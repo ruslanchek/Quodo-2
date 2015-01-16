@@ -1,0 +1,7 @@
+$widths: 100
+$width: 1%
+
+@while $widths > 0
+	.w-#{$widths}
+		width: $width * $widths
+	$widths: $widths - 1
