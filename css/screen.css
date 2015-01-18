@@ -2225,6 +2225,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .fa-meanpath:before {
   content: ""; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/settings\.sass}line{font-family:\000033}}
+body {
+  font-family: "Asap", sans-serif; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/settings\.sass}line{font-family:\000037}}
+.limiter {
+  width: 960px;
+  margin: 0 auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/settings\.sass}line{font-family:\0000311}}
+main {
+  padding: 40px 0; }
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\0000337}}
 .color-bittersweet-light {
   color: #fc6d58; }
@@ -2434,40 +2447,40 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     padding-left: 30px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000320}}
     .grid-row > [class*='col-'].col-1 {
-      width: 8.33333%; }
+      width: 80px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000323}}
     .grid-row > [class*='col-'].col-2 {
-      width: 16.66667%; }
+      width: 160px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000326}}
     .grid-row > [class*='col-'].col-3 {
-      width: 25%; }
+      width: 240px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000329}}
     .grid-row > [class*='col-'].col-4 {
-      width: 33.33333%; }
+      width: 320px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000332}}
     .grid-row > [class*='col-'].col-5 {
-      width: 41.66667%; }
+      width: 400px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000335}}
     .grid-row > [class*='col-'].col-6 {
-      width: 50%; }
+      width: 480px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000338}}
     .grid-row > [class*='col-'].col-7 {
-      width: 58.33333%; }
+      width: 560px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000341}}
     .grid-row > [class*='col-'].col-8 {
-      width: 66.66667%; }
+      width: 640px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000344}}
     .grid-row > [class*='col-'].col-9 {
-      width: 75%; }
+      width: 720px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000347}}
     .grid-row > [class*='col-'].col-10 {
-      width: 83.33333%; }
+      width: 800px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000350}}
     .grid-row > [class*='col-'].col-11 {
-      width: 91.66667%; }
+      width: 880px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000353}}
     .grid-row > [class*='col-'].col-12 {
-      width: 100%; }
+      width: 960px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000356}}
 .push-right {
@@ -2882,19 +2895,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 h1 {
   font-size: 30px;
   margin-bottom: 0.75em; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/settings\.sass}line{font-family:\000033}}
-body {
-  font-family: "Asap", sans-serif; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/settings\.sass}line{font-family:\000037}}
-.limiter {
-  width: 900px;
-  margin: 0 auto; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/settings\.sass}line{font-family:\0000311}}
-main {
-  padding: 40px 0; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/demo\.sass}line{font-family:\000032}}
 .colors .grid-row {
