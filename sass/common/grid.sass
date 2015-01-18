@@ -2,19 +2,20 @@
 	$cols: 12
 	$width: 100%
 	$col-w: $width/$cols
+	$gutter: 30px
 
 	&:after
 		display: block
 		content: ''
 		clear: both
 
-	margin-left: -20px
+	margin-left: -$gutter
 
 	> [class*='col-']
 		float: left
 		min-height: 1px
 		box-sizing: border-box
-		padding-left: 20px
+		padding-left: $gutter
 
 		&.col-1
 			width: $col-w
@@ -58,3 +59,4 @@
 
 .text-right
 	text-align: right
+
