@@ -1,0 +1,51 @@
+.nav
+	a
+		box-sizing: border-box
+		display: block
+		height: $height-component-default
+		line-height: $height-component-default
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: hidden
+
+	&.fat
+		a
+			height: $height-component-fat
+			line-height: $height-component-fat
+
+	&.slim
+		a
+			height: $height-component-slim
+			line-height: $height-component-slim
+
+	&.fill
+		background-color: $fill-component-color
+		border-radius: $border-radius
+
+		a
+			@extend .links-white
+			padding: 0 $padding-component-side
+
+			&:hover
+				background-color: rgba(255, 255, 255, .2)
+
+			&:active
+				background-color: rgba(255, 255, 255, .1)
+
+			&:first-child
+				border-radius: $border-radius $border-radius 0 0
+
+			&:last-child
+				border-radius: 0 0 $border-radius $border-radius
+
+	&.horizontal
+		display: table
+		table-layout: fixed
+		width: 100%
+		padding: 0 $padding-component-side 0 0
+
+		&.fill
+			padding: 0 $padding-component-side
+
+		a
+			display: table-cell

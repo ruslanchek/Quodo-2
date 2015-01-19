@@ -1,84 +1,98 @@
-doctype html
-html
-	include partials/head
-	body 
-		header
-			.limiter
-		main
-			.limiter
+extends ./layout.jade
+
+block content
+	.grid-row
+		.col-3
+			.logo Quodo 2
+			
+			nav.nav.fat.fill
+				a.active(href="#") Colors
+				a(href="#") Navigation
+				a(href="#") Grid
+				a(href="#") Colors
+				a(href="#") Colors
+				a(href="#") Colors
+				a(href="#") Colors
+
+		.col-9
+			h1 Colors
+
+			nav.nav.fat.fill.horizontal
+				a.active(href="#") Colors
+				a(href="#") Navigation
+				a(href="#") Grid
+				a(href="#") Colors
+				a(href="#") Colors
+				a(href="#") Colors
+				a(href="#") Colors
+
+			.colors
 				.grid-row
 					.col-3
-						nav navigation
+						.item
+							.dark.bg-bittersweet-dark
+							.light.bg-bittersweet-light
+							.title bittersweet
+					.col-3
+						.item
+							.dark.bg-sunflower-dark
+							.light.bg-sunflower-light
+							.title sunflower
+					.col-3
+						.item
+							.dark.bg-grass-dark
+							.light.bg-grass-light
+							.title grass
 
-					.col-9
-						h1 Colors
-						.colors
-							.grid-row
-								.col-3
-									.item
-										.dark.bg-bittersweet-dark
-										.light.bg-bittersweet-light
-										.title bittersweet
-								.col-3
-									.item
-										.dark.bg-sunflower-dark
-										.light.bg-sunflower-light
-										.title sunflower
-								.col-3
-									.item
-										.dark.bg-grass-dark
-										.light.bg-grass-light
-										.title grass
+				.grid-row
+					.col-3
+						.item
+							.dark.bg-mint-dark
+							.light.bg-mint-light
+							.title mint
 
-							.grid-row
-								.col-3
-									.item
-										.dark.bg-mint-dark
-										.light.bg-mint-light
-										.title mint
+					.col-3
+						.item
+							.dark.bg-aqua-dark
+							.light.bg-aqua-light
+							.title aqua
+					.col-3
+						.item
+							.dark.bg-blue-jeans-dark
+							.light.bg-blue-jeans-light
+							.title blue-jeans
 
-								.col-3
-									.item
-										.dark.bg-aqua-dark
-										.light.bg-aqua-light
-										.title aqua
-								.col-3
-									.item
-										.dark.bg-blue-jeans-dark
-										.light.bg-blue-jeans-light
-										.title blue-jeans
+				.grid-row
+					.col-3
+						.item
+							.dark.bg-lavender-dark
+							.light.bg-lavender-light
+							.title lavender
+					.col-3
+						.item
+							.dark.bg-pink-rose-dark
+							.light.bg-pink-rose-light
+							.title pink-rose
 
-							.grid-row
-								.col-3
-									.item
-										.dark.bg-lavender-dark
-										.light.bg-lavender-light
-										.title lavender
-								.col-3
-									.item
-										.dark.bg-pink-rose-dark
-										.light.bg-pink-rose-light
-										.title pink-rose
+					.col-3
+						.item
+							.dark.bg-light-gray-dark
+							.light.bg-light-gray-light
+							.title light-gray
 
-								.col-3
-									.item
-										.dark.bg-light-gray-dark
-										.light.bg-light-gray-light
-										.title light-gray
-
-							.grid-row
-								.col-3
-									.item
-										.dark.bg-medium-gray-dark
-										.light.bg-medium-gray-light
-										.title medium-gray
-								.col-3
-									.item
-										.dark.bg-dark-gray-dark
-										.light.bg-dark-gray-light
-										.title dark-gray
-								.col-3
-									.item
-										.dark.bg-black-dark
-										.light.bg-black-light
-										.title black
+				.grid-row
+					.col-3
+						.item
+							.dark.bg-medium-gray-dark
+							.light.bg-medium-gray-light
+							.title medium-gray
+					.col-3
+						.item
+							.dark.bg-dark-gray-dark
+							.light.bg-dark-gray-light
+							.title dark-gray
+					.col-3
+						.item
+							.dark.bg-black-dark
+							.light.bg-black-light
+							.title black

@@ -1,10 +1,17 @@
++sticky-footer(50px, ".wrap", ".push", ".footer")
+
+.logo
+	font-size: 30px
+	font-weight: bold
+	margin-bottom: 0.75em
+
 .colors
 	.grid-row
 		margin-bottom: 30px
 
 	.item
-		border-radius: 5px 5px
-		box-shadow: 0 1px 5px rgba(0, 15, 10, .15)
+		border-radius: $border-radius
+		box-shadow: 0 1px 3px rgba(0, 15, 10, .15)
 
 		.dark, 
 		.light
@@ -13,12 +20,12 @@
 			float: left
 
 			&.dark
-				border-radius: 5px 0 0 0
+				border-radius: $border-radius 0 0 0
 			&.light
-				border-radius: 0 5px 0 0
+				border-radius: 0 $border-radius 0 0
 
 		.title
-			border-radius: 0 0 5px 5px
+			border-radius: 0 0 $border-radius $border-radius
 			padding: 0 15px
 			clear: both
 			height: 50px

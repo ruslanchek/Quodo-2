@@ -1,8 +1,8 @@
 .grid-row
-	$cols: 12
+	$cols: $grid-cols
 	$width: $overall-width
 	$col-w: $width/$cols
-	$gutter: 30px
+	$gutter: $grid-gutter-width
 
 	&:after
 		display: block
@@ -57,6 +57,12 @@
 	margin-left: auto
 	margin-right: 0
 
+.cntered
+	margin: 0 auto
+
 .text-right
+	text-align: right
+
+.text-center
 	text-align: right
 
