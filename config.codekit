@@ -22,6 +22,15 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
+	"\/colors.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/colors.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/colors.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
