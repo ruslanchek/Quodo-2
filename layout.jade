@@ -5,33 +5,9 @@ html
 		.wrap
 			main
 				.limiter
-					block content
-				.push
+					include partials/header
 
-		footer.footer
-			.limiter
-				.grid-row
-					.col-3
-						nav.nav
-							a.active(href="#") Colors
-							a.color-bittersweet-light(href="#") Navigation
-							a(href="#") Grid
-							a(href="#") Colors
-					.col-3
-						nav.nav
-							a.active(href="#") Colors
-							a(href="#") Navigation
-							a(href="#") Grid
-							a(href="#") Colors
-					.col-3
-						nav.nav
-							a.active(href="#") Colors
-							a(href="#") Navigation
-							a(href="#") Grid
-							a(href="#") Colors
-					.col-3
-						nav.nav
-							a.active(href="#") Colors
-							a(href="#") Navigation
-							a(href="#") Grid
-							a(href="#") Colors
+					block content
+			.push
+
+		include partials/footer

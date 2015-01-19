@@ -2,11 +2,10 @@
 	box-sizing: border-box
 
 	a
+		height: $height-component-default
 		box-sizing: border-box
 		display: block
-		height: $height-component-default
-		line-height: $height-component-default
-		transition: background $animation-component-duration
+		transition: $animation-component-duration
 
 	&:not(.horizontal)
 		white-space: nowrap
@@ -18,6 +17,8 @@
 		border-radius: $border-radius
 
 		a
+			height: $height-component-default
+			line-height: $height-component-default
 			color: #fff
 			padding: 0 $padding-component-side
 
@@ -39,6 +40,8 @@
 		border-radius: $border-radius
 
 		a
+			height: $height-component-default - 1
+			line-height: $height-component-default - 1
 			padding: 0 $padding-component-side
 			border-bottom: 1px solid $border-component-color
 
@@ -55,51 +58,62 @@
 				border-radius: 0 0 $border-radius - 1 $border-radius - 1
 				border-bottom: none
 
-	&.horizontal
-		display: table
-		table-layout: fixed
-		width: 100%
-		tex-align: center
-	
+	&.horizontal	
 		a
-			display: table-cell	
-			padding: 0
-			text-align: center
-			width: 2%
-			height: $height-component-default - 1
-			line-height: $height-component-default - 1
-
+			padding: 0 $padding-component-side*2 0 0
+			display: inline-block
+			
 			&:first-child
 				border-radius: $border-radius - 1 0 0 $border-radius - 1
 
 			&:last-child
 				border-radius: 0 $border-radius - 1 $border-radius - 1 0
 
+		&.bordered,
+		&.filled
+			text-align: center
+			display: table
+			table-layout: fixed
+			width: 100%
+
+			a
+				padding: 0
+				display: table-cell
+				width: 2%
+
+		&.filled
+			a
+				height: $height-component-default
+				line-height: $height-component-default
+
 		&.bordered
 			a
 				border-bottom: none
 				border-right: 1px solid $border-component-color
+				height: $height-component-default - 1
+				line-height: $height-component-default - 1
 
 				&:last-of-type
 					border-right: none
 
 	&.fat
-		a
-			height: $height-component-fat
-			line-height: $height-component-fat
+		&:not(.horizontal)
+			a
+				height: $height-component-fat
 
-		&.horizontal
+		&.bordered,
+		&.filled
 			a
 				height: $height-component-fat - 1
 				line-height: $height-component-fat - 1
 
 	&.slim
-		a
-			height: $height-component-slim
-			line-height: $height-component-slim
+		&:not(.horizontal)
+			a
+				height: $height-component-slim
 
-		&.horizontal
+		&.bordered,
+		&.filled
 			a
 				height: $height-component-slim - 1
 				line-height: $height-component-slim - 1
-		

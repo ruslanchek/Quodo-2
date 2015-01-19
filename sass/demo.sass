@@ -4,7 +4,15 @@ main
 .logo
 	font-size: 30px
 	font-weight: bold
-	margin-bottom: 0.75em
+	margin-bottom: .5em
+	display: block
+
+.logo-p
+	color: $color-dark-gray-light
+
+.footer
+	.logo-p
+		color: $color-medium-gray-dark
 
 .colors
 	.grid-row
@@ -12,12 +20,12 @@ main
 
 	.item
 		border-radius: $border-radius
-		box-shadow: 0 1px 3px rgba(0, 15, 10, .15)
+		@extend .shadowed
 
 		.dark, 
 		.light
 			width: 50%
-			height: 50px
+			height: $height-component-fat
 			float: left
 
 			&.dark
@@ -29,5 +37,5 @@ main
 			border-radius: 0 0 $border-radius $border-radius
 			padding: 0 15px
 			clear: both
-			height: 50px
-			line-height: 50px
+			height: $height-component-fat
+			line-height: $height-component-fat

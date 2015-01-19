@@ -3,28 +3,22 @@ extends ./layout.jade
 block content
 	.grid-row
 		.col-3
-			.logo Quodo 2
-			
+			a(href="#").color-dark-gray-dark
+				.logo
+					| Quodo&nbsp;
+					i.fa.fa-rocket.color-aqua-dark
+					| &nbsp;2&nbsp;
+				p.logo-p Application UI library
+
 			nav.nav.fat.bordered
 				a.active(href="#") Colors
 				a(href="#") Navigation
 				a(href="#") Grid
 				a(href="#") Colors
-				a(href="#") Colors
-				a(href="#") Colors
-				a(href="#") Colors
 
 		.col-9
 			h1 Colors
-
-			nav.nav.fat.filled.horizontal
-				a.active(href="#") Colors
-				a(href="#") Navigation
-				a(href="#") Grid
-				a(href="#") Colors
-				a(href="#") Colors
-				a(href="#") Colors
-				a(href="#") Colors
+			p A backgrounds, text and links colors, that also suitable for theming
 
 			.colors
 				.grid-row
