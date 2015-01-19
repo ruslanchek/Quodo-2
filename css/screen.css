@@ -2250,72 +2250,72 @@ body {
 .shadowed, .colors .item {
   box-shadow: 0 1px 3px rgba(0, 15, 10, 0.1); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\000031}}
-.grid-row {
-  margin-left: -30px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\000037}}
-  .grid-row:after {
-    display: block;
-    content: "";
-    clear: both; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000314}}
-  .grid-row > [class*='col-'] {
-    float: left;
-    min-height: 1px;
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
-    padding-left: 30px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000320}}
-    .grid-row > [class*='col-'].col-1 {
-      width: 80px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000323}}
-    .grid-row > [class*='col-'].col-2 {
-      width: 160px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000326}}
-    .grid-row > [class*='col-'].col-3 {
-      width: 240px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000329}}
-    .grid-row > [class*='col-'].col-4 {
-      width: 320px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000332}}
-    .grid-row > [class*='col-'].col-5 {
-      width: 400px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000335}}
-    .grid-row > [class*='col-'].col-6 {
-      width: 480px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000338}}
-    .grid-row > [class*='col-'].col-7 {
-      width: 560px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000341}}
-    .grid-row > [class*='col-'].col-8 {
-      width: 640px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000344}}
-    .grid-row > [class*='col-'].col-9 {
-      width: 720px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000347}}
-    .grid-row > [class*='col-'].col-10 {
-      width: 800px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000350}}
-    .grid-row > [class*='col-'].col-11 {
-      width: 880px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000353}}
-    .grid-row > [class*='col-'].col-12 {
-      width: 960px; }
+.grid-row:after {
+  display: block;
+  content: "";
+  clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000312}}
+.grid-row > [class*='col-'] {
+  float: left;
+  min-height: 1px;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  margin-left: 30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000318}}
+  .grid-row > [class*='col-']:first-of-type {
+    margin-left: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000321}}
+  .grid-row > [class*='col-'].col-1 {
+    width: 50px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000324}}
+  .grid-row > [class*='col-'].col-2 {
+    width: 130px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000327}}
+  .grid-row > [class*='col-'].col-3 {
+    width: 210px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000330}}
+  .grid-row > [class*='col-'].col-4 {
+    width: 290px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000333}}
+  .grid-row > [class*='col-'].col-5 {
+    width: 370px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000336}}
+  .grid-row > [class*='col-'].col-6 {
+    width: 450px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000339}}
+  .grid-row > [class*='col-'].col-7 {
+    width: 530px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000342}}
+  .grid-row > [class*='col-'].col-8 {
+    width: 610px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000345}}
+  .grid-row > [class*='col-'].col-9 {
+    width: 690px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000348}}
+  .grid-row > [class*='col-'].col-10 {
+    width: 770px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000351}}
+  .grid-row > [class*='col-'].col-11 {
+    width: 850px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000354}}
+  .grid-row > [class*='col-'].col-12 {
+    width: 930px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000357}}
 .push-right {
   margin-left: auto;
   margin-right: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000361}}
 .cntered {
   margin: 0 auto; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000364}}
 .text-right {
   text-align: right; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000367}}
 .text-center {
   text-align: right; }
 
@@ -3125,85 +3125,85 @@ p {
       padding: 0 20px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000325}}
       .nav.filled a:hover {
-        background-color: rgba(255, 255, 255, 0.2); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000328}}
-      .nav.filled a:active {
         background-color: rgba(255, 255, 255, 0.1); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000328}}
+      .nav.filled a:active, .nav.filled a.active {
+        background-color: rgba(255, 255, 255, 0.15); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000332}}
       .nav.filled a:first-child {
         border-radius: 4px 4px 0 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000335}}
       .nav.filled a:last-child {
         border-radius: 0 0 4px 4px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000338}}
   .nav.bordered {
     background-color: none;
     border: 1px solid #e6e9ed;
     border-radius: 5px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000343}}
     .nav.bordered a {
       height: 35px;
       line-height: 35px;
       padding: 0 20px;
       border-bottom: 1px solid #e6e9ed; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000349}}
       .nav.bordered a:hover {
+        background-color: #f5f8fc; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000352}}
+      .nav.bordered a:active, .nav.bordered a.active {
         background-color: #e6e9ed; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000351}}
-      .nav.bordered a:active {
-        background-color: #e6e9ed; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000356}}
       .nav.bordered a:first-child {
         border-radius: 4px 4px 0 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000359}}
       .nav.bordered a:last-of-type {
         border-radius: 0 0 4px 4px;
         border-bottom: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000364}}
   .nav.horizontal a {
     padding: 0 40px 0 0;
     display: inline-block; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000368}}
     .nav.horizontal a:first-child {
       border-radius: 4px 0 0 4px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000371}}
     .nav.horizontal a:last-child {
       border-radius: 0 4px 4px 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000372}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000374}}
   .nav.horizontal.bordered, .nav.horizontal.filled {
     text-align: center;
     display: table;
     table-layout: fixed;
     width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000381}}
     .nav.horizontal.bordered a, .nav.horizontal.filled a {
       padding: 0;
       display: table-cell;
       width: 2%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000387}}
   .nav.horizontal.filled a {
     height: 36px;
     line-height: 36px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000390}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000392}}
   .nav.horizontal.bordered a {
     border-bottom: none;
     border-right: 1px solid #e6e9ed;
     height: 35px;
     line-height: 35px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000396}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000398}}
     .nav.horizontal.bordered a:last-of-type {
       border-right: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\00003103}}
   .nav.fat:not(.horizontal) a {
     height: 48px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\00003106}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\00003108}}
   .nav.fat.bordered a, .nav.fat.filled a {
     height: 47px;
     line-height: 47px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\00003112}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\00003114}}
   .nav.slim:not(.horizontal) a {
     height: 32px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\00003117}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\00003119}}
   .nav.slim.bordered a, .nav.slim.filled a {
     height: 31px;
     line-height: 31px; }

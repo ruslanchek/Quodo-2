@@ -1,7 +1,16 @@
 extends ./layout.jade
 
 block content
-	- var section = 'main'
+	- var section = 'colors'
+
+	nav.nav.fat.filled.horizontal
+		a(href="/colors.html", class= (section=='colors' ? 'active' : '')) Colors
+		a(href="/nav.html", class= (section=='nav' ? 'active' : '')) Navigation
+		a(href="/grid.html", class= (section=='grid' ? 'active' : '')) Grid
+		a(href="/buttons.html", class= (section=='buttons' ? 'active' : '')) Buttons
+
+	br
+	br
 
 	.grid-row
 		.col-3
