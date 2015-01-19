@@ -1,145 +1,157 @@
+@mixin color($color)
+	color: $color !important
+	
+	@at-root a#{&}
+		color: $color !important
+		&:hover
+			color: $color - 25 !important
+
 .color-bittersweet-light
-	color: $color-bittersweet-light
+	+color($color-bittersweet-light)
 
 .color-bittersweet-dark
-	color: $color-bittersweet-dark
+	+color($color-bittersweet-dark)
 
 .color-sunflower-light
-	color: $color-sunflower-light
+	+color($color-sunflower-light)
 
 .color-sunflower-dark
-	color: $color-sunflower-dark
+	+color($color-sunflower-dark)
 
 .color-grass-light
-	color: $color-grass-light
+	+color($color-grass-light)
 
 .color-grass-dark
-	color: $color-grass-dark
+	+color($color-grass-dark)
 
 .color-mint-light
-	color: $color-mint-light
+	+color($color-mint-light)
 
 .color-mint-dark
-	color: $color-mint-dark
+	+color($color-mint-dark)
 
 .color-aqua-light
-	color: $color-aqua-light
+	+color($color-aqua-light)
 
 .color-aqua-dark
-	color: $color-aqua-dark
+	+color($color-aqua-dark)
 
 .color-blue-jeans-light
-	color: $color-blue-jeans-light
+	+color($color-blue-jeans-light)
 
 .color-blue-jeans-dark
-	color: $color-blue-jeans-dark
+	+color($color-blue-jeans-dark)
 
 .color-lavender-light
-	color: $color-lavender-light
+	+color($color-lavender-light)
 
 .color-lavender-dark
-	color: $color-lavender-dark
+	+color($color-lavender-dark)
 
 .color-pink-rose-light
-	color: $color-pink-rose-light
+	+color($color-pink-rose-light)
 
 .color-pink-rose-dark
-	color: $color-pink-rose-dark
+	+color($color-pink-rose-dark)
 
 .color-light-gray-light
-	color: $color-light-gray-light
+	+color($color-light-gray-light)
 
 .color-light-gray-dark
-	color: $color-light-gray-dark
+	+color($color-light-gray-dark)
 
 .color-medium-gray-light
-	color: $color-medium-gray-light
+	+color($color-medium-gray-light)
 
 .color-medium-gray-dark
-	color: $color-medium-gray-dark
+	+color($color-medium-gray-dark)
 
 .color-dark-gray-light
-	color: $color-dark-gray-light
+	+color($color-dark-gray-light)
 
 .color-dark-gray-dark
-	color: $color-dark-gray-dark
+	+color($color-dark-gray-dark)
 
 .color-black-light
-	color: $color-black-light
+	+color($color-black-light)
 
 .color-black-dark
-	color: $color-black-dark
+	+color($color-black-dark)
 
 
+
+@mixin bg($color)
+	background-color: $color !important
+	
 
 .bg-bittersweet-light
-	background-color: $color-bittersweet-light
+	+bg($color-bittersweet-light)
 
 .bg-bittersweet-dark
-	background-color: $color-bittersweet-dark
+	+bg($color-bittersweet-dark)
 
 .bg-sunflower-light
-	background-color: $color-sunflower-light
+	+bg($color-sunflower-light)
 
 .bg-sunflower-dark
-	background-color: $color-sunflower-dark
+	+bg($color-sunflower-dark)
 
 .bg-grass-light
-	background-color: $color-grass-light
+	+bg($color-grass-light)
 
 .bg-grass-dark
-	background-color: $color-grass-dark
+	+bg($color-grass-dark)
 
 .bg-mint-light
-	background-color: $color-mint-light
+	+bg($color-mint-light)
 
 .bg-mint-dark
-	background-color: $color-mint-dark
+	+bg($color-mint-dark)
 
 .bg-aqua-light
-	background-color: $color-aqua-light
+	+bg($color-aqua-light)
 
 .bg-aqua-dark
-	background-color: $color-aqua-dark
+	+bg($color-aqua-dark)
 
 .bg-blue-jeans-light
-	background-color: $color-blue-jeans-light
+	+bg($color-blue-jeans-light)
 
 .bg-blue-jeans-dark
-	background-color: $color-blue-jeans-dark
+	+bg($color-blue-jeans-dark)
 
 .bg-lavender-light
-	background-color: $color-lavender-light
+	+bg($color-lavender-light)
 
 .bg-lavender-dark
-	background-color: $color-lavender-dark
+	+bg($color-lavender-dark)
 
 .bg-pink-rose-light
-	background-color: $color-pink-rose-light
+	+bg($color-pink-rose-light)
 
 .bg-pink-rose-dark
-	background-color: $color-pink-rose-dark
+	+bg($color-pink-rose-dark)
 
 .bg-light-gray-light
-	background-color: $color-light-gray-light
+	+bg($color-light-gray-light)
 
 .bg-light-gray-dark
-	background-color: $color-light-gray-dark
+	+bg($color-light-gray-dark)
 
 .bg-medium-gray-light
-	background-color: $color-medium-gray-light
+	+bg($color-medium-gray-light)
 
 .bg-medium-gray-dark
-	background-color: $color-medium-gray-dark
+	+bg($color-medium-gray-dark)
 
 .bg-dark-gray-light
-	background-color: $color-dark-gray-light
+	+bg($color-dark-gray-light)
 
 .bg-dark-gray-dark
-	background-color: $color-dark-gray-dark
+	+bg($color-dark-gray-dark)
 
 .bg-black-light
-	background-color: $color-black-light
+	+bg($color-black-light)
 
 .bg-black-dark
-	background-color: $color-black-dark
+	+bg($color-black-dark)
