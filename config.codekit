@@ -210,15 +210,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/nav.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/nav.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/nav.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -642,21 +633,21 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
-	"\/sass\/common\/grid.sass": {
+	"\/sass\/common\/grid.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
-		"fileType": 2,
+		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/common\/grid.sass",
+		"inputAbbreviatedPath": "\/sass\/common\/grid.scss",
 		"outputAbbreviatedPath": "\/css\/grid.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
-		"useLibsass": false
+		"useLibsass": 0
 		},
 	"\/sass\/common\/mixins.sass": {
 		"createSourceMap": 1,

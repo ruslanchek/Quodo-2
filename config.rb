@@ -18,3 +18,4 @@ line_comments = false
 color_output = true
 
 preferred_syntax = :sass
+Sass::Script::Number.precision = 10

@@ -7,6 +7,15 @@
 		display: block
 		transition: $animation-component-duration
 
+		&.active
+			opacity: .7
+
+	&.bordered,
+	&.filled
+		a.active
+			opacity: 1
+
+
 	&:not(.horizontal)
 		white-space: nowrap
 		overflow: hidden
@@ -27,7 +36,7 @@
 
 			&:active,
 			&.active
-				background-color: rgba(255, 255, 255, .15)
+				background-color: rgba(255, 255, 255, .2)
 
 			&:first-child
 				border-radius: $border-radius - 1 $border-radius - 1 0 0
@@ -45,6 +54,7 @@
 			line-height: $height-component-default - 1
 			padding: 0 $padding-component-side
 			border-bottom: 1px solid $border-component-color
+			color: $color-links-default
 
 			&:hover
 				background-color: $border-component-color + 15
