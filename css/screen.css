@@ -2441,7 +2441,7 @@ main {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\000031}}
 .grid-row {
-  margin-left: -30px; }
+  margin-left: -20px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\000037}}
   .grid-row:after {
     display: block;
@@ -2453,7 +2453,7 @@ main {
     min-height: 1px;
     -moz-box-sizing: border-box;
          box-sizing: border-box;
-    padding-left: 30px; }
+    padding-left: 20px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.sass}line{font-family:\0000320}}
     .grid-row > [class*='col-'].col-1 {
       width: 80px; }
@@ -2914,19 +2914,19 @@ h1 {
   margin-bottom: 0.75em; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/links\.sass}line{font-family:\000031}}
-.links-white, .nav.fill a {
+.links-white, .nav.filled a {
   color: #fff; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/compass\/compass-core\/stylesheets\/compass\/typography\/links\/_link-colors\.scss}line{font-family:\0000318}}
-  .links-white:visited, .nav.fill a:visited {
+  .links-white:visited, .nav.filled a:visited {
     color: #fff; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/compass\/compass-core\/stylesheets\/compass\/typography\/links\/_link-colors\.scss}line{font-family:\0000321}}
-  .links-white:focus, .nav.fill a:focus {
+  .links-white:focus, .nav.filled a:focus {
     color: #fff; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/compass\/compass-core\/stylesheets\/compass\/typography\/links\/_link-colors\.scss}line{font-family:\0000324}}
-  .links-white:hover, .nav.fill a:hover {
+  .links-white:hover, .nav.filled a:hover {
     color: white; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/compass\/compass-core\/stylesheets\/compass\/typography\/links\/_link-colors\.scss}line{font-family:\0000327}}
-  .links-white:active, .nav.fill a:active {
+  .links-white:active, .nav.filled a:active {
     color: white; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/links\.sass}line{font-family:\000034}}
@@ -2945,55 +2945,81 @@ h1 {
   .links-default:active, * a:active {
     color: #4c545e; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\000032}}
-.nav a {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\000031}}
+.nav {
   -moz-box-sizing: border-box;
-       box-sizing: border-box;
-  display: block;
-  height: 32px;
-  line-height: 32px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: hidden; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000312}}
-.nav.fat a {
-  height: 48px;
-  line-height: 48px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000317}}
-.nav.slim a {
-  height: 26px;
-  line-height: 26px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000321}}
-.nav.fill {
-  background-color: #434a53;
-  border-radius: 5px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000325}}
-  .nav.fill a {
-    padding: 0 30px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000329}}
-    .nav.fill a:hover {
-      background-color: rgba(255, 255, 255, 0.2); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000332}}
-    .nav.fill a:active {
-      background-color: rgba(255, 255, 255, 0.1); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000335}}
-    .nav.fill a:first-child {
-      border-radius: 5px 5px 0 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000338}}
-    .nav.fill a:last-child {
-      border-radius: 0 0 5px 5px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000341}}
-.nav.horizontal {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-  padding: 0 30px 0 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000347}}
-  .nav.horizontal.fill {
-    padding: 0 30px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000350}}
-  .nav.horizontal a {
-    display: table-cell; }
+       box-sizing: border-box; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\000034}}
+  .nav a {
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000314}}
+  .nav.fat a {
+    height: 48px;
+    line-height: 48px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000319}}
+  .nav.slim a {
+    height: 26px;
+    line-height: 26px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000323}}
+  .nav.filled {
+    background-color: #434a53;
+    border-radius: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000327}}
+    .nav.filled a {
+      padding: 0 30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000331}}
+      .nav.filled a:hover {
+        background-color: rgba(255, 255, 255, 0.2); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000334}}
+      .nav.filled a:active {
+        background-color: rgba(255, 255, 255, 0.1); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000337}}
+      .nav.filled a:first-child {
+        border-radius: 5px 5px 0 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000340}}
+      .nav.filled a:last-child {
+        border-radius: 0 0 5px 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000343}}
+  .nav.bordered {
+    background-color: none;
+    border: 1px solid #e6e9ed;
+    border-radius: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000348}}
+    .nav.bordered a {
+      padding: 0 30px;
+      border-bottom: 1px solid #e6e9ed; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000352}}
+      .nav.bordered a:hover {
+        background-color: #e6e9ed; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000355}}
+      .nav.bordered a:active {
+        background-color: #e6e9ed; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000358}}
+      .nav.bordered a:first-child {
+        border-radius: 5px 5px 0 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000361}}
+      .nav.bordered a:last-child {
+        border-radius: 0 0 5px 5px;
+        border-bottom: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000365}}
+  .nav.horizontal:not(.bordered) {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    padding: 0 30px 0 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000371}}
+    .nav.horizontal:not(.bordered).fill, .nav.horizontal:not(.bordered).bordered {
+      padding: 0 30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000375}}
+    .nav.horizontal:not(.bordered) a {
+      display: table-cell; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/compass\/compass-core\/stylesheets\/compass\/layout\/_sticky-footer\.scss}line{font-family:\0000310}}
 html, body {

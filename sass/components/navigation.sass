@@ -1,4 +1,6 @@
 .nav
+	box-sizing: border-box
+
 	a
 		box-sizing: border-box
 		display: block
@@ -18,7 +20,7 @@
 			height: $height-component-slim
 			line-height: $height-component-slim
 
-	&.fill
+	&.filled
 		background-color: $fill-component-color
 		border-radius: $border-radius
 
@@ -38,14 +40,38 @@
 			&:last-child
 				border-radius: 0 0 $border-radius $border-radius
 
-	&.horizontal
+	&.bordered
+		background-color: none
+		border: 1px solid $border-component-color
+		border-radius: $border-radius
+
+		a
+			padding: 0 $padding-component-side
+			border-bottom: 1px solid $border-component-color
+
+			&:hover
+				background-color: $border-component-color
+
+			&:active
+				background-color: $border-component-color
+
+			&:first-child
+				border-radius: $border-radius $border-radius 0 0
+
+			&:last-child
+				border-radius: 0 0 $border-radius $border-radius
+				border-bottom: none
+
+	&.horizontal:not(.bordered)
 		display: table
 		table-layout: fixed
 		width: 100%
 		padding: 0 $padding-component-side 0 0
 
-		&.fill
+		&.fill, 
+		&.bordered
 			padding: 0 $padding-component-side
 
 		a
 			display: table-cell
+		
