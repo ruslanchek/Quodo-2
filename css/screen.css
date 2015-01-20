@@ -2682,14 +2682,14 @@ html, body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin-bottom: -190px; }
+  margin-bottom: -205px; }
   .wrap .push {
-    height: 190px; }
+    height: 205px; }
 
 .footer {
   clear: both;
   position: relative;
-  height: 190px; }
+  height: 205px; }
 
 .footer {
   -moz-box-sizing: border-box;
@@ -2697,6 +2697,8 @@ html, body {
   background-color: #434a53;
   color: #fff;
   padding: 30px 0; }
+  .footer .logo {
+    margin-top: 12px; }
 
 .box {
   padding: 30px 20px; }
