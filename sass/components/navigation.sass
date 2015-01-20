@@ -3,6 +3,7 @@
 
 	a
 		height: $height-component-default
+		line-height: $height-component-default
 		box-sizing: border-box
 		display: block
 		transition: $animation-component-duration
@@ -26,17 +27,15 @@
 		border-radius: $border-radius
 
 		a
-			height: $height-component-default
-			line-height: $height-component-default
 			color: #fff
 			padding: 0 $padding-component-side
 
 			&:hover
-				background-color: rgba(255, 255, 255, .1)
+				background-color: rgba(255, 255, 255, .15)
 
 			&:active,
 			&.active
-				background-color: rgba(255, 255, 255, .2)
+				background-color: rgba(255, 255, 255, .25)
 
 			&:first-child
 				border-radius: $border-radius - 1 $border-radius - 1 0 0
@@ -50,8 +49,6 @@
 		border-radius: $border-radius
 
 		a
-			height: $height-component-default - 1
-			line-height: $height-component-default - 1
 			padding: 0 $padding-component-side
 			border-bottom: 1px solid $border-component-color
 			color: $color-links-default
@@ -93,39 +90,19 @@
 				display: table-cell
 				width: 2%
 
-		&.filled
-			a
-				height: $height-component-default
-				line-height: $height-component-default
-
 		&.bordered
 			a
 				border-bottom: none
 				border-right: 1px solid $border-component-color
-				height: $height-component-default - 1
-				line-height: $height-component-default - 1
 
 				&:last-of-type
 					border-right: none
 
-	&.fat
-		&:not(.horizontal)
-			a
-				height: $height-component-fat
+	&.fat a
+		height: $height-component-fat
+		line-height: $height-component-fat
 
-		&.bordered,
-		&.filled
-			a
-				height: $height-component-fat - 1
-				line-height: $height-component-fat - 1
 
-	&.slim
-		&:not(.horizontal)
-			a
-				height: $height-component-slim
-
-		&.bordered,
-		&.filled
-			a
-				height: $height-component-slim - 1
-				line-height: $height-component-slim - 1
+	&.slim a
+		height: $height-component-slim
+		line-height: $height-component-fat

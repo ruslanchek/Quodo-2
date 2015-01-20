@@ -168,6 +168,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/grid.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/grid.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/grid.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -210,22 +219,33 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/nav.html": {
+	"\/nav-h.html": {
 		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/nav.html",
+		"inputAbbreviatedPath": "\/nav-h.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/nav.jade": {
+	"\/nav-h.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/nav.jade",
-		"outputAbbreviatedPath": "\/nav.html",
+		"inputAbbreviatedPath": "\/nav-h.jade",
+		"outputAbbreviatedPath": "\/nav-h.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/nav-v.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/nav-v.jade",
+		"outputAbbreviatedPath": "\/nav-v.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0

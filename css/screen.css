@@ -2601,6 +2601,7 @@ p {
        box-sizing: border-box; }
   .nav a {
     height: 36px;
+    line-height: 36px;
     -moz-box-sizing: border-box;
          box-sizing: border-box;
     display: block;
@@ -2618,14 +2619,12 @@ p {
     background-color: #434a53;
     border-radius: 5px; }
     .nav.filled a {
-      height: 36px;
-      line-height: 36px;
       color: #fff;
       padding: 0 20px; }
       .nav.filled a:hover {
-        background-color: rgba(255, 255, 255, 0.1); }
+        background-color: rgba(255, 255, 255, 0.15); }
       .nav.filled a:active, .nav.filled a.active {
-        background-color: rgba(255, 255, 255, 0.2); }
+        background-color: rgba(255, 255, 255, 0.25); }
       .nav.filled a:first-child {
         border-radius: 4px 4px 0 0; }
       .nav.filled a:last-child {
@@ -2635,8 +2634,6 @@ p {
     border: 1px solid #e6e9ed;
     border-radius: 5px; }
     .nav.bordered a {
-      height: 35px;
-      line-height: 35px;
       padding: 0 20px;
       border-bottom: 1px solid #e6e9ed;
       color: #656d77; }
@@ -2665,26 +2662,17 @@ p {
       padding: 0;
       display: table-cell;
       width: 2%; }
-  .nav.horizontal.filled a {
-    height: 36px;
-    line-height: 36px; }
   .nav.horizontal.bordered a {
     border-bottom: none;
-    border-right: 1px solid #e6e9ed;
-    height: 35px;
-    line-height: 35px; }
+    border-right: 1px solid #e6e9ed; }
     .nav.horizontal.bordered a:last-of-type {
       border-right: none; }
-  .nav.fat:not(.horizontal) a {
-    height: 48px; }
-  .nav.fat.bordered a, .nav.fat.filled a {
-    height: 47px;
-    line-height: 47px; }
-  .nav.slim:not(.horizontal) a {
-    height: 32px; }
-  .nav.slim.bordered a, .nav.slim.filled a {
-    height: 31px;
-    line-height: 31px; }
+  .nav.fat a {
+    height: 48px;
+    line-height: 48px; }
+  .nav.slim a {
+    height: 32px;
+    line-height: 48px; }
 
 html, body {
   height: 100%; }

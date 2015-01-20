@@ -1,0 +1,34 @@
+extends ./layout.jade
+
+block content
+	- var section = 'nav-h'
+
+	.grid-row
+		.col-3
+			include ./partials/leftcol.jade
+
+		.col-9
+			h1 Horizontal navigation
+			p Can be bordered, filled or simple inline links
+
+			nav.nav.fat.horizontal
+				a(href="#stayhere") Letter
+				a(href="#stayhere") Word
+				a.active(href="#stayhere") Expression
+				a(href="#stayhere") Article
+				a(href="#stayhere") Tale
+
+			nav.nav.fat.horizontal.filled.bg-grass-light
+				a(href="#stayhere") Letter
+				a(href="#stayhere") Word
+				a.active(href="#stayhere") Expression
+				a(href="#stayhere") Article
+				a(href="#stayhere") Tale
+			br
+
+			nav.nav.fat.horizontal.bordered
+				a(href="#stayhere") Letter
+				a(href="#stayhere") Word
+				a.active(href="#stayhere") Expression
+				a(href="#stayhere") Article
+				a(href="#stayhere") Tale

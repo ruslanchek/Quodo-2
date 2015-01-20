@@ -1,0 +1,35 @@
+extends ./layout.jade
+
+block content
+	- var section = 'nav-v'
+
+	.grid-row
+		.col-3
+			include ./partials/leftcol.jade
+
+		.col-9
+			h1 Vertical navigation
+			p Can be bordered, filled or simple inline links
+
+			.grid-row
+				.col-3
+					nav.nav.fat.bordered
+						a(href="#stayhere") Letter
+						a(href="#stayhere") Word
+						a.active(href="#stayhere") Expression
+						a(href="#stayhere") Article
+						a(href="#stayhere") Tale
+				.col-3
+					nav.nav.fat.filled.bg-mint-light
+						a(href="#stayhere") Letter
+						a(href="#stayhere") Word
+						a.active(href="#stayhere") Expression
+						a(href="#stayhere") Article
+						a(href="#stayhere") Tale
+				.col-3
+					nav.nav.fat
+						a(href="#stayhere") Letter
+						a(href="#stayhere") Word
+						a.active(href="#stayhere") Expression
+						a(href="#stayhere") Article
+						a(href="#stayhere") Tale
