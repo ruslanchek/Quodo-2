@@ -2334,6 +2334,9 @@ h4 {
 p {
   margin-bottom: 1.5em; }
 
+em {
+  font-style: italic; }
+
 .color-bittersweet-light {
   color: #fc6d58 !important; }
   a.color-bittersweet-light {
@@ -2773,5 +2776,23 @@ main {
     line-height: 48px;
     color: #fff;
     text-align: center; }
+
+.super {
+  font-size: 16px;
+  position: absolute;
+  margin-top: -6px;
+  margin-left: 12px; }
+
+.paintable,
+.resizeable {
+  margin-right: 3ex;
+  font-style: italic;
+  font-size: 14px; }
+  .paintable.resizeable i,
+  .resizeable.resizeable i {
+    font-size: 16px; }
+  .paintable i,
+  .resizeable i {
+    margin-right: 0.6ex; }
 
 /*# sourceMappingURL=screen.css.map */

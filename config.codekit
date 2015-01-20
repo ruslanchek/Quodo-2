@@ -285,6 +285,28 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
+	"\/partials\/paintable.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/partials\/paintable.jade",
+		"outputAbbreviatedPath": "\/partials\/paintable.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/partials\/resizeable.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/partials\/resizeable.jade",
+		"outputAbbreviatedPath": "\/partials\/resizeable.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
 	"\/sass\/_breakpoint.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,

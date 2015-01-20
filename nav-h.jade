@@ -9,14 +9,17 @@ block content
 
 		.col-9
 			h1 Horizontal navigation
+
 			p Can be bordered, filled or simple inline links
 
-			nav.nav.fat.horizontal
+			nav.nav.fat.horizontal.bordered
 				a(href="#stayhere") Letter
 				a(href="#stayhere") Word
 				a.active(href="#stayhere") Expression
 				a(href="#stayhere") Article
 				a(href="#stayhere") Tale
+
+			br
 
 			nav.nav.fat.horizontal.filled.bg-medium-gray-dark
 				a(href="#stayhere") Letter
@@ -26,9 +29,14 @@ block content
 				a(href="#stayhere") Tale
 			br
 
-			nav.nav.fat.horizontal.bordered
+			nav.nav.fat.horizontal
 				a(href="#stayhere") Letter
 				a(href="#stayhere") Word
 				a.active(href="#stayhere") Expression
 				a(href="#stayhere") Article
 				a(href="#stayhere") Tale
+
+			br
+
+			include partials/paintable
+			include partials/resizeable
