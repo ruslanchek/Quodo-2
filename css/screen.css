@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic);
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/compass\/compass-core\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\000035}}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,38 +20,30 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/compass\/compass-core\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000322}}
 html {
   line-height: 1; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/compass\/compass-core\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000324}}
 ol, ul {
   list-style: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/compass\/compass-core\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000326}}
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/compass\/compass-core\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000328}}
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/compass\/compass-core\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000330}}
 q, blockquote {
   quotes: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/compass\/compass-core\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003103}}
   q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/compass\/compass-core\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000332}}
 a img {
   border: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/compass\/compass-core\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003116}}
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
@@ -68,7 +59,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.2.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.2.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_core\.scss}line{font-family:\000034}}
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -78,75 +68,59 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -moz-osx-font-smoothing: grayscale; }
 
 /* makes the font 33% larger relative to the icon container */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_larger\.scss}line{font-family:\000035}}
 .fa-lg {
   font-size: 1.3333333333em;
   line-height: 0.75em;
   vertical-align: -15%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_larger\.scss}line{font-family:\0000310}}
 .fa-2x {
   font-size: 2em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_larger\.scss}line{font-family:\0000311}}
 .fa-3x {
   font-size: 3em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_larger\.scss}line{font-family:\0000312}}
 .fa-4x {
   font-size: 4em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_larger\.scss}line{font-family:\0000313}}
 .fa-5x {
   font-size: 5em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_fixed-width\.scss}line{font-family:\000033}}
 .fa-fw {
   width: 1.2857142857em;
   text-align: center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_list\.scss}line{font-family:\000034}}
 .fa-ul {
   padding-left: 0;
   margin-left: 2.1428571429em;
   list-style-type: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_list\.scss}line{font-family:\000038}}
   .fa-ul > li {
     position: relative; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_list\.scss}line{font-family:\0000310}}
 .fa-li {
   position: absolute;
   left: -2.1428571429em;
   width: 2.1428571429em;
   top: 0.1428571429em;
   text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_list\.scss}line{font-family:\0000316}}
   .fa-li.fa-lg {
     left: -1.8571428571em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_bordered-pulled\.scss}line{font-family:\000034}}
 .fa-border {
   padding: .2em .25em .15em;
   border: solid 0.08em #eee;
   border-radius: .1em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_bordered-pulled\.scss}line{font-family:\0000310}}
 .pull-right {
   float: right; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_bordered-pulled\.scss}line{font-family:\0000311}}
 .pull-left {
   float: left; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_bordered-pulled\.scss}line{font-family:\0000314}}
 .fa.pull-left {
   margin-right: .3em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_bordered-pulled\.scss}line{font-family:\0000315}}
 .fa.pull-right {
   margin-left: .3em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_spinning\.scss}line{font-family:\000034}}
 .fa-spin {
   -webkit-animation: fa-spin 2s infinite linear;
   animation: fa-spin 2s infinite linear; }
@@ -165,42 +139,36 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_rotated-flipped\.scss}line{font-family:\000034}}
 .fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_rotated-flipped\.scss}line{font-family:\000035}}
 .fa-rotate-180 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_rotated-flipped\.scss}line{font-family:\000036}}
 .fa-rotate-270 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_rotated-flipped\.scss}line{font-family:\000038}}
 .fa-flip-horizontal {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
   -webkit-transform: scale(-1, 1);
   -ms-transform: scale(-1, 1);
   transform: scale(-1, 1); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_rotated-flipped\.scss}line{font-family:\000039}}
 .fa-flip-vertical {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -webkit-transform: scale(1, -1);
   -ms-transform: scale(1, -1);
   transform: scale(1, -1); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_rotated-flipped\.scss}line{font-family:\0000314}}
 :root .fa-rotate-90,
 :root .fa-rotate-180,
 :root .fa-rotate-270,
@@ -209,7 +177,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-filter: none;
           filter: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_stacked\.scss}line{font-family:\000034}}
 .fa-stack {
   position: relative;
   display: inline-block;
@@ -218,1762 +185,1338 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   line-height: 2em;
   vertical-align: middle; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_stacked\.scss}line{font-family:\0000312}}
 .fa-stack-1x, .fa-stack-2x {
   position: absolute;
   left: 0;
   width: 100%;
   text-align: center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_stacked\.scss}line{font-family:\0000318}}
 .fa-stack-1x {
   line-height: inherit; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_stacked\.scss}line{font-family:\0000319}}
 .fa-stack-2x {
   font-size: 2em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_stacked\.scss}line{font-family:\0000320}}
 .fa-inverse {
   color: #fff; }
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\000034}}
 .fa-glass:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\000035}}
 .fa-music:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\000036}}
 .fa-search:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\000037}}
 .fa-envelope-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\000038}}
 .fa-heart:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\000039}}
 .fa-star:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000310}}
 .fa-star-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000311}}
 .fa-user:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000312}}
 .fa-film:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000313}}
 .fa-th-large:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000314}}
 .fa-th:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000315}}
 .fa-th-list:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000316}}
 .fa-check:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000317}}
 .fa-remove:before,
 .fa-close:before,
 .fa-times:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000320}}
 .fa-search-plus:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000321}}
 .fa-search-minus:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000322}}
 .fa-power-off:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000323}}
 .fa-signal:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000324}}
 .fa-gear:before,
 .fa-cog:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000326}}
 .fa-trash-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000327}}
 .fa-home:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000328}}
 .fa-file-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000329}}
 .fa-clock-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000330}}
 .fa-road:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000331}}
 .fa-download:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000332}}
 .fa-arrow-circle-o-down:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000333}}
 .fa-arrow-circle-o-up:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000334}}
 .fa-inbox:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000335}}
 .fa-play-circle-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000336}}
 .fa-rotate-right:before,
 .fa-repeat:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000338}}
 .fa-refresh:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000339}}
 .fa-list-alt:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000340}}
 .fa-lock:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000341}}
 .fa-flag:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000342}}
 .fa-headphones:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000343}}
 .fa-volume-off:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000344}}
 .fa-volume-down:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000345}}
 .fa-volume-up:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000346}}
 .fa-qrcode:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000347}}
 .fa-barcode:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000348}}
 .fa-tag:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000349}}
 .fa-tags:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000350}}
 .fa-book:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000351}}
 .fa-bookmark:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000352}}
 .fa-print:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000353}}
 .fa-camera:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000354}}
 .fa-font:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000355}}
 .fa-bold:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000356}}
 .fa-italic:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000357}}
 .fa-text-height:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000358}}
 .fa-text-width:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000359}}
 .fa-align-left:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000360}}
 .fa-align-center:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000361}}
 .fa-align-right:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000362}}
 .fa-align-justify:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000363}}
 .fa-list:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000364}}
 .fa-dedent:before,
 .fa-outdent:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000366}}
 .fa-indent:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000367}}
 .fa-video-camera:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000368}}
 .fa-photo:before,
 .fa-image:before,
 .fa-picture-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000371}}
 .fa-pencil:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000372}}
 .fa-map-marker:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000373}}
 .fa-adjust:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000374}}
 .fa-tint:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000375}}
 .fa-edit:before,
 .fa-pencil-square-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000377}}
 .fa-share-square-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000378}}
 .fa-check-square-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000379}}
 .fa-arrows:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000380}}
 .fa-step-backward:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000381}}
 .fa-fast-backward:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000382}}
 .fa-backward:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000383}}
 .fa-play:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000384}}
 .fa-pause:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000385}}
 .fa-stop:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000386}}
 .fa-forward:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000387}}
 .fa-fast-forward:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000388}}
 .fa-step-forward:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000389}}
 .fa-eject:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000390}}
 .fa-chevron-left:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000391}}
 .fa-chevron-right:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000392}}
 .fa-plus-circle:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000393}}
 .fa-minus-circle:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000394}}
 .fa-times-circle:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000395}}
 .fa-check-circle:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000396}}
 .fa-question-circle:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000397}}
 .fa-info-circle:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000398}}
 .fa-crosshairs:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\0000399}}
 .fa-times-circle-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003100}}
 .fa-check-circle-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003101}}
 .fa-ban:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003102}}
 .fa-arrow-left:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003103}}
 .fa-arrow-right:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003104}}
 .fa-arrow-up:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003105}}
 .fa-arrow-down:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003106}}
 .fa-mail-forward:before,
 .fa-share:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003108}}
 .fa-expand:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003109}}
 .fa-compress:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003110}}
 .fa-plus:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003111}}
 .fa-minus:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003112}}
 .fa-asterisk:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003113}}
 .fa-exclamation-circle:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003114}}
 .fa-gift:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003115}}
 .fa-leaf:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003116}}
 .fa-fire:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003117}}
 .fa-eye:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003118}}
 .fa-eye-slash:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003119}}
 .fa-warning:before,
 .fa-exclamation-triangle:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003121}}
 .fa-plane:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003122}}
 .fa-calendar:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003123}}
 .fa-random:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003124}}
 .fa-comment:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003125}}
 .fa-magnet:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003126}}
 .fa-chevron-up:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003127}}
 .fa-chevron-down:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003128}}
 .fa-retweet:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003129}}
 .fa-shopping-cart:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003130}}
 .fa-folder:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003131}}
 .fa-folder-open:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003132}}
 .fa-arrows-v:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003133}}
 .fa-arrows-h:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003134}}
 .fa-bar-chart-o:before,
 .fa-bar-chart:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003136}}
 .fa-twitter-square:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003137}}
 .fa-facebook-square:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003138}}
 .fa-camera-retro:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003139}}
 .fa-key:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003140}}
 .fa-gears:before,
 .fa-cogs:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003142}}
 .fa-comments:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003143}}
 .fa-thumbs-o-up:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003144}}
 .fa-thumbs-o-down:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003145}}
 .fa-star-half:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003146}}
 .fa-heart-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003147}}
 .fa-sign-out:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003148}}
 .fa-linkedin-square:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003149}}
 .fa-thumb-tack:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003150}}
 .fa-external-link:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003151}}
 .fa-sign-in:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003152}}
 .fa-trophy:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003153}}
 .fa-github-square:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003154}}
 .fa-upload:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003155}}
 .fa-lemon-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003156}}
 .fa-phone:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003157}}
 .fa-square-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003158}}
 .fa-bookmark-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003159}}
 .fa-phone-square:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003160}}
 .fa-twitter:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003161}}
 .fa-facebook:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003162}}
 .fa-github:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003163}}
 .fa-unlock:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003164}}
 .fa-credit-card:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003165}}
 .fa-rss:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003166}}
 .fa-hdd-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003167}}
 .fa-bullhorn:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003168}}
 .fa-bell:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003169}}
 .fa-certificate:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003170}}
 .fa-hand-o-right:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003171}}
 .fa-hand-o-left:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003172}}
 .fa-hand-o-up:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003173}}
 .fa-hand-o-down:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003174}}
 .fa-arrow-circle-left:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003175}}
 .fa-arrow-circle-right:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003176}}
 .fa-arrow-circle-up:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003177}}
 .fa-arrow-circle-down:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003178}}
 .fa-globe:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003179}}
 .fa-wrench:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003180}}
 .fa-tasks:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003181}}
 .fa-filter:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003182}}
 .fa-briefcase:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003183}}
 .fa-arrows-alt:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003184}}
 .fa-group:before,
 .fa-users:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003186}}
 .fa-chain:before,
 .fa-link:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003188}}
 .fa-cloud:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003189}}
 .fa-flask:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003190}}
 .fa-cut:before,
 .fa-scissors:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003192}}
 .fa-copy:before,
 .fa-files-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003194}}
 .fa-paperclip:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003195}}
 .fa-save:before,
 .fa-floppy-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003197}}
 .fa-square:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003198}}
 .fa-navicon:before,
 .fa-reorder:before,
 .fa-bars:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003201}}
 .fa-list-ul:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003202}}
 .fa-list-ol:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003203}}
 .fa-strikethrough:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003204}}
 .fa-underline:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003205}}
 .fa-table:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003206}}
 .fa-magic:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003207}}
 .fa-truck:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003208}}
 .fa-pinterest:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003209}}
 .fa-pinterest-square:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003210}}
 .fa-google-plus-square:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003211}}
 .fa-google-plus:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003212}}
 .fa-money:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003213}}
 .fa-caret-down:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003214}}
 .fa-caret-up:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003215}}
 .fa-caret-left:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003216}}
 .fa-caret-right:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003217}}
 .fa-columns:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003218}}
 .fa-unsorted:before,
 .fa-sort:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003220}}
 .fa-sort-down:before,
 .fa-sort-desc:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003222}}
 .fa-sort-up:before,
 .fa-sort-asc:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003224}}
 .fa-envelope:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003225}}
 .fa-linkedin:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003226}}
 .fa-rotate-left:before,
 .fa-undo:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003228}}
 .fa-legal:before,
 .fa-gavel:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003230}}
 .fa-dashboard:before,
 .fa-tachometer:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003232}}
 .fa-comment-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003233}}
 .fa-comments-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003234}}
 .fa-flash:before,
 .fa-bolt:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003236}}
 .fa-sitemap:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003237}}
 .fa-umbrella:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003238}}
 .fa-paste:before,
 .fa-clipboard:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003240}}
 .fa-lightbulb-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003241}}
 .fa-exchange:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003242}}
 .fa-cloud-download:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003243}}
 .fa-cloud-upload:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003244}}
 .fa-user-md:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003245}}
 .fa-stethoscope:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003246}}
 .fa-suitcase:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003247}}
 .fa-bell-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003248}}
 .fa-coffee:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003249}}
 .fa-cutlery:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003250}}
 .fa-file-text-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003251}}
 .fa-building-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003252}}
 .fa-hospital-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003253}}
 .fa-ambulance:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003254}}
 .fa-medkit:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003255}}
 .fa-fighter-jet:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003256}}
 .fa-beer:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003257}}
 .fa-h-square:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003258}}
 .fa-plus-square:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003259}}
 .fa-angle-double-left:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003260}}
 .fa-angle-double-right:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003261}}
 .fa-angle-double-up:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003262}}
 .fa-angle-double-down:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003263}}
 .fa-angle-left:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003264}}
 .fa-angle-right:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003265}}
 .fa-angle-up:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003266}}
 .fa-angle-down:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003267}}
 .fa-desktop:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003268}}
 .fa-laptop:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003269}}
 .fa-tablet:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003270}}
 .fa-mobile-phone:before,
 .fa-mobile:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003272}}
 .fa-circle-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003273}}
 .fa-quote-left:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003274}}
 .fa-quote-right:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003275}}
 .fa-spinner:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003276}}
 .fa-circle:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003277}}
 .fa-mail-reply:before,
 .fa-reply:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003279}}
 .fa-github-alt:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003280}}
 .fa-folder-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003281}}
 .fa-folder-open-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003282}}
 .fa-smile-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003283}}
 .fa-frown-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003284}}
 .fa-meh-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003285}}
 .fa-gamepad:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003286}}
 .fa-keyboard-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003287}}
 .fa-flag-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003288}}
 .fa-flag-checkered:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003289}}
 .fa-terminal:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003290}}
 .fa-code:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003291}}
 .fa-mail-reply-all:before,
 .fa-reply-all:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003293}}
 .fa-star-half-empty:before,
 .fa-star-half-full:before,
 .fa-star-half-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003296}}
 .fa-location-arrow:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003297}}
 .fa-crop:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003298}}
 .fa-code-fork:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003299}}
 .fa-unlink:before,
 .fa-chain-broken:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003301}}
 .fa-question:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003302}}
 .fa-info:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003303}}
 .fa-exclamation:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003304}}
 .fa-superscript:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003305}}
 .fa-subscript:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003306}}
 .fa-eraser:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003307}}
 .fa-puzzle-piece:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003308}}
 .fa-microphone:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003309}}
 .fa-microphone-slash:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003310}}
 .fa-shield:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003311}}
 .fa-calendar-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003312}}
 .fa-fire-extinguisher:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003313}}
 .fa-rocket:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003314}}
 .fa-maxcdn:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003315}}
 .fa-chevron-circle-left:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003316}}
 .fa-chevron-circle-right:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003317}}
 .fa-chevron-circle-up:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003318}}
 .fa-chevron-circle-down:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003319}}
 .fa-html5:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003320}}
 .fa-css3:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003321}}
 .fa-anchor:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003322}}
 .fa-unlock-alt:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003323}}
 .fa-bullseye:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003324}}
 .fa-ellipsis-h:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003325}}
 .fa-ellipsis-v:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003326}}
 .fa-rss-square:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003327}}
 .fa-play-circle:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003328}}
 .fa-ticket:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003329}}
 .fa-minus-square:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003330}}
 .fa-minus-square-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003331}}
 .fa-level-up:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003332}}
 .fa-level-down:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003333}}
 .fa-check-square:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003334}}
 .fa-pencil-square:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003335}}
 .fa-external-link-square:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003336}}
 .fa-share-square:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003337}}
 .fa-compass:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003338}}
 .fa-toggle-down:before,
 .fa-caret-square-o-down:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003340}}
 .fa-toggle-up:before,
 .fa-caret-square-o-up:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003342}}
 .fa-toggle-right:before,
 .fa-caret-square-o-right:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003344}}
 .fa-euro:before,
 .fa-eur:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003346}}
 .fa-gbp:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003347}}
 .fa-dollar:before,
 .fa-usd:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003349}}
 .fa-rupee:before,
 .fa-inr:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003351}}
 .fa-cny:before,
 .fa-rmb:before,
 .fa-yen:before,
 .fa-jpy:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003355}}
 .fa-ruble:before,
 .fa-rouble:before,
 .fa-rub:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003358}}
 .fa-won:before,
 .fa-krw:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003360}}
 .fa-bitcoin:before,
 .fa-btc:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003362}}
 .fa-file:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003363}}
 .fa-file-text:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003364}}
 .fa-sort-alpha-asc:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003365}}
 .fa-sort-alpha-desc:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003366}}
 .fa-sort-amount-asc:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003367}}
 .fa-sort-amount-desc:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003368}}
 .fa-sort-numeric-asc:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003369}}
 .fa-sort-numeric-desc:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003370}}
 .fa-thumbs-up:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003371}}
 .fa-thumbs-down:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003372}}
 .fa-youtube-square:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003373}}
 .fa-youtube:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003374}}
 .fa-xing:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003375}}
 .fa-xing-square:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003376}}
 .fa-youtube-play:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003377}}
 .fa-dropbox:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003378}}
 .fa-stack-overflow:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003379}}
 .fa-instagram:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003380}}
 .fa-flickr:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003381}}
 .fa-adn:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003382}}
 .fa-bitbucket:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003383}}
 .fa-bitbucket-square:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003384}}
 .fa-tumblr:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003385}}
 .fa-tumblr-square:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003386}}
 .fa-long-arrow-down:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003387}}
 .fa-long-arrow-up:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003388}}
 .fa-long-arrow-left:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003389}}
 .fa-long-arrow-right:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003390}}
 .fa-apple:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003391}}
 .fa-windows:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003392}}
 .fa-android:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003393}}
 .fa-linux:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003394}}
 .fa-dribbble:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003395}}
 .fa-skype:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003396}}
 .fa-foursquare:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003397}}
 .fa-trello:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003398}}
 .fa-female:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003399}}
 .fa-male:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003400}}
 .fa-gittip:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003401}}
 .fa-sun-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003402}}
 .fa-moon-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003403}}
 .fa-archive:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003404}}
 .fa-bug:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003405}}
 .fa-vk:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003406}}
 .fa-weibo:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003407}}
 .fa-renren:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003408}}
 .fa-pagelines:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003409}}
 .fa-stack-exchange:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003410}}
 .fa-arrow-circle-o-right:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003411}}
 .fa-arrow-circle-o-left:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003412}}
 .fa-toggle-left:before,
 .fa-caret-square-o-left:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003414}}
 .fa-dot-circle-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003415}}
 .fa-wheelchair:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003416}}
 .fa-vimeo-square:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003417}}
 .fa-turkish-lira:before,
 .fa-try:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003419}}
 .fa-plus-square-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003420}}
 .fa-space-shuttle:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003421}}
 .fa-slack:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003422}}
 .fa-envelope-square:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003423}}
 .fa-wordpress:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003424}}
 .fa-openid:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003425}}
 .fa-institution:before,
 .fa-bank:before,
 .fa-university:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003428}}
 .fa-mortar-board:before,
 .fa-graduation-cap:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003430}}
 .fa-yahoo:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003431}}
 .fa-google:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003432}}
 .fa-reddit:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003433}}
 .fa-reddit-square:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003434}}
 .fa-stumbleupon-circle:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003435}}
 .fa-stumbleupon:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003436}}
 .fa-delicious:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003437}}
 .fa-digg:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003438}}
 .fa-pied-piper:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003439}}
 .fa-pied-piper-alt:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003440}}
 .fa-drupal:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003441}}
 .fa-joomla:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003442}}
 .fa-language:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003443}}
 .fa-fax:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003444}}
 .fa-building:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003445}}
 .fa-child:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003446}}
 .fa-paw:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003447}}
 .fa-spoon:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003448}}
 .fa-cube:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003449}}
 .fa-cubes:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003450}}
 .fa-behance:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003451}}
 .fa-behance-square:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003452}}
 .fa-steam:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003453}}
 .fa-steam-square:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003454}}
 .fa-recycle:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003455}}
 .fa-automobile:before,
 .fa-car:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003457}}
 .fa-cab:before,
 .fa-taxi:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003459}}
 .fa-tree:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003460}}
 .fa-spotify:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003461}}
 .fa-deviantart:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003462}}
 .fa-soundcloud:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003463}}
 .fa-database:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003464}}
 .fa-file-pdf-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003465}}
 .fa-file-word-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003466}}
 .fa-file-excel-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003467}}
 .fa-file-powerpoint-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003468}}
 .fa-file-photo-o:before,
 .fa-file-picture-o:before,
 .fa-file-image-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003471}}
 .fa-file-zip-o:before,
 .fa-file-archive-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003473}}
 .fa-file-sound-o:before,
 .fa-file-audio-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003475}}
 .fa-file-movie-o:before,
 .fa-file-video-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003477}}
 .fa-file-code-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003478}}
 .fa-vine:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003479}}
 .fa-codepen:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003480}}
 .fa-jsfiddle:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003481}}
 .fa-life-bouy:before,
 .fa-life-buoy:before,
 .fa-life-saver:before,
@@ -1981,1393 +1524,1048 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .fa-life-ring:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003486}}
 .fa-circle-o-notch:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003487}}
 .fa-ra:before,
 .fa-rebel:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003489}}
 .fa-ge:before,
 .fa-empire:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003491}}
 .fa-git-square:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003492}}
 .fa-git:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003493}}
 .fa-hacker-news:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003494}}
 .fa-tencent-weibo:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003495}}
 .fa-qq:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003496}}
 .fa-wechat:before,
 .fa-weixin:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003498}}
 .fa-send:before,
 .fa-paper-plane:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003500}}
 .fa-send-o:before,
 .fa-paper-plane-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003502}}
 .fa-history:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003503}}
 .fa-circle-thin:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003504}}
 .fa-header:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003505}}
 .fa-paragraph:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003506}}
 .fa-sliders:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003507}}
 .fa-share-alt:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003508}}
 .fa-share-alt-square:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003509}}
 .fa-bomb:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003510}}
 .fa-soccer-ball-o:before,
 .fa-futbol-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003512}}
 .fa-tty:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003513}}
 .fa-binoculars:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003514}}
 .fa-plug:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003515}}
 .fa-slideshare:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003516}}
 .fa-twitch:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003517}}
 .fa-yelp:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003518}}
 .fa-newspaper-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003519}}
 .fa-wifi:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003520}}
 .fa-calculator:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003521}}
 .fa-paypal:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003522}}
 .fa-google-wallet:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003523}}
 .fa-cc-visa:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003524}}
 .fa-cc-mastercard:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003525}}
 .fa-cc-discover:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003526}}
 .fa-cc-amex:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003527}}
 .fa-cc-paypal:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003528}}
 .fa-cc-stripe:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003529}}
 .fa-bell-slash:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003530}}
 .fa-bell-slash-o:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003531}}
 .fa-trash:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003532}}
 .fa-copyright:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003533}}
 .fa-at:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003534}}
 .fa-eyedropper:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003535}}
 .fa-paint-brush:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003536}}
 .fa-birthday-cake:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003537}}
 .fa-area-chart:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003538}}
 .fa-pie-chart:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003539}}
 .fa-line-chart:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003540}}
 .fa-lastfm:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003541}}
 .fa-lastfm-square:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003542}}
 .fa-toggle-off:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003543}}
 .fa-toggle-on:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003544}}
 .fa-bicycle:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003545}}
 .fa-bus:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003546}}
 .fa-ioxhost:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003547}}
 .fa-angellist:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003548}}
 .fa-cc:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003549}}
 .fa-shekel:before,
 .fa-sheqel:before,
 .fa-ils:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/font-awesome\/_icons\.scss}line{font-family:\00003552}}
 .fa-meanpath:before {
   content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/settings\.sass}line{font-family:\000033}}
 * a {
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
   -webkit-transition: color 0.15s;
           transition: color 0.15s; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/compass\/compass-core\/stylesheets\/compass\/typography\/links\/_unstyled-link\.scss}line{font-family:\000036}}
   * a:active, * a:focus {
     outline: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/settings\.sass}line{font-family:\000038}}
 body {
   font-family: "Asap", sans-serif;
   color: #434a53;
   line-height: 1.4em;
   font-size: 16px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/settings\.sass}line{font-family:\0000314}}
 .limiter {
   width: 960px;
   margin: 0 auto; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/mixins\.sass}line{font-family:\000031}}
 .shadowed, .colors .item {
   box-shadow: 0 1px 3px rgba(0, 15, 10, 0.1); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000317}}
 .grid-row:after {
   content: '';
   clear: both;
   display: block; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000323}}
 .grid-row .col-1, .grid-row .col-2, .grid-row .col-3, .grid-row .col-4, .grid-row .col-5, .grid-row .col-6, .grid-row .col-7, .grid-row .col-8, .grid-row .col-9, .grid-row .col-10, .grid-row .col-11, .grid-row .col-12 {
   float: left;
   margin-left: 4%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000329}}
 .grid-row .col-1 {
   float: left;
   width: 4.6666666667%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-1 .col-1 {
     margin-left: 85.7142857143%;
     width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-1 .col-0 {
     margin-left: 85.7142857143%;
     width: -85.7142857143%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000329}}
 .grid-row .col-2 {
   float: left;
   width: 13.3333333333%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-2 .col-1 {
     margin-left: 30%;
     width: 35%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000329}}
 .grid-row .col-3 {
   float: left;
   width: 22%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-3 .col-1 {
     margin-left: 18.1818181818%;
     width: 21.2121212121%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-3 .col-2 {
     margin-left: 18.1818181818%;
     width: 60.6060606061%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000329}}
 .grid-row .col-4 {
   float: left;
   width: 30.6666666667%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-4 .col-1 {
     margin-left: 13.0434782609%;
     width: 15.2173913043%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-4 .col-2 {
     margin-left: 13.0434782609%;
     width: 43.4782608696%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-4 .col-3 {
     margin-left: 13.0434782609%;
     width: 71.7391304348%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000329}}
 .grid-row .col-5 {
   float: left;
   width: 39.3333333333%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-5 .col-1 {
     margin-left: 10.1694915254%;
     width: 11.8644067797%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-5 .col-2 {
     margin-left: 10.1694915254%;
     width: 33.8983050847%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-5 .col-3 {
     margin-left: 10.1694915254%;
     width: 55.9322033898%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-5 .col-4 {
     margin-left: 10.1694915254%;
     width: 77.9661016949%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000329}}
 .grid-row .col-6 {
   float: left;
   width: 48%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-6 .col-1 {
     margin-left: 8.3333333333%;
     width: 9.7222222222%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-6 .col-2 {
     margin-left: 8.3333333333%;
     width: 27.7777777778%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-6 .col-3 {
     margin-left: 8.3333333333%;
     width: 45.8333333333%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-6 .col-4 {
     margin-left: 8.3333333333%;
     width: 63.8888888889%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-6 .col-5 {
     margin-left: 8.3333333333%;
     width: 81.9444444444%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000329}}
 .grid-row .col-7 {
   float: left;
   width: 56.6666666667%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-7 .col-1 {
     margin-left: 7.0588235294%;
     width: 8.2352941176%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-7 .col-2 {
     margin-left: 7.0588235294%;
     width: 23.5294117647%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-7 .col-3 {
     margin-left: 7.0588235294%;
     width: 38.8235294118%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-7 .col-4 {
     margin-left: 7.0588235294%;
     width: 54.1176470588%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-7 .col-5 {
     margin-left: 7.0588235294%;
     width: 69.4117647059%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-7 .col-6 {
     margin-left: 7.0588235294%;
     width: 84.7058823529%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000329}}
 .grid-row .col-8 {
   float: left;
   width: 65.3333333333%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-8 .col-1 {
     margin-left: 6.1224489796%;
     width: 7.1428571429%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-8 .col-2 {
     margin-left: 6.1224489796%;
     width: 20.4081632653%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-8 .col-3 {
     margin-left: 6.1224489796%;
     width: 33.6734693878%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-8 .col-4 {
     margin-left: 6.1224489796%;
     width: 46.9387755102%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-8 .col-5 {
     margin-left: 6.1224489796%;
     width: 60.2040816327%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-8 .col-6 {
     margin-left: 6.1224489796%;
     width: 73.4693877551%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-8 .col-7 {
     margin-left: 6.1224489796%;
     width: 86.7346938776%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000329}}
 .grid-row .col-9 {
   float: left;
   width: 74%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-9 .col-1 {
     margin-left: 5.4054054054%;
     width: 6.3063063063%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-9 .col-2 {
     margin-left: 5.4054054054%;
     width: 18.018018018%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-9 .col-3 {
     margin-left: 5.4054054054%;
     width: 29.7297297297%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-9 .col-4 {
     margin-left: 5.4054054054%;
     width: 41.4414414414%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-9 .col-5 {
     margin-left: 5.4054054054%;
     width: 53.1531531532%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-9 .col-6 {
     margin-left: 5.4054054054%;
     width: 64.8648648649%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-9 .col-7 {
     margin-left: 5.4054054054%;
     width: 76.5765765766%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-9 .col-8 {
     margin-left: 5.4054054054%;
     width: 88.2882882883%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000329}}
 .grid-row .col-10 {
   float: left;
   width: 82.6666666667%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-10 .col-1 {
     margin-left: 4.8387096774%;
     width: 5.6451612903%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-10 .col-2 {
     margin-left: 4.8387096774%;
     width: 16.1290322581%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-10 .col-3 {
     margin-left: 4.8387096774%;
     width: 26.6129032258%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-10 .col-4 {
     margin-left: 4.8387096774%;
     width: 37.0967741935%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-10 .col-5 {
     margin-left: 4.8387096774%;
     width: 47.5806451613%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-10 .col-6 {
     margin-left: 4.8387096774%;
     width: 58.064516129%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-10 .col-7 {
     margin-left: 4.8387096774%;
     width: 68.5483870968%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-10 .col-8 {
     margin-left: 4.8387096774%;
     width: 79.0322580645%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-10 .col-9 {
     margin-left: 4.8387096774%;
     width: 89.5161290323%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000329}}
 .grid-row .col-11 {
   float: left;
   width: 91.3333333333%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-11 .col-1 {
     margin-left: 4.3795620438%;
     width: 5.1094890511%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-11 .col-2 {
     margin-left: 4.3795620438%;
     width: 14.598540146%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-11 .col-3 {
     margin-left: 4.3795620438%;
     width: 24.0875912409%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-11 .col-4 {
     margin-left: 4.3795620438%;
     width: 33.5766423358%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-11 .col-5 {
     margin-left: 4.3795620438%;
     width: 43.0656934307%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-11 .col-6 {
     margin-left: 4.3795620438%;
     width: 52.5547445255%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-11 .col-7 {
     margin-left: 4.3795620438%;
     width: 62.0437956204%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-11 .col-8 {
     margin-left: 4.3795620438%;
     width: 71.5328467153%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-11 .col-9 {
     margin-left: 4.3795620438%;
     width: 81.0218978102%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-11 .col-10 {
     margin-left: 4.3795620438%;
     width: 90.5109489051%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000329}}
 .grid-row .col-12 {
   float: left;
   width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-12 .col-1 {
     margin-left: 4%;
     width: 4.6666666667%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-12 .col-2 {
     margin-left: 4%;
     width: 13.3333333333%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-12 .col-3 {
     margin-left: 4%;
     width: 22%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-12 .col-4 {
     margin-left: 4%;
     width: 30.6666666667%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-12 .col-5 {
     margin-left: 4%;
     width: 39.3333333333%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-12 .col-6 {
     margin-left: 4%;
     width: 48%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-12 .col-7 {
     margin-left: 4%;
     width: 56.6666666667%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-12 .col-8 {
     margin-left: 4%;
     width: 65.3333333333%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-12 .col-9 {
     margin-left: 4%;
     width: 74%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-12 .col-10 {
     margin-left: 4%;
     width: 82.6666666667%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000333}}
   .grid-row .col-12 .col-11 {
     margin-left: 4%;
     width: 91.3333333333%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/grid\.scss}line{font-family:\0000340}}
 .grid-row > :first-child,
 .grid-row .grid-row > :first-child {
   margin-left: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-100 {
   width: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-99 {
   width: 99%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-98 {
   width: 98%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-97 {
   width: 97%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-96 {
   width: 96%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-95 {
   width: 95%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-94 {
   width: 94%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-93 {
   width: 93%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-92 {
   width: 92%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-91 {
   width: 91%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-90 {
   width: 90%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-89 {
   width: 89%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-88 {
   width: 88%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-87 {
   width: 87%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-86 {
   width: 86%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-85 {
   width: 85%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-84 {
   width: 84%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-83 {
   width: 83%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-82 {
   width: 82%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-81 {
   width: 81%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-80 {
   width: 80%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-79 {
   width: 79%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-78 {
   width: 78%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-77 {
   width: 77%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-76 {
   width: 76%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-75 {
   width: 75%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-74 {
   width: 74%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-73 {
   width: 73%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-72 {
   width: 72%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-71 {
   width: 71%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-70 {
   width: 70%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-69 {
   width: 69%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-68 {
   width: 68%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-67 {
   width: 67%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-66 {
   width: 66%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-65 {
   width: 65%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-64 {
   width: 64%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-63 {
   width: 63%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-62 {
   width: 62%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-61 {
   width: 61%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-60 {
   width: 60%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-59 {
   width: 59%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-58 {
   width: 58%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-57 {
   width: 57%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-56 {
   width: 56%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-55 {
   width: 55%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-54 {
   width: 54%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-53 {
   width: 53%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-52 {
   width: 52%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-51 {
   width: 51%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-50 {
   width: 50%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-49 {
   width: 49%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-48 {
   width: 48%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-47 {
   width: 47%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-46 {
   width: 46%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-45 {
   width: 45%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-44 {
   width: 44%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-43 {
   width: 43%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-42 {
   width: 42%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-41 {
   width: 41%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-40 {
   width: 40%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-39 {
   width: 39%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-38 {
   width: 38%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-37 {
   width: 37%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-36 {
   width: 36%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-35 {
   width: 35%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-34 {
   width: 34%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-33 {
   width: 33%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-32 {
   width: 32%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-31 {
   width: 31%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-30 {
   width: 30%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-29 {
   width: 29%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-28 {
   width: 28%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-27 {
   width: 27%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-26 {
   width: 26%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-25 {
   width: 25%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-24 {
   width: 24%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-23 {
   width: 23%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-22 {
   width: 22%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-21 {
   width: 21%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-20 {
   width: 20%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-19 {
   width: 19%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-18 {
   width: 18%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-17 {
   width: 17%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-16 {
   width: 16%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-15 {
   width: 15%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-14 {
   width: 14%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-13 {
   width: 13%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-12 {
   width: 12%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-11 {
   width: 11%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-10 {
   width: 10%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-9 {
   width: 9%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-8 {
   width: 8%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-7 {
   width: 7%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-6 {
   width: 6%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-5 {
   width: 5%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-4 {
   width: 4%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-3 {
   width: 3%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-2 {
   width: 2%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/sizes\.sass}line{font-family:\000035}}
 .w-1 {
   width: 1%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/typography\.sass}line{font-family:\000031}}
 h1 {
   font-size: 30px;
   margin-bottom: 0.5em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/typography\.sass}line{font-family:\000035}}
+h2 {
+  font-size: 26px;
+  margin-bottom: 0.5em; }
+
+h3 {
+  font-size: 22px;
+  margin-bottom: 0.5em; }
+
+h4 {
+  font-size: 18px;
+  margin-bottom: 0.5em; }
+
 p {
   margin-bottom: 1.5em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\000039}}
 .color-bittersweet-light {
   color: #fc6d58 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{}}
   a.color-bittersweet-light {
     color: #fc6d58 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\000036}}
     a.color-bittersweet-light:hover {
       color: #e3543f !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\0000312}}
 .color-bittersweet-dark {
   color: #e95546 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{}}
   a.color-bittersweet-dark {
     color: #e95546 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\000036}}
     a.color-bittersweet-dark:hover {
       color: #d03c2d !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\0000315}}
 .color-sunflower-light {
   color: #ffcd69 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{}}
   a.color-sunflower-light {
     color: #ffcd69 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\000036}}
     a.color-sunflower-light:hover {
       color: #e6b450 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\0000318}}
 .color-sunflower-dark {
   color: #f6ba59 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{}}
   a.color-sunflower-dark {
     color: #f6ba59 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\000036}}
     a.color-sunflower-dark:hover {
       color: #dda140 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\0000321}}
 .color-grass-light {
   color: #9fd477 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{}}
   a.color-grass-light {
     color: #9fd477 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\000036}}
     a.color-grass-light:hover {
       color: #86bb5e !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\0000324}}
 .color-grass-dark {
   color: #8bc163 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{}}
   a.color-grass-dark {
     color: #8bc163 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\000036}}
     a.color-grass-dark:hover {
       color: #72a84a !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\0000327}}
 .color-mint-light {
   color: #46cfb0 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{}}
   a.color-mint-light {
     color: #46cfb0 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\000036}}
     a.color-mint-light:hover {
       color: #2db697 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\0000330}}
 .color-mint-dark {
   color: #34bc9d !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{}}
   a.color-mint-dark {
     color: #34bc9d !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\000036}}
     a.color-mint-dark:hover {
       color: #1ba384 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\0000333}}
 .color-aqua-light {
   color: #4fc2e5 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{}}
   a.color-aqua-light {
     color: #4fc2e5 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\000036}}
     a.color-aqua-light:hover {
       color: #36a9cc !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\0000336}}
 .color-aqua-dark {
   color: #3bb0d6 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{}}
   a.color-aqua-dark {
     color: #3bb0d6 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\000036}}
     a.color-aqua-dark:hover {
       color: #2297bd !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\0000339}}
 .color-blue-jeans-light {
   color: #5e9de6 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{}}
   a.color-blue-jeans-light {
     color: #5e9de6 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\000036}}
     a.color-blue-jeans-light:hover {
       color: #4584cd !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\0000342}}
 .color-blue-jeans-dark {
   color: #4b8ad6 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{}}
   a.color-blue-jeans-dark {
     color: #4b8ad6 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\000036}}
     a.color-blue-jeans-dark:hover {
       color: #3271bd !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\0000345}}
 .color-lavender-light {
   color: #ad93e6 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{}}
   a.color-lavender-light {
     color: #ad93e6 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\000036}}
     a.color-lavender-light:hover {
       color: #947acd !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\0000348}}
 .color-lavender-dark {
   color: #977bd5 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{}}
   a.color-lavender-dark {
     color: #977bd5 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\000036}}
     a.color-lavender-dark:hover {
       color: #7e62bc !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\0000351}}
 .color-pink-rose-light {
   color: #ed87bd !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{}}
   a.color-pink-rose-light {
     color: #ed87bd !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\000036}}
     a.color-pink-rose-light:hover {
       color: #d46ea4 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\0000354}}
 .color-pink-rose-dark {
   color: #d870a9 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{}}
   a.color-pink-rose-dark {
     color: #d870a9 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\000036}}
     a.color-pink-rose-dark:hover {
       color: #bf5790 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\0000357}}
 .color-light-gray-light {
   color: #f5f7fa !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{}}
   a.color-light-gray-light {
     color: #f5f7fa !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\000036}}
     a.color-light-gray-light:hover {
       color: #dcdee1 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\0000360}}
 .color-light-gray-dark {
   color: #e6e9ed !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{}}
   a.color-light-gray-dark {
     color: #e6e9ed !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\000036}}
     a.color-light-gray-dark:hover {
       color: #cdd0d4 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\0000363}}
 .color-medium-gray-light {
   color: #ccd1d8 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{}}
   a.color-medium-gray-light {
     color: #ccd1d8 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\000036}}
     a.color-medium-gray-light:hover {
       color: #b3b8bf !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\0000366}}
 .color-medium-gray-dark {
   color: #aab2bc !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{}}
   a.color-medium-gray-dark {
     color: #aab2bc !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\000036}}
     a.color-medium-gray-dark:hover {
       color: #9199a3 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\0000369}}
 .color-dark-gray-light {
   color: #656d77 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{}}
   a.color-dark-gray-light {
     color: #656d77 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\000036}}
     a.color-dark-gray-light:hover {
       color: #4c545e !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\0000372}}
 .color-dark-gray-dark {
   color: #434a53 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{}}
   a.color-dark-gray-dark {
     color: #434a53 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\000036}}
     a.color-dark-gray-dark:hover {
       color: #2a313a !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\0000375}}
 .color-black-light {
   color: #292C31 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{}}
   a.color-black-light {
     color: #292C31 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\000036}}
     a.color-black-light:hover {
       color: #101318 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\0000378}}
 .color-black-dark {
   color: #1F2226 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{}}
   a.color-black-dark {
     color: #1F2226 !important; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\000036}}
     a.color-black-dark:hover {
       color: #06090d !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\0000387}}
 .bg-bittersweet-light {
   background-color: #fc6d58 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\0000390}}
 .bg-bittersweet-dark {
   background-color: #e95546 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\0000393}}
 .bg-sunflower-light {
   background-color: #ffcd69 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\0000396}}
 .bg-sunflower-dark {
   background-color: #f6ba59 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\0000399}}
 .bg-grass-light {
   background-color: #9fd477 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\00003102}}
 .bg-grass-dark {
   background-color: #8bc163 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\00003105}}
 .bg-mint-light {
   background-color: #46cfb0 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\00003108}}
 .bg-mint-dark {
   background-color: #34bc9d !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\00003111}}
 .bg-aqua-light {
   background-color: #4fc2e5 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\00003114}}
 .bg-aqua-dark {
   background-color: #3bb0d6 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\00003117}}
 .bg-blue-jeans-light {
   background-color: #5e9de6 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\00003120}}
 .bg-blue-jeans-dark {
   background-color: #4b8ad6 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\00003123}}
 .bg-lavender-light {
   background-color: #ad93e6 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\00003126}}
 .bg-lavender-dark {
   background-color: #977bd5 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\00003129}}
 .bg-pink-rose-light {
   background-color: #ed87bd !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\00003132}}
 .bg-pink-rose-dark {
   background-color: #d870a9 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\00003135}}
 .bg-light-gray-light {
   background-color: #f5f7fa !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\00003138}}
 .bg-light-gray-dark {
   background-color: #e6e9ed !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\00003141}}
 .bg-medium-gray-light {
   background-color: #ccd1d8 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\00003144}}
 .bg-medium-gray-dark {
   background-color: #aab2bc !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\00003147}}
 .bg-dark-gray-light {
   background-color: #656d77 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\00003150}}
 .bg-dark-gray-dark {
   background-color: #434a53 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\00003153}}
 .bg-black-light {
   background-color: #292C31 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/common\/colors\.sass}line{font-family:\00003156}}
 .bg-black-dark {
   background-color: #1F2226 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/links\.sass}line{font-family:\000031}}
 .links-white, .footer a {
   color: #fff; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/compass\/compass-core\/stylesheets\/compass\/typography\/links\/_link-colors\.scss}line{font-family:\0000318}}
   .links-white:visited, .footer a:visited {
     color: #fff; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/compass\/compass-core\/stylesheets\/compass\/typography\/links\/_link-colors\.scss}line{font-family:\0000321}}
   .links-white:focus, .footer a:focus {
     color: #fff; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/compass\/compass-core\/stylesheets\/compass\/typography\/links\/_link-colors\.scss}line{font-family:\0000324}}
   .links-white:hover, .footer a:hover {
     color: #c8c8c8; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/compass\/compass-core\/stylesheets\/compass\/typography\/links\/_link-colors\.scss}line{font-family:\0000327}}
   .links-white:active, .footer a:active {
     color: #c8c8c8; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/links\.sass}line{font-family:\000034}}
 .links-default, * a {
   color: #656d77; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/compass\/compass-core\/stylesheets\/compass\/typography\/links\/_link-colors\.scss}line{font-family:\0000318}}
   .links-default:visited, * a:visited {
     color: #656d77; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/compass\/compass-core\/stylesheets\/compass\/typography\/links\/_link-colors\.scss}line{font-family:\0000321}}
   .links-default:focus, * a:focus {
     color: #656d77; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/compass\/compass-core\/stylesheets\/compass\/typography\/links\/_link-colors\.scss}line{font-family:\0000324}}
   .links-default:hover, * a:hover {
     color: #7e8690; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/compass\/compass-core\/stylesheets\/compass\/typography\/links\/_link-colors\.scss}line{font-family:\0000327}}
   .links-default:active, * a:active {
     color: #7e8690; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\000031}}
 .nav {
   -moz-box-sizing: border-box;
        box-sizing: border-box; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\000034}}
   .nav a {
     height: 36px;
     -moz-box-sizing: border-box;
@@ -3375,135 +2573,103 @@ p {
     display: block;
     -webkit-transition: 0.15s;
             transition: 0.15s; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000310}}
     .nav a.active {
       opacity: 0.7; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000315}}
   .nav.bordered a.active, .nav.filled a.active {
     opacity: 1; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000319}}
   .nav:not(.horizontal) {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: hidden; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000324}}
   .nav.filled {
     background-color: #434a53;
     border-radius: 5px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000328}}
     .nav.filled a {
       height: 36px;
       line-height: 36px;
       color: #fff;
       padding: 0 20px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000334}}
       .nav.filled a:hover {
         background-color: rgba(255, 255, 255, 0.1); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000337}}
       .nav.filled a:active, .nav.filled a.active {
         background-color: rgba(255, 255, 255, 0.2); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000341}}
       .nav.filled a:first-child {
         border-radius: 4px 4px 0 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000344}}
       .nav.filled a:last-child {
         border-radius: 0 0 4px 4px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000347}}
   .nav.bordered {
     background-color: none;
     border: 1px solid #e6e9ed;
     border-radius: 5px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000352}}
     .nav.bordered a {
       height: 35px;
       line-height: 35px;
       padding: 0 20px;
       border-bottom: 1px solid #e6e9ed;
       color: #656d77; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000359}}
       .nav.bordered a:hover {
         background-color: #f5f8fc; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000362}}
       .nav.bordered a:active, .nav.bordered a.active {
         background-color: #e6e9ed; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000366}}
       .nav.bordered a:first-child {
         border-radius: 4px 4px 0 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000369}}
       .nav.bordered a:last-of-type {
         border-radius: 0 0 4px 4px;
         border-bottom: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000374}}
   .nav.horizontal a {
     padding: 0 40px 0 0;
     display: inline-block; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000378}}
     .nav.horizontal a:first-child {
       border-radius: 4px 0 0 4px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000381}}
     .nav.horizontal a:last-child {
       border-radius: 0 4px 4px 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000384}}
   .nav.horizontal.bordered, .nav.horizontal.filled {
     text-align: center;
     display: table;
     table-layout: fixed;
     width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000391}}
     .nav.horizontal.bordered a, .nav.horizontal.filled a {
       padding: 0;
       display: table-cell;
       width: 2%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\0000397}}
   .nav.horizontal.filled a {
     height: 36px;
     line-height: 36px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\00003102}}
   .nav.horizontal.bordered a {
     border-bottom: none;
     border-right: 1px solid #e6e9ed;
     height: 35px;
     line-height: 35px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\00003108}}
     .nav.horizontal.bordered a:last-of-type {
       border-right: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\00003113}}
   .nav.fat:not(.horizontal) a {
     height: 48px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\00003118}}
   .nav.fat.bordered a, .nav.fat.filled a {
     height: 47px;
     line-height: 47px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\00003124}}
   .nav.slim:not(.horizontal) a {
     height: 32px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/navigation\.sass}line{font-family:\00003129}}
   .nav.slim.bordered a, .nav.slim.filled a {
     height: 31px;
     line-height: 31px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/compass\/compass-core\/stylesheets\/compass\/layout\/_sticky-footer\.scss}line{font-family:\0000310}}
 html, body {
   height: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/compass\/compass-core\/stylesheets\/compass\/layout\/_sticky-footer\.scss}line{font-family:\0000312}}
 .wrap {
   clear: both;
   min-height: 100%;
   height: auto !important;
   height: 100%;
   margin-bottom: -190px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/compass\/compass-core\/stylesheets\/compass\/layout\/_sticky-footer\.scss}line{font-family:\0000318}}
   .wrap .push {
     height: 190px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/compass\/compass-core\/stylesheets\/compass\/layout\/_sticky-footer\.scss}line{font-family:\0000320}}
 .footer {
   clear: both;
   position: relative;
   height: 190px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/footer\.sass}line{font-family:\000033}}
 .footer {
   -moz-box-sizing: border-box;
        box-sizing: border-box;
@@ -3511,58 +2677,45 @@ html, body {
   color: #fff;
   padding: 30px 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/components\/box\.sass}line{font-family:\000031}}
 .box {
   padding: 30px 20px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/demo\.sass}line{font-family:\000031}}
 main {
   padding: 40px 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/demo\.sass}line{font-family:\000034}}
 .logo {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 0.5em;
   display: block; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/demo\.sass}line{font-family:\0000310}}
   .logo i {
     line-height: 20px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/demo\.sass}line{font-family:\0000313}}
 .logo-p {
   color: #656d77; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/demo\.sass}line{font-family:\0000317}}
 .footer .logo-p {
   color: #aab2bc; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/demo\.sass}line{font-family:\0000321}}
 .colors .grid-row {
   margin-bottom: 30px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/demo\.sass}line{font-family:\0000324}}
 .colors .item {
   border-radius: 5px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/demo\.sass}line{font-family:\0000328}}
   .colors .item .dark,
   .colors .item .light {
     width: 50%;
     height: 48px;
     float: left; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/demo\.sass}line{font-family:\0000334}}
     .colors .item .dark.dark,
     .colors .item .light.dark {
       border-radius: 5px 0 0 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/demo\.sass}line{font-family:\0000336}}
     .colors .item .dark.light,
     .colors .item .light.light {
       border-radius: 0 5px 0 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ruslan\/Sites\/quodo2\/sass\/demo\.sass}line{font-family:\0000339}}
   .colors .item .title {
     border-radius: 0 0 5px 5px;
     padding: 0 15px;
     clear: both;
     height: 48px;
     line-height: 48px; }
-
 /*# sourceMappingURL=screen.css.map */
