@@ -5,10 +5,17 @@ block content
 
 	.grid-row
 		.col-3
-			include ./partials/leftcol.jade
+			button.button.fat.w-100(href="#stayhere") I am the button
+		.col-3
+			button.button.fat.bg-lavender-light.wait.w-100(href="#stayhere") Ooops
+		.col-3
+			button.button.fat.bg-grass-dark.w-100(href="#stayhere") Press me
 
-		.col-9
-			h1 Buttons
-			p Buttons for people, can be flat or embossed
-
-			a.button(href="#stayhere") I am the button
+	br
+	.grid-row
+		.col-3
+			button.button.fat.bg-aqua-light.bevel.w-100(href="#stayhere") Zzzap
+		.col-3
+			button.button.fat.bg-bittersweet-dark.bevel.w-100(href="#stayhere") Boom
+		.col-3
+			button.button.fat.bg-sunflower-dark.bevel.w-100(href="#stayhere", disabled) You can't
