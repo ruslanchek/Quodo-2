@@ -79,13 +79,23 @@ main
 	margin-left: 12px
 
 .paintable,
-.resizeable
-	&.resizeable i
-		font-size: 16px
+.resizeable,
+.code
+	&.paintable i
+		font-size: 14px
+	&.code i
+		font-size: 20px
 
 	i
 		margin-right: .6ex
+		color: $color-aqua-dark
 
 	margin-right: 3ex
 	font-style: italic
-	font-size: 14px
+	font-size: 16px
+
+	&:last-of-type
+		margin-right: 0
+
+	&:hover i
+		color: $color-aqua-dark + 30

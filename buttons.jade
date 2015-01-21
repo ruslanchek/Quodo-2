@@ -15,7 +15,7 @@ block content
 				.col-3
 					button.button.fat.w-100(href="#stayhere") I am the button
 				.col-3
-					button.button.fat.bg-lavender-light.wait.w-100(href="#stayhere") Ooops
+					button.button.fat.bg-lavender-light.wait.w-100(href="#stayhere") Squeezing the berries
 				.col-3
 					button.button.fat.bg-grass-dark.w-100(href="#stayhere") Press me
 
@@ -29,8 +29,14 @@ block content
 					button.button.fat.bg-sunflower-dark.volume.w-100(href="#stayhere", disabled) Sorry, i am disabled
 
 			br
-			include partials/paintable
-			include partials/resizeable
+
+			.grid-row
+				.col-3
+					include partials/code
+
+				.col-6.text-right
+					include partials/paintable
+					include partials/resizeable
 
 			// h3 Code for this example
 			// pre: code.C
