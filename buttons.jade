@@ -5,17 +5,29 @@ block content
 
 	.grid-row
 		.col-3
-			button.button.fat.w-100(href="#stayhere") I am the button
-		.col-3
-			button.button.fat.bg-lavender-light.wait.w-100(href="#stayhere") Ooops
-		.col-3
-			button.button.fat.bg-grass-dark.w-100(href="#stayhere") Press me
+			include ./partials/leftcol.jade
 
-	br
-	.grid-row
-		.col-3
-			button.button.fat.bg-aqua-light.bevel.w-100(href="#stayhere") Zzzap
-		.col-3
-			button.button.fat.bg-bittersweet-dark.bevel.w-100(href="#stayhere") Boom
-		.col-3
-			button.button.fat.bg-sunflower-dark.bevel.w-100(href="#stayhere", disabled) You can't
+		.col-9
+			h1 Colors
+			p A backgrounds, text and links colors, that suitable for theming
+
+			.grid-row
+				.col-3
+					button.button.fat.w-100(href="#stayhere") I am the button
+				.col-3
+					button.button.fat.bg-lavender-light.wait.w-100(href="#stayhere") Ooops
+				.col-3
+					button.button.fat.bg-grass-dark.w-100(href="#stayhere") Press me
+
+			br
+			.grid-row
+				.col-3
+					button.button.fat.bg-aqua-light.bevel.w-100(href="#stayhere") Zzzap
+				.col-3
+					button.button.fat.bg-bittersweet-dark.bevel.w-100(href="#stayhere") Boom
+				.col-3
+					button.button.fat.bg-sunflower-dark.bevel.w-100(href="#stayhere", disabled) You can't
+
+			br
+			include partials/paintable
+			include partials/resizeable
