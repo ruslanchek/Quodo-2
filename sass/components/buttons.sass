@@ -1,4 +1,34 @@
 .button
 	background-color: $fill-button-color
 	display: inline-block
-	padding: 0
+	padding: 0 $padding-component-side
+	height: $height-component-default
+	line-height: $height-component-default
+	position: relative
+
+	&:before
+		content: ''
+		display: block
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+
+	&:hover
+		&:before
+			background-color: $fill-component-hover
+
+	&:active,
+	&.active
+		background-color: $fill-component-active
+
+	&:disabled
+		opacity: .5
+
+	&.fat
+		height: $height-component-fat
+		line-height: $height-component-fat
+
+	&.slim
+		height: $height-component-slim
+		line-height: $height-component-fat

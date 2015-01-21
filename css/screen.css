@@ -2704,11 +2704,40 @@ html, body {
     line-height: 1.2em; }
 
 .box {
-  padding: 30px 20px; }
+  padding: 30px 20px;
+  border: 1px solid #e6e9ed;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box; }
+  .box .filled {
+    background-color: #434a53;
+    color: #fff; }
 
 .button {
-  background-color: #f5f7fa;
-  display: inline-block; }
+  background-color: #e6e9ed;
+  display: inline-block;
+  padding: 0 20px;
+  height: 36px;
+  line-height: 36px;
+  position: relative; }
+  .button:before {
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .button:hover:before {
+    background-color: rgba(255, 255, 255, 0.15); }
+  .button:active, .button.active {
+    background-color: rgba(255, 255, 255, 0.25); }
+  .button:disabled {
+    opacity: 0.5; }
+  .button.fat {
+    height: 48px;
+    line-height: 48px; }
+  .button.slim {
+    height: 32px;
+    line-height: 48px; }
 
 main {
   padding: 40px 0 60px; }
@@ -2800,5 +2829,4 @@ main {
   .paintable i,
   .resizeable i {
     margin-right: 0.6ex; }
-
 /*# sourceMappingURL=screen.css.map */
