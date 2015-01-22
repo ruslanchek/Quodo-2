@@ -1,2 +1,34 @@
-.table
-	
+table
+	td,
+	th
+		padding: 5px 10px
+
+	thead
+		th
+			border-bottom: 1px solid $border-component-color
+
+	&.bordered
+		tbody
+			td
+				border-bottom: 1px solid $border-component-color + 10
+
+			tr:last-of-type
+				td
+					border-bottom: none
+
+	&.striped
+		tbody
+			tr:nth-child(odd)
+				background-color: $border-component-color + 10
+
+	&.hovered
+		tbody
+			tr:hover
+				background-color: $border-component-color
+
+	&.boxed
+		border: 1px solid $border-component-color
+
+	tfoot
+		td
+			border-top: 1px solid $border-component-color

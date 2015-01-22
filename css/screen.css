@@ -3524,6 +3524,24 @@ html, body {
     background-position: 0 0; }
   to {
     background-position: 50px 0; } }
+table td,
+table th {
+  padding: 5px 10px; }
+table thead th {
+  border-bottom: 1px solid #e6e9ed; }
+table.bordered tbody td {
+  border-bottom: 1px solid #f0f3f7; }
+table.bordered tbody tr:last-of-type td {
+  border-bottom: none; }
+table.striped tbody tr:nth-child(odd) {
+  background-color: #f0f3f7; }
+table.hovered tbody tr:hover {
+  background-color: #e6e9ed; }
+table.boxed {
+  border: 1px solid #e6e9ed; }
+table tfoot td {
+  border-top: 1px solid #e6e9ed; }
+
 main {
   padding: 40px 0 60px; }
 
