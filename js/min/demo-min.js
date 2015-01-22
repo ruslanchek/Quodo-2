@@ -1,1 +1,1 @@
-hljs.initHighlightingOnLoad();
+var Demo={};Demo.Table=function(){this.initChecker=function(){var e=new UI.Checker("#table-checkers",function(e){$("#table-sample").addClass(e.data("type"))},function(e){$("#table-sample").removeClass(e.data("type"))})},this.init=function(){this.initChecker()}},Demo.init=function(){this.Table=(new this.Table).init()},$(function(){Demo.init()});

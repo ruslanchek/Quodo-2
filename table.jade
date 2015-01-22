@@ -11,7 +11,7 @@ block content
 			h1 Grid
 			p Simple grid system of 24 cols, nesting supports
 
-			table#table-sample
+			table.rounded.bordered#table-sample
 				thead
 					tr
 						th
@@ -45,7 +45,7 @@ block content
 					tr
 						td 4
 						td Infiniti
-						td Q50 Eau rouge
+						td Q50 Eau Rouge
 						td 500
 						td 280 km/h
 						td $100 000
@@ -54,14 +54,15 @@ block content
 						td.text-right(colspan="5") Total
 						td $1 290 000
 
-			.checkers
-				a.rounded.bg-aqua-light(href="#") Rounded
-				a.striped(href="#") Striped
-				a.hovered(href="#") Hovered
-				a.bordered(href="#") Bordered
-				a.bordered-rows-h(href="#") Horizontal borders
-				a.bordered-rows-v(href="#") Vertical borders
+			br
 
+			.checker#table-checkers
+				a.active(href="#", data-type="rounded") rounded
+				a.active(href="#", data-type="bordered") bordered
+				a(href="#", data-type="striped") striped
+				a(href="#", data-type="hovered") hovered
+				a(href="#", data-type="bordered-rows-h") horizontal borders
+				a(href="#", data-type="bordered-rows-v") vertical borders
 
 			br
 			.grid-row

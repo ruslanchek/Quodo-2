@@ -3563,10 +3563,14 @@ html, body {
   to {
     background-position: 50px 0; } }
 table {
-  width: 100%; }
+  width: 100%;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box; }
   table td,
   table th {
-    padding: 11px 15px; }
+    padding: 11px 15px;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box; }
   table th {
     font-weight: bold; }
   table thead th {
@@ -3591,9 +3595,9 @@ table {
     table.bordered thead tr {
       background-color: #f0f3f7; }
 
-.checkers {
+.checker {
   font-size: 14px; }
-  .checkers a {
+  .checker a {
     background-color: #e6e9ed;
     display: inline-block;
     padding: 0 1ex;
@@ -3608,7 +3612,7 @@ table {
     margin: 0 2ex 0 0;
     position: relative;
     z-index: 1; }
-    .checkers a:after, .checkers a:before {
+    .checker a:after, .checker a:before {
       content: "";
       z-index: 0;
       width: 100%;
@@ -3619,15 +3623,14 @@ table {
       left: 0;
       z-index: 1;
       border-radius: 2.5px; }
-    .checkers a:hover .checkers a:after {
+    .checker a:hover .checker a:after {
       background-color: rgba(255, 255, 255, 0.15); }
-    .checkers a:active .checkers a:after {
+    .checker a:active .checker a:after {
       background-color: rgba(255, 255, 255, 0.25); }
-    .checkers a.active {
-      background-color: #d2d5d9; }
-    .checkers a[class^="bg-"], .checkers a[class*=" bg-"] {
-      color: #fff !important; }
-  .checkers.text-right {
+    .checker a.active {
+      background-color: #4fc2e5;
+      color: #fff; }
+  .checker.text-right a {
     margin: 0 0 0 2ex; }
 
 main {

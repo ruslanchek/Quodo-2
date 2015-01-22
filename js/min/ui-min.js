@@ -1,0 +1,1 @@
+var UI={};UI.Checker=function(i,c,s){var a=$(i);a.find(">a").off("click.UIChecker").on("click.UIChecker",function(){$(this).hasClass("active")?($(this).removeClass("active"),s&&s($(this))):($(this).addClass("active"),c&&c($(this)))})};

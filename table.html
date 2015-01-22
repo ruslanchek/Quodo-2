@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="/css/screen.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/default.min.css">
     <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/highlight.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="/js/ui.js"></script>
     <script src="/js/demo.js"></script>
   </head>
   <body>
@@ -21,7 +23,7 @@
             <div class="col-18">
               <h1>Grid</h1>
               <p>Simple grid system of 24 cols, nesting supports</p>
-              <table id="table-sample">
+              <table id="table-sample" class="rounded bordered">
                 <thead>
                   <tr>
                     <th></th>
@@ -60,7 +62,7 @@
                   <tr>
                     <td>4</td>
                     <td>Infiniti</td>
-                    <td>Q50 Eau rouge</td>
+                    <td>Q50 Eau Rouge</td>
                     <td>500</td>
                     <td>280 km/h</td>
                     <td>$100 000</td>
@@ -72,8 +74,8 @@
                     <td>$1 290 000</td>
                   </tr>
                 </tfoot>
-              </table>
-              <div class="checkers"><a href="#" class="rounded bg-aqua-light">Rounded</a><a href="#" class="striped">Striped</a><a href="#" class="hovered">Hovered</a><a href="#" class="bordered">Bordered</a><a href="#" class="bordered-rows-h">Horizontal borders</a><a href="#" class="bordered-rows-v">Vertical borders</a></div><br>
+              </table><br>
+              <div id="table-checkers" class="checker"><a href="#" data-type="rounded" class="active">rounded</a><a href="#" data-type="bordered" class="active">bordered</a><a href="#" data-type="striped">striped</a><a href="#" data-type="hovered">hovered</a><a href="#" data-type="bordered-rows-h">horizontal borders</a><a href="#" data-type="bordered-rows-v">vertical borders</a></div><br>
               <div class="grid-row">
                 <div class="col-9"><a href="#" class="code"><i class="fa fa-code"></i>&nbsp;The code</a></div>
               </div>
