@@ -4,37 +4,37 @@ block content
 	- var section = 'buttons'
 
 	.grid-row
-		.col-3
+		.col-6
 			include ./partials/leftcol.jade
 
-		.col-9
+		.col-18
 			h1 Colors
 			p A backgrounds, text and links colors, that suitable for theming
 
 			.grid-row
-				.col-3
+				.col-6
 					button.button.fat.w-100(href="#stayhere") I am the button
-				.col-3
+				.col-6
 					button.button.fat.bg-lavender-light.wait.w-100(href="#stayhere") Squeezing the berries...
-				.col-3
+				.col-6
 					button.button.fat.bg-mint-light.w-100(href="#stayhere") Press me
 
 			br
 			.grid-row
-				.col-3
+				.col-6
 					button.button.fat.bg-aqua-light.wait.volume.w-100(href="#stayhere") Loading the awesome...
-				.col-3
+				.col-6
 					button.button.fat.bg-bittersweet-dark.volume.w-100(href="#stayhere") Boom!
-				.col-3
+				.col-6
 					button.button.fat.bg-sunflower-dark.volume.w-100(href="#stayhere", disabled) Sorry, i am disabled
 
 			br
 
 			.grid-row
-				.col-3
+				.col-9
 					include partials/code
 
-				.col-6.text-right
+				.col-9.text-right
 					include partials/paintable
 					include partials/resizeable
 
