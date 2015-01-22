@@ -130,6 +130,18 @@
 			&:after
 				left: 15px
 
+	&.wireframe
+		background-color: none
+		border: 1px solid $border-component-color
+
+		&.wait
+			background-color: rgba(0, 0, 0, .05)
+
+		&:hover
+			$border-component-color + 10
+
+		&:active
+			$border-component-color + 15
 
 	&:disabled,
 	&.disabled
