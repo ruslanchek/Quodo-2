@@ -3631,6 +3631,14 @@ table {
   .checker.text-right a {
     margin: 0 0 0 2ex; }
 
+.hero {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  background-color: #434a53;
+  color: #fff;
+  padding: 60px;
+  border-radius: 5px; }
+
 main {
   padding: 40px 0 60px; }
 
