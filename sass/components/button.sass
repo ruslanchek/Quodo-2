@@ -26,7 +26,7 @@
 		left: 0
 		width: 100%
 		height: 100%
-		border-radius: $border-radius
+		border-radius: $border-radius - 2
 		transition: $animation-component-duration
 
 	&:hover
@@ -44,11 +44,12 @@
 
 	&[class^="bg-"], 
 	&[class*=" bg-"]
-		color: #fff
-		
-		&:hover, 
-		&:active
+		&:not(.wireframe)
 			color: #fff
+
+			&:hover,
+			&:active
+				color: #fff
 
 	&.wait
 		cursor: default
@@ -88,60 +89,73 @@
 			.wait
 				@extend .bevel
 
+	// @TODO: Improve that shit, needs to be merged
 	&.next
-		padding-right: 20px
+		padding-right: 40px
+		padding-left: 40px
 
 		&:after
 			font: normal normal normal 14px/1 FontAwesome
 			content: $fa-var-chevron-right
 			display: inline-block
-			font-size: inherit
 			position: absolute
 			width: 20px
 			height: 20px
 			top: 50%
-			right: 20px
+			right: 10px
 			font-size: 18px
 			margin-top: -8px
 			transition: right $animation-component-duration
 
 		&:hover
 			&:after
-				right: 15px
+				right: 5px
 
 	&.prev
-		padding-left: 20px
+		padding-left: 40px
+		padding-right: 40px
 
 		&:after
 			font: normal normal normal 14px/1 FontAwesome
 			content: $fa-var-chevron-left
 			display: inline-block
-			font-size: inherit
 			position: absolute
 			width: 20px
 			height: 20px
 			top: 50%
-			left: 20px
+			left: 10px
 			font-size: 18px
 			margin-top: -8px
 			transition: left $animation-component-duration
 
 		&:hover
 			&:after
-				left: 15px
+				left: 5px
 
 	&.wireframe
-		background-color: none
-		border: 1px solid $border-component-color
+		background-color: transparent
+		border: 1px solid $color-links-default + 50
+		box-shadow: none !important
+		line-height: $height-component-default - 1
 
 		&.wait
 			background-color: rgba(0, 0, 0, .05)
 
+		&:before
+			background-color: $fill-button-color - 20
+			opacity: 0
+
 		&:hover
-			border-color:  $border-component-color + 10
+			&:before
+				opacity: .05
 
 		&:active
-			border-color: $border-component-color + 15
+			&:before
+				opacity: .1
+
+		&.wait
+			border-color: $fill-button-color - 20
+			background-color: $fill-button-color
 
 	&:disabled,
 	&.disabled
@@ -159,9 +173,15 @@
 		height: $height-component-fat
 		line-height: $height-component-fat
 
+		&.wireframe
+			line-height: $height-component-fat - 1
+
 	&.slim
 		height: $height-component-slim
 		line-height: $height-component-slim
+
+		&.wireframe
+			line-height: $height-component-slim - 1
 
 	@keyframes button-wait
 		from 

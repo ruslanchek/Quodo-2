@@ -21,20 +21,6 @@ table
 	&.rounded
 		border-radius: $border-radius
 
-	&.bordered-rows-h
-		tbody
-			td
-				border-bottom: 1px solid $border-component-color
-
-			tr:last-of-type
-				td
-					border-bottom: none
-
-	&.bordered-rows-v
-		td,
-		th
-			border-right: 1px solid $border-component-color
-
 	&.striped
 		tbody
 			tr:nth-child(odd)
@@ -51,3 +37,22 @@ table
 		thead
 			tr
 				background-color: $bg-table-head
+
+		&.bordered-rows-v
+			td,
+			th
+				border-right: 1px solid $border-component-color
+
+				&:last-of-type,
+				&:last-of-type
+					border-right: none
+
+
+	&.bordered-rows-h
+		tbody
+			td
+				border-bottom: 1px solid $border-component-color
+
+			tr:last-of-type
+				td
+					border-bottom: none

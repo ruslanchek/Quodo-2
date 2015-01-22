@@ -81,8 +81,14 @@
 
 
 @mixin bg($color)
-	background-color: $color !important
-	
+	&:not(.wireframe)
+		background-color: $color !important
+	&.button.wireframe
+		border-color: $color !important
+		color: $color
+		&:before
+			background-color: $color
+
 .bg-bittersweet-light
 	+bg($color-bittersweet-light)
 
@@ -154,3 +160,6 @@
 
 .bg-black-dark
 	+bg($color-black-dark)
+
+.bg-white
+	+bg(#fff)
