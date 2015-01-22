@@ -3,6 +3,9 @@ table
 	th
 		padding: 5px 10px
 
+	th
+		font-weight: bold
+
 	thead
 		th
 			border-bottom: 1px solid $border-component-color
@@ -10,7 +13,7 @@ table
 	&.bordered
 		tbody
 			td
-				border-bottom: 1px solid $border-component-color + 10
+				border-bottom: 1px solid $border-component-color
 
 			tr:last-of-type
 				td
@@ -19,7 +22,7 @@ table
 	&.striped
 		tbody
 			tr:nth-child(odd)
-				background-color: $border-component-color + 10
+				background-color: $border-component-color
 
 	&.hovered
 		tbody
@@ -28,6 +31,10 @@ table
 
 	&.boxed
 		border: 1px solid $border-component-color
+
+		thead
+			tr
+				background-color: $border-component-color + 15
 
 	tfoot
 		td

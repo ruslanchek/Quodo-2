@@ -1722,7 +1722,10 @@ body {
   font-family: "Asap", sans-serif;
   color: #434a53;
   line-height: 1.5em;
-  font-size: 16px; }
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%; }
 
 .limiter {
   width: 1000px;
@@ -3527,18 +3530,22 @@ html, body {
 table td,
 table th {
   padding: 5px 10px; }
+table th {
+  font-weight: bold; }
 table thead th {
   border-bottom: 1px solid #e6e9ed; }
 table.bordered tbody td {
-  border-bottom: 1px solid #f0f3f7; }
+  border-bottom: 1px solid #e6e9ed; }
 table.bordered tbody tr:last-of-type td {
   border-bottom: none; }
 table.striped tbody tr:nth-child(odd) {
-  background-color: #f0f3f7; }
+  background-color: #e6e9ed; }
 table.hovered tbody tr:hover {
   background-color: #e6e9ed; }
 table.boxed {
   border: 1px solid #e6e9ed; }
+  table.boxed thead tr {
+    background-color: #f5f8fc; }
 table tfoot td {
   border-top: 1px solid #e6e9ed; }
 
