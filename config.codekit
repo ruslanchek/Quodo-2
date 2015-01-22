@@ -2,15 +2,6 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "18270",
 "files": {
-	"\/buttons.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/buttons.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/buttons.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -74,6 +65,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/css\/common\/vars.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/components\/checkers.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/components\/checkers.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -701,15 +701,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/sass\/common\/colors.sass": {
+	"\/sass\/common\/color.sass": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 2,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/common\/colors.sass",
-		"outputAbbreviatedPath": "\/css\/colors.css",
+		"inputAbbreviatedPath": "\/sass\/common\/color.sass",
+		"outputAbbreviatedPath": "\/css\/color.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -733,15 +733,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/sass\/common\/mixins.sass": {
+	"\/sass\/common\/mixin.sass": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 2,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/common\/mixins.sass",
-		"outputAbbreviatedPath": "\/css\/mixins.css",
+		"inputAbbreviatedPath": "\/sass\/common\/mixin.sass",
+		"outputAbbreviatedPath": "\/css\/mixin.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -749,15 +749,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
-	"\/sass\/common\/sizes.sass": {
+	"\/sass\/common\/size.sass": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 2,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/common\/sizes.sass",
-		"outputAbbreviatedPath": "\/css\/sizes.css",
+		"inputAbbreviatedPath": "\/sass\/common\/size.sass",
+		"outputAbbreviatedPath": "\/css\/size.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -797,15 +797,31 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
-	"\/sass\/components\/buttons.sass": {
+	"\/sass\/components\/button.sass": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 2,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/components\/buttons.sass",
-		"outputAbbreviatedPath": "\/css\/buttons.css",
+		"inputAbbreviatedPath": "\/sass\/components\/button.sass",
+		"outputAbbreviatedPath": "\/css\/button.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": false
+		},
+	"\/sass\/components\/checker.sass": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/components\/checker.sass",
+		"outputAbbreviatedPath": "\/css\/checker.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -829,15 +845,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
-	"\/sass\/components\/links.sass": {
+	"\/sass\/components\/link.sass": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 2,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/components\/links.sass",
-		"outputAbbreviatedPath": "\/css\/links.css",
+		"inputAbbreviatedPath": "\/sass\/components\/link.sass",
+		"outputAbbreviatedPath": "\/css\/link.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1980,6 +1996,15 @@
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"useLibsass": false
+		},
+	"\/table.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/table.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/table.jade": {
 		"compileDebug": 1,

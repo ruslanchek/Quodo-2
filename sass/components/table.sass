@@ -1,7 +1,9 @@
 table
+	width: 100%
+
 	td,
 	th
-		padding: 5px 10px
+		padding: 11px 15px
 
 	th
 		font-weight: bold
@@ -10,7 +12,14 @@ table
 		th
 			border-bottom: 1px solid $border-component-color
 
-	&.bordered
+	tfoot
+		td
+			border-top: 1px solid $border-component-color
+
+	&.rounded
+		border-radius: $border-radius
+
+	&.bordered-rows-h
 		tbody
 			td
 				border-bottom: 1px solid $border-component-color
@@ -19,23 +28,24 @@ table
 				td
 					border-bottom: none
 
+	&.bordered-rows-v
+		td,
+		th
+			border-right: 1px solid $border-component-color
+
 	&.striped
 		tbody
 			tr:nth-child(odd)
-				background-color: $border-component-color
+				background-color: $bg-table-stripe
 
 	&.hovered
 		tbody
 			tr:hover
-				background-color: $border-component-color
+				background-color: $bg-table-hover
 
-	&.boxed
+	&.bordered
 		border: 1px solid $border-component-color
 
 		thead
 			tr
-				background-color: $border-component-color + 15
-
-	tfoot
-		td
-			border-top: 1px solid $border-component-color
+				background-color: $bg-table-head

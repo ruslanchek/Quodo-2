@@ -89,6 +89,59 @@
 			.wait
 				@extend .bevel
 
+	&.next
+		padding-right: 20px
+
+		&:after
+			font: normal normal normal 14px/1 FontAwesome
+			content: $fa-var-chevron-right
+			display: inline-block
+			font-size: inherit
+			position: absolute
+			width: 20px
+			height: 20px
+			top: 50%
+			right: 20px
+			font-size: 18px
+			margin-top: -8px
+			transition: right .2s
+
+		&:hover
+			&:after
+				right: 15px
+
+		&:active,
+		&.active
+			&:after
+				right: 10px
+
+	&.prev
+		padding-left: 20px
+
+		&:after
+			font: normal normal normal 14px/1 FontAwesome
+			content: $fa-var-chevron-left
+			display: inline-block
+			font-size: inherit
+			position: absolute
+			width: 20px
+			height: 20px
+			top: 50%
+			left: 20px
+			font-size: 18px
+			margin-top: -8px
+			transition: left .2s
+
+		&:hover
+			&:after
+				left: 15px
+
+		&:active,
+		&.active
+			&:after
+				left: 10px
+
+
 	&:disabled,
 	&.disabled
 		cursor: default
