@@ -1,1 +1,1 @@
-var UI={};UI.Checker=function(i,c,s){var a=$(i);a.find(">a").off("click.UIChecker").on("click.UIChecker",function(){$(this).hasClass("active")?($(this).removeClass("active"),s&&s($(this))):($(this).addClass("active"),c&&c($(this)))})};
+var UI={};UI.Checker=function(a,s,t){var i=$(a);i.find(">a").off("click.UIChecker").on("click.UIChecker",function(a){a.preventDefault();var i="";$(this).data("activeClass")&&(i=" "+$(this).data("activeClass")),$(this).hasClass("active")?($(this).removeClass("active"+i),t&&t($(this))):($(this).addClass("active"+i),s&&s($(this)))})};

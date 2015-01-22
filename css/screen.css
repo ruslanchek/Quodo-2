@@ -3754,8 +3754,6 @@ table {
     display: inline-block;
     padding: 0 1ex;
     border-radius: 2.5px;
-    -webkit-transition: opacity 0.2s;
-            transition: opacity 0.2s;
     -moz-box-sizing: border-box;
          box-sizing: border-box;
     color: #656d77;
@@ -3763,21 +3761,22 @@ table {
     white-space: nowrap;
     margin: 0 2ex 0 0;
     position: relative;
-    z-index: 1; }
-    .checker a:after, .checker a:before {
+    -webkit-transition: 0.15s;
+            transition: 0.15s; }
+    .checker a:after {
       content: "";
-      z-index: 0;
       width: 100%;
       height: 100%;
       display: block;
       position: absolute;
       top: 0;
       left: 0;
-      z-index: 1;
-      border-radius: 2.5px; }
-    .checker a:hover .checker a:after {
+      border-radius: 2.5px;
+      -webkit-transition: 0.15s;
+              transition: 0.15s; }
+    .checker a:hover:after {
       background-color: rgba(255, 255, 255, 0.15); }
-    .checker a:active .checker a:after {
+    .checker a:active:after {
       background-color: rgba(255, 255, 255, 0.25); }
     .checker a.active {
       background-color: #4fc2e5;
@@ -3890,7 +3889,7 @@ main {
   .paintable i,
   .resizeable i,
   .code i {
-    margin-right: 0.6ex;
+    margin-right: 0.3ex;
     color: #3bb0d6; }
   .paintable:last-of-type,
   .resizeable:last-of-type,
