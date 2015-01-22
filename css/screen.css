@@ -3520,8 +3520,6 @@ html, body {
               transition: right 0.2s; }
     .button.next:hover:after {
       right: 15px; }
-    .button.next:active:after, .button.next.active:after {
-      right: 10px; }
   .button.prev {
     padding-left: 20px; }
     .button.prev:after {
@@ -3540,8 +3538,6 @@ html, body {
               transition: left 0.2s; }
     .button.prev:hover:after {
       left: 15px; }
-    .button.prev:active:after, .button.prev.active:after {
-      left: 10px; }
   .button:disabled, .button.disabled {
     cursor: default;
     opacity: 0.75; }
