@@ -3564,13 +3564,11 @@ html, body {
     background-position: 50px 0; } }
 table {
   width: 100%;
-  -moz-box-sizing: border-box;
-       box-sizing: border-box; }
+  border-spacing: 0;
+  border-collapse: separate; }
   table td,
   table th {
-    padding: 11px 15px;
-    -moz-box-sizing: border-box;
-         box-sizing: border-box; }
+    padding: 11px 15px; }
   table th {
     font-weight: bold; }
   table thead th {
