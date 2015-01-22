@@ -1,2 +1,45 @@
-.checker
-	
+.checkers
+	font-size: 14px
+
+	a
+		background-color: $fill-button-color
+		display: inline-block
+		padding: 0 1ex
+		border-radius: $border-radius
+		transition: opacity .2s
+		box-sizing: border-box
+		color: $color-links-default
+		cursor: pointer
+		white-space: nowrap
+		margin: 0 2ex 0 0
+		position: relative
+		z-index: 1
+
+		&:after,
+		&:before
+			content: ''
+			z-index: 0
+			width: 100%
+			height: 100%
+			display: block
+			position: absolute
+			top: 0
+			left: 0
+			z-index: 1
+			border-radius: $border-radius
+				
+		&:hover &:after
+			background-color: $fill-component-hover
+
+		&:active &:after
+			background-color: $fill-component-active
+
+		&.active
+			background-color: $fill-button-color - 20
+
+		&[class^="bg-"], 
+		&[class*=" bg-"]
+			color: #fff !important
+
+	&.text-right
+		margin: 0 0 0 2ex

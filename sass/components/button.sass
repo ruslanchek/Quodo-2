@@ -22,13 +22,12 @@
 		content: ''
 		position: absolute
 		display: block
-		opacity: 1
 		top: 0
 		left: 0
 		width: 100%
 		height: 100%
 		border-radius: $border-radius
-		transition: .2s
+		transition: $animation-component-duration
 
 	&:hover
 		color: $color-links-default
@@ -104,7 +103,7 @@
 			right: 20px
 			font-size: 18px
 			margin-top: -8px
-			transition: right .2s
+			transition: right $animation-component-duration
 
 		&:hover
 			&:after
@@ -125,7 +124,7 @@
 			left: 20px
 			font-size: 18px
 			margin-top: -8px
-			transition: left .2s
+			transition: left $animation-component-duration
 
 		&:hover
 			&:after
@@ -157,3 +156,6 @@
 			background-position: 0 0
 		to
 			background-position: 50px 0
+
+
+// @TODO: Add white and bordered styles to the button 

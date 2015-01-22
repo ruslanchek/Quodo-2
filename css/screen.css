@@ -3459,14 +3459,13 @@ html, body {
     content: "";
     position: absolute;
     display: block;
-    opacity: 1;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     border-radius: 5px;
-    -webkit-transition: 0.2s;
-            transition: 0.2s; }
+    -webkit-transition: 0.15s;
+            transition: 0.15s; }
   .button:hover {
     color: #656d77; }
     .button:hover:before {
@@ -3516,8 +3515,8 @@ html, body {
       right: 20px;
       font-size: 18px;
       margin-top: -8px;
-      -webkit-transition: right 0.2s;
-              transition: right 0.2s; }
+      -webkit-transition: right 0.15s;
+              transition: right 0.15s; }
     .button.next:hover:after {
       right: 15px; }
   .button.prev {
@@ -3534,8 +3533,8 @@ html, body {
       left: 20px;
       font-size: 18px;
       margin-top: -8px;
-      -webkit-transition: left 0.2s;
-              transition: left 0.2s; }
+      -webkit-transition: left 0.15s;
+              transition: left 0.15s; }
     .button.prev:hover:after {
       left: 15px; }
   .button:disabled, .button.disabled {
@@ -3591,6 +3590,45 @@ table {
     border: 1px solid #e6e9ed; }
     table.bordered thead tr {
       background-color: #f0f3f7; }
+
+.checkers {
+  font-size: 14px; }
+  .checkers a {
+    background-color: #e6e9ed;
+    display: inline-block;
+    padding: 0 1ex;
+    border-radius: 5px;
+    -webkit-transition: opacity 0.2s;
+            transition: opacity 0.2s;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+    color: #656d77;
+    cursor: pointer;
+    white-space: nowrap;
+    margin: 0 2ex 0 0;
+    position: relative;
+    z-index: 1; }
+    .checkers a:after, .checkers a:before {
+      content: "";
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      border-radius: 5px; }
+    .checkers a:hover .checkers a:after {
+      background-color: rgba(255, 255, 255, 0.15); }
+    .checkers a:active .checkers a:after {
+      background-color: rgba(255, 255, 255, 0.25); }
+    .checkers a.active {
+      background-color: #d2d5d9; }
+    .checkers a[class^="bg-"], .checkers a[class*=" bg-"] {
+      color: #fff !important; }
+  .checkers.text-right {
+    margin: 0 0 0 2ex; }
 
 main {
   padding: 40px 0 60px; }
