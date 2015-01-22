@@ -3478,9 +3478,9 @@ html, body {
     .button:active:before, .button.active:before {
       background-color: rgba(255, 255, 255, 0.25); }
   .button[class^="bg-"], .button[class*=" bg-"] {
-    color: #fff !important; }
+    color: #fff; }
     .button[class^="bg-"]:hover, .button[class^="bg-"]:active, .button[class*=" bg-"]:hover, .button[class*=" bg-"]:active {
-      color: #fff !important; }
+      color: #fff; }
   .button.wait {
     cursor: default;
     -webkit-animation-timing-function: linear;
