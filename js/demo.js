@@ -4,14 +4,15 @@ var Demo = {};
 
 Demo.Table = function(){
 	this.initChecker = function(){
-		var checker = new UI.Checker('#table-checker',
-			function($checker){
+		var checker = new UI.Checker({
+			selector: '#table-checker',
+			onCheck: function($checker){
 				$('#table-sample').addClass($checker.data('type'));
 			}, 
-			function($checker){
+			onUncheck: function($checker){
 				$('#table-sample').removeClass($checker.data('type'));
 			}
-		);
+		});
 	};
 
 	this.init = function(){
@@ -21,14 +22,9 @@ Demo.Table = function(){
 
 Demo.Checker = function(){
     this.initChecker = function(){
-        var checker = new UI.Checker('#sample-checker',
-            function($checker){
-
-            },
-            function($checker){
-
-            }
-        );
+        var checker = new UI.Checker({
+        	selector: '#sample-checker'
+        });
     };
 
     this.init = function(){
