@@ -61,6 +61,8 @@ UI.Checker = function(options){
 UI.Popup = function(options){
 	var _this = this;
 
+	this.$popup = null;
+
 	this.options = $.extend({
 		templateSelector: '#template-ui-popup',
 		onShow: function(){
@@ -74,10 +76,18 @@ UI.Popup = function(options){
 	var bind = function(){
 		unbind();
 
+		if(_this.$popup){
+			$popup.find('close').on('click', function(e){
+				e.preventDefault();
+
+				_this.hide();
+			});
+		}
+
 		$(document).on('keyup.UIPopup', function(e){
 			switch(e.keyCode){
 				case 13 : {
-					this.hide();
+					_this.hide();
 				} break;
 			}
 		});
@@ -97,17 +107,28 @@ UI.Popup = function(options){
 	};
 
 	this.changeContent = function(html){
-
+		if(this.$popup){
+			this.$popup.find('.content').html(html);
+		}
 	};
 
 	this.changeTitle = function(html){
-
+		if(this.$popup){
+			this.$popup.find('.title').html(html);
+		}
 	};
 
 	this.show = function(title, content){
 		this.hide();
-		$('body').append(make(title, content));
+
+		var html = make(title, content);
+
+		this.$popup = $(html);
+
+		$('body').append(html);
 		this.options.onShow();
+
+		bind();
 	};
 
 	this.hide = function(){

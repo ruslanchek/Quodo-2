@@ -3792,6 +3792,24 @@ table {
   padding: 60px;
   border-radius: 5px; }
 
+.popup-overlay {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.4); }
+  .popup-overlay .popup {
+    width: 400px;
+    min-height: 300px;
+    background: #fff;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+    margin: -150px 0 0 -200px;
+    padding: 20px 20px;
+    box-shadow: 0 20px 80px rgba(0, 0, 0, 0.5); }
+
 main {
   padding: 40px 0 60px; }
 
