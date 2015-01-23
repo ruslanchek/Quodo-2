@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <title>Quodo 2</title>
+    <link rel="stylesheet" href="/css/screen.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/default.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/highlight.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="http://underscorejs.org/underscore.js"></script>
+    <script src="/js/ui.js"></script>
+    <script src="/js/demo.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <main>
+        <div class="limiter">
+          <div class="grid-row">
+            <div class="col-6"><a href="/" class="color-dark-gray-dark">
+                <div class="logo">Quodo<i class="fa fa-rocket color-aqua-dark"></i>2</div>
+                <p class="logo-p">Application UI library</p></a>
+              <nav class="nav fat bordered"><a href="/colors.html">Colors</a><a href="/nav-v.html">Vertical navigation</a><a href="/nav-h.html">Horizontal navigation</a><a href="/grid.html">Grid</a><a href="/buttons.html" class="active">Buttons</a><a href="/table.html">Table</a><a href="/typography.html">Typography</a><a href="/checkers.html">Checkers</a></nav>
+            </div>
+            <div class="col-18">
+              <h1>Buttons</h1>
+              <p>A beautiful set of buttons, the combinations are awesome</p>
+              <div class="grid-row">
+                <div class="col-6">
+                  <button class="button fat w-100">I am the button</button>
+                </div>
+                <div class="col-6">
+                  <button class="button fat bg-lavender-light wait w-100">Squeezing the berries...</button>
+                </div>
+                <div class="col-6">
+                  <button class="button fat bg-mint-light volume next w-100">Next thing</button>
+                </div>
+              </div><br>
+              <div class="grid-row">
+                <div class="col-6">
+                  <button class="button fat bg-aqua-light wait volume w-100">Loading the awesome...</button>
+                </div>
+                <div class="col-6">
+                  <button class="button fat wireframe w-100">Show the skeleton</button>
+                </div>
+                <div class="col-6">
+                  <button disabled class="button fat bg-sunflower-dark volume w-100">Sorry, i am disabled</button>
+                </div>
+              </div><br>
+              <div class="grid-row">
+                <div class="col-6">
+                  <button class="button fat bg-sunflower-dark volume w-100">Get a suntan</button>
+                </div>
+                <div class="col-6">
+                  <button class="button fat bg-bittersweet-light w-100"><i class="fa fa-bomb"></i>&nbsp;Boom!</button>
+                </div>
+                <div class="col-6">
+                  <button class="button fat bg-aqua-dark wireframe prev w-100">Blue lines</button>
+                </div>
+              </div>
+              <!--br-->
+              <!--.box.filled.bg-dark-gray-dark-->
+              <!--	.grid-row-->
+              <!--		.col-4.text-center-->
+              <!--			button.button.fat.bg-aqua-light.wireframe.prev.w-100 Back-->
+              <!--		.col-10.text-center-->
+              <!--			button.button.fat.bg-white.wireframe: i.fa.fa-play-->
+              <!--			button.button.fat.bg-white.wireframe: i.fa.fa-pause-->
+              <!--			button.button.fat.bg-bittersweet-light.wireframe: i.fa.fa-eject-->
+              <!--		.col-4.text-center-->
+              <!--			button.button.fat.bg-aqua-light.wireframe.next.w-100 Next--><br>
+              <div class="grid-row">
+                <div class="col-9"><a href="#" class="code"><i class="fa fa-code"></i>&nbsp;The code</a></div>
+                <div class="col-9 text-right"><a href="#" class="paintable"><i class="fa fa-paint-brush"></i>&nbsp;Paintable</a><a href="#" class="resizeable"><i class="fa fa-arrows"></i>&nbsp;Resizeable</a></div>
+              </div>
+              <!-- h3 Code for this example-->
+              <!-- pre: code.C-->
+              <!-- 	|public ActionResult Index()-->
+              <!-- 	|{-->
+              <!-- 	|	var i = 0;-->
+              <!-- 	|	return View();-->
+              <!-- 	|}-->
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="push"></div>
+    </div>
+    <footer class="footer">
+      <div class="limiter">
+        <div class="grid-row">
+          <div class="col-6"><a href="/" class="color-white">
+              <div class="logo">Quodo<i class="fa fa-rocket color-aqua-dark"></i>2</div>
+              <p class="logo-p">Application UI library</p></a></div>
+          <div class="col-6">
+            <nav class="nav"><a href="/colors.html">Colors</a><a href="/nav-v.html">Vertical navigation</a><a href="/nav-h.html">Horizontal navigation</a><a href="/grid.html">Grid</a></nav>
+          </div>
+          <div class="col-6">
+            <nav class="nav"><a href="/buttons.html" class="active">Buttons</a><a href="/table.html">Table</a><a href="/typography.html">Typography</a><a href="/checkers.html">Checkers</a></nav>
+          </div>
+          <div class="col-6">
+            <nav class="nav"></nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script id="template-ui-popup">
+      <div class="popup-overlay">
+        <div class="popup"><a href="#" class="close">i.fa.fa-close</a>
+          <div class="title">{{title}}</div>
+          <div class="content">{{content}}</div>
+        </div>
+      </div>
+    </script>
+  </body>
+</html>

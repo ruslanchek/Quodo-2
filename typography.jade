@@ -1,0 +1,18 @@
+extends ./layout.jade
+
+block content
+	- var section = 'typography'
+
+	.grid-row
+		.col-6
+			include ./partials/leftcol.jade
+
+		.col-18
+			h1 Typography
+			p Simple grid system of 24 cols, nesting supports
+
+
+			br
+			.grid-row
+				.col-9
+					include partials/code

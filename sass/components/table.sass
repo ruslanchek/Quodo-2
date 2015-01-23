@@ -1,0 +1,58 @@
+table
+	width: 100%
+	border-spacing: 0
+	border-collapse: separate
+
+	td,
+	th
+		padding: 11px 15px
+
+	th
+		font-weight: bold
+
+	thead
+		th
+			border-bottom: 1px solid $border-component-color
+
+	tfoot
+		td
+			border-top: 1px solid $border-component-color
+
+	&.rounded
+		border-radius: $border-radius
+
+	&.striped
+		tbody
+			tr:nth-child(odd)
+				background-color: $bg-table-stripe
+
+	&.hovered
+		tbody
+			tr:hover
+				background-color: $bg-table-hover
+
+	&.bordered
+		border: 1px solid $border-component-color
+
+		thead
+			tr
+				background-color: $bg-table-head
+
+		&.bordered-rows-v
+			td,
+			th
+				border-right: 1px solid $border-component-color
+
+				&:last-of-type,
+				&:last-of-type
+					border-right: none
+
+
+	&.bordered-rows-h
+		tbody
+			td
+				border-bottom: 1px solid $border-component-color
+
+			tr:last-of-type
+				td
+					border-bottom: none

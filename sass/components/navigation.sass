@@ -1,0 +1,108 @@
+.nav
+	box-sizing: border-box
+
+	a
+		height: $height-component-default
+		line-height: $height-component-default
+		box-sizing: border-box
+		display: block
+		transition: $animation-component-duration
+
+		&.active
+			opacity: .7
+
+	&.bordered,
+	&.filled
+		a.active
+			opacity: 1
+
+
+	&:not(.horizontal)
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: hidden
+
+	&.filled
+		background-color: $fill-component-color
+		border-radius: $border-radius
+
+		a
+			color: #fff
+			padding: 0 $padding-component-side
+
+			&:hover
+				background-color: $fill-component-hover
+
+			&:active,
+			&.active
+				background-color: $fill-component-active
+
+			&:first-child
+				border-radius: $border-radius - 1 $border-radius - 1 0 0
+
+			&:last-child
+				border-radius: 0 0 $border-radius - 1 $border-radius - 1
+
+	&.bordered
+		background-color: none
+		border: 1px solid $border-component-color
+		border-radius: $border-radius
+
+		a
+			padding: 0 $padding-component-side
+			border-bottom: 1px solid $border-component-color
+			color: $color-links-default
+
+			&:hover
+				background-color: $border-component-color + 15
+
+			&:active,
+			&.active
+				background-color: $border-component-color
+
+			&:first-child
+				border-radius: $border-radius - 1 $border-radius - 1 0 0
+
+			&:last-of-type
+				border-radius: 0 0 $border-radius - 1 $border-radius - 1
+				border-bottom: none
+
+	&.horizontal	
+		a
+			padding: 0 $padding-component-side*2 0 0
+			display: inline-block
+			
+			&:first-child
+				border-radius: $border-radius - 1 0 0 $border-radius - 1
+
+			&:last-child
+				border-radius: 0 $border-radius - 1 $border-radius - 1 0
+
+		&.bordered,
+		&.filled
+			text-align: center
+			display: table
+			table-layout: fixed
+			width: 100%
+
+			a
+				padding: 0
+				display: table-cell
+				width: 2%
+
+		&.bordered
+			a
+				border-bottom: none
+				border-right: 1px solid $border-component-color
+
+				&:last-of-type
+					border-right: none
+
+	&.fat a
+		height: $height-component-fat
+		line-height: $height-component-fat
+
+
+	&.slim a
+		height: $height-component-slim
+		line-height: $height-component-fat
