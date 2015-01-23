@@ -1,0 +1,70 @@
+extends ./layout.jade
+
+block content
+	- var section = 'table'
+
+	.grid-row
+		.col-6
+			include ./partials/leftcol.jade
+
+		.col-18
+			h1 Table
+			p Simple grid system of 24 cols, nesting supports
+
+			table.rounded.bordered#table-sample
+				thead
+					tr
+						th
+						th Make
+						th Model
+						th Horsepower
+						th Top speed
+						th Price
+				tbody
+					tr
+						td 1
+						td Audi
+						td A5 3.2 Quattro
+						td 350
+						td 250 km/h
+						td $69 000
+					tr
+						td 2
+						td BMW
+						td 335i xDrive
+						td 300
+						td 250 km/h
+						td $71 000
+					tr
+						td 3
+						td Mercedes Benz
+						td E 320 AMG
+						td 298
+						td 250 km/h
+						td $70 000
+					tr
+						td 4
+						td Infiniti
+						td Q50 Eau Rouge
+						td 500
+						td 280 km/h
+						td $100 000
+				tfoot
+					tr
+						td.text-right(colspan="5") Total
+						td $1 290 000
+
+			br
+
+			.checker#table-checker
+				a.active(href="#", data-type="rounded") Rounded
+				a.active(href="#", data-type="bordered") Bordered
+				a(href="#", data-type="striped") Striped
+				a(href="#", data-type="hovered") Hovered
+				a(href="#", data-type="bordered-rows-h") Horizontal borders
+				a(href="#", data-type="bordered-rows-v") Vertical borders
+
+			br
+			.grid-row
+				.col-9
+					include partials/code

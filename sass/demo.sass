@@ -1,25 +1,102 @@
+main
+	padding: $margin-vertical-space 0 $margin-vertical-space * 1.5
+
+.logo
+	font-size: 30px
+	font-weight: bold
+	margin-bottom: .5em
+	display: block
+
+	i
+		width: 28px
+		line-height: 20px
+		margin: 0 .25ex
+
+.logo-p
+	color: $color-dark-gray-light
+
+.footer
+	.logo-p
+		color: $color-medium-gray-dark
+
 .colors
 	.grid-row
 		margin-bottom: 30px
 
+		&:last-of-type
+			margin-bottom: 0
+
 	.item
-		border-radius: 5px 5px
-		box-shadow: 0 1px 5px rgba(0, 15, 10, .15)
+		border-radius: $border-radius
+		//@extend .shadowed
 
 		.dark, 
 		.light
 			width: 50%
-			height: 50px
+			height: $height-component-fat
 			float: left
 
 			&.dark
-				border-radius: 5px 0 0 0
+				border-radius: $border-radius 0 0 0
 			&.light
-				border-radius: 0 5px 0 0
+				border-radius: 0 $border-radius 0 0
 
 		.title
-			border-radius: 0 0 5px 5px
+			border-radius: 0 0 $border-radius $border-radius
 			padding: 0 15px
 			clear: both
-			height: 50px
-			line-height: 50px
+			height: $height-component-fat
+			line-height: $height-component-fat
+			border: 1px solid $border-component-color
+			border-top: none
+
+.grid-demo
+	.grid-row
+		margin-bottom: $margin-vertical-space
+
+		&:last-of-type
+			margin-bottom: 0
+
+		$opacity: 1
+		$items: 9
+
+		@while $items > 0
+			&:nth-child(#{$items})
+				opacity: $opacity - .085 * $items
+			$items: $items - 1
+
+		div
+			@extend .border-radius
+			background: $color-aqua-light
+			height: $height-component-fat
+			line-height: $height-component-fat
+			color: #fff
+			text-align: center
+
+.super
+	font-size: 16px
+	position: absolute
+	margin-top: -6px
+	margin-left: 12px
+
+.paintable,
+.resizeable,
+.code
+	&.paintable i
+		font-size: 14px
+	&.code i
+		font-size: 20px
+
+	i
+		margin-right: .3ex
+		color: $color-aqua-dark
+
+	margin-right: 3ex
+	font-style: italic
+	font-size: 16px
+
+	&:last-of-type
+		margin-right: 0
+
+	&:hover i
+		color: $color-aqua-dark + 30

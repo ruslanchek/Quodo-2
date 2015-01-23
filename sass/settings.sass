@@ -1,12 +1,17 @@
 @import url(http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic)
 
+* a
+	+unstyled-link
+	@extend .links-default
+	transition: color $animation-component-duration
+
 body
 	font-family: 'Asap', sans-serif
-	@extend .color-black-light
+	color: $color-dark-gray-dark
+	line-height: $base-line-height
+	font-size: $base-font-size
+	text-size-adjust: 100%
 
 .limiter
-	width: 900px
+	width: $overall-width
 	margin: 0 auto
-
-main
-	padding: 40px 0
