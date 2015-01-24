@@ -32,10 +32,26 @@ Demo.Checker = function(){
     };
 };
 
+Demo.Popup = function(){
+    this.initPopup = function(){
+        var samplePopup = new UI.Popup({
+
+        });
+
+        $('#show-sample-popup').on('click', function(){
+            samplePopup.show('Header', 'Content');
+        });
+    };
+
+    this.init = function(){
+        this.initPopup();
+    };
+};
 
 Demo.init = function(){
 	this.table = new this.Table().init();
 	this.checker = new this.Checker().init();
+    this.popup = new this.Popup().init();
 };
 
 $(function(){

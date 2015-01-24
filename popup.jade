@@ -1,0 +1,20 @@
+extends ./layout.jade
+
+block content
+	- var section = 'checkers'
+
+	.grid-row
+		.col-6
+			include ./partials/leftcol.jade
+
+		.col-18
+			h1 Popup
+			p Yeah, everybody loves popups too
+
+			button.button.fat#show-sample-popup Open popup
+			br
+
+			br
+			.grid-row
+				.col-9
+					include partials/code
