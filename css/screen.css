@@ -3821,10 +3821,13 @@ table {
 
 .popup-overlay {
   position: fixed;
+  top: 0;
+  left: 0;
   height: 100vh;
   width: 100vw;
   background: rgba(0, 0, 0, 0.4); }
   .popup-overlay .popup {
+    position: absolute;
     width: 400px;
     min-height: 300px;
     background: #fff;

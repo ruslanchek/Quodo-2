@@ -7,7 +7,7 @@ var UI = {
 };
 
 UI.Template = function(templateName){
-	_.templateSettings = this.settings.templateSettings;
+	_.templateSettings = UI.settings.templateSettings;
 
 	var getTemplate = function(){
 		var template = $('#' + templateName).html();
@@ -64,7 +64,7 @@ UI.Popup = function(options){
 	this.$popup = null;
 
 	this.options = $.extend({
-		templateSelector: '#template-ui-popup',
+		templateName: 'template-ui-popup',
 		onShow: function(){
 
 		},
@@ -77,7 +77,7 @@ UI.Popup = function(options){
 		unbind();
 
 		if(_this.$popup){
-			$popup.find('close').on('click', function(e){
+			_this.$popup.find('.close').on('click', function(e){
 				e.preventDefault();
 
 				_this.hide();
@@ -86,7 +86,7 @@ UI.Popup = function(options){
 
 		$(document).on('keyup.UIPopup', function(e){
 			switch(e.keyCode){
-				case 13 : {
+				case 27 : {
 					_this.hide();
 				} break;
 			}
@@ -97,7 +97,7 @@ UI.Popup = function(options){
 		$(document).off('keyup.UIPopup');
 	};
 
-	var template = new UI.Template(_this.options.templateSelector);
+	var template = new UI.Template(_this.options.templateName);
 
 	var make = function(title, content){
 		return template.render({
@@ -121,11 +121,9 @@ UI.Popup = function(options){
 	this.show = function(title, content){
 		this.hide();
 
-		var html = make(title, content);
+		this.$popup = $(make(title, content));
 
-		this.$popup = $(html);
-
-		$('body').append(html);
+		$('body').append(this.$popup);
 		this.options.onShow();
 
 		bind();
@@ -133,6 +131,11 @@ UI.Popup = function(options){
 
 	this.hide = function(){
 		unbind();
+
+		if(this.$popup){
+			this.$popup.remove();
+		}
+
 		this.options.onHide();
 	};
 };
