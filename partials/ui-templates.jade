@@ -1,6 +1,8 @@
-script#template-ui-popup
+script#template-ui-popup(type="text/x-handlebars-template")
 	.popup-overlay
 		.popup
-			a.close(href="#") i.fa.fa-close
+			a.close(href="#") 
+				i.fa.fa-close
+					
 			.title {{title}}
-			.content{{content}}
+			.content {{content}}
