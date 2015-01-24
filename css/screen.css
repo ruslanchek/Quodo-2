@@ -3494,7 +3494,7 @@ hr {
   .nav:not(.horizontal) {
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: hidden; }
+    text-overflow: clip; }
   .nav.filled {
     background-color: #434a53;
     border-radius: 5px; }
@@ -3519,7 +3519,9 @@ hr {
       color: #656d77; }
       .nav.bordered a:hover {
         background-color: #f5f8fc; }
-      .nav.bordered a:active, .nav.bordered a.active {
+      .nav.bordered a:active {
+        background-color: #eef1f5; }
+      .nav.bordered a.active {
         background-color: #e6e9ed; }
       .nav.bordered a:first-child {
         border-radius: 4px 4px 0 0; }
