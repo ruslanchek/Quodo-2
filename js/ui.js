@@ -65,6 +65,7 @@ UI.Popup = function(options){
 
 	this.options = $.extend({
 		templateName: 'template-ui-popup',
+        width: 400,
 		onShow: function(){
 
 		},
@@ -112,12 +113,12 @@ UI.Popup = function(options){
 
     var resize = function(){
         if(_this.$popup){
-            var height = _this.$popup.find('.popup').outerHeight(),
-                width = _this.$popup.find('.popup').outerWidth();
+            var height = _this.$popup.find('.popup').outerHeight();
 
             _this.$popup.find('.popup').css({
+                width: _this.options.width,
                 marginTop: -height/2,
-                marginLeft: -width/2
+                marginLeft: -_this.options.width/2
             });
         }
     };

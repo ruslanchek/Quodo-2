@@ -43,7 +43,7 @@ Demo.Popup = function(){
 
     this.initPopup = function(){
         this.samplePopup = new UI.Popup({
-
+            width: 500
         });
 
         $('#show-sample-popup').on('click', function(){
