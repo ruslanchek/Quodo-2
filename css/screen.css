@@ -3849,8 +3849,11 @@ table {
       background-color: #f5f7fa;
       padding: 20px 20px;
       position: relative; }
+    .popup-overlay .popup .message {
+      color: #fff;
+      padding: 6.6666666667px 20px; }
     .popup-overlay .popup .content {
-      padding: 20px 20px; }
+      padding: 10px 20px; }
     .popup-overlay .popup .close {
       position: absolute;
       z-index: 2;

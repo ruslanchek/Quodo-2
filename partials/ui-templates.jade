@@ -1,8 +1,12 @@
-script#template-ui-popup(type="text/x-handlebars-template")
+script(type="text/x-handlebars-template")#template-ui-popup
 	.popup-overlay
 		.popup
 			a.close(href="#") 
 				i.fa.fa-close
 					
 			.title {{title}}
+			.messages
 			.content {{content}}
+
+script(type="text/x-handlebars-template")#template-ui-popup-message
+	.message(class="{{className}}") {{text}}

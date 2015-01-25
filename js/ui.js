@@ -64,7 +64,6 @@ UI.Popup = function(options){
 	this.$popup = null;
 
 	this.options = $.extend({
-		templateName: 'template-ui-popup',
         width: 400,
 		onShow: function(){
 
@@ -98,13 +97,13 @@ UI.Popup = function(options){
 		});
 	};
 
-    var template = new UI.Template(_this.options.templateName);
-
 	var unbind = function(){
 		$(document).off('keyup.UIPopup');
 	};
 
 	var make = function(title, content){
+        var template = new UI.Template('template-ui-popup');
+
 		return template.render({
 			title: title,
 			content: content
@@ -120,6 +119,27 @@ UI.Popup = function(options){
                 marginTop: -height/2,
                 marginLeft: -_this.options.width/2
             });
+        }
+    };
+
+    this.showMessage = function(text, type){
+        var template = new UI.Template('template-ui-popup-message');
+
+        var className = '';
+
+        switch(type){
+            case 'error' : className = 'bg-bittersweet-dark'; break;
+            case 'ok' : className = 'bg-mint-dark'; break;
+            default : className = 'bg-medium-gray-dark'; break;
+        }
+
+        var html = template.render({
+            className: className,
+            text: text
+        });
+
+        if(_this.$popup){
+            _this.$popup.find('.messages').html(html);
         }
     };
 
