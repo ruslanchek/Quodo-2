@@ -157,6 +157,18 @@ UI.Popup = function(options){
         }
 	};
 
+    this.setWaitingMode = function(){
+        if(_this.$popup){
+            _this.$popup.find('.popup').addClass('wait');
+        }
+    };
+
+    this.removeWaitingMode = function(){
+        if(_this.$popup){
+            _this.$popup.find('.popup').removeClass('wait');
+        }
+    };
+
 	this.show = function(title, content){
 		this.hide();
 

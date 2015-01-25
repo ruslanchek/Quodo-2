@@ -131,9 +131,6 @@
 		box-shadow: none !important
 		line-height: $height-component-default - 1
 
-		&.wait
-			background-color: rgba(0, 0, 0, .05)
-
 		&:before
 			background-color: $fill-button-color - 20
 			opacity: 0
@@ -148,7 +145,7 @@
 
 		&.wait
 			border-color: $fill-button-color - 20
-			background-color: $fill-button-color
+			@extend .wait-bg-dark
 
 	&:disabled,
 	&.disabled
