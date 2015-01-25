@@ -84,6 +84,10 @@ UI.Popup = function(options){
 			});
 		}
 
+        $(window).on('resize.UIPopup', function(){
+            resize();
+        });
+
 		$(document).on('keyup.UIPopup', function(e){
 			switch(e.keyCode){
 				case 27 : {
@@ -93,11 +97,11 @@ UI.Popup = function(options){
 		});
 	};
 
+    var template = new UI.Template(_this.options.templateName);
+
 	var unbind = function(){
 		$(document).off('keyup.UIPopup');
 	};
-
-	var template = new UI.Template(_this.options.templateName);
 
 	var make = function(title, content){
 		return template.render({
@@ -106,16 +110,30 @@ UI.Popup = function(options){
 		});
 	};
 
+    var resize = function(){
+        if(_this.$popup){
+            var height = _this.$popup.find('.popup').outerHeight(),
+                width = _this.$popup.find('.popup').outerWidth();
+
+            _this.$popup.find('.popup').css({
+                marginTop: -height/2,
+                marginLeft: -width/2
+            });
+        }
+    };
+
 	this.changeContent = function(html){
 		if(this.$popup){
 			this.$popup.find('.content').html(html);
-		}
+            resize();
+        }
 	};
 
 	this.changeTitle = function(html){
 		if(this.$popup){
 			this.$popup.find('.title').html(html);
-		}
+            resize();
+        }
 	};
 
 	this.show = function(title, content){
@@ -127,6 +145,7 @@ UI.Popup = function(options){
 		this.options.onShow();
 
 		bind();
+        resize();
 	};
 
 	this.hide = function(){

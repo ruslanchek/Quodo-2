@@ -17,6 +17,8 @@ Demo.Table = function(){
 
 	this.init = function(){
 		this.initChecker();
+
+        return this;
 	};
 };
 
@@ -29,22 +31,30 @@ Demo.Checker = function(){
 
     this.init = function(){
         this.initChecker();
+
+        return this;
     };
 };
 
 Demo.Popup = function(){
+    var _this = this;
+
+    this.samplePopup = null;
+
     this.initPopup = function(){
-        var samplePopup = new UI.Popup({
+        this.samplePopup = new UI.Popup({
 
         });
 
         $('#show-sample-popup').on('click', function(){
-            samplePopup.show('Header', 'Content');
+            _this.samplePopup.show('Header', 'Content');
         });
     };
 
     this.init = function(){
         this.initPopup();
+
+        return this;
     };
 };
 
