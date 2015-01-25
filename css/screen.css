@@ -3845,7 +3845,6 @@ table {
   .popup-overlay .popup {
     position: absolute;
     width: 400px;
-    min-height: 300px;
     background: #fff;
     border-radius: 5px;
     top: 50%;
@@ -3864,7 +3863,7 @@ table {
       color: #fff;
       padding: 6.6666666667px 20px; }
     .popup-overlay .popup .content {
-      padding: 10px 20px; }
+      padding: 20px 20px; }
     .popup-overlay .popup .close {
       position: absolute;
       z-index: 2;

@@ -62,6 +62,7 @@ UI.Popup = function(options){
 	var _this = this;
 
 	this.$popup = null;
+    this.waitingMode = false;
 
 	this.options = $.extend({
         width: 400,
@@ -158,12 +159,16 @@ UI.Popup = function(options){
 	};
 
     this.setWaitingMode = function(){
+        this.waitingMode = true;
+
         if(_this.$popup){
             _this.$popup.find('.popup').addClass('wait');
         }
     };
 
     this.removeWaitingMode = function(){
+        this.waitingMode = false;
+
         if(_this.$popup){
             _this.$popup.find('.popup').removeClass('wait');
         }
@@ -175,7 +180,7 @@ UI.Popup = function(options){
 		this.$popup = $(make(title, content));
 
 		$('body').append(this.$popup);
-		this.options.onShow();
+		this.options.onShow(this);
 
 		bind();
         resize();
@@ -188,6 +193,6 @@ UI.Popup = function(options){
 			this.$popup.remove();
 		}
 
-		this.options.onHide();
+		this.options.onHide(this);
 	};
 };

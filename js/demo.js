@@ -39,20 +39,38 @@ Demo.Checker = function(){
 Demo.Popup = function(){
     var _this = this;
 
-    this.samplePopup = null;
+    this.initPopup1 = function(){
+        this.samplePopup1 = new UI.Popup({
+            width: 500,
+            onShow: function(instance){
+                $('#popup-sample-waiting-toggler').on('click', function(){
+                    if(!instance.waitingMode) {
+                        _this.samplePopup1.setWaitingMode();
+                    }else{
+                        _this.samplePopup1.removeWaitingMode();
+                    }
+                });
+            }
+        });
 
-    this.initPopup = function(){
-        this.samplePopup = new UI.Popup({
+        $('#show-sample-popup-1').on('click', function(){
+            _this.samplePopup1.show('Waiting mode popup', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua<br><br><button id="popup-sample-waiting-toggler" class="button bg-aqua-dark volume fat">Toggle waiting mode</button>');
+        });
+    };
+
+    this.initPopup2 = function(){
+        this.samplePopup2 = new UI.Popup({
             width: 500
         });
 
-        $('#show-sample-popup').on('click', function(){
-            _this.samplePopup.show('Header', 'Content');
+        $('#show-sample-popup-2').on('click', function(){
+            _this.samplePopup1.show('Waiting mode popup');
         });
     };
 
     this.init = function(){
-        this.initPopup();
+        this.initPopup1();
+        this.initPopup2();
 
         return this;
     };
