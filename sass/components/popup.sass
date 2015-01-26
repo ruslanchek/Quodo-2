@@ -5,45 +5,47 @@
 	height: 100vh
 	width: 100vw
 	background: rgba(0, 0, 0, .4)
+	display: none
 
-	.popup
+.popup
+	position: absolute
+	width: 400px
+	background: #fff
+	border-radius: $border-radius
+	top: 50%
+	left: 50%
+	box-sizing: border-box
+	margin: -150px 0 0 -200px
+	box-shadow: 0 20px 80px rgba(0, 0, 0, .5)
+	display: none
+
+	.title
+		font-size: 1.375em
+		border-radius: $border-radius $border-radius 0 0
+		background-color: $color-light-gray-light
+		padding: $padding-component-vertical $padding-component-side
+		position: relative
+
+	.message
+		color: #fff
+		padding: $padding-component-vertical/3 $padding-component-side
+
+	.content
+		padding: $padding-component-vertical $padding-component-side
+
+	.close
 		position: absolute
-		width: 400px
-		background: #fff
-		border-radius: $border-radius
-		top: 50%
-		left: 50%
-		box-sizing: border-box
-		margin: -150px 0 0 -200px
-		box-shadow: 0 20px 80px rgba(0, 0, 0, .5)
+		z-index: 2
+		top: 12px
+		right: 10px
+		height: 40px
+		width: 40px
+		font-size: 20px
+		line-height: 40px
+		text-align: center
 
+	&.wait
 		.title
-			font-size: 1.375em
-			border-radius: $border-radius $border-radius 0 0
-			background-color: $color-light-gray-light
-			padding: $padding-component-vertical $padding-component-side
-			position: relative
-
-		.message
-			color: #fff
-			padding: $padding-component-vertical/3 $padding-component-side
-
-		.content
-			padding: $padding-component-vertical $padding-component-side
-
-		.close
-			position: absolute
-			z-index: 2
-			top: 12px
-			right: 10px
-			height: 40px
-			width: 40px
-			font-size: 20px
-			line-height: 40px
-			text-align: center
-
-		&.wait
-			.title
-				@extend .wait-bg-dark
+			@extend .wait-bg-dark
 
 
