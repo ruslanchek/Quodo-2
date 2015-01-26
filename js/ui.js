@@ -6,6 +6,59 @@ var UI = {
 	}
 };
 
+UI.Animate = function($element, duration){
+	this.fadeIn = function(done){
+		$element.transition({
+			opacity: 1
+		}, duration);
+
+		setTimeout(function(done){
+			if(done) done();
+		}, duration);
+	};
+
+	this.fadeOut = function(done){
+		$element.transition({
+			opacity: 0
+		}, duration);
+
+		setTimeout(function(done){
+			if(done) done();
+		}, duration);
+	};
+
+	this.appear = function(done){
+		$element.transition({
+			scale: 0,
+			opacity: 1,
+			perspective: '1500px',
+			rotateX: '-90deg'
+		}, 0);
+
+		setTimeout(function(){
+			$element.transition({
+				scale: 1,
+				opacity: 1,
+				rotateX: '0deg'
+			}, duration, 'easeOutBack');
+
+			if(done) done();
+		}, 50);
+	};
+
+	this.disappear = function(done){
+		$element.transition({
+			scale: 0,
+			opacity: 1,
+			rotateX: '90deg'
+		}, duration, 'easeInBack');
+
+		setTimeout(function(){
+			if(done) done();
+		}, duration);
+	};
+};
+
 UI.Template = function(templateName){
 	_.templateSettings = UI.settings.templateSettings;
 
@@ -60,11 +113,12 @@ UI.Checker = function(options){
 
 UI.Popup = function(options){
 	var _this = this,
-		animationTime = 300;
+		animateWindow,
+		animateOverlay;
 
 	this.$popup = null;
-    this.waitingMode = false;
-
+    this.state = 'idle'; // @TODO: Add all the other states 
+    
 	this.options = $.extend({
         width: 400,
 		onShow: function(){
@@ -114,77 +168,14 @@ UI.Popup = function(options){
 
     var resize = function(){
         if(_this.$popup){
-            var height = _this.$popup.find('.popup').outerHeight();
+            var height = _this.$popup.find('.window').outerHeight();
 
-            _this.$popup.find('.popup').css({
+            _this.$popup.find('.window').css({
                 width: _this.options.width,
                 marginTop: -height/2,
                 marginLeft: -_this.options.width/2
             });
         }
-    };
-
-    var animateAppear = function(done){
-    	if(_this.$popup){
-    		//perspective: '100px',rotateX: '180deg'
-    		var $overlay = _this.$popup,
-    			$window = _this.$popup.find('.popup');
-
-	    	$overlay.transition({
-				opacity: 0
-			}, 0);
-
-			$overlay.css({
-				display: 'block'
-			});
-
-			$window.transition({
-				scale: 0,
-				perspective: '1000px',
-				rotateX: '20deg'
-			}, 0);
-
-			$window.css({
-				display: 'block'
-			});
-
-			setTimeout(function(){
-				$overlay.transition({
-					opacity: 1
-				}, animationTime);
-
-				$window.transition({
-					scale: 1,
-					rotateX: '0deg'
-				}, animationTime, 'easeOutBack');
-
-				if(done) done();
-			}, 50);
-		}else{
-			if(done) done();
-		}
-    };
-
-    var animateDisappear = function(done){
-    	if(_this.$popup){
-			var $overlay = _this.$popup,
-				$window = _this.$popup.find('.popup');
-
-	    	$overlay.transition({
-				opacity: 0
-			}, animationTime);
-
-			$window.transition({
-				scale: 0,
-				rotateX: '20deg'
-			}, animationTime, 'easeInBack');
-
-			setTimeout(function(){
-				if(done) done();
-			}, animationTime);
-		}else{
-			if(done) done();
-		}
     };
 
     this.showMessage = function(text, type){
@@ -222,18 +213,18 @@ UI.Popup = function(options){
 	};
 
     this.setWaitingMode = function(){
-        this.waitingMode = true;
+        this.state = 'waiting';
 
         if(_this.$popup){
-            _this.$popup.find('.popup').addClass('wait');
+            _this.$popup.find('.window').addClass('wait');
         }
     };
 
     this.removeWaitingMode = function(){
-        this.waitingMode = false;
+        this.state = 'idle';
 
         if(_this.$popup){
-            _this.$popup.find('.popup').removeClass('wait');
+            _this.$popup.find('.window').removeClass('wait');
         }
     };
 
@@ -244,22 +235,32 @@ UI.Popup = function(options){
 
 		$('body').append(this.$popup);
 
-		animateAppear(function(){
-			bind();
-        	resize();
+    	animateWindow = new UI.Animate(this.$popup.find('.window'), 500);
+    	animateOverlay = new UI.Animate(this.$popup.find('.overlay'), 500);
 
-        	_this.options.onShow(this);
+		animateOverlay.fadeIn();
+
+		animateWindow.appear(function(){
+			bind();
+    		resize();
+
+    		_this.options.onShow(_this);
 		});
 	};
 
 	this.hide = function(){
 		if(this.$popup){
-			animateDisappear(function(){
+			animateOverlay.fadeOut();
+
+			animateWindow.disappear(function(){
 				unbind();
 
 				_this.$popup.remove();
-				_this.options.onHide(this);
+				_this.options.onHide(_this);
+				
 				_this.$popup = null;
+				animateWindow = null;
+				animateOverlay = null;
 			});
 		}
 	};

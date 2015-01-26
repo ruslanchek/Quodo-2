@@ -44,10 +44,10 @@ Demo.Popup = function(){
             width: 500,
             onShow: function(instance){
                 $('#popup-sample-waiting-toggler').on('click', function(){
-                    if(!instance.waitingMode) {
-                        _this.samplePopup1.setWaitingMode();
-                    }else{
+                    if(instance.state == 'waiting') {
                         _this.samplePopup1.removeWaitingMode();
+                    }else{
+                        _this.samplePopup1.setWaitingMode();
                     }
                 });
             }
