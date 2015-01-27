@@ -2,14 +2,14 @@
 <html>
   <head> 
     <title>Quodo 2</title>
-    <link rel="stylesheet" href="/css/screen.css">
+    <link rel="stylesheet" href="css/screen.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/default.min.css">
     <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/highlight.min.js"></script>
     <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="http://ricostacruz.com/jquery.transit/jquery.transit.min.js"></script>
     <script src="http://underscorejs.org/underscore.js"></script>
-    <script src="/js/ui.js"></script>
-    <script src="/js/demo.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/demo.js"></script>
   </head>
   <body>
     <div class="wrap">
@@ -19,17 +19,16 @@
             <div class="col-6"><a href="/" class="color-dark-gray-dark">
                 <div class="logo">Quodo<i class="fa fa-rocket color-aqua-dark"></i>2</div>
                 <p class="logo-p">Application UI library</p></a>
-              <nav class="nav fat bordered"><a href="/colors.html">Colors</a><a href="/nav.html">Navigation</a><a href="/grid.html" class="active">Grid</a><a href="/buttons.html">Buttons</a><a href="/table.html">Table</a><a href="/typography.html">Typography</a><a href="/checkers.html">Checkers</a><a href="/popup.html">Popup</a></nav>
+              <nav class="nav fat bordered"><a href="colors.html">Colors</a><a href="nav.html">Navigation</a><a href="grid.html">Grid</a><a href="buttons.html">Buttons</a><a href="table.html">Table</a><a href="typography.html">Typography</a><a href="checkers.html">Checkers</a><a href="popup.html">Popup</a><a href="api.html" class="active">API</a></nav>
             </div>
             <div class="col-18">
               <h1>JavaScript API</h1>
-              <p>The API will make you happy</p><a name="Animate"></a>
-              <h2>UI.Animate</h2><code class="code-multiline">
-                <pre>var Animate = new UI.Animate({
-	$element: $('#my-animated-element'),
-	duration: 500
-})</pre></code><br>
-              <p class="bullet"><code>Animate.play(animationMethod, onDone)</code><br>Will apply an animation method on the $element, that pointed when you construct UI.Animate()</p><a name="ClickOutside"></a>
+              <p>The API will make you happy</p>
+              <!-- Animate--><a name="Animate"></a>
+                        <h2>UI.Animate</h2><code class="code-multiline">
+                          <pre>sss</pre></code><br>
+              <p class="bullet"><code>Animate.play(animationMethod, onDone)</code><br>Will apply an animation method on the $element, that pointed when you construct UI.Animate()</p>
+              <!-- ClickOutside--><a name="ClickOutside"></a>
               <h2>UI.ClickOutside</h2><code class="code-multiline">
                 <pre>var ClickOutside = new UI.ClickOutside({
 	$element: $('#my-element'),
@@ -38,6 +37,20 @@
 	}
 })</pre></code><br>
               <p class="bullet"><code>ClickOutside.bind()</code><br>Activate the click outside listener</p>
+              <p class="bullet"><code>ClickOutside.unbind()</code><br>Deactivate the click outside listener</p>
+              <!-- Popup--><a name="Popup"></a>
+              <h2>UI.Popup</h2><code class="code-multiline">
+                <pre>var Popup = new UI.Popup({
+	width: 500,
+	animationDuration: 500,
+	onShow: function(instance){
+	
+	},
+	onHide: function(instance){
+	
+	}
+});</pre></code><br>
+              <p class="bullet"><code>Popup.showMessage()</code><br>Activate the click outside listener</p>
               <p class="bullet"><code>ClickOutside.unbind()</code><br>Deactivate the click outside listener</p>
             </div>
           </div>
@@ -52,13 +65,13 @@
               <div class="logo">Quodo<i class="fa fa-rocket color-aqua-dark"></i>2</div>
               <p class="logo-p">Application UI library</p></a></div>
           <div class="col-6">
-            <nav class="nav"><a href="/colors.html">Colors</a><a href="/nav.html">Navigation</a><a href="/grid.html" class="active">Grid</a><a href="/buttons.html">Buttons</a></nav>
+            <nav class="nav"><a href="/colors.html">Colors</a><a href="/nav.html">Navigation</a><a href="/grid.html">Grid</a><a href="/buttons.html">Buttons</a></nav>
           </div>
           <div class="col-6">
             <nav class="nav"><a href="/table.html">Table</a><a href="/typography.html">Typography</a><a href="/checkers.html">Checkers</a><a href="/popup.html">Popup</a></nav>
           </div>
           <div class="col-6">
-            <nav class="nav"></nav>
+            <nav class="nav"><a href="/api.html" class="active">API</a></nav>
           </div>
         </div>
       </div>

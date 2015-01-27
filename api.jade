@@ -1,7 +1,13 @@
 extends ./layout.jade
 
 block content
-	- var section = 'grid'
+	- var section = 'api'
+
+	mixin constructorSection(title, code)
+		a(name="#{title}")
+		h2 UI.#{title}
+		code.code-multiline: pre=code
+		br
 
 	.grid-row
 		.col-6
@@ -11,16 +17,9 @@ block content
 			h1 JavaScript API
 			p The API will make you happy
 
-
-			a(name="Animate")
-			h2 UI.Animate
-			code.code-multiline: pre
-				|var Animate = new UI.Animate({
-				|	$element: $('#my-animated-element'),
-				|	duration: 500
-				|})
-
-			br
+			// Animate
+			- var code = 'sss'
+			+constructorSection('Animate', code)
 
 			p.bullet
 				code Animate.play(animationMethod, onDone)
@@ -28,6 +27,7 @@ block content
 				|Will apply an animation method on the $element, that pointed when you construct UI.Animate()
 
 
+			// ClickOutside
 			a(name="ClickOutside")
 			h2 UI.ClickOutside
 			code.code-multiline: pre
@@ -42,6 +42,34 @@ block content
 
 			p.bullet
 				code ClickOutside.bind()
+				br
+				|Activate the click outside listener
+
+			p.bullet
+				code ClickOutside.unbind()
+				br
+				|Deactivate the click outside listener
+
+
+			// Popup
+			a(name="Popup")
+			h2 UI.Popup
+			code.code-multiline: pre
+				|var Popup = new UI.Popup({
+				|	width: 500,
+				|	animationDuration: 500,
+				|	onShow: function(instance){
+				|	
+				|	},
+				|	onHide: function(instance){
+				|	
+				|	}
+				|});
+
+			br
+
+			p.bullet
+				code Popup.showMessage()
 				br
 				|Activate the click outside listener
 

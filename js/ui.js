@@ -173,10 +173,10 @@ UI.Popup = function(options){
 	this.options = $.extend({
         width: 400,
         animationDuration: 500,
-		onShow: function(){
+		onShow: function(instance){
 
 		},
-		onHide: function(){
+		onHide: function(instance){
 
 		}
 	}, options);
