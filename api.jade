@@ -16,32 +16,30 @@ block content
 				|var Animate = new UI.Animate($element, duration)
 
 			br
-			br
 
-			code.bullet Animate.fadeIn(onDone)
-			p Simple fading in animation
+			p.bullet
+				code Animate.play(animationMethod, onDone)
+				br
+				|Will apply an animation method on the $element, that pointed when you construct UI.Animate()
 
-			code.bullet Animate.fadeOut(onDone)
-			p Simple fading out animation
-
-			code.bullet Animate.appear(onDone)
-			p Complex fading in animation
-
-			code.bullet Animate.disappear(onDone)
-			p Complex fading out animation
-
-
+			
 			h2 UI.ClickOutside
+
 			code.code-multiline: pre
 				|var ClickOutside = new UI.ClickOutside($container, function($target){})
 
-			code.bullet ClickOutside.bind()
-			p Activate the click outside listener
-
-			code.bullet ClickOutside.unbind()
-			p Deactivate the click outside listener
-
 			br
+
+			p.bullet
+				code ClickOutside.bind()
+				br
+				|Activate the click outside listener
+
+			p.bullet
+				code ClickOutside.unbind()
+				br
+				|Deactivate the click outside listener
+
 			.grid-row
 				.col-9
 					include partials/code

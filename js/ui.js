@@ -25,27 +25,25 @@ UI.ClickOutside = function($container, onClickOutside){
 };
 
 UI.Animate = function($element, duration){
-	this.fadeIn = function(done){
+	var methods = {};
+
+	methods.fadeIn = function(done){
 		$element.transition({
 			opacity: 1
 		}, duration);
 
-		setTimeout(function(done){
-			if(done) done();
-		}, duration);
+		done();
 	};
 
-	this.fadeOut = function(done){
+	methods.fadeOut = function(done){
 		$element.transition({
 			opacity: 0
 		}, duration);
 
-		setTimeout(function(done){
-			if(done) done();
-		}, duration);
+		done();
 	};
 
-	this.appear = function(done){
+	methods.appear = function(done){
 		$element.transition({
 			scale: 0,
 			opacity: 1,
@@ -60,20 +58,30 @@ UI.Animate = function($element, duration){
 				rotateX: '0deg'
 			}, duration, 'easeOutBack');
 
-			if(done) done();
+			done();
 		}, 50);
 	};
 
-	this.disappear = function(done){
+	methods.disappear = function(done){
 		$element.transition({
 			scale: 0,
 			opacity: 1,
 			rotateX: '90deg'
-		}, duration, 'easeInBack');
+		}, duration, 'easeInBack');		
 
-		setTimeout(function(){
-			if(done) done();
-		}, duration);
+		done();
+	};
+
+	this.play = function(method, done){
+		if(methods[method]){
+			methods[method](function(){
+				setTimeout(function(){
+					if(done) done();
+				}, duration);
+			});
+		}else{
+			console.error('UI.Animate', 'Animation method not defined', method);
+		}
 	};
 };
 
@@ -86,7 +94,7 @@ UI.Template = function(templateName){
 		if(template){
 			return template;
 		}else{
-			console.error('UI.Template', 'Template ' + templateName + ' is empty!');
+			console.error('UI.Template', 'Template is empty', templateName);
 		}
 	};
 
@@ -254,24 +262,24 @@ UI.Popup = function(options){
 
 		$('body').append(this.$popup);
 
+		resize();
+
     	animateWindow = new UI.Animate(this.$popup.find('.window'), this.options.animationDuration);
     	animateOverlay = new UI.Animate(this.$popup.find('.overlay'), this.options.animationDuration);
 
-		animateOverlay.fadeIn();
+		animateOverlay.play('fadeIn');
 
-		animateWindow.appear(function(){
+		animateWindow.play('appear', function(){
 			bind();
-    		resize();
-
     		_this.options.onShow(_this);
 		});
 	};
 
 	this.hide = function(){
 		if(this.$popup){
-			animateOverlay.fadeOut();
+			animateOverlay.play('fadeOut');
 
-			animateWindow.disappear(function(){
+			animateWindow.play('disappear', function(){
 				unbind();
 
 				_this.$popup.remove();

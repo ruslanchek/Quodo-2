@@ -3119,9 +3119,9 @@ code {
   color: #656d77; }
 
 .code-multiline {
-  display: inline-block;
+  display: block;
   background: #f5f7fa;
-  padding: 20px 20px;
+  padding: 13.3333333333px 20px;
   border-radius: 5px; }
 
 mark {
@@ -3139,7 +3139,7 @@ mark {
     width: 0.5em;
     height: 0.5em;
     left: 0;
-    top: 0.3em;
+    top: 0.61em;
     display: block;
     position: absolute;
     border-radius: 0.25em; }
@@ -3864,7 +3864,8 @@ table {
   left: 0;
   height: 100vh;
   width: 100vw;
-  background: rgba(0, 0, 0, 0.4); }
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 99; }
 .popup .window {
   position: absolute;
   width: 400px;
@@ -3874,7 +3875,8 @@ table {
   left: 50%;
   box-sizing: border-box;
   margin: -150px 0 0 -200px;
-  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.5);
+  z-index: 100; }
   .popup .window .title {
     font-size: 1.375em;
     border-radius: 5px 5px 0 0;

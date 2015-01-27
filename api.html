@@ -25,15 +25,12 @@
               <h1>JavaScript API</h1>
               <p>The API will make you happy</p>
               <h2>UI.Animate</h2><code class="code-multiline">
-                <pre>var Animate = new UI.Animate($element, duration)</pre></code><br><br><code class="bullet">Animate.fadeIn(onDone)</code>
-              <p>Simple fading in animation</p><code class="bullet">Animate.fadeOut(onDone)</code>
-              <p>Simple fading out animation</p><code class="bullet">Animate.appear(onDone)</code>
-              <p>Complex fading in animation</p><code class="bullet">Animate.disappear(onDone)</code>
-              <p>Complex fading out animation</p>
+                <pre>var Animate = new UI.Animate($element, duration)</pre></code><br>
+              <p class="bullet"><code>Animate.play(animationMethod, onDone)</code><br>Will apply an animation method on the $element, that pointed when you construct UI.Animate()</p>
               <h2>UI.ClickOutside</h2><code class="code-multiline">
-                <pre>var ClickOutside = new UI.ClickOutside($container, function($target){})</pre></code><code class="bullet">ClickOutside.bind()</code>
-              <p>Activate the click outside listener</p><code class="bullet">ClickOutside.unbind()</code>
-              <p>Deactivate the click outside listener</p><br>
+                <pre>var ClickOutside = new UI.ClickOutside($container, function($target){})</pre></code><br>
+              <p class="bullet"><code>ClickOutside.bind()</code><br>Activate the click outside listener</p>
+              <p class="bullet"><code>ClickOutside.unbind()</code><br>Deactivate the click outside listener</p>
               <div class="grid-row">
                 <div class="col-9"><a href="#" class="code"><i class="fa fa-code"></i>&nbsp;The code</a></div>
               </div>
