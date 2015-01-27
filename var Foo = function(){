@@ -1,0 +1,11 @@
+var Foo = function(){
+	var baz = myMethod(){
+
+	};	
+
+	this.call = function(name){
+		
+	};
+};
+
+var bar = new Foo();

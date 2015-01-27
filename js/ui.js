@@ -121,6 +121,7 @@ UI.Popup = function(options){
     
 	this.options = $.extend({
         width: 400,
+        animationDuration: 500,
 		onShow: function(){
 
 		},
@@ -235,8 +236,8 @@ UI.Popup = function(options){
 
 		$('body').append(this.$popup);
 
-    	animateWindow = new UI.Animate(this.$popup.find('.window'), 500);
-    	animateOverlay = new UI.Animate(this.$popup.find('.overlay'), 500);
+    	animateWindow = new UI.Animate(this.$popup.find('.window'), this.options.animationDuration);
+    	animateOverlay = new UI.Animate(this.$popup.find('.overlay'), this.options.animationDuration);
 
 		animateOverlay.fadeIn();
 

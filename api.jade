@@ -1,0 +1,43 @@
+extends ./layout.jade
+
+block content
+	- var section = 'grid'
+
+	.grid-row
+		.col-6
+			include ./partials/leftcol.jade
+
+		.col-18
+			h1 API
+			p API makes you happy
+
+			h2 UI.Animate
+
+			p
+				code fadeIn
+				|Plays simple fading in animation
+
+			p
+				code fadeOut
+				|Plays simple fading out animation
+
+			p
+				code appear
+				|Plays complex fading in animation
+
+			p
+				code disappear
+				|Plays complex fading out animation	
+
+			h3 Example usage
+				pre: code
+					|var myAnimation = new UI.Animate($('#my-element'), 400);
+					|&nbsp;
+					|myAnimation.fadeOut(function(){
+					|	// Callback instructions
+					|});
+
+			br
+			.grid-row
+				.col-9
+					include partials/code
