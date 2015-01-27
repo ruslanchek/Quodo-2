@@ -8,34 +8,38 @@ block content
 			include ./partials/leftcol.jade
 
 		.col-18
-			h1 API
-			p API makes you happy
+			h1 JavaScript API
+			p The API will make you happy
 
 			h2 UI.Animate
+			code.code-multiline: pre
+				|var Animate = new UI.Animate($element, duration)
 
-			p
-				code fadeIn
-				|Plays simple fading in animation
+			br
+			br
 
-			p
-				code fadeOut
-				|Plays simple fading out animation
+			code.bullet Animate.fadeIn(onDone)
+			p Simple fading in animation
 
-			p
-				code appear
-				|Plays complex fading in animation
+			code.bullet Animate.fadeOut(onDone)
+			p Simple fading out animation
 
-			p
-				code disappear
-				|Plays complex fading out animation	
+			code.bullet Animate.appear(onDone)
+			p Complex fading in animation
 
-			h3 Example usage
-				pre: code
-					|var myAnimation = new UI.Animate($('#my-element'), 400);
-					|&nbsp;
-					|myAnimation.fadeOut(function(){
-					|	// Callback instructions
-					|});
+			code.bullet Animate.disappear(onDone)
+			p Complex fading out animation
+
+
+			h2 UI.ClickOutside
+			code.code-multiline: pre
+				|var ClickOutside = new UI.ClickOutside($container, function($target){})
+
+			code.bullet ClickOutside.bind()
+			p Activate the click outside listener
+
+			code.bullet ClickOutside.unbind()
+			p Deactivate the click outside listener
 
 			br
 			.grid-row

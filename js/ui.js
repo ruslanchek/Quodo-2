@@ -6,9 +6,8 @@ var UI = {
 	}
 };
 
-UI.ClickOutside = function(container, onClickOutside){
-	var $container = $(container),
-		_id = _.uniqueId('UIClickOutside_');
+UI.ClickOutside = function($container, onClickOutside){
+	var id = _.uniqueId('UIClickOutside_');
  
 	this.bind = function(){
 		this.unbind();

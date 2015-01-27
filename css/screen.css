@@ -3114,6 +3114,36 @@ hr {
   margin: 2em 0;
   border: none; }
 
+code {
+  font-family: monospace;
+  color: #656d77; }
+
+.code-multiline {
+  display: inline-block;
+  background: #f5f7fa;
+  padding: 20px 20px;
+  border-radius: 5px; }
+
+mark {
+  background-color: #ad93e6;
+  color: #fff;
+  border-radius: 5px; }
+
+.bullet, ul.bullets li {
+  padding-left: 1em;
+  display: block;
+  position: relative; }
+  .bullet:before, ul.bullets li:before {
+    content: "";
+    background-color: #ad93e6;
+    width: 0.5em;
+    height: 0.5em;
+    left: 0;
+    top: 0.3em;
+    display: block;
+    position: absolute;
+    border-radius: 0.25em; }
+
 .color-bittersweet-light {
   color: #fc6d58 !important; }
   a.color-bittersweet-light {
@@ -3482,10 +3512,10 @@ hr {
   .bg-white.button.wireframe:before {
     background-color: #fff; }
 
-@-webkit-keyframes wait-bg {
-  from {
+@-webkit-keyframes wait-bg{
+  from{
     background-position: 0 0; }
-  to {
+  to{
     background-position: 50px 0; } }
 
 @keyframes wait-bg {
@@ -3516,13 +3546,11 @@ hr {
     color: #7e8690; }
 
 .nav {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box; }
+  box-sizing: border-box; }
   .nav a {
     height: 36px;
     line-height: 36px;
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
+    box-sizing: border-box;
     display: block;
     -webkit-transition: 0.15s;
             transition: 0.15s; }
@@ -3613,8 +3641,7 @@ html, body {
   height: 200px; }
 
 .footer {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #434a53;
   color: #fff;
   padding: 40px 0; }
@@ -3625,8 +3652,7 @@ html, body {
   padding: 20px 20px;
   border: 1px solid #e6e9ed;
   border-radius: 5px;
-  -moz-box-sizing: border-box;
-       box-sizing: border-box; }
+  box-sizing: border-box; }
   .box.filled {
     background-color: #434a53;
     color: #fff; }
@@ -3643,8 +3669,7 @@ html, body {
   border-radius: 5px;
   -webkit-transition: opacity 0.2s;
           transition: opacity 0.2s;
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
   color: #656d77;
   text-align: center;
   font-size: 1em;
@@ -3797,8 +3822,7 @@ table {
     display: inline-block;
     padding: 0 1ex;
     border-radius: 2.5px;
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
+    box-sizing: border-box;
     color: #656d77;
     cursor: pointer;
     white-space: nowrap;
@@ -3828,8 +3852,7 @@ table {
     margin: 0 0 0 2ex; }
 
 .hero {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #434a53;
   color: #fff;
   padding: 60px;
@@ -3849,8 +3872,7 @@ table {
   border-radius: 5px;
   top: 50%;
   left: 50%;
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
   margin: -150px 0 0 -200px;
   box-shadow: 0 20px 80px rgba(0, 0, 0, 0.5); }
   .popup .window .title {

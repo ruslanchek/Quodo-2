@@ -52,3 +52,39 @@ hr
 	background: $border-component-color
 	margin: 2em 0
 	border: none
+
+code
+	font-family: monospace
+	color: $color-faded-text
+	
+.code-multiline
+	display: inline-block
+	background: $fill-component-neutral-state
+	padding: $padding-component-vertical $padding-component-side
+	border-radius: $border-radius
+
+mark 
+	background-color: $fill-component-mark
+	color: #fff
+	border-radius: $border-radius
+
+.bullet
+	padding-left: 1em
+	display: block
+	position: relative
+
+	&:before 
+		content: ''
+		background-color: $fill-component-mark
+		width: .5em
+		height: .5em
+		left: 0
+		top: .3em
+		display: block
+		position: absolute
+		border-radius: .25em
+
+ul
+	&.bullets
+		li 
+			@extend .bullet
