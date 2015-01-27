@@ -11,9 +11,14 @@ block content
 			h1 JavaScript API
 			p The API will make you happy
 
+
+			a(name="Animate")
 			h2 UI.Animate
 			code.code-multiline: pre
-				|var Animate = new UI.Animate($element, duration)
+				|var Animate = new UI.Animate({
+				|	$element: $('#my-animated-element'),
+				|	duration: 500
+				|})
 
 			br
 
@@ -22,11 +27,16 @@ block content
 				br
 				|Will apply an animation method on the $element, that pointed when you construct UI.Animate()
 
-			
-			h2 UI.ClickOutside
 
+			a(name="ClickOutside")
+			h2 UI.ClickOutside
 			code.code-multiline: pre
-				|var ClickOutside = new UI.ClickOutside($container, function($target){})
+				|var ClickOutside = new UI.ClickOutside({
+				|	$element: $('#my-element'),
+				|	onClickOutside: function($target){
+				|		
+				|	}
+				|})
 
 			br
 
@@ -39,7 +49,3 @@ block content
 				code ClickOutside.unbind()
 				br
 				|Deactivate the click outside listener
-
-			.grid-row
-				.col-9
-					include partials/code

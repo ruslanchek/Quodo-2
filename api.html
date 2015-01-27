@@ -23,17 +23,22 @@
             </div>
             <div class="col-18">
               <h1>JavaScript API</h1>
-              <p>The API will make you happy</p>
+              <p>The API will make you happy</p><a name="Animate"></a>
               <h2>UI.Animate</h2><code class="code-multiline">
-                <pre>var Animate = new UI.Animate($element, duration)</pre></code><br>
-              <p class="bullet"><code>Animate.play(animationMethod, onDone)</code><br>Will apply an animation method on the $element, that pointed when you construct UI.Animate()</p>
+                <pre>var Animate = new UI.Animate({
+	$element: $('#my-animated-element'),
+	duration: 500
+})</pre></code><br>
+              <p class="bullet"><code>Animate.play(animationMethod, onDone)</code><br>Will apply an animation method on the $element, that pointed when you construct UI.Animate()</p><a name="ClickOutside"></a>
               <h2>UI.ClickOutside</h2><code class="code-multiline">
-                <pre>var ClickOutside = new UI.ClickOutside($container, function($target){})</pre></code><br>
+                <pre>var ClickOutside = new UI.ClickOutside({
+	$element: $('#my-element'),
+	onClickOutside: function($target){
+		
+	}
+})</pre></code><br>
               <p class="bullet"><code>ClickOutside.bind()</code><br>Activate the click outside listener</p>
               <p class="bullet"><code>ClickOutside.unbind()</code><br>Deactivate the click outside listener</p>
-              <div class="grid-row">
-                <div class="col-9"><a href="#" class="code"><i class="fa fa-code"></i>&nbsp;The code</a></div>
-              </div>
             </div>
           </div>
         </div>

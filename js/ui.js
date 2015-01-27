@@ -6,8 +6,17 @@ var UI = {
 	}
 };
 
-UI.ClickOutside = function($container, onClickOutside){
-	var id = _.uniqueId('UIClickOutside_');
+// @TODO: Rewrite the options passing mechanism to options extender
+UI.ClickOutside = function(options){
+	var _this = this,
+		id = _.uniqueId('UIClickOutside_');
+
+	this.options = $.extend({
+		$element: '', 
+		onClickOutside: function($target){
+			
+		}
+	}, options);
  
 	this.bind = function(){
 		this.unbind();
@@ -24,8 +33,15 @@ UI.ClickOutside = function($container, onClickOutside){
 	};
 };
 
-UI.Animate = function($element, duration){
-	var methods = {};
+
+UI.Animate = function(options){
+	var _this = this,
+		methods = {};
+
+	this.options = $.extend({
+		$element: '',
+		duration: 300
+	}, options);
 
 	methods.fadeIn = function(done){
 		$element.transition({
@@ -85,16 +101,23 @@ UI.Animate = function($element, duration){
 	};
 };
 
-UI.Template = function(templateName){
+
+UI.Template = function(options){
+	var _this = this;
+
+	this.options = $.extend({
+		templateName: ''
+	}, options);
+
 	_.templateSettings = UI.settings.templateSettings;
 
 	var getTemplate = function(){
-		var template = $('#' + templateName).html();
+		var template = $('#' + _this.options.templateName).html();
 
 		if(template){
 			return template;
 		}else{
-			console.error('UI.Template', 'Template is empty', templateName);
+			console.error('UI.Template', 'Template is empty', _this.options.templateName);
 		}
 	};
 
@@ -104,6 +127,7 @@ UI.Template = function(templateName){
 		return template(data);
 	};
 };
+
 
 UI.Checker = function(options){
 	var _this = this;
@@ -136,6 +160,7 @@ UI.Checker = function(options){
 		}
 	});
 };
+
 
 UI.Popup = function(options){
 	var _this = this,
@@ -185,7 +210,9 @@ UI.Popup = function(options){
 	};
 
 	var make = function(title, content){
-        var template = new UI.Template('template-ui-popup');
+        var template = new UI.Template({
+        	templateName: 'template-ui-popup'
+        });
 
 		return template.render({
 			title: title,
@@ -206,7 +233,9 @@ UI.Popup = function(options){
     };
 
     this.showMessage = function(text, type){
-        var template = new UI.Template('template-ui-popup-message'),
+        var template = new UI.Template({
+        		templateName: 'template-ui-popup-message'
+    		}),
         	className = '';
 
         switch(type){
@@ -264,8 +293,15 @@ UI.Popup = function(options){
 
 		resize();
 
-    	animateWindow = new UI.Animate(this.$popup.find('.window'), this.options.animationDuration);
-    	animateOverlay = new UI.Animate(this.$popup.find('.overlay'), this.options.animationDuration);
+    	animateWindow = new UI.Animate({
+    		$element: this.$popup.find('.window'), 
+    		duration: this.options.animationDuration
+    	});
+
+    	animateOverlay = new UI.Animate({
+    		$element: this.$popup.find('.overlay'), 
+    		duration: this.options.animationDuration
+    	});
 
 		animateOverlay.play('fadeIn');
 
