@@ -6,6 +6,25 @@ var UI = {
 	}
 };
 
+UI.ClickOutside = function(container, onClickOutside){
+	var $container = $(container),
+		_id = _.uniqueId('UIClickOutside_');
+ 
+	this.bind = function(){
+		this.unbind();
+		
+		$(document).on('mouseup.' + _id, function (e){
+			if (!$container.is(e.target) && $container.has(e.target).length === 0){
+			    if(onClickOutside) onClickOutside(e.target);
+			}
+		});
+	};
+ 
+	this.unbind = function(){
+		$(document).off('mouseup.' + _id);
+	};
+};
+
 UI.Animate = function($element, duration){
 	this.fadeIn = function(done){
 		$element.transition({
