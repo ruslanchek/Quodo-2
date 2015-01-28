@@ -8,11 +8,8 @@ block content
 		h2 UI.#{title}
 
 	mixin constructorPublicMethod(code, desc)
-		p.bullet
+		div.bullet
 			code= code
-			if desc
-				br
-				|#{desc}
 
 	mixin paramItem(code)
 		div.bullet.bg-pink-rose-light

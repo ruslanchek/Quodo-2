@@ -3101,6 +3101,9 @@ em {
 .text-right {
   text-align: right; }
 
+.text-faded {
+  opacity: 0.5; }
+
 strong {
   font-weight: bold; }
 
@@ -3635,14 +3638,35 @@ mark {
     color: #c8c8c8; }
 
 .links-default, * a {
-  color: #656d77; }
+  color: #3bb0d6; }
   .links-default:visited, * a:visited {
-    color: #656d77; }
+    color: #3bb0d6; }
   .links-default:focus, * a:focus {
-    color: #656d77; }
+    color: #3bb0d6; }
   .links-default:hover, * a:hover {
-    color: #7e8690; }
+    color: #54c9ef; }
   .links-default:active, * a:active {
+    color: #54c9ef; }
+
+.links-component, .nav a, .popup .window .close, .paintable,
+.resizeable,
+.code {
+  color: #656d77; }
+  .links-component:visited, .nav a:visited, .popup .window .close:visited, .paintable:visited,
+  .resizeable:visited,
+  .code:visited {
+    color: #656d77; }
+  .links-component:focus, .nav a:focus, .popup .window .close:focus, .paintable:focus,
+  .resizeable:focus,
+  .code:focus {
+    color: #656d77; }
+  .links-component:hover, .nav a:hover, .popup .window .close:hover, .paintable:hover,
+  .resizeable:hover,
+  .code:hover {
+    color: #7e8690; }
+  .links-component:active, .nav a:active, .popup .window .close:active, .paintable:active,
+  .resizeable:active,
+  .code:active {
     color: #7e8690; }
 
 .nav {
@@ -3654,7 +3678,9 @@ mark {
     display: block;
     -webkit-transition: 0.15s;
             transition: 0.15s; }
-    .nav a.active {
+    .nav a:hover {
+      opacity: 0.8; }
+    .nav a.active, .nav a:active {
       opacity: 0.7; }
   .nav.bordered a.active, .nav.filled a.active {
     opacity: 1; }
@@ -3667,7 +3693,8 @@ mark {
     border-radius: 5px; }
     .nav.filled a {
       color: #fff;
-      padding: 0 20px; }
+      padding: 0 20px;
+      opacity: 1; }
       .nav.filled a:hover {
         background-color: rgba(255, 255, 255, 0.15); }
       .nav.filled a:active, .nav.filled a.active {
@@ -3683,11 +3710,12 @@ mark {
     .nav.bordered a {
       padding: 0 20px;
       border-bottom: 1px solid #e6e9ed;
-      color: #656d77; }
+      color: #656d77;
+      opacity: 1; }
       .nav.bordered a:hover {
-        background-color: #f5f8fc; }
+        background-color: #f0f3f7; }
       .nav.bordered a:active {
-        background-color: #eef1f5; }
+        background-color: #ebeef2; }
       .nav.bordered a.active {
         background-color: #e6e9ed; }
       .nav.bordered a:first-child {
@@ -3797,7 +3825,7 @@ html, body {
         -ms-transform: translateY(1px);
             transform: translateY(1px); }
     .button:active:before, .button.active:before {
-      background-color: rgba(255, 255, 255, 0.25); }
+      background-color: rgba(255, 255, 255, 0.15); }
   .button[class^="bg-"]:not(.wireframe), .button[class*=" bg-"]:not(.wireframe) {
     color: #fff; }
     .button[class^="bg-"]:not(.wireframe):hover, .button[class^="bg-"]:not(.wireframe):active, .button[class*=" bg-"]:not(.wireframe):hover, .button[class*=" bg-"]:not(.wireframe):active {
@@ -3855,9 +3883,9 @@ html, body {
       background-color: #d2d5d9;
       opacity: 0; }
     .button.wireframe:hover:before {
-      opacity: 0.05; }
+      opacity: 0.075; }
     .button.wireframe:active:before {
-      opacity: 0.1; }
+      opacity: 0.125; }
     .button.wireframe.wait {
       border-color: #d2d5d9; }
   .button:disabled, .button.disabled {
@@ -3889,6 +3917,9 @@ table {
     padding: 11px 15px; }
   table th {
     font-weight: bold; }
+  table tr {
+    -webkit-transition: background 0.15s;
+            transition: background 0.15s; }
   table thead th {
     border-bottom: 1px solid #e6e9ed; }
   table tfoot td {
@@ -3896,13 +3927,15 @@ table {
   table.rounded {
     border-radius: 5px; }
   table.striped tbody tr:nth-child(even) {
-    background-color: #f5f8fc; }
+    background-color: #edf0f4; }
   table.hovered tbody tr:hover {
-    background-color: #f2f5f9; }
+    background-color: #f0f3f7; }
+  table.hovered.striped tr:hover {
+    background-color: #e8ebef; }
   table.bordered {
     border: 1px solid #e6e9ed; }
     table.bordered thead tr {
-      background-color: #f0f3f7; }
+      background-color: #ebeef2; }
     table.bordered.bordered-rows-v td,
     table.bordered.bordered-rows-v th {
       border-right: 1px solid #e6e9ed; }

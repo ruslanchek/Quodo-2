@@ -7,8 +7,13 @@
 		box-sizing: border-box
 		display: block
 		transition: $animation-component-duration
+		@extend .links-component
 
-		&.active
+		&:hover
+			opacity: .8
+
+		&.active,
+		&:active
 			opacity: .7
 
 	&.bordered,
@@ -29,6 +34,7 @@
 		a
 			color: #fff
 			padding: 0 $padding-component-side
+			opacity: 1
 
 			&:hover
 				background-color: $fill-component-hover
@@ -51,16 +57,17 @@
 		a
 			padding: 0 $padding-component-side
 			border-bottom: 1px solid $border-component-color
-			color: $color-links-default
+			color: $color-links-component
+			opacity: 1
 
 			&:hover
-				background-color: $border-component-color + 15
+				background-color: $fill-component-bordered-hover
 
 			&:active
-				background-color: $border-component-color + 8
+				background-color: $fill-component-bordered-active
 
 			&.active
-				background-color: $border-component-color
+				background-color: $fill-component-bordered-selected
 
 			&:first-child
 				border-radius: $border-radius - 1 $border-radius - 1 0 0

@@ -10,6 +10,9 @@ table
 	th
 		font-weight: bold
 
+	tr
+		transition: background $animation-component-duration
+
 	thead
 		th
 			border-bottom: 1px solid $border-component-color
@@ -30,6 +33,10 @@ table
 		tbody
 			tr:hover
 				background-color: $bg-table-hover
+
+		&.striped
+			tr:hover
+				background-color: $bg-table-stripe - 5
 
 	&.bordered
 		border: 1px solid $border-component-color

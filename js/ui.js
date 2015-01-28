@@ -102,22 +102,18 @@ UI.Animate = function(options){
 };
 
 
-UI.Template = function(options){
+UI.Template = function(templateName){
 	var _this = this;
-
-	this.options = $.extend({
-		templateName: ''
-	}, options);
 
 	_.templateSettings = UI.settings.templateSettings;
 
 	var getTemplate = function(){
-		var template = $('#' + _this.options.templateName).html();
+		var template = $('#' + templateName).html();
 
 		if(template){
 			return template;
 		}else{
-			console.error('UI.Template', 'Template is empty', _this.options.templateName);
+			console.error('UI.Template', 'Template is empty', templateName);
 		}
 	};
 
@@ -142,7 +138,13 @@ UI.Checker = function(options){
 		}
 	}, options);
 
-	$(this.options.selector).find('>a').off('click.UIChecker').on('click.UIChecker', function(e){
+	var $items = $(this.options.selector).find('>a');
+
+	$items.each(function(){
+		$(this).data('originalContent', $(this).html());
+	});
+
+	$items.off('click.UIChecker').on('click.UIChecker', function(e){
         e.preventDefault();
 
         var activeClass = '';
@@ -150,6 +152,14 @@ UI.Checker = function(options){
         if($(this).data('activeClass')){
             activeClass = ' ' + $(this).data('activeClass');
         }
+
+        if($(this).data('toggledContent')){
+	        if($(this).data('toggledContent') != $(this).html()){
+				$(this).html($(this).data('toggledContent'));
+			}else{
+				$(this).html($(this).data('originalContent'));
+			}
+		}
 
 		if($(this).hasClass('active')){
 			$(this).removeClass('active' + activeClass);
@@ -212,9 +222,7 @@ UI.Popup = function(options){
 	};
 
 	var make = function(title, content){
-        var template = new UI.Template({
-        	templateName: 'template-ui-popup'
-        });
+        var template = new UI.Template('template-ui-popup');
 
 		return template.render({
 			title: title,
@@ -236,9 +244,7 @@ UI.Popup = function(options){
 
     this.showMessage = function(type, timeout, text){
     	this.hideMessage(function(){
-    		var template = new UI.Template({
-	        		templateName: 'template-ui-popup-message'
-	    		}),
+    		var template = new UI.Template('template-ui-popup-message'),
 	        	className = '';
 
 	        switch(type){
@@ -258,7 +264,7 @@ UI.Popup = function(options){
 	            	.html(html)
 	            	.transition({
 						height: _this.$popup.find('.messages > .message').outerHeight()
-					}, 200, 'easeOutQuart');
+					}, 300, 'easeOutQuad');
 
 				setTimeout(function(){
 					if(timeout > 0){
@@ -266,7 +272,7 @@ UI.Popup = function(options){
 							_this.hideMessage();
 						}, timeout);
 					}
-				}, 200);
+				}, 300);
 	        }
 
 	        messageShowed = true;
@@ -281,7 +287,7 @@ UI.Popup = function(options){
 	    		.find('.messages')
 	    		.transition({
 					height: 0
-				}, 200, 'easeOutQuart');
+				}, 200, 'easeOutQuad');
 
 			setTimeout(function(){
 				messageShowed = false;

@@ -40,14 +40,18 @@ Demo.Popup = function(){
     var _this = this;
 
     this.initPopup1 = function(){
+        var content = new UI.Template('template-demo-popup-1-content').render();
+
         this.samplePopup1 = new UI.Popup({
             width: 500,
             onShow: function(instance){
-                $('#popup-sample-waiting-toggler').on('click', function(){
-                    if(instance.state == 'waiting') {
-                        instance.removeWaitingMode();
-                    }else{
+                var checker = new UI.Checker({
+                    selector: '#popup-sample-waiting-checker',
+                    onCheck: function(){
                         instance.setWaitingMode();
+                    },
+                    onUncheck: function(){
+                        instance.removeWaitingMode();
                     }
                 });
             }
@@ -55,27 +59,29 @@ Demo.Popup = function(){
 
         $('#show-sample-popup-1').on('click', function(e){
             e.preventDefault();
-            _this.samplePopup1.show('Waiting mode popup', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua<br><br><button id="popup-sample-waiting-toggler" class="button bg-aqua-dark volume fat">Toggle waiting mode</button>');
+            _this.samplePopup1.show('Waiting mode popup', content);
         });
     };
 
     this.initPopup2 = function(){
+        var content = new UI.Template('template-demo-popup-2-content').render();
+
         this.samplePopup2 = new UI.Popup({
             width: 500,
             onShow: function(instance){
                 $('#popup-sample-messages-error').on('click', function(){
-                    instance.showMessage('error', 1000, 'Here is your error message!')
+                    instance.showMessage('error', 5000, 'Here is your error message! <span class="text-faded">Will disappear in 5 seconds.</span>')
                 });
 
                 $('#popup-sample-messages-success').on('click', function(){
-                    instance.showMessage('success', 1000, 'Here is your success message!')
+                    instance.showMessage('success', 5000, 'Here is your success message! <span class="text-faded">Will disappear in 5 seconds.</span>')
                 });
             }
         });
 
         $('#show-sample-popup-2').on('click', function(e){
             e.preventDefault();
-            _this.samplePopup2.show('Messages system', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua<br><br><button id="popup-sample-messages-error" class="button bg-bittersweet-dark volume fat">Show error message</button><button id="popup-sample-messages-success" class="button bg-mint-dark volume fat">Show success message</button>');
+            _this.samplePopup2.show('Messages system', content);
         });
     };
 

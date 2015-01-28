@@ -26,13 +26,10 @@
               <p>Yeah, everybody loves popups</p>
               <div class="grid-row">
                 <div class="col-6">
-                  <button id="show-sample-popup-1" class="button fat w-100">Popup waiting demo</button>
+                  <button id="show-sample-popup-1" class="button fat volume w-100 bg-aqua-light">Waiting mode demo</button>
                 </div>
                 <div class="col-6">
-                  <button id="show-sample-popup-2" class="button fat w-100">Open popup</button>
-                </div>
-                <div class="col-6">
-                  <button id="show-sample-popup-3" class="button fat w-100">Open popup</button>
+                  <button id="show-sample-popup-2" class="button fat volume w-100 bg-aqua-light">Message system demo</button>
                 </div>
               </div><br>
               <div class="grid-row">
@@ -74,6 +71,20 @@
     </script>
     <script type="text/x-handlebars-template" id="template-ui-popup-message">
       <div class="message {{className}}">{{text}}</div>
+    </script>
+    <script type="text/x-handlebars-template" id="template-demo-popup-1-content">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+      </p>
+      <div id="popup-sample-waiting-checker" class="checker"><a href="#" data-toggled-content="Switch to idle mode">Switch to waiting mode</a></div>
+    </script>
+    <script type="text/x-handlebars-template" id="template-demo-popup-2-content">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+      </p>
+      <div class="checker"><a id="popup-sample-messages-error" href="#">Show error message</a><a id="popup-sample-messages-success" href="#">Show success message</a></div>
     </script>
   </body>
 </html>
