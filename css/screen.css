@@ -3142,7 +3142,7 @@ mark {
     width: 0.5em;
     height: 0.5em;
     left: 0;
-    top: 0.61em;
+    top: 0.575em;
     display: block;
     position: absolute;
     border-radius: 0.25em; }
@@ -3688,6 +3688,8 @@ mark {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: clip; }
+  .nav.white a {
+    color: #fff; }
   .nav.filled {
     background-color: #434a53;
     border-radius: 5px; }
@@ -3930,7 +3932,7 @@ table {
     background-color: #edf0f4; }
   table.hovered tbody tr:hover {
     background-color: #f0f3f7; }
-  table.hovered.striped tr:hover {
+  table.hovered.striped tr:nth-child(even):hover {
     background-color: #e8ebef; }
   table.bordered {
     border: 1px solid #e6e9ed; }
@@ -3961,8 +3963,8 @@ table {
     white-space: nowrap;
     margin: 0 2ex 0 0;
     position: relative;
-    -webkit-transition: 0.15s;
-            transition: 0.15s; }
+    -webkit-transition: 0.3s;
+            transition: 0.3s; }
     .checker a:after {
       content: "";
       width: 100%;

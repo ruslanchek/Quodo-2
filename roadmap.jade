@@ -1,0 +1,17 @@
+extends ./layout.jade
+
+block content
+	- var section = 'roadmap'
+
+	.grid-row
+		.col-6
+			include ./partials/leftcol.jade
+
+		.col-18
+			h1 Roadmap
+			p A place, where we solve the problems and making new things
+
+			ul
+				li.bullet.bg-medium-gray-light Fade effect on wait animation of the Popup
+				li.bullet.bg-medium-gray-light Timeout for popup wait method
+				li.bullet.bg-medium-gray-light Wireframed navigation
