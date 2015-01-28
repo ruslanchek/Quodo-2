@@ -6,7 +6,7 @@ var UI = {
 	}
 };
 
-// @TODO: Rewrite the options passing mechanism to options extender
+
 UI.ClickOutside = function(options){
 	var _this = this,
 		id = _.uniqueId('UIClickOutside_');
@@ -40,13 +40,13 @@ UI.Animate = function(options){
 
 	this.options = $.extend({
 		$element: '',
-		duration: 300
+		animationDuration: 300
 	}, options);
 
 	methods.fadeIn = function(done){
 		$element.transition({
 			opacity: 1
-		}, duration);
+		}, animationDuration);
 
 		done();
 	};
@@ -54,7 +54,7 @@ UI.Animate = function(options){
 	methods.fadeOut = function(done){
 		$element.transition({
 			opacity: 0
-		}, duration);
+		}, animationDuration);
 
 		done();
 	};
@@ -72,7 +72,7 @@ UI.Animate = function(options){
 				scale: 1,
 				opacity: 1,
 				rotateX: '0deg'
-			}, duration, 'easeOutBack');
+			}, animationDuration, 'easeOutBack');
 
 			done();
 		}, 50);
@@ -83,7 +83,7 @@ UI.Animate = function(options){
 			scale: 0,
 			opacity: 1,
 			rotateX: '90deg'
-		}, duration, 'easeInBack');		
+		}, animationDuration, 'easeInBack');		
 
 		done();
 	};
@@ -232,7 +232,7 @@ UI.Popup = function(options){
         }
     };
 
-    this.showMessage = function(text, type){
+    this.showMessage = function(type, text){
         var template = new UI.Template({
         		templateName: 'template-ui-popup-message'
     		}),
@@ -252,6 +252,10 @@ UI.Popup = function(options){
         if(_this.$popup){
             _this.$popup.find('.messages').html(html);
         }
+    };
+
+    this.hideMessage = function(){
+    	_this.$popup.find('.messages').empty();
     };
 
 	this.changeContent = function(html){
@@ -295,12 +299,12 @@ UI.Popup = function(options){
 
     	animateWindow = new UI.Animate({
     		$element: this.$popup.find('.window'), 
-    		duration: this.options.animationDuration
+    		animationDuration: this.options.animationDuration
     	});
 
     	animateOverlay = new UI.Animate({
     		$element: this.$popup.find('.overlay'), 
-    		duration: this.options.animationDuration
+    		animationDuration: this.options.animationDuration
     	});
 
 		animateOverlay.play('fadeIn');

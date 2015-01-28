@@ -6,8 +6,17 @@ block content
 	mixin constructorSection(title, code)
 		a(name="#{title}")
 		h2 UI.#{title}
-		code.code-multiline: pre=code
-		br
+
+	mixin constructorPublicMethod(code, desc)
+		p.bullet
+			code= code
+			if desc
+				br
+				|#{desc}
+
+	mixin paramItem(code, desc)
+		div.bullet.bg-pink-rose-light
+			code= code #{desc}
 
 	.grid-row
 		.col-6
@@ -17,63 +26,49 @@ block content
 			h1 JavaScript API
 			p The API will make you happy
 
-			// Animate
-			- var code = 'sss'
-			+constructorSection('Animate', code)
 
-			p.bullet
-				code Animate.play(animationMethod, onDone)
-				br
-				|Will apply an animation method on the $element, that pointed when you construct UI.Animate()
+			+constructorSection('Animate')
+			code.code-multiline: pre
+				|var Animate = new UI.Animate({
+				|	$element: $('#my-element'),
+				|	animationDuration: 300
+				|});
+			br
+			+constructorPublicMethod('Animate.play(animationMethod, onDone)', 'Will apply an animation method on the $element, that pointed when you construct UI.Animate()')
+			
+			h4 Animation methods
+			+paramItem('fadeIn')
+			+paramItem('fadeOut')
+			+paramItem('appear')
+			+paramItem('disappear')
 
-
-			// ClickOutside
-			a(name="ClickOutside")
-			h2 UI.ClickOutside
+			+constructorSection('ClickOutside')
 			code.code-multiline: pre
 				|var ClickOutside = new UI.ClickOutside({
 				|	$element: $('#my-element'),
-				|	onClickOutside: function($target){
-				|		
-				|	}
+				|	onClickOutside: function($target){}
 				|})
-
 			br
-
-			p.bullet
-				code ClickOutside.bind()
-				br
-				|Activate the click outside listener
-
-			p.bullet
-				code ClickOutside.unbind()
-				br
-				|Deactivate the click outside listener
+			+constructorPublicMethod('ClickOutside.bind()', 'Activate the click outside listener')
+			+constructorPublicMethod('ClickOutside.unbind()', 'Deactivate the click outside listener')
 
 
 			// Popup
-			a(name="Popup")
-			h2 UI.Popup
+			+constructorSection('Popup')
 			code.code-multiline: pre
 				|var Popup = new UI.Popup({
 				|	width: 500,
 				|	animationDuration: 500,
-				|	onShow: function(instance){
-				|	
-				|	},
-				|	onHide: function(instance){
-				|	
-				|	}
+				|	onShow: function(instance){},
+				|	onHide: function(instance){}
 				|});
-
 			br
 
-			p.bullet
-				code Popup.showMessage()
-				br
-				|Activate the click outside listener
-
-			p.bullet
-				code ClickOutside.unbind()
-				br
-				|Deactivate the click outside listener
+			+constructorPublicMethod('Popup.show(title, content)', 'Shows the popup')
+			+constructorPublicMethod('Popup.hide()', 'Hides the popup')
+			+constructorPublicMethod('Popup.showMessage(type, text)', 'Shows text with background under the title (it can be error message for example)')
+			+constructorPublicMethod('Popup.hideMessage()', 'Hides the popup message')
+			+constructorPublicMethod('Popup.changeContent(html)', 'Change the popup body content')
+			+constructorPublicMethod('Popup.changeTitle(html)', 'Change the popup title content')
+			+constructorPublicMethod('Popup.setWaitingMode()', 'Shows waiting animation on the popup title')
+			+constructorPublicMethod('Popup.removeWaitingMode()', 'Removes the popup waiting animation')

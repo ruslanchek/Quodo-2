@@ -83,11 +83,18 @@
 @mixin bg($color)
 	&:not(.wireframe)
 		background-color: $color !important
+
 	&.button.wireframe
 		border-color: $color !important
 		color: $color
 		&:before
 			background-color: $color
+
+	&.bullet
+		background: none !important
+
+		&:before 
+			background-color: $color !important
 
 .bg-bittersweet-light
 	+bg($color-bittersweet-light)
