@@ -33,11 +33,25 @@
 			padding: $padding-component-vertical $padding-component-side
 			position: relative
 
-		.message
-			color: #fff
-			padding: $padding-component-vertical/3 $padding-component-side
+		.messages
+			overflow: hidden
+			height: 0
+
+			.message
+				color: #fff
+				padding: .5em $padding-component-side
+				background-color: $color-medium-gray-light
+
+				&.error
+					background-color: $color-error
+
+				&.success
+					background-color: $color-success
 
 		.content
+			padding: $padding-component-vertical $padding-component-side
+
+		.bottom
 			padding: $padding-component-vertical $padding-component-side
 
 		.close

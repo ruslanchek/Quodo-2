@@ -44,23 +44,23 @@ UI.Animate = function(options){
 	}, options);
 
 	methods.fadeIn = function(done){
-		$element.transition({
+		_this.options.$element.transition({
 			opacity: 1
-		}, animationDuration);
+		}, _this.options.animationDuration);
 
 		done();
 	};
 
 	methods.fadeOut = function(done){
-		$element.transition({
+		_this.options.$element.transition({
 			opacity: 0
-		}, animationDuration);
+		}, _this.options.animationDuration);
 
 		done();
 	};
 
 	methods.appear = function(done){
-		$element.transition({
+		_this.options.$element.transition({
 			scale: 0,
 			opacity: 1,
 			perspective: '1500px',
@@ -68,22 +68,22 @@ UI.Animate = function(options){
 		}, 0);
 
 		setTimeout(function(){
-			$element.transition({
+			_this.options.$element.transition({
 				scale: 1,
 				opacity: 1,
 				rotateX: '0deg'
-			}, animationDuration, 'easeOutBack');
+			}, _this.options.animationDuration, 'easeOutBack');
 
 			done();
 		}, 50);
 	};
 
 	methods.disappear = function(done){
-		$element.transition({
+		_this.options.$element.transition({
 			scale: 0,
 			opacity: 1,
 			rotateX: '90deg'
-		}, animationDuration, 'easeInBack');		
+		}, _this.options.animationDuration, 'easeInBack');		
 
 		done();
 	};
@@ -93,7 +93,7 @@ UI.Animate = function(options){
 			methods[method](function(){
 				setTimeout(function(){
 					if(done) done();
-				}, duration);
+				}, _this.options.animationDuration);
 			});
 		}else{
 			console.error('UI.Animate', 'Animation method not defined', method);
@@ -165,10 +165,12 @@ UI.Checker = function(options){
 UI.Popup = function(options){
 	var _this = this,
 		animateWindow,
-		animateOverlay;
+		animateOverlay,
+		messageShowed = false,
+		messageTimeout = null;
 
 	this.$popup = null;
-    this.state = 'idle'; // @TODO: Add all the other states 
+    this.state = 'idle';
     
 	this.options = $.extend({
         width: 400,
@@ -232,30 +234,64 @@ UI.Popup = function(options){
         }
     };
 
-    this.showMessage = function(type, text){
-        var template = new UI.Template({
-        		templateName: 'template-ui-popup-message'
-    		}),
-        	className = '';
+    this.showMessage = function(type, timeout, text){
+    	this.hideMessage(function(){
+    		var template = new UI.Template({
+	        		templateName: 'template-ui-popup-message'
+	    		}),
+	        	className = '';
 
-        switch(type){
-            case 'error' : className = 'bg-bittersweet-dark'; break;
-            case 'ok' : className = 'bg-mint-dark'; break;
-            default : className = 'bg-medium-gray-dark'; break;
-        }
+	        switch(type){
+	            case 'error' : className = 'error'; break;
+	            case 'success' : className = 'success'; break;
+	            default : className = ''; break;
+	        }
 
-        var html = template.render({
-            className: className,
-            text: text
-        });
+	        var html = template.render({
+	            className: className,
+	            text: text
+	        });
 
-        if(_this.$popup){
-            _this.$popup.find('.messages').html(html);
-        }
+	        if(_this.$popup){
+	            _this.$popup
+	            	.find('.messages')
+	            	.html(html)
+	            	.transition({
+						height: _this.$popup.find('.messages > .message').outerHeight()
+					}, 200, 'easeOutQuart');
+
+				setTimeout(function(){
+					if(timeout > 0){
+						messageTimeout = setTimeout(function(){
+							_this.hideMessage();
+						}, timeout);
+					}
+				}, 200);
+	        }
+
+	        messageShowed = true;
+    	});
     };
 
-    this.hideMessage = function(){
-    	_this.$popup.find('.messages').empty();
+    this.hideMessage = function(done){
+    	clearTimeout(messageTimeout);
+    	
+    	if(messageShowed){
+	    	this.$popup
+	    		.find('.messages')
+	    		.transition({
+					height: 0
+				}, 200, 'easeOutQuart');
+
+			setTimeout(function(){
+				messageShowed = false;
+				_this.$popup.find('.messages').empty();
+				if(done) done();				
+			}, 200);
+		}else{
+			messageShowed = false;
+			if(done) done();
+		}
     };
 
 	this.changeContent = function(html){

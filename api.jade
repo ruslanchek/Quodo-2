@@ -14,9 +14,9 @@ block content
 				br
 				|#{desc}
 
-	mixin paramItem(code, desc)
+	mixin paramItem(code)
 		div.bullet.bg-pink-rose-light
-			code= code #{desc}
+			code= code
 
 	.grid-row
 		.col-6
@@ -66,7 +66,7 @@ block content
 
 			+constructorPublicMethod('Popup.show(title, content)', 'Shows the popup')
 			+constructorPublicMethod('Popup.hide()', 'Hides the popup')
-			+constructorPublicMethod('Popup.showMessage(type, text)', 'Shows text with background under the title (it can be error message for example)')
+			+constructorPublicMethod('Popup.showMessage(type, timeout, text)', 'Shows text with background under the title (it can be error message for example)')
 			+constructorPublicMethod('Popup.hideMessage()', 'Hides the popup message')
 			+constructorPublicMethod('Popup.changeContent(html)', 'Change the popup body content')
 			+constructorPublicMethod('Popup.changeTitle(html)', 'Change the popup title content')

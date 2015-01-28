@@ -3989,10 +3989,20 @@ table {
       background-color: #f5f7fa;
       padding: 20px 20px;
       position: relative; }
-    .popup .window .message {
-      color: #fff;
-      padding: 6.6666666667px 20px; }
+    .popup .window .messages {
+      overflow: hidden;
+      height: 0; }
+      .popup .window .messages .message {
+        color: #fff;
+        padding: 0.5em 20px;
+        background-color: #ccd1d8; }
+        .popup .window .messages .message.error {
+          background-color: #e95546; }
+        .popup .window .messages .message.success {
+          background-color: #34bc9d; }
     .popup .window .content {
+      padding: 20px 20px; }
+    .popup .window .bottom {
       padding: 20px 20px; }
     .popup .window .close {
       position: absolute;
