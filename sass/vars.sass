@@ -57,13 +57,26 @@ $margin-vertical-space: 40px
 // Components colors
 $fill-component-color: $color-dark-gray-dark
 $fill-component-active-state: $color-aqua-light
+$fill-component-neutral-state: $color-light-gray-light // @TODO: needs refacoring (shorten names)
 $fill-button-color: $color-light-gray-dark
+$fill-component-mark: $color-lavender-light
 
 $border-component-color: $color-light-gray-dark
-$color-links-default: $color-dark-gray-light
+
+$fill-component-bordered-hover: $border-component-color + 10
+$fill-component-bordered-active: $border-component-color + 5
+$fill-component-bordered-selected: $border-component-color
+
+$color-links-default: $color-aqua-dark
+$color-links-component: $color-dark-gray-light
 
 $fill-component-hover: rgba(255, 255, 255, .15)
 $fill-component-active: rgba(255, 255, 255, .25)
+
+$color-faded-text: $color-dark-gray-light
+
+$color-error: $color-bittersweet-dark
+$color-success: $color-mint-dark
 
 // Grid settings
 $grid-cols: 24
@@ -77,6 +90,6 @@ $base-font-size: 16px
 $base-line-height: 1.5em
 
 // Table
-$bg-table-stripe: $border-component-color + 15
-$bg-table-hover: $border-component-color + 12
-$bg-table-head: $border-component-color + 10
+$bg-table-stripe: $border-component-color + 7
+$bg-table-hover: $border-component-color + 10
+$bg-table-head: $border-component-color + 5

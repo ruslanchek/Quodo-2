@@ -2,14 +2,14 @@
 <html>
   <head> 
     <title>Quodo 2</title>
-    <link rel="stylesheet" href="/css/screen.css">
+    <link rel="stylesheet" href="css/screen.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/default.min.css">
     <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/highlight.min.js"></script>
     <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="http://ricostacruz.com/jquery.transit/jquery.transit.min.js"></script>
     <script src="http://underscorejs.org/underscore.js"></script>
-    <script src="/js/ui.js"></script>
-    <script src="/js/demo.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/demo.js"></script>
   </head>
   <body>
     <div class="wrap">
@@ -19,7 +19,7 @@
             <div class="col-6"><a href="/" class="color-dark-gray-dark">
                 <div class="logo">Quodo<i class="fa fa-rocket color-aqua-dark"></i>2</div>
                 <p class="logo-p">Application UI library</p></a>
-              <nav class="nav fat bordered"><a href="/colors.html">Colors</a><a href="/nav.html">Navigation</a><a href="/grid.html">Grid</a><a href="/buttons.html">Buttons</a><a href="/table.html">Table</a><a href="/typography.html">Typography</a><a href="/checkers.html">Checkers</a><a href="/popup.html">Popup</a></nav>
+              <nav class="nav fat bordered"><a href="colors.html">Colors</a><a href="nav.html">Navigation</a><a href="grid.html">Grid</a><a href="buttons.html">Buttons</a><a href="table.html">Table</a><a href="typography.html">Typography</a><a href="checkers.html">Checkers</a><a href="popup.html">Popup</a><a href="api.html">API</a><a href="roadmap.html">Roadmap</a></nav>
             </div>
             <div class="col-18">
               <h1>Kitchen sink</h1>
@@ -36,13 +36,13 @@
               <div class="logo">Quodo<i class="fa fa-rocket color-aqua-dark"></i>2</div>
               <p class="logo-p">Application UI library</p></a></div>
           <div class="col-6">
-            <nav class="nav"><a href="/colors.html">Colors</a><a href="/nav.html">Navigation</a><a href="/grid.html">Grid</a><a href="/buttons.html">Buttons</a></nav>
+            <nav class="nav white"><a href="/colors.html">Colors</a><a href="/nav.html">Navigation</a><a href="/grid.html">Grid</a><a href="/buttons.html">Buttons</a></nav>
           </div>
           <div class="col-6">
-            <nav class="nav"><a href="/table.html">Table</a><a href="/typography.html">Typography</a><a href="/checkers.html">Checkers</a><a href="/popup.html">Popup</a></nav>
+            <nav class="nav white"><a href="/table.html">Table</a><a href="/typography.html">Typography</a><a href="/checkers.html">Checkers</a><a href="/popup.html">Popup</a></nav>
           </div>
           <div class="col-6">
-            <nav class="nav"></nav>
+            <nav class="nav white"><a href="/api.html">API</a><a href="/roadmap.html">Roadmap</a></nav>
           </div>
         </div>
       </div>
@@ -51,7 +51,10 @@
       <div class="popup">
         <div class="overlay"></div>
         <div class="window"><a href="#" class="close"> <i class="fa fa-close"></i></a>
-          <div class="title">{{title}}</div>
+          <div class="title">
+            <div class="text">{{title}}</div>
+            <div class="wait-indicator"></div>
+          </div>
           <div class="messages"></div>
           <div class="content">{{content}}</div>
         </div>
@@ -59,6 +62,20 @@
     </script>
     <script type="text/x-handlebars-template" id="template-ui-popup-message">
       <div class="message {{className}}">{{text}}</div>
+    </script>
+    <script type="text/x-handlebars-template" id="template-demo-popup-1-content">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+      </p>
+      <div id="popup-sample-waiting-checker" class="checker"><a href="#" data-toggled-content="Switch to idle mode">Switch to waiting mode</a></div>
+    </script>
+    <script type="text/x-handlebars-template" id="template-demo-popup-2-content">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+      </p>
+      <div class="checker"><a id="popup-sample-messages-error" href="#">Show error message</a><a id="popup-sample-messages-success" href="#">Show success message</a></div>
     </script>
   </body>
 </html>
