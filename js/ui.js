@@ -184,7 +184,7 @@ UI.Popup = function(options){
     
 	this.options = $.extend({
         width: 400,
-        animationDuration: 500,
+        animationDuration: 400,
 		onShow: function(instance){
 
 		},

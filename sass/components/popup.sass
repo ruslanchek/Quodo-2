@@ -33,6 +33,22 @@
 			padding: $padding-component-vertical $padding-component-side
 			position: relative
 
+			.wait-indicator
+				z-index: 1
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				opacity: 0
+				border-radius: $border-radius $border-radius 0 0
+				transition: opacity $animation-component-duration
+				@extend .wait-bg-dark
+
+			.text
+				position: relative
+				z-index: 2
+
 		.messages
 			overflow: hidden
 			height: 0
@@ -56,7 +72,7 @@
 
 		.close
 			position: absolute
-			z-index: 2
+			z-index: 3
 			top: 12px
 			right: 10px
 			height: 40px
@@ -68,6 +84,7 @@
 
 		&.wait
 			.title
-				@extend .wait-bg-dark
+				.wait-indicator
+					opacity: 1
 
 

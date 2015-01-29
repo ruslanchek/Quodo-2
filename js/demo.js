@@ -70,11 +70,11 @@ Demo.Popup = function(){
             width: 500,
             onShow: function(instance){
                 $('#popup-sample-messages-error').on('click', function(){
-                    instance.showMessage('error', 5000, 'Here is your error message! <span class="text-faded">Will disappear in 5 seconds.</span>')
+                    instance.showMessage('error', 5000, 'Here is your error message! <span class="text-fade">Will disappear in 5 seconds.</span>')
                 });
 
                 $('#popup-sample-messages-success').on('click', function(){
-                    instance.showMessage('success', 5000, 'Here is your success message! <span class="text-faded">Will disappear in 5 seconds.</span>')
+                    instance.showMessage('success', 5000, 'Here is your success message! <span class="text-fade">Will disappear in 5 seconds.</span>')
                 });
             }
         });

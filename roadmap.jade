@@ -3,6 +3,13 @@ extends ./layout.jade
 block content
 	- var section = 'roadmap'
 
+	mixin feature(state, text)
+		if state
+			.bullet.bg-grass-light
+				span.text-fade= text
+		else
+			.bullet.bg-medium-gray-light= text
+
 	.grid-row
 		.col-6
 			include ./partials/leftcol.jade
@@ -11,7 +18,9 @@ block content
 			h1 Roadmap
 			p A place, where we solve the problems and making new things
 
-			ul
-				li.bullet.bg-medium-gray-light Fade effect on wait animation of the Popup
-				li.bullet.bg-medium-gray-light Timeout for popup wait method
-				li.bullet.bg-medium-gray-light Wireframed navigation
+			+feature(true, 'Fade effect on wait animation of the Popup')
+			+feature(false, 'Timeout for popup wait method')
+			+feature(false, 'Wireframed navigation')
+			+feature(false, 'Tabs navigation')
+			+feature(false, 'Breadcrumbs')
+			+feature(false, 'Pagination')
