@@ -177,7 +177,8 @@ UI.Popup = function(options){
 		animateWindow,
 		animateOverlay,
 		messageShowed = false,
-		messageTimeout = null;
+		messageTimeout = null,
+		waitingTimeout = null;
 
 	this.$popup = null;
     this.state = 'idle';
@@ -242,7 +243,7 @@ UI.Popup = function(options){
         }
     };
 
-    this.showMessage = function(type, timeout, text){
+    this.showMessage = function(type, timeout, content){
     	this.hideMessage(function(){
     		var template = new UI.Template('template-ui-popup-message'),
 	        	className = '';
@@ -255,7 +256,7 @@ UI.Popup = function(options){
 
 	        var html = template.render({
 	            className: className,
-	            text: text
+	            content: content
 	        });
 
 	        if(_this.$popup){
@@ -314,15 +315,26 @@ UI.Popup = function(options){
         }
 	};
 
-    this.setWaitingMode = function(){
+    this.setWaitingMode = function(timeout, done){
+    	clearTimeout(waitingTimeout);
+
         this.state = 'waiting';
 
         if(_this.$popup){
             _this.$popup.find('.window').addClass('wait');
+
+            if(timeout > 0){
+            	waitingTimeout = setTimeout(function(){
+            		_this.removeWaitingMode();
+            		if(done) done();
+            	}, timeout);
+            }
         }
     };
 
     this.removeWaitingMode = function(){
+    	clearTimeout(waitingTimeout);
+
         this.state = 'idle';
 
         if(_this.$popup){

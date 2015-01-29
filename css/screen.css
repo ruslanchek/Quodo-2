@@ -4033,8 +4033,8 @@ table {
         height: 100%;
         opacity: 0;
         border-radius: 5px 5px 0 0;
-        -webkit-transition: opacity 0.15s;
-                transition: opacity 0.15s; }
+        -webkit-transition: opacity 0.4s;
+                transition: opacity 0.4s; }
       .popup .window .title .text {
         position: relative;
         z-index: 2; }
@@ -4174,5 +4174,4 @@ main {
   .resizeable:hover i,
   .code:hover i {
     color: #59cef4; }
-
 /*# sourceMappingURL=screen.css.map */
