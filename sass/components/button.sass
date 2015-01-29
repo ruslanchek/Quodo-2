@@ -10,7 +10,7 @@
 	border-radius: $border-radius
 	transition: opacity .2s
 	box-sizing: border-box
-	color: $color-links-default
+	color: $color-links-component
 	text-align: center
 	font-size: 1em
 	cursor: pointer
@@ -30,7 +30,7 @@
 		transition: $animation-component-duration
 
 	&:hover
-		color: $color-links-default
+		color: $color-links-component
 
 		&:before
 			background-color: $fill-component-hover
@@ -40,7 +40,7 @@
 		transform: translateY(1px)
 
 		&:before
-			background-color: $fill-component-active
+			background-color: $fill-component-hover
 
 	&[class^="bg-"], 
 	&[class*=" bg-"]
@@ -127,7 +127,7 @@
 
 	&.wireframe
 		background-color: transparent
-		border: 1px solid $color-links-default + 50
+		border: 1px solid $color-links-component + 50
 		box-shadow: none !important
 		line-height: $height-component-default - 1
 
@@ -137,11 +137,11 @@
 
 		&:hover
 			&:before
-				opacity: .05
+				opacity: .075
 
 		&:active
 			&:before
-				opacity: .1
+				opacity: .125
 
 		&.wait
 			border-color: $fill-button-color - 20

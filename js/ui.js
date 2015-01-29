@@ -6,9 +6,17 @@ var UI = {
 	}
 };
 
-UI.ClickOutside = function(container, onClickOutside){
-	var $container = $(container),
-		_id = _.uniqueId('UIClickOutside_');
+
+UI.ClickOutside = function(options){
+	var _this = this,
+		id = _.uniqueId('UIClickOutside_');
+
+	this.options = $.extend({
+		$element: '', 
+		onClickOutside: function($target){
+			
+		}
+	}, options);
  
 	this.bind = function(){
 		this.unbind();
@@ -25,29 +33,34 @@ UI.ClickOutside = function(container, onClickOutside){
 	};
 };
 
-UI.Animate = function($element, duration){
-	this.fadeIn = function(done){
-		$element.transition({
+
+UI.Animate = function(options){
+	var _this = this,
+		methods = {};
+
+	this.options = $.extend({
+		$element: '',
+		animationDuration: 300
+	}, options);
+
+	methods.fadeIn = function(done){
+		_this.options.$element.transition({
 			opacity: 1
-		}, duration);
+		}, _this.options.animationDuration);
 
-		setTimeout(function(done){
-			if(done) done();
-		}, duration);
+		done();
 	};
 
-	this.fadeOut = function(done){
-		$element.transition({
+	methods.fadeOut = function(done){
+		_this.options.$element.transition({
 			opacity: 0
-		}, duration);
+		}, _this.options.animationDuration);
 
-		setTimeout(function(done){
-			if(done) done();
-		}, duration);
+		done();
 	};
 
-	this.appear = function(done){
-		$element.transition({
+	methods.appear = function(done){
+		_this.options.$element.transition({
 			scale: 0,
 			opacity: 1,
 			perspective: '1500px',
@@ -55,30 +68,43 @@ UI.Animate = function($element, duration){
 		}, 0);
 
 		setTimeout(function(){
-			$element.transition({
+			_this.options.$element.transition({
 				scale: 1,
 				opacity: 1,
 				rotateX: '0deg'
-			}, duration, 'easeOutBack');
+			}, _this.options.animationDuration, 'easeOutBack');
 
-			if(done) done();
+			done();
 		}, 50);
 	};
 
-	this.disappear = function(done){
-		$element.transition({
+	methods.disappear = function(done){
+		_this.options.$element.transition({
 			scale: 0,
 			opacity: 1,
 			rotateX: '90deg'
-		}, duration, 'easeInBack');
+		}, _this.options.animationDuration, 'easeInBack');		
 
-		setTimeout(function(){
-			if(done) done();
-		}, duration);
+		done();
+	};
+
+	this.play = function(method, done){
+		if(methods[method]){
+			methods[method](function(){
+				setTimeout(function(){
+					if(done) done();
+				}, _this.options.animationDuration);
+			});
+		}else{
+			console.error('UI.Animate', 'Animation method not defined', method);
+		}
 	};
 };
 
+
 UI.Template = function(templateName){
+	var _this = this;
+
 	_.templateSettings = UI.settings.templateSettings;
 
 	var getTemplate = function(){
@@ -87,7 +113,7 @@ UI.Template = function(templateName){
 		if(template){
 			return template;
 		}else{
-			console.error('UI.Template', 'Template ' + templateName + ' is empty!');
+			console.error('UI.Template', 'Template is empty', templateName);
 		}
 	};
 
@@ -97,6 +123,7 @@ UI.Template = function(templateName){
 		return template(data);
 	};
 };
+
 
 UI.Checker = function(options){
 	var _this = this;
@@ -111,7 +138,13 @@ UI.Checker = function(options){
 		}
 	}, options);
 
-	$(this.options.selector).find('>a').off('click.UIChecker').on('click.UIChecker', function(e){
+	var $items = $(this.options.selector).find('>a');
+
+	$items.each(function(){
+		$(this).data('originalContent', $(this).html());
+	});
+
+	$items.off('click.UIChecker').on('click.UIChecker', function(e){
         e.preventDefault();
 
         var activeClass = '';
@@ -119,6 +152,14 @@ UI.Checker = function(options){
         if($(this).data('activeClass')){
             activeClass = ' ' + $(this).data('activeClass');
         }
+
+        if($(this).data('toggledContent')){
+	        if($(this).data('toggledContent') != $(this).html()){
+				$(this).html($(this).data('toggledContent'));
+			}else{
+				$(this).html($(this).data('originalContent'));
+			}
+		}
 
 		if($(this).hasClass('active')){
 			$(this).removeClass('active' + activeClass);
@@ -130,21 +171,24 @@ UI.Checker = function(options){
 	});
 };
 
+
 UI.Popup = function(options){
 	var _this = this,
 		animateWindow,
-		animateOverlay;
+		animateOverlay,
+		messageShowed = false,
+		messageTimeout = null;
 
 	this.$popup = null;
-    this.state = 'idle'; // @TODO: Add all the other states 
+    this.state = 'idle';
     
 	this.options = $.extend({
         width: 400,
-        animationDuration: 500,
-		onShow: function(){
+        animationDuration: 400,
+		onShow: function(instance){
 
 		},
-		onHide: function(){
+		onHide: function(instance){
 
 		}
 	}, options);
@@ -198,24 +242,62 @@ UI.Popup = function(options){
         }
     };
 
-    this.showMessage = function(text, type){
-        var template = new UI.Template('template-ui-popup-message'),
-        	className = '';
+    this.showMessage = function(type, timeout, text){
+    	this.hideMessage(function(){
+    		var template = new UI.Template('template-ui-popup-message'),
+	        	className = '';
 
-        switch(type){
-            case 'error' : className = 'bg-bittersweet-dark'; break;
-            case 'ok' : className = 'bg-mint-dark'; break;
-            default : className = 'bg-medium-gray-dark'; break;
-        }
+	        switch(type){
+	            case 'error' : className = 'error'; break;
+	            case 'success' : className = 'success'; break;
+	            default : className = ''; break;
+	        }
 
-        var html = template.render({
-            className: className,
-            text: text
-        });
+	        var html = template.render({
+	            className: className,
+	            text: text
+	        });
 
-        if(_this.$popup){
-            _this.$popup.find('.messages').html(html);
-        }
+	        if(_this.$popup){
+	            _this.$popup
+	            	.find('.messages')
+	            	.html(html)
+	            	.transition({
+						height: _this.$popup.find('.messages > .message').outerHeight()
+					}, 300, 'easeOutQuad');
+
+				setTimeout(function(){
+					if(timeout > 0){
+						messageTimeout = setTimeout(function(){
+							_this.hideMessage();
+						}, timeout);
+					}
+				}, 300);
+	        }
+
+	        messageShowed = true;
+    	});
+    };
+
+    this.hideMessage = function(done){
+    	clearTimeout(messageTimeout);
+    	
+    	if(messageShowed){
+	    	this.$popup
+	    		.find('.messages')
+	    		.transition({
+					height: 0
+				}, 200, 'easeOutQuad');
+
+			setTimeout(function(){
+				messageShowed = false;
+				_this.$popup.find('.messages').empty();
+				if(done) done();				
+			}, 200);
+		}else{
+			messageShowed = false;
+			if(done) done();
+		}
     };
 
 	this.changeContent = function(html){
@@ -255,24 +337,31 @@ UI.Popup = function(options){
 
 		$('body').append(this.$popup);
 
-    	animateWindow = new UI.Animate(this.$popup.find('.window'), this.options.animationDuration);
-    	animateOverlay = new UI.Animate(this.$popup.find('.overlay'), this.options.animationDuration);
+		resize();
 
-		animateOverlay.fadeIn();
+    	animateWindow = new UI.Animate({
+    		$element: this.$popup.find('.window'), 
+    		animationDuration: this.options.animationDuration
+    	});
 
-		animateWindow.appear(function(){
+    	animateOverlay = new UI.Animate({
+    		$element: this.$popup.find('.overlay'), 
+    		animationDuration: this.options.animationDuration
+    	});
+
+		animateOverlay.play('fadeIn');
+
+		animateWindow.play('appear', function(){
 			bind();
-    		resize();
-
     		_this.options.onShow(_this);
 		});
 	};
 
 	this.hide = function(){
 		if(this.$popup){
-			animateOverlay.fadeOut();
+			animateOverlay.play('fadeOut');
 
-			animateWindow.disappear(function(){
+			animateWindow.play('disappear', function(){
 				unbind();
 
 				_this.$popup.remove();
