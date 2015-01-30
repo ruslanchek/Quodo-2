@@ -4011,6 +4011,8 @@ table {
     width: 100%;
     background: rgba(0, 0, 0, 0.4);
     z-index: 99; }
+  .popup.no-overlay .overlay {
+    display: none; }
   .popup .window {
     position: absolute;
     width: 400px;

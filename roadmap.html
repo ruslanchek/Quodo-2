@@ -26,13 +26,14 @@
               <p>A place, where we solve the problems and making new things</p>
                         <div class="bullet bg-grass-light"><span class="text-fade">Fade effect on wait animation of the Popup</span></div>
                         <div class="bullet bg-grass-light"><span class="text-fade">Timeout for popup wait method</span></div>
+                        <div class="bullet bg-grass-light"><span class="text-fade">Popup close by click anywhere option</span></div>
                         <div class="bullet bg-medium-gray-light">Wireframed navigation</div>
                         <div class="bullet bg-medium-gray-light">Tabs navigation</div>
                         <div class="bullet bg-medium-gray-light">Forms</div>
                         <div class="bullet bg-medium-gray-light">Breadcrumbs</div>
                         <div class="bullet bg-medium-gray-light">Pagination</div>
                         <div class="bullet bg-medium-gray-light">Footer width bug</div>
-                        <div class="bullet bg-medium-gray-light">Popup close by click anywhere option</div>
+                        <div class="bullet bg-medium-gray-light">Popup option for remove overlay</div>
             </div>
           </div>
         </div>
@@ -60,7 +61,7 @@
       </div>
     </footer>
     <script type="text/x-handlebars-template" id="template-ui-popup">
-      <div id="{{_id}}" class="popup">
+      <div id="{{_id}}" class="popup {{overlay}}">
         <div class="overlay"></div>
         <div class="window"><a href="#" class="close"> <i class="fa fa-close"></i></a>
           <div class="title">

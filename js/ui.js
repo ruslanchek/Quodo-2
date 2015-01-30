@@ -251,6 +251,7 @@ UI.Popup = function(options){
 		return template.render({
 			title: title,
 			content: content,
+			overlay: ((_this.options.overlay) ? '' : 'no-overlay'),
 			_id: _id
 		});
 	};
