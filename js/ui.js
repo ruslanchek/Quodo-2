@@ -176,6 +176,7 @@ UI.Checker = function(options){
 
 UI.Popup = function(options){
 	var _this = this,
+		_id = _.uniqueId('UIPopup_'),
 		animateWindow,
 		animateOverlay,
 		messageShowed = false,
@@ -190,6 +191,7 @@ UI.Popup = function(options){
         width: 400,
         animationDuration: 500,
         modal: true,
+        overlay: true,
 		onShow: function(instance){
 
 		},
@@ -200,7 +202,7 @@ UI.Popup = function(options){
 
 	if(this.options.modal !== true){
 		clickOutside = new UI.ClickOutside({
-			selector: '.popup .window',
+			selector: '.popup#' + _id + ' .window',
 			onClickOutside: function($t){
 				_this.hide();
 			}
@@ -248,7 +250,8 @@ UI.Popup = function(options){
 
 		return template.render({
 			title: title,
-			content: content
+			content: content,
+			_id: _id
 		});
 	};
 

@@ -46,7 +46,7 @@
                         <h2>UI.Popup</h2><code class="code-multiline">
                 <pre>var Popup = new UI.Popup({
 	width: 500,
-	modal: false
+	modal: false,
 	animationDuration: 500,
 	onShow: function(instance){},
 	onHide: function(instance){}
@@ -86,7 +86,7 @@
       </div>
     </footer>
     <script type="text/x-handlebars-template" id="template-ui-popup">
-      <div class="popup">
+      <div id="{{_id}}" class="popup">
         <div class="overlay"></div>
         <div class="window"><a href="#" class="close"> <i class="fa fa-close"></i></a>
           <div class="title">
