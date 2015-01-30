@@ -59,7 +59,7 @@ Demo.Popup = function(){
 
         $('#show-sample-popup-1').on('click', function(e){
             e.preventDefault();
-            _this.samplePopup1.show('Waiting mode popup', content);
+            _this.samplePopup1.show('Waiting mode', content);
         });
     };
 
