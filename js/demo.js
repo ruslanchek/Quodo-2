@@ -48,7 +48,9 @@ Demo.Popup = function(){
                 var checker = new UI.Checker({
                     selector: '#popup-sample-waiting-checker',
                     onCheck: function(){
-                        instance.setWaitingMode(2000);
+                        instance.setWaitingMode(2000, function(){
+                        	$('#popup-sample-waiting-checker').click();
+                        });
                     },
                     onUncheck: function(){
                         instance.removeWaitingMode();
