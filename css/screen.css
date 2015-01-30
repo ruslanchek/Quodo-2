@@ -3062,32 +3062,36 @@ body {
 h1 {
   font-size: 1.875em;
   margin-bottom: 0.5em;
-  line-height: 1.1em; }
+  line-height: 1.1em;
+  font-weight: bold; }
 
 h2 {
   font-size: 1.6em;
   margin-bottom: 0.4em;
   margin-top: 1.28905em;
-  line-height: 1.175em; }
+  line-height: 1.175em;
+  font-weight: bold; }
 
 h3 {
   font-size: 1.375em;
   margin-bottom: 0.4em;
   margin-top: 1.5em;
-  line-height: 1.25em; }
+  line-height: 1.25em;
+  font-weight: bold; }
 
 h4 {
   font-size: 1.2em;
   margin-bottom: 0.4em;
   margin-top: 1.71875em;
-  line-height: 1.35em; }
+  line-height: 1.35em;
+  font-weight: bold; }
 
 h5 {
   font-size: 1em;
   margin-bottom: 0.5em;
   margin-top: 2.0625em;
   line-height: 1.4em;
-  text-transform: uppercase; }
+  font-weight: bold; }
 
 p {
   margin-bottom: 1.5em; }
@@ -4066,6 +4070,10 @@ table {
     .popup .window.wait .title .wait-indicator {
       opacity: 1; }
 
+.breadcrumbs a {
+  display: inline-block;
+  margin-right: 2ex; }
+
 main {
   padding: 40px 0 60px; }
 
@@ -4174,4 +4182,5 @@ main {
   .resizeable:hover i,
   .code:hover i {
     color: #59cef4; }
+
 /*# sourceMappingURL=screen.css.map */

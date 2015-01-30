@@ -1,19 +1,20 @@
 extends ./layout.jade
 
 block content
-	- var section = 'breadcrumbs'
+	- var section = 'nav-misc'
 
 	.grid-row
 		.col-6
 			include ./partials/leftcol.jade
 
 		.col-18
-			h1 Popup
+			h1 Breadcrumbs
 			p Yeah, everybody loves popups
 
-			.grid-row
-				.col-6: button.button.fat.w-100.bg-aqua-light#show-sample-popup-1 Waiting mode demo
-				.col-6: button.button.fat.w-100.bg-aqua-light#show-sample-popup-2 Message system demo
+			.breadcrumbs
+				a(href="#") Main page
+				a(href="#") Navigation
+				a.active(href="#") Breadcrumbs
 
 			br
 			.grid-row

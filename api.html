@@ -19,7 +19,7 @@
             <div class="col-6"><a href="index.html" class="color-dark-gray-dark">
                 <div class="logo">Quodo<i class="fa fa-rocket color-aqua-dark"></i>2</div>
                 <p class="logo-p">Application UI library</p></a>
-              <nav class="nav fat bordered"><a href="colors.html">Colors</a><a href="nav.html">Navigation</a><a href="breadcrumbs.html">Breadcrumbs</a><a href="pagination.html">Pagination</a><a href="grid.html">Grid</a><a href="buttons.html">Buttons</a><a href="table.html">Table</a><a href="typography.html">Typography</a><a href="checkers.html">Checkers</a><a href="popup.html">Popup</a><a href="api.html" class="active">API</a><a href="roadmap.html">Roadmap</a></nav>
+              <nav class="nav fat bordered"><a href="colors.html">Colors</a><a href="nav.html">Navigation</a><a href="nav-misc.html">Other navigation</a><a href="grid.html">Grid</a><a href="buttons.html">Buttons</a><a href="table.html">Table</a><a href="typography.html">Typography</a><a href="checkers.html">Checkers</a><a href="popup.html">Popup</a><a href="api.html" class="active">API</a><a href="roadmap.html">Roadmap</a></nav>
             </div>
             <div class="col-18">
               <h1>JavaScript API</h1>
@@ -37,7 +37,7 @@
                         <div class="bullet bg-pink-rose-light"><code>disappear</code></div><a name="ClickOutside"></a>
                         <h2>UI.ClickOutside</h2><code class="code-multiline">
                 <pre>var ClickOutside = new UI.ClickOutside({
-	$element: $('#my-element'),
+	selector: '#my-element',
 	onClickOutside: function($target){}
 })</pre></code><br>
                         <div class="bullet"><code>ClickOutside.bind()</code></div>
@@ -46,6 +46,7 @@
                         <h2>UI.Popup</h2><code class="code-multiline">
                 <pre>var Popup = new UI.Popup({
 	width: 500,
+	modal: false
 	animationDuration: 500,
 	onShow: function(instance){},
 	onHide: function(instance){}
@@ -73,13 +74,13 @@
             <p><a href="https://github.com/ruslanchek/Quodo-2"><i class="fa fa-github"></i>&nbsp;GitHub</a></p>
           </div>
           <div class="col-6">
-            <nav class="nav white"><a href="colors.html">Colors</a><a href="nav.html">Navigation</a><a href="breadcrumbs.html">Breadcrumbs</a><a href="pagination.html">Pagination</a></nav>
+            <nav class="nav white"><a href="colors.html">Colors</a><a href="nav.html">Navigation</a><a href="nav-misc.html">Other navigation</a><a href="grid.html">Grid</a></nav>
           </div>
           <div class="col-6">
-            <nav class="nav white"><a href="grid.html">Grid</a><a href="buttons.html">Buttons</a><a href="table.html">Table</a><a href="typography.html">Typography</a></nav>
+            <nav class="nav white"><a href="buttons.html">Buttons</a><a href="table.html">Table</a><a href="typography.html">Typography</a><a href="checkers.html">Checkers</a></nav>
           </div>
           <div class="col-6">
-            <nav class="nav white"><a href="checkers.html">Checkers</a><a href="popup.html">Popup</a><a href="api.html" class="active">API</a><a href="roadmap.html">Roadmap</a></nav>
+            <nav class="nav white"><a href="popup.html">Popup</a><a href="api.html" class="active">API</a><a href="roadmap.html">Roadmap</a></nav>
           </div>
         </div>
       </div>
@@ -109,7 +110,7 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
       </p>
-      <div class="checker"><a id="popup-sample-messages-error" href="#">Show error message</a><a id="popup-sample-messages-success" href="#">Show success messagea</a></div>
+      <div class="checker"><a id="popup-sample-messages-error" href="#">Error message</a><a id="popup-sample-messages-success" href="#">Success message</a></div>
     </script>
   </body>
 </html>

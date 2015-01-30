@@ -42,7 +42,7 @@ block content
 			+constructorSection('ClickOutside')
 			code.code-multiline: pre
 				|var ClickOutside = new UI.ClickOutside({
-				|	$element: $('#my-element'),
+				|	selector: '#my-element',
 				|	onClickOutside: function($target){}
 				|})
 			br
@@ -55,6 +55,7 @@ block content
 			code.code-multiline: pre
 				|var Popup = new UI.Popup({
 				|	width: 500,
+				|	modal: false,
 				|	animationDuration: 500,
 				|	onShow: function(instance){},
 				|	onHide: function(instance){}

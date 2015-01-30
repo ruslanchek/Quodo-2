@@ -49,7 +49,7 @@ Demo.Popup = function(){
                     selector: '#popup-sample-waiting-checker',
                     onCheck: function(){
                         instance.setWaitingMode(2000, function(){
-                        	$('#popup-sample-waiting-checker').click();
+                        	$('#popup-sample-waiting-checker a').click();
                         });
                     },
                     onUncheck: function(){
