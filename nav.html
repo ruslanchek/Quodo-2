@@ -24,21 +24,25 @@
             <div class="col-18">
               <h1>Horizontal navigation</h1>
               <p>Can be bordered, filled or simple inline links</p>
-              <nav class="nav fat horizontal bordered"><a href="#stayhere">Letter</a><a href="#stayhere">Word</a><a href="#stayhere" class="active">Expression</a><a href="#stayhere">Article</a><a href="#stayhere">Tale</a></nav><br>
+              <nav class="nav fat horizontal bordered"><a href="#stayhere" class="active">Letter</a><a href="#stayhere">Word</a><a href="#stayhere">Expression</a><a href="#stayhere">Article</a><a href="#stayhere">Tale</a></nav><br>
               <nav class="nav fat horizontal filled bg-bittersweet-light"><a href="#stayhere">Letter</a><a href="#stayhere">Word</a><a href="#stayhere" class="active">Expression</a><a href="#stayhere">Article</a><a href="#stayhere">Tale</a></nav><br>
-              <nav class="nav fat horizontal text-center"><a href="#stayhere">Letter</a><a href="#stayhere">Word</a><a href="#stayhere" class="active">Expression</a><a href="#stayhere">Article</a><a href="#stayhere">Tale</a></nav>
+              <nav class="nav fat horizontal text-center"><a href="#stayhere">Letter</a><a href="#stayhere">Word</a><a href="#stayhere">Expression</a><a href="#stayhere">Article</a><a href="#stayhere" class="active">Tale</a></nav><br>
+              <div class="grid-row">
+                <div class="col-9"><a href="#" class="code"><i class="fa fa-code"></i>&nbsp;The code</a></div>
+                <div class="col-9 text-right"><a href="#" class="paintable"><i class="fa fa-paint-brush"></i>&nbsp;Paintable</a><a href="#" class="resizeable"><i class="fa fa-arrows"></i>&nbsp;Resizeable</a></div>
+              </div>
               <hr>
               <h1>Vertical navigation</h1>
               <p>Can be bordered, filled or simple inline links</p>
               <div class="grid-row">
                 <div class="col-6">
-                  <nav class="nav fat bordered"><a href="#stayhere">Letter</a><a href="#stayhere">Word</a><a href="#stayhere" class="active">Expression</a><a href="#stayhere">Article</a><a href="#stayhere">Tale</a></nav>
+                  <nav class="nav fat bordered"><a href="#stayhere" class="active">Letter</a><a href="#stayhere">Word</a><a href="#stayhere">Expression</a><a href="#stayhere">Article</a><a href="#stayhere">Tale</a></nav>
                 </div>
                 <div class="col-6">
                   <nav class="nav fat filled bg-lavender-light"><a href="#stayhere">Letter</a><a href="#stayhere">Word</a><a href="#stayhere" class="active">Expression</a><a href="#stayhere">Article</a><a href="#stayhere">Tale</a></nav>
                 </div>
                 <div class="col-6">
-                  <nav class="nav fat"><a href="#stayhere">Letter</a><a href="#stayhere">Word</a><a href="#stayhere" class="active">Expression</a><a href="#stayhere">Article</a><a href="#stayhere">Tale</a></nav>
+                  <nav class="nav fat"><a href="#stayhere">Letter</a><a href="#stayhere">Word</a><a href="#stayhere">Expression</a><a href="#stayhere">Article</a><a href="#stayhere" class="active">Tale</a></nav>
                 </div>
               </div><br>
               <div class="grid-row">
@@ -88,15 +92,18 @@
       <div class="message {{className}}">{{content}}</div>
     </script>
     <script type="text/x-handlebars-template" id="template-demo-popup-1-content">
-      <p>This example will show you, how the popup can appear and disappear, and how it play its own waiting animation. Also you can set a timeout, that automatically removes waiting mode from a popup window</p>
+      <p>This example will show you, how the popup can appear and disappear, and how it play its own waiting animation. Also you can set a timeout, that automatically removes waiting mode from a popup window.</p>
       <div id="popup-sample-waiting-checker" class="checker"><a href="#" data-toggled-content="Switch waiting mode off">Switch waiting mode on</a></div>
     </script>
     <script type="text/x-handlebars-template" id="template-demo-popup-2-content">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
       <div class="checker"><a id="popup-sample-messages-error" href="#">Error message</a><a id="popup-sample-messages-success" href="#">Success message</a></div>
+    </script>
+    <script type="text/x-handlebars-template" id="template-demo-popup-3-content">
+      <p>Click anywhere outside this window to close it.</p>
     </script>
   </body>
 </html>

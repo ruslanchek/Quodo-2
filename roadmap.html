@@ -27,13 +27,13 @@
                         <div class="bullet bg-grass-light"><span class="text-fade">Fade effect on wait animation of the Popup</span></div>
                         <div class="bullet bg-grass-light"><span class="text-fade">Timeout for popup wait method</span></div>
                         <div class="bullet bg-grass-light"><span class="text-fade">Popup close by click anywhere option</span></div>
+                        <div class="bullet bg-grass-light"><span class="text-fade">Popup option for remove overlay</span></div>
+                        <div class="bullet bg-grass-light"><span class="text-fade">Breadcrumbs</span></div>
                         <div class="bullet bg-medium-gray-light">Wireframed navigation</div>
                         <div class="bullet bg-medium-gray-light">Tabs navigation</div>
                         <div class="bullet bg-medium-gray-light">Forms</div>
-                        <div class="bullet bg-medium-gray-light">Breadcrumbs</div>
                         <div class="bullet bg-medium-gray-light">Pagination</div>
                         <div class="bullet bg-medium-gray-light">Footer width bug</div>
-                        <div class="bullet bg-medium-gray-light">Popup option for remove overlay</div>
             </div>
           </div>
         </div>
@@ -77,15 +77,18 @@
       <div class="message {{className}}">{{content}}</div>
     </script>
     <script type="text/x-handlebars-template" id="template-demo-popup-1-content">
-      <p>This example will show you, how the popup can appear and disappear, and how it play its own waiting animation. Also you can set a timeout, that automatically removes waiting mode from a popup window</p>
+      <p>This example will show you, how the popup can appear and disappear, and how it play its own waiting animation. Also you can set a timeout, that automatically removes waiting mode from a popup window.</p>
       <div id="popup-sample-waiting-checker" class="checker"><a href="#" data-toggled-content="Switch waiting mode off">Switch waiting mode on</a></div>
     </script>
     <script type="text/x-handlebars-template" id="template-demo-popup-2-content">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
       <div class="checker"><a id="popup-sample-messages-error" href="#">Error message</a><a id="popup-sample-messages-success" href="#">Success message</a></div>
+    </script>
+    <script type="text/x-handlebars-template" id="template-demo-popup-3-content">
+      <p>Click anywhere outside this window to close it.</p>
     </script>
   </body>
 </html>

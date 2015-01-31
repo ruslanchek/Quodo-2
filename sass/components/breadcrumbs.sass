@@ -3,7 +3,17 @@
 		display: inline-block
 		margin-right: 2ex
 
-		&:after
-			
+		@extend .links-component
 
-		&.active
+		&:after
+			margin-left: 2ex
+			font: normal normal normal 14px/1 FontAwesome
+			content: $fa-var-angle-right
+			display: inline-block
+			color: $color-medium-gray-dark
+
+		&:last-of-type
+			color: $color-medium-gray-dark
+
+			&:after
+				display: none
