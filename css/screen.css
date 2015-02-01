@@ -3099,8 +3099,6 @@ h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child {
 
 p {
   margin-bottom: 1.5em; }
-  p:last-child {
-    margin-bottom: 0; }
 
 em {
   font-style: italic; }
@@ -4065,6 +4063,8 @@ table {
           background-color: #34bc9d; }
     .popup .window .content {
       padding: 20px 20px; }
+      .popup .window .content p:last-child {
+        margin-bottom: 0; }
     .popup .window .bottom {
       padding: 20px 20px; }
     .popup .window .close {
@@ -4113,6 +4113,8 @@ table {
   display: none;
   border: 1px solid #e6e9ed;
   border-top: none; }
+  .tabs-content p:last-child {
+    margin-bottom: 0; }
   .tabs-content.active {
     display: block; }
 
