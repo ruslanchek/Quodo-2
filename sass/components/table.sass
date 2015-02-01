@@ -2,13 +2,18 @@ table
 	width: 100%
 	border-spacing: 0
 	border-collapse: separate
+	border: 1px solid transparent
 
 	td,
 	th
 		padding: 11px 15px
+		border-right: 1px solid transparent
 
 	th
 		font-weight: bold
+
+	td
+		border-bottom: 1px solid transparent
 
 	tr
 		transition: background $animation-component-duration
@@ -39,7 +44,7 @@ table
 				background-color: $bg-table-stripe - 5
 
 	&.bordered
-		border: 1px solid $border-component-color
+		border-color: $border-component-color
 
 		thead
 			tr
@@ -48,18 +53,18 @@ table
 		&.bordered-rows-v
 			td,
 			th
-				border-right: 1px solid $border-component-color
+				border-right-color: $border-component-color
 
 				&:last-of-type,
 				&:last-of-type
-					border-right: none
+					border-right-color: transparent
 
 
 	&.bordered-rows-h
 		tbody
 			td
-				border-bottom: 1px solid $border-component-color
+				border-bottom-color: $border-component-color
 
 			tr:last-of-type
 				td
-					border-bottom: none
+					border-bottom-color: transparent

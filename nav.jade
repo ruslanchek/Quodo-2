@@ -9,13 +9,12 @@ block content
 
 		.col-18
 			h1 Horizontal navigation
-
 			p Can be bordered, filled or simple inline links
 
 			nav.nav.fat.horizontal.bordered
-				a(href="#stayhere") Letter
+				a.active(href="#stayhere") Letter
 				a(href="#stayhere") Word
-				a.active(href="#stayhere") Expression
+				a(href="#stayhere") Expression
 				a(href="#stayhere") Article
 				a(href="#stayhere") Tale
 
@@ -32,9 +31,18 @@ block content
 			nav.nav.fat.horizontal.text-center
 				a(href="#stayhere") Letter
 				a(href="#stayhere") Word
-				a.active(href="#stayhere") Expression
+				a(href="#stayhere") Expression
 				a(href="#stayhere") Article
-				a(href="#stayhere") Tale
+				a.active(href="#stayhere") Tale
+
+
+			br
+			.grid-row
+				.col-9
+					include partials/code
+				.col-9.text-right
+					include partials/paintable
+					include partials/resizeable
 
 			hr
 
@@ -44,9 +52,9 @@ block content
 			.grid-row
 				.col-6
 					nav.nav.fat.bordered
-						a(href="#stayhere") Letter
+						a.active(href="#stayhere") Letter
 						a(href="#stayhere") Word
-						a.active(href="#stayhere") Expression
+						a(href="#stayhere") Expression
 						a(href="#stayhere") Article
 						a(href="#stayhere") Tale
 				.col-6
@@ -61,9 +69,9 @@ block content
 					nav.nav.fat
 						a(href="#stayhere") Letter
 						a(href="#stayhere") Word
-						a.active(href="#stayhere") Expression
+						a(href="#stayhere") Expression
 						a(href="#stayhere") Article
-						a(href="#stayhere") Tale
+						a.active(href="#stayhere") Tale
 
 			br
 			.grid-row

@@ -1,0 +1,21 @@
+.tabs
+	border-bottom: 1px solid $border-component-color
+
+	a
+		@extend .links-component
+		display: inline-block
+		padding: $padding-component-vertical/2 $padding-component-vertical
+		border: 1px solid transparent
+
+		&.active
+			background-color: $border-component-color
+			border-radius: $border-radius $border-radius 0 0
+
+.tabs-content
+	padding: $padding-component-vertical $padding-component-vertical
+	display: none
+	border: 1px solid $border-component-color
+	border-top: none
+
+	&.active
+		display: block

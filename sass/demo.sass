@@ -64,6 +64,7 @@ main
 		@while $items > 0
 			&:nth-child(#{$items})
 				opacity: $opacity - .085 * $items
+				
 			$items: $items - 1
 
 		div
@@ -84,6 +85,7 @@ main
 .resizeable,
 .code
 	@extend .links-component
+
 	&.paintable i
 		font-size: 14px
 	&.code i

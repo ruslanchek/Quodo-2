@@ -9,21 +9,23 @@ var UI = {
 
 UI.ClickOutside = function(options){
 	var _this = this,
-		id = _.uniqueId('UIClickOutside_');
+		_id = _.uniqueId('UIClickOutside_');
 
 	this.options = $.extend({
-		$element: '', 
+		selector: '', 
 		onClickOutside: function($target){
 			
 		}
 	}, options);
- 
+
 	this.bind = function(){
 		this.unbind();
 		
 		$(document).on('mouseup.' + _id, function (e){
+			var $container = $(_this.options.selector);
+
 			if (!$container.is(e.target) && $container.has(e.target).length === 0){
-			    if(onClickOutside) onClickOutside(e.target);
+			    _this.options.onClickOutside(e.target);
 			}
 		});
 	};
@@ -174,11 +176,13 @@ UI.Checker = function(options){
 
 UI.Popup = function(options){
 	var _this = this,
+		_id = _.uniqueId('UIPopup_'),
 		animateWindow,
 		animateOverlay,
 		messageShowed = false,
 		messageTimeout = null,
-		waitingTimeout = null;
+		waitingTimeout = null,
+		clickOutside = null;
 
 	this.$popup = null;
     this.state = 'idle';
@@ -186,6 +190,8 @@ UI.Popup = function(options){
 	this.options = $.extend({
         width: 400,
         animationDuration: 500,
+        modal: true,
+        overlay: true,
 		onShow: function(instance){
 
 		},
@@ -193,6 +199,15 @@ UI.Popup = function(options){
 
 		}
 	}, options);
+
+	if(this.options.modal !== true){
+		clickOutside = new UI.ClickOutside({
+			selector: '.popup#' + _id + ' .window',
+			onClickOutside: function($t){
+				_this.hide();
+			}
+		});
+	}
 
 	var bind = function(){
 		unbind();
@@ -203,6 +218,10 @@ UI.Popup = function(options){
 
 				_this.hide();
 			});
+
+			if(!_this.options.modal && clickOutside){
+				clickOutside.bind();
+			}
 		}
 
         $(window).on('resize.UIPopup', function(){
@@ -220,6 +239,10 @@ UI.Popup = function(options){
 
 	var unbind = function(){
 		$(document).off('keyup.UIPopup');
+
+		if(!_this.options.modal && clickOutside !== null){
+			clickOutside.unbind();
+		}
 	};
 
 	var make = function(title, content){
@@ -227,7 +250,9 @@ UI.Popup = function(options){
 
 		return template.render({
 			title: title,
-			content: content
+			content: content,
+			overlay: ((_this.options.overlay) ? '' : 'no-overlay'),
+			_id: _id
 		});
 	};
 

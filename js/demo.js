@@ -49,7 +49,7 @@ Demo.Popup = function(){
                     selector: '#popup-sample-waiting-checker',
                     onCheck: function(){
                         instance.setWaitingMode(2000, function(){
-                        	$('#popup-sample-waiting-checker').click();
+                        	$('#popup-sample-waiting-checker a').click();
                         });
                     },
                     onUncheck: function(){
@@ -87,9 +87,35 @@ Demo.Popup = function(){
         });
     };
 
+    this.initPopup3 = function(){
+        var content = new UI.Template('template-demo-popup-3-content').render();
+
+        this.samplePopup3 = new UI.Popup({
+            width: 500,
+            overlay: false,
+            modal: false,
+            onShow: function(instance){
+                $('#popup-sample-messages-error').on('click', function(){
+                    instance.showMessage('error', 5000, 'Here is your error message! <span class="text-fade">Will disappear in 5 seconds.</span>')
+                });
+
+                $('#popup-sample-messages-success').on('click', function(){
+                    instance.showMessage('success', 5000, 'Here is your success message! <span class="text-fade">Will disappear in 5 seconds.</span>')
+                });
+            }
+        });
+
+        $('#show-sample-popup-3').on('click', function(e){
+            e.preventDefault();
+            _this.samplePopup3.show('Not modal', content);
+        });
+    };
+
+
     this.init = function(){
         this.initPopup1();
         this.initPopup2();
+        this.initPopup3();
 
         return this;
     };
