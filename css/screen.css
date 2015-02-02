@@ -3125,6 +3125,11 @@ hr {
   margin: 2em 0;
   border: none; }
 
+pre {
+  -moz-tab-size: 4;
+    -o-tab-size: 4;
+       tab-size: 4; }
+
 code {
   font-family: monospace;
   color: #656d77; }

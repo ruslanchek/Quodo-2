@@ -25,7 +25,7 @@ block content
 
 
 			+constructorSection('Animate')
-			code.code-multiline: pre
+			pre.code-multiline: code
 				|var Animate = new UI.Animate({
 				|	$element: $('#my-element'),
 				|	animationDuration: 300
@@ -70,3 +70,13 @@ block content
 			+constructorPublicMethod('Popup.changeTitle(html)', 'Change the popup title content')
 			+constructorPublicMethod('Popup.setWaitingMode(timeout, done)', 'Shows waiting animation on the popup title')
 			+constructorPublicMethod('Popup.removeWaitingMode()', 'Removes the popup waiting animation')
+
+
+			// Popup
+			+constructorSection('Tabs')
+			code.code-multiline: pre
+				|var Tabs = new UI.Tabs({
+				|	tabsSelector: '.tabs',
+				|	tabsContentSelector: '.tabs-content'
+				|});
+			br
