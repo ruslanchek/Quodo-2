@@ -4,11 +4,14 @@ block content
 	- var section = 'roadmap'
 
 	mixin feature(state, text)
-		if state
-			.bullet.bg-grass-light
-				span.text-fade= text
-		else
+		if state == 1
+			.bullet.bg-grass-light= text
+
+		if state == 2
 			.bullet.bg-medium-gray-light= text
+
+		if state == 3
+			.bullet.bg-sunflower-light= text
 
 	.grid-row
 		.col-6
@@ -18,15 +21,21 @@ block content
 			h1 Roadmap
 			p A place, where we solve the problems and making new things
 
-			+feature(true, 'Fade effect on wait animation of the Popup')
-			+feature(true, 'Timeout for popup wait method')
-			+feature(true, 'Popup close by click anywhere option')
-			+feature(true, 'Popup option for remove overlay')
-			+feature(true, 'Breadcrumbs')
-			+feature(true, 'Tabs navigation')
-			+feature(false, 'Tabs sliding')
-			+feature(false, 'Wireframed navigation')
-			+feature(false, 'Forms')
-			+feature(false, 'Pagination')
-			+feature(false, 'Footer width bug')
-			+feature(false, 'Tabs sliding animation on swithing')
+			h2 Yep, done!
+			+feature(1, 'Fade effect on wait animation of the Popup')
+			+feature(1, 'Timeout for popup wait method')
+			+feature(1, 'Popup close by click anywhere option')
+			+feature(1, 'Popup option for remove overlay')
+			+feature(1, 'Breadcrumbs')
+			+feature(1, 'Tabs navigation')
+
+			h2 Not yet
+			+feature(2, 'Tabs sliding')
+			+feature(2, 'Wireframed navigation')
+			+feature(2, 'Forms')
+			+feature(2, 'Pagination')
+			+feature(2, 'Footer width bug')
+			+feature(2, 'Tabs sliding animation on swithing')
+
+			h2 Ideas
+			+feature(3, 'Probably, it\'s nice to make a drag functionality in non modal popup?')
