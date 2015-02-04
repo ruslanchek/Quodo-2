@@ -3,10 +3,6 @@ var UI = {
 		templateSettings: {
 		  	interpolate: /\{\{(.+?)\}\}/g
 		}
-	},
-
-	init: function(){
-		var commonTabs = new UI.Tabs();
 	}
 };
 
@@ -175,34 +171,6 @@ UI.Checker = function(options){
 			_this.options.onCheck($(this));
 		}
 	});
-};
-
-
-UI.Tabs = function(){
-	var _this = this,
-		$tabs = $('.tabs[data-role="tabs"]'),
-		$tabsContent = $('[data-tab-content]');
-
-	this.openTab = function(name){
-		$tabs.find('a').removeClass('active');
-		$tabs.find('a[href="#' + name + '"]').addClass('active');
-		$tabsContent.filter('.active').removeClass('active');
-		$tabsContent.filter('[data-tab-content="' + name + '"]').addClass('active');
-	};
-
-	var bind = function(){
-		$tabs.find('>a').off('click').on('click', function(e){
-			e.preventDefault();
-
-			var name = $(this).attr('href');
-
-			name = name.substr(1, name.length);
-
-			_this.openTab(name);
-		});
-	};
-
-	bind();
 };
 
 
@@ -444,6 +412,36 @@ UI.Popup = function(options){
 	};
 };
 
-$(function(){
-	UI.init();
-});
+
+UI.Tabs = function(options){
+	var _this = this;
+
+	this.options = $.extend({
+        tabsSelector: '.tabs',
+        tabsContentSelector: '.tabs-content'
+	}, options);
+
+	var $tabs = $(this.options.tabsSelector + '[data-role="tabs"]'),
+		$tabsContent = $(this.options.tabsContentSelector + '[data-tab-content]');
+
+	this.openTab = function(name){
+		$tabs.find('a').removeClass('active');
+		$tabs.find('a[href="#' + name + '"]').addClass('active');
+		$tabsContent.filter('.active').removeClass('active');
+		$tabsContent.filter('[data-tab-content="' + name + '"]').addClass('active');
+	};
+
+	var bind = function(){
+		$tabs.find('>a').off('click').on('click', function(e){
+			e.preventDefault();
+
+			var name = $(this).attr('href');
+
+			name = name.substr(1, name.length);
+
+			_this.openTab(name);
+		});
+	};
+
+	bind();
+};

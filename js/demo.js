@@ -1,4 +1,4 @@
-// hljs.initHighlightingOnLoad();
+hljs.initHighlightingOnLoad();
 
 var Demo = {};
 
@@ -121,10 +121,25 @@ Demo.Popup = function(){
     };
 };
 
+Demo.Tabs = function(){
+    var _this = this;
+
+    this.initTabs = function(){
+        this.sampleTabs = new UI.Tabs();
+    };
+
+    this.init = function(){
+        this.initTabs();
+
+        return this;
+    };
+};
+
 Demo.init = function(){
 	this.table = new this.Table().init();
 	this.checker = new this.Checker().init();
     this.popup = new this.Popup().init();
+    this.tabs = new this.Tabs().init();
 };
 
 $(function(){
