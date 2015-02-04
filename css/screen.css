@@ -4104,24 +4104,49 @@ table {
       display: none; }
 
 .tabs {
-  border-bottom: 1px solid #e6e9ed; }
+  border-bottom: 1px solid #e6e9ed;
+  position: relative; }
   .tabs a {
+    box-sizing: border-box;
     display: inline-block;
-    padding: 10px 20px;
-    border: 1px solid transparent; }
-    .tabs a.active {
-      background-color: #e6e9ed;
-      border-radius: 5px 5px 0 0; }
+    padding: 0 20px;
+    border: 1px solid transparent;
+    height: 36px;
+    line-height: 36px;
+    position: relative;
+    z-index: 2; }
+  .tabs.fat a {
+    height: 48px;
+    line-height: 48px; }
+  .tabs.slim a {
+    height: 32px;
+    line-height: 32px; }
+  .tabs .marker {
+    display: block;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #e6e9ed;
+    border-radius: 5px 5px 0 0; }
+  .tabs.sliding .marker {
+    -webkit-transition: 0.3s;
+            transition: 0.3s; }
 
 .tabs-content {
-  padding: 20px 20px;
   display: none;
-  border: 1px solid #e6e9ed;
-  border-top: none; }
+  padding: 20px 0; }
   .tabs-content p:last-child {
     margin-bottom: 0; }
   .tabs-content.active {
     display: block; }
+  .tabs-content.bordered {
+    border: 1px solid #e6e9ed;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    padding: 20px 20px; }
 
 main {
   padding: 40px 0 60px; }

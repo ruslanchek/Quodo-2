@@ -1,24 +1,55 @@
 .tabs
 	border-bottom: 1px solid $border-component-color
+	position: relative
 
 	a
 		@extend .links-component
+		box-sizing: border-box
 		display: inline-block
-		padding: $padding-component-vertical/2 $padding-component-vertical
+		padding: 0 $padding-component-vertical
 		border: 1px solid transparent
+		height: $height-component-default
+		line-height: $height-component-default
+		position: relative
+		z-index: 2
 
-		&.active
-			background-color: $border-component-color
-			border-radius: $border-radius $border-radius 0 0
+	&.fat
+		a
+			height: $height-component-fat
+			line-height: $height-component-fat
+
+	&.slim
+		a
+			height: $height-component-slim
+			line-height: $height-component-slim
+
+	.marker
+		display: block
+		height: 100%
+		width: 0
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 1
+		background-color: $border-component-color
+		border-radius: $border-radius $border-radius 0 0
+
+	&.sliding
+		.marker
+			transition: $animation-component-duration*2
 
 .tabs-content
-	padding: $padding-component-vertical $padding-component-vertical
 	display: none
-	border: 1px solid $border-component-color
-	border-top: none
+	padding: $padding-component-vertical 0
 
 	p:last-child
 		margin-bottom: 0
 
 	&.active
 		display: block
+
+	&.bordered
+		border: 1px solid $border-component-color
+		border-top: none
+		border-radius: 0 0 $border-radius $border-radius
+		padding: $padding-component-vertical $padding-component-vertical

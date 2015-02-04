@@ -418,17 +418,42 @@ UI.Tabs = function(options){
 
 	this.options = $.extend({
         tabsSelector: '.tabs',
-        tabsContentSelector: '.tabs-content'
+        tabsContentSelector: '.tabs-content',
+		sliding: true,
+		onTabOpen: function(name){
+
+		}
 	}, options);
 
-	var $tabs = $(this.options.tabsSelector + '[data-role="tabs"]'),
-		$tabsContent = $(this.options.tabsContentSelector + '[data-tab-content]');
+	var $tabs = $(this.options.tabsSelector),
+		$tabsContent = $(this.options.tabsContentSelector);
 
 	this.openTab = function(name){
-		$tabs.find('a').removeClass('active');
-		$tabs.find('a[href="#' + name + '"]').addClass('active');
+		$tabs.find('>a').removeClass('active');
 		$tabsContent.filter('.active').removeClass('active');
-		$tabsContent.filter('[data-tab-content="' + name + '"]').addClass('active');
+
+		var $activeTab = $tabs.find('>a[href="#' + name + '"]');
+		var $activeTabContent = $tabsContent.filter('[data-tab="' + name + '"]');
+
+		$activeTab.addClass('active');
+		$activeTabContent.addClass('active');
+
+		setMarkerGeometry();
+
+		this.options.onTabOpen(name);
+	};
+
+	var setMarkerGeometry = function(){
+		var $anchor = $tabs.find('>a.active');
+
+		if($anchor.length > 0){
+			$tabs.find('>.marker').css({
+				left: $anchor.position().left,
+				top: $anchor.position().top,
+				width: $anchor.outerWidth(),
+				height: $anchor.outerHeight()
+			});
+		}
 	};
 
 	var bind = function(){
@@ -441,6 +466,16 @@ UI.Tabs = function(options){
 
 			_this.openTab(name);
 		});
+
+		setMarkerGeometry();
+
+		setTimeout(function(){
+			if(_this.options.sliding === true){
+				$tabs.addClass('sliding');
+				$tabsContent.addClass('sliding');
+			}
+		}, 1);
+		
 	};
 
 	bind();
