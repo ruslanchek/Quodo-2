@@ -430,10 +430,10 @@ UI.Tabs = function(options){
 
 	this.openTab = function(name){
 		$tabs.find('>a').removeClass('active');
-		$tabsContent.filter('.active').removeClass('active');
+		$tabsContent.find('.page').filter('.active').removeClass('active');
 
 		var $activeTab = $tabs.find('>a[href="#' + name + '"]');
-		var $activeTabContent = $tabsContent.filter('[data-tab="' + name + '"]');
+		var $activeTabContent = $tabsContent.find('.page').filter('[data-tab="' + name + '"]');
 
 		$activeTab.addClass('active');
 		$activeTabContent.addClass('active');
