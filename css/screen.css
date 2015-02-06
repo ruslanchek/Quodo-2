@@ -3820,6 +3820,8 @@ html, body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
+  .button:visited {
+    color: #656d77; }
   .button:before {
     content: "";
     position: absolute;
@@ -4160,11 +4162,11 @@ table {
     .tabs-content .page.active {
       display: block; }
   .tabs-content.sliding {
-    -webkit-transition: 0.45s;
-            transition: 0.45s; }
+    -webkit-transition: height 0.45s;
+            transition: height 0.45s; }
     .tabs-content.sliding .pages {
-      -webkit-transition: 0.45s;
-              transition: 0.45s; }
+      -webkit-transition: left 0.45s;
+              transition: left 0.45s; }
   .tabs-content.bordered {
     box-sizing: border-box;
     border: 1px solid #e6e9ed;
