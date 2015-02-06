@@ -473,20 +473,28 @@ UI.Tabs = function(options){
 		return name.substr(1, name.length);
 	};
 
-	var setContentActive = function(){
+	var setContentActive = function(no_animation){
+		if (_this.options.sliding === true && !no_animation) {
+			$tabsContent.addClass('sliding');
+		}
+
 		var $active = $tabsContent.find('.page').filter('[data-tab="' + activeName + '"]');
 
 		$tabsContent.find('.page').removeClass('active');
 		$active.addClass('active');
 
 		resizeContent();
+
+		if(_this.options.sliding === true && !no_animation){
+			clearTimeout(animationTimeout);
+
+			animationTimeout = setTimeout(function(){
+				$tabsContent.removeClass('sliding');
+			}, 450);
+		}
 	};
 
 	var setMarkerGeometry = function(){
-		if (_this.options.sliding === true) {
-			$tabsContent.addClass('sliding');
-		}
-
 		var $active = $tabs.find('>a[href="#' + activeName + '"]');
 
 		$tabs.find('>a').removeClass('active');
@@ -499,14 +507,6 @@ UI.Tabs = function(options){
 				width: $active.outerWidth(),
 				height: $active.outerHeight()
 			});
-		}
-
-		if(_this.options.sliding === true){
-			clearTimeout(animationTimeout);
-
-			animationTimeout = setTimeout(function(){
-				$tabsContent.removeClass('sliding');
-			}, 450);
 		}
 	};
 
@@ -543,7 +543,7 @@ UI.Tabs = function(options){
 		activeName = getAnchorName($tabs.find('>a.active'));
 
 		setMarkerGeometry();
-		setContentActive();
+		setContentActive(true);
 
 		if (_this.options.sliding === true) {
 			setTimeout(function () {
