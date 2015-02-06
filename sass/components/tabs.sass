@@ -36,12 +36,22 @@
 
 	&.sliding
 		.marker
-			transition: $animation-component-duration*2
+			transition: $animation-component-duration*3
 
 .tabs-content
+	overflow: hidden
+	width: 100%
+	position: relative
+	+pie-clearfix
+
+	.pages
+		position: relative
+
 	.page
 		display: none
+		float: left
 		padding: $padding-component-vertical 0
+		+pie-clearfix
 
 		p:last-child
 			margin-bottom: 0
@@ -49,9 +59,16 @@
 		&.active
 			display: block
 
+	&.sliding
+		transition: $animation-component-duration*3
+
+		.pages
+			transition: $animation-component-duration*3
+
+
 	&.bordered
-		.page
-			border: 1px solid $border-component-color
-			border-top: none
-			border-radius: 0 0 $border-radius $border-radius
-			padding: $padding-component-vertical $padding-component-vertical
+		box-sizing: border-box
+		border: 1px solid $border-component-color
+		border-top: none
+		border-radius: 0 0 $border-radius $border-radius
+		padding: $padding-component-vertical $padding-component-vertical
