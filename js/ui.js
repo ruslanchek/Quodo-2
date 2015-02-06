@@ -443,10 +443,34 @@ UI.Tabs = function(options){
 		setContentActive();
 
 		this.options.onTabOpen(name);
+
+		return name;
+	};
+
+	this.next = function(){
+		var $next = $tabs.find('>a.active').next('a');
+
+		if($next.length > 0){
+			return _this.openTab(getAnchorName($next));
+		}
+	};
+
+	this.prev = function(){
+		var $prev = $tabs.find('>a.active').prev('a');
+
+		if($prev.length > 0){
+			return _this.openTab(getAnchorName($prev));
+		}
 	};
 
 	this.getActive = function(){
 		return active;
+	};
+
+	var getAnchorName = function($link){
+		var name = $link.attr('href');
+
+		return name.substr(1, name.length);
 	};
 
 	var setContentActive = function(){
@@ -508,9 +532,7 @@ UI.Tabs = function(options){
 	var bind = function(){
 		$tabs.find('>a').off('click').on('click', function(e){
 			e.preventDefault();
-			var name = $(this).attr('href');
-			name = name.substr(1, name.length);
-			_this.openTab(name);
+			_this.openTab(getAnchorName($(this)));
 		});
 		
 		$tabsContent.wrapInner('<div class="pages"></div>');
@@ -518,8 +540,7 @@ UI.Tabs = function(options){
 			display: 'block'
 		});
 
-		activeName = $tabs.find('>a.active').attr('href');
-		activeName = activeName.substr(1, activeName.length);
+		activeName = getAnchorName($tabs.find('>a.active'));
 
 		setMarkerGeometry();
 		setContentActive();
