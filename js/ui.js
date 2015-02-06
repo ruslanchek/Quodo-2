@@ -137,6 +137,9 @@ UI.Checker = function(options){
 		}, 
 		onUncheck: function($checker){
 
+		},
+		onToggle: function(state, $checker){
+
 		}
 	}, options);
 
@@ -166,9 +169,11 @@ UI.Checker = function(options){
 		if($(this).hasClass('active')){
 			$(this).removeClass('active' + activeClass);
 			_this.options.onUncheck($(this));
+			_this.options.onToggle(false, $(this));
 		}else{
 			$(this).addClass('active' + activeClass);
 			_this.options.onCheck($(this));
+			_this.options.onToggle(true, $(this));
 		}
 	});
 };
@@ -414,7 +419,9 @@ UI.Popup = function(options){
 
 
 UI.Tabs = function(options){
-	var _this = this;
+	var _this = this,
+		_id = _.uniqueId('UITabs_'),
+		activeName;
 
 	this.options = $.extend({
         tabsSelector: '.tabs',
@@ -426,56 +433,127 @@ UI.Tabs = function(options){
 	}, options);
 
 	var $tabs = $(this.options.tabsSelector),
-		$tabsContent = $(this.options.tabsContentSelector);
+		$tabsContent = $(this.options.tabsContentSelector),
+		animationTimeout = null;
 
 	this.openTab = function(name){
-		$tabs.find('>a').removeClass('active');
-		$tabsContent.find('.page').filter('.active').removeClass('active');
-
-		var $activeTab = $tabs.find('>a[href="#' + name + '"]');
-		var $activeTabContent = $tabsContent.find('.page').filter('[data-tab="' + name + '"]');
-
-		$activeTab.addClass('active');
-		$activeTabContent.addClass('active');
+		activeName = name;
 
 		setMarkerGeometry();
+		setContentActive();
 
 		this.options.onTabOpen(name);
+
+		return name;
+	};
+
+	this.next = function(){
+		var $next = $tabs.find('>a.active').next('a');
+
+		if($next.length > 0){
+			return _this.openTab(getAnchorName($next));
+		}
+	};
+
+	this.prev = function(){
+		var $prev = $tabs.find('>a.active').prev('a');
+
+		if($prev.length > 0){
+			return _this.openTab(getAnchorName($prev));
+		}
+	};
+
+	this.getActive = function(){
+		return active;
+	};
+
+	var getAnchorName = function($link){
+		var name = $link.attr('href');
+
+		return name.substr(1, name.length);
+	};
+
+	var setContentActive = function(){
+		var $active = $tabsContent.find('.page').filter('[data-tab="' + activeName + '"]');
+
+		$tabsContent.find('.page').removeClass('active');
+		$active.addClass('active');
+
+		resizeContent();
 	};
 
 	var setMarkerGeometry = function(){
-		var $anchor = $tabs.find('>a.active');
+		if (_this.options.sliding === true) {
+			$tabsContent.addClass('sliding');
+		}
 
-		if($anchor.length > 0){
+		var $active = $tabs.find('>a[href="#' + activeName + '"]');
+
+		$tabs.find('>a').removeClass('active');
+		$active.addClass('active');
+
+		if($active.length > 0){
 			$tabs.find('>.marker').css({
-				left: $anchor.position().left,
-				top: $anchor.position().top,
-				width: $anchor.outerWidth(),
-				height: $anchor.outerHeight()
+				left: $active.position().left,
+				top: $active.position().top,
+				width: $active.outerWidth(),
+				height: $active.outerHeight()
 			});
 		}
+
+		if(_this.options.sliding === true){
+			clearTimeout(animationTimeout);
+
+			animationTimeout = setTimeout(function(){
+				$tabsContent.removeClass('sliding');
+			}, 450);
+		}
+	};
+
+	var resizeContent = function(){
+		var width = $tabsContent.width() - ($tabsContent.outerWidth() - $tabsContent.width()),
+			$page = $tabsContent.find('.page'),
+			$active = $page.filter('.active');
+
+		$page.css({
+			width: width
+		});
+
+		$tabsContent.find('.pages').css({
+			width: width * $page.length,
+			left: -$active.position().left
+		});
+
+		$tabsContent.css({
+			height: $active.outerHeight()
+		});
 	};
 
 	var bind = function(){
 		$tabs.find('>a').off('click').on('click', function(e){
 			e.preventDefault();
-
-			var name = $(this).attr('href');
-
-			name = name.substr(1, name.length);
-
-			_this.openTab(name);
+			_this.openTab(getAnchorName($(this)));
+		});
+		
+		$tabsContent.wrapInner('<div class="pages"></div>');
+		$tabsContent.find('.page').css({
+			display: 'block'
 		});
 
-		setMarkerGeometry();
+		activeName = getAnchorName($tabs.find('>a.active'));
 
-		setTimeout(function(){
-			if(_this.options.sliding === true){
+		setMarkerGeometry();
+		setContentActive();
+
+		if (_this.options.sliding === true) {
+			setTimeout(function () {
 				$tabs.addClass('sliding');
-				$tabsContent.addClass('sliding');
-			}
-		}, 1);
-		
+			}, 1);
+		}
+
+		$(window).off('resize.' + _id).on('resize.' + _id, function(){
+			resizeContent();
+		});
 	};
 
 	bind();

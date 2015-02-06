@@ -126,6 +126,11 @@ Demo.Tabs = function(){
 
     this.initTabs = function(){
         this.sampleTabs = new UI.Tabs();
+
+        $('#tab-media').on('click', function(e){
+            e.preventDefault();
+            _this.sampleTabs.openTab('media');
+        });
     };
 
     this.init = function(){
