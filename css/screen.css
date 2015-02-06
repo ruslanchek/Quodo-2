@@ -4135,18 +4135,18 @@ table {
     -webkit-transition: 0.3s;
             transition: 0.3s; }
 
-.tabs-content {
+.tabs-content .page {
   display: none;
   padding: 20px 0; }
-  .tabs-content p:last-child {
+  .tabs-content .page p:last-child {
     margin-bottom: 0; }
-  .tabs-content.active {
+  .tabs-content .page.active {
     display: block; }
-  .tabs-content.bordered {
-    border: 1px solid #e6e9ed;
-    border-top: none;
-    border-radius: 0 0 5px 5px;
-    padding: 20px 20px; }
+.tabs-content.bordered .page {
+  border: 1px solid #e6e9ed;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  padding: 20px 20px; }
 
 main {
   padding: 40px 0 60px; }

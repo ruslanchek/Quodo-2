@@ -39,17 +39,19 @@
 			transition: $animation-component-duration*2
 
 .tabs-content
-	display: none
-	padding: $padding-component-vertical 0
+	.page
+		display: none
+		padding: $padding-component-vertical 0
 
-	p:last-child
-		margin-bottom: 0
+		p:last-child
+			margin-bottom: 0
 
-	&.active
-		display: block
+		&.active
+			display: block
 
 	&.bordered
-		border: 1px solid $border-component-color
-		border-top: none
-		border-radius: 0 0 $border-radius $border-radius
-		padding: $padding-component-vertical $padding-component-vertical
+		.page
+			border: 1px solid $border-component-color
+			border-top: none
+			border-radius: 0 0 $border-radius $border-radius
+			padding: $padding-component-vertical $padding-component-vertical
