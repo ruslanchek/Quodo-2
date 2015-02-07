@@ -3166,8 +3166,10 @@ mark {
     position: absolute;
     border-radius: 0.25em; }
 
-ol li {
-  list-style-type: decimal; }
+ol {
+  list-style-position: inside; }
+  ol li {
+    list-style-type: decimal; }
 
 ul.dashes li {
   position: relative;
