@@ -3152,7 +3152,7 @@ mark {
   border-radius: 5px; }
 
 .bullet, ul.bullets li {
-  padding-left: 1em;
+  padding-left: 2ex;
   display: block;
   position: relative; }
   .bullet:before, ul.bullets li:before {
@@ -3165,6 +3165,18 @@ mark {
     display: block;
     position: absolute;
     border-radius: 0.25em; }
+
+ol li {
+  list-style-type: decimal; }
+
+ul.dashes li {
+  position: relative;
+  padding-left: 2.75ex; }
+  ul.dashes li:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "—"; }
 
 .color-bittersweet-light {
   color: #fc6d58 !important; }
@@ -4298,4 +4310,5 @@ main {
   .resizeable:hover i,
   .code:hover i {
     color: #59cef4; }
+
 /*# sourceMappingURL=screen.css.map */
