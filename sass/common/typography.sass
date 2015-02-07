@@ -84,7 +84,7 @@ mark
 	border-radius: $border-radius
 
 .bullet
-	padding-left: 1em
+	padding-left: 2ex
 	display: block
 	position: relative
 
@@ -99,7 +99,22 @@ mark
 		position: absolute
 		border-radius: .25em
 
+ol
+	li
+		list-style-type: decimal
+
 ul
 	&.bullets
 		li 
 			@extend .bullet
+
+	&.dashes
+		li
+			position: relative
+			padding-left: 2.75ex
+
+			&:before
+				position: absolute
+				left: 0
+				top: 0
+				content: '\2014'

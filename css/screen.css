@@ -1725,11 +1725,17 @@ body {
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
-          text-size-adjust: 100%; }
+          text-size-adjust: 100%;
+  min-width: 1000px; }
 
 .limiter {
-  width: 1000px;
-  margin: 0 auto; }
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5%;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  max-width: 1200px;
+  min-width: 1000px; }
 
 .shadowed {
   box-shadow: 0 1px 3px rgba(0, 15, 10, 0.1); }
@@ -3146,7 +3152,7 @@ mark {
   border-radius: 5px; }
 
 .bullet, ul.bullets li {
-  padding-left: 1em;
+  padding-left: 2ex;
   display: block;
   position: relative; }
   .bullet:before, ul.bullets li:before {
@@ -3159,6 +3165,18 @@ mark {
     display: block;
     position: absolute;
     border-radius: 0.25em; }
+
+ol li {
+  list-style-type: decimal; }
+
+ul.dashes li {
+  position: relative;
+  padding-left: 2.75ex; }
+  ul.dashes li:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "—"; }
 
 .color-bittersweet-light {
   color: #fc6d58 !important; }
@@ -3628,10 +3646,10 @@ mark {
   .bg-white.bullet:before, ul.bullets li.bg-white:before {
     background-color: #fff !important; }
 
-@-webkit-keyframes wait-bg{
-  from{
+@-webkit-keyframes wait-bg {
+  from {
     background-position: 0 0; }
-  to{
+  to {
     background-position: 50px 0; } }
 
 @keyframes wait-bg {
@@ -3683,11 +3701,13 @@ mark {
     color: #7e8690; }
 
 .nav {
-  box-sizing: border-box; }
+  -moz-box-sizing: border-box;
+       box-sizing: border-box; }
   .nav a {
     height: 36px;
     line-height: 36px;
-    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
     display: block;
     -webkit-transition: 0.15s;
             transition: 0.15s; }
@@ -3784,7 +3804,8 @@ html, body {
   height: 200px; }
 
 .footer {
-  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   background-color: #434a53;
   color: #fff;
   padding: 40px 0; }
@@ -3795,7 +3816,8 @@ html, body {
   padding: 20px 20px;
   border: 1px solid #e6e9ed;
   border-radius: 5px;
-  box-sizing: border-box; }
+  -moz-box-sizing: border-box;
+       box-sizing: border-box; }
   .box.filled {
     background-color: #434a53;
     color: #fff; }
@@ -3812,7 +3834,8 @@ html, body {
   border-radius: 5px;
   -webkit-transition: opacity 0.2s;
           transition: opacity 0.2s;
-  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   color: #656d77;
   text-align: center;
   font-size: 1em;
@@ -3976,7 +3999,8 @@ table {
     display: inline-block;
     padding: 0 1ex;
     border-radius: 2.5px;
-    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
     color: #656d77;
     cursor: pointer;
     white-space: nowrap;
@@ -4006,7 +4030,8 @@ table {
     margin: 0 0 0 2ex; }
 
 .hero {
-  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   background-color: #434a53;
   color: #fff;
   padding: 60px;
@@ -4033,7 +4058,8 @@ table {
     border-radius: 5px;
     top: 50%;
     left: 50%;
-    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
     margin: -150px 0 0 -200px;
     box-shadow: 0 20px 80px rgba(0, 0, 0, 0.5);
     z-index: 100; }
@@ -4109,7 +4135,8 @@ table {
   border-bottom: 1px solid #e6e9ed;
   position: relative; }
   .tabs a {
-    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
     display: inline-block;
     padding: 0 20px;
     border: 1px solid transparent;
@@ -4168,7 +4195,8 @@ table {
       -webkit-transition: left 0.45s;
               transition: left 0.45s; }
   .tabs-content.bordered {
-    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
     border: 1px solid #e6e9ed;
     border-top: none;
     border-radius: 0 0 5px 5px;
