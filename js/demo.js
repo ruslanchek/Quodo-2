@@ -127,9 +127,9 @@ Demo.Tabs = function(){
     this.initTabs = function(){
         this.sampleTabs = new UI.Tabs();
 
-        $('#tab-media').on('click', function(e){
+        $('.tab-trigger').on('click', function(e){
             e.preventDefault();
-            _this.sampleTabs.openTab('media');
+            _this.sampleTabs.openTab($(this).data('name'));
         });
     };
 
