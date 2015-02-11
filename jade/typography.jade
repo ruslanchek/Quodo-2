@@ -3,7 +3,7 @@ extends ./layout.jade
 block content
 	- var section = 'typography'
 
-	.grid-row
+	.grid
 		.col-6
 			include ./partials/leftcol.jade
 
@@ -80,7 +80,7 @@ block content
 			hr
 			h1 Lists
 
-			.grid-row
+			.grid
 				.col-6
 					ul.bullets
 						li Wake up
@@ -116,6 +116,6 @@ block content
 
 
 			br
-			.grid-row
+			.grid
 				.col-9
 					include partials/code

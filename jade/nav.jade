@@ -3,7 +3,7 @@ extends ./layout.jade
 block content
 	- var section = 'nav'
 
-	.grid-row
+	.grid
 		.col-6
 			include ./partials/leftcol.jade
 
@@ -37,7 +37,7 @@ block content
 
 
 			br
-			.grid-row
+			.grid
 				.col-9
 					include partials/code
 				.col-9.text-right
@@ -49,7 +49,7 @@ block content
 			h1 Vertical navigation
 			p Can be bordered, filled or simple inline links
 
-			.grid-row
+			.grid
 				.col-6
 					nav.nav.fat.bordered
 						a.active(href="#stayhere") Letter
@@ -74,7 +74,7 @@ block content
 						a.active(href="#stayhere") Tale
 
 			br
-			.grid-row
+			.grid
 				.col-9
 					include partials/code
 

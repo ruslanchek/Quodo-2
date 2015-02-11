@@ -3,7 +3,7 @@ extends ./layout.jade
 block content
 	- var section = 'buttons'
 
-	.grid-row
+	.grid
 		.col-6
 			include ./partials/leftcol.jade
 
@@ -11,7 +11,7 @@ block content
 			h1 Buttons
 			p A beautiful set of buttons, the combinations are awesome
 
-			.grid-row
+			.grid
 				.col-6
 					button.button.fat.w-100 I am the button
 				.col-6
@@ -20,7 +20,7 @@ block content
 					button.button.fat.bg-mint-light.volume.next.w-100 Next thing
 
 			br
-			.grid-row
+			.grid
 				.col-6
 					button.button.fat.bg-aqua-light.wait.volume.w-100 Loading the awesome...
 				.col-6
@@ -29,7 +29,7 @@ block content
 					button.button.fat.bg-sunflower-dark.volume.w-100(disabled) Sorry, i am disabled
 
 			br
-			.grid-row
+			.grid
 				.col-6
 					button.button.fat.bg-sunflower-dark.volume.w-100 Get a suntan
 				.col-6
@@ -41,7 +41,7 @@ block content
 
 			//br
 			//.box.filled.bg-dark-gray-dark
-			//	.grid-row
+			//	.grid
 			//		.col-4.text-center
 			//			button.button.fat.bg-aqua-light.wireframe.prev.w-100 Back
 			//		.col-10.text-center
@@ -53,7 +53,7 @@ block content
 
 			br
 
-			.grid-row
+			.grid
 				.col-9
 					include partials/code
 

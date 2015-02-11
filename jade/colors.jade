@@ -3,7 +3,7 @@ extends ./layout.jade
 block content
 	- var section = 'colors'
 
-	.grid-row
+	.grid
 		.col-6
 			include ./partials/leftcol.jade
 
@@ -12,7 +12,7 @@ block content
 			p A backgrounds, text and links colors, that also suitable for theming
 
 			.colors
-				.grid-row
+				.grid
 					.col-6
 						.item
 							.dark.bg-bittersweet-dark
@@ -29,7 +29,7 @@ block content
 							.light.bg-grass-light
 							.title grass
 
-				.grid-row
+				.grid
 					.col-6
 						.item
 							.dark.bg-mint-dark
@@ -47,7 +47,7 @@ block content
 							.light.bg-blue-jeans-light
 							.title blue-jeans
 
-				.grid-row
+				.grid
 					.col-6
 						.item
 							.dark.bg-lavender-dark
@@ -65,7 +65,7 @@ block content
 							.light.bg-light-gray-light
 							.title light-gray
 
-				.grid-row
+				.grid
 					.col-6
 						.item
 							.dark.bg-medium-gray-dark

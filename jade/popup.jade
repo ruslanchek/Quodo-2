@@ -3,7 +3,7 @@ extends ./layout.jade
 block content
 	- var section = 'popup'
 
-	.grid-row
+	.grid
 		.col-6
 			include ./partials/leftcol.jade
 
@@ -11,13 +11,13 @@ block content
 			h1 Popup
 			p Yeah, everybody loves popups
 
-			.grid-row
+			.grid
 				.col-6: button.button.fat.w-100.bg-aqua-light#show-sample-popup-1 Waiting mode demo
 				.col-6: button.button.fat.w-100.bg-aqua-light#show-sample-popup-2 Message system demo
 				.col-6: button.button.fat.w-100.bg-aqua-light#show-sample-popup-3 Not modal demo
 
 			br
-			.grid-row
+			.grid
 				.col-9
 					a.code(href="api.html#Popup")
 						i.fa.fa-code

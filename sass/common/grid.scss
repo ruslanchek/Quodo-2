@@ -13,7 +13,7 @@ $one_col: (100% - ($grid-gutter-width * ($grid-cols - 1))) / $grid-cols;
   width: ($child_size / $parent_size) * 100%;
 }
 
-.grid-row {
+.grid {
     &:after {
         content: '';
         clear: both;
@@ -38,7 +38,7 @@ $one_col: (100% - ($grid-gutter-width * ($grid-cols - 1))) / $grid-cols;
 	}
 
 	> :first-child,
-	.grid-row > :first-child {
+	.grid > :first-child {
 		margin-left: 0;
 	}
 }
