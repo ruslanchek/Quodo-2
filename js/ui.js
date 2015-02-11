@@ -470,7 +470,9 @@ UI.Tabs = function(options){
 	var getAnchorName = function($link){
 		var name = $link.attr('href');
 
-		return name.substr(1, name.length);
+		if(name) {
+			return name.substr(1, name.length);
+		}
 	};
 
 	var setContentActive = function(no_animation){
@@ -556,5 +558,7 @@ UI.Tabs = function(options){
 		});
 	};
 
-	bind();
+	if($tabs.length > 0 && $tabsContent.length > 0){
+		bind();
+	}
 };
