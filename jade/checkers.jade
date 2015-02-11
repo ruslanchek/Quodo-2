@@ -3,7 +3,7 @@ extends ./layout.jade
 block content
 	- var section = 'checkers'
 
-	.grid-row
+	.grid
 		.col-6
 			include ./partials/leftcol.jade
 
@@ -21,6 +21,6 @@ block content
 				a(href="#", data-toggled-content="On") Off
 
 			br
-			.grid-row
+			.grid
 				.col-9
 					include partials/code

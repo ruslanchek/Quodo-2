@@ -3,7 +3,7 @@ extends ./layout.jade
 block content
 	- var section = 'table'
 
-	.grid-row
+	.grid
 		.col-6
 			include ./partials/leftcol.jade
 
@@ -65,6 +65,6 @@ block content
 				a(href="#", data-type="bordered-rows-v") Vertical borders
 
 			br
-			.grid-row
+			.grid
 				.col-9
 					include partials/code
