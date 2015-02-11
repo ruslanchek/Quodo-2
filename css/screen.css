@@ -3747,9 +3747,9 @@ ul.dashes li {
       color: #656d77;
       opacity: 1; }
       .nav.bordered a:hover {
-        background-color: #f0f3f7; }
+        background-color: #f1f4f8; }
       .nav.bordered a:active {
-        background-color: #ebeef2; }
+        background-color: #eceff3; }
       .nav.bordered a.active {
         background-color: #e6e9ed; }
       .nav.bordered a:first-child {
@@ -3967,11 +3967,11 @@ table {
   table.rounded {
     border-radius: 5px; }
   table.striped tbody tr:nth-child(even) {
-    background-color: #edf0f4; }
+    background-color: #eceff3; }
   table.hovered tbody tr:hover {
-    background-color: #f0f3f7; }
+    background-color: #f1f4f8; }
   table.hovered.striped tr:nth-child(even):hover {
-    background-color: #e8ebef; }
+    background-color: #e7eaee; }
   table.bordered {
     border-color: #e6e9ed; }
     table.bordered thead tr {
