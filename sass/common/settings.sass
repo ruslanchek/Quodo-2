@@ -7,11 +7,16 @@
 
 body
 	font-family: 'Asap', sans-serif
+	text-size-adjust: 100%
 	color: $color-dark-gray-dark
 	line-height: $base-line-height
 	font-size: $base-font-size
-	text-size-adjust: 100%
 	min-width: $overall-width-min
+
+	+breakpoint($bp-iphone)
+		width: 100%
+		min-width: 100%
+		max-width: 100%
 
 .limiter
 	width: 100%
@@ -20,3 +25,12 @@ body
 	box-sizing: border-box
 	max-width: $overall-width-max
 	min-width: $overall-width-min
+
+	+breakpoint($bp-iphone)
+		width: 100%
+		max-width: 100%
+		min-width: 100%
+
+
+main
+	margin: $margin-vertical-space 0 $margin-vertical-space

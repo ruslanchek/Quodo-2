@@ -1,5 +1,37 @@
 .nav
 	box-sizing: border-box
+	margin-bottom: $margin-vertical-space
+
+	&[data-collapse="true"]
+		height: $height-component-default
+		overflow: hidden
+		position: relative
+		cursor: pointer
+
+		&:before 
+			content: attr(data-collapsed-text)
+			display: block
+			height: $height-component-default
+			line-height: $height-component-default
+			box-sizing: border-box
+			@extend .links-component
+
+		&:after
+			font: normal normal normal 14px/1 FontAwesome
+			content: $fa-var-bars
+			display: inline-block
+			position: absolute
+			width: 20px
+			height: 20px
+			top: 50%
+			right: 10px
+			font-size: 18px
+			margin-top: -8px
+
+		&.bordered,
+		&.filled 
+			&:before
+				padding: 0 $padding-component-side
 
 	a
 		height: $height-component-default
@@ -109,6 +141,17 @@
 
 				&:last-of-type
 					border-right: none
+
+		+breakpoint($bp-iphone)
+			display: block !important
+			text-align: left
+			table-layout: none
+
+			a
+				display: block !important
+				padding: 0 $padding-component-side !important
+				text-align: left
+				width: 100% !important
 
 	&.fat a
 		height: $height-component-fat
