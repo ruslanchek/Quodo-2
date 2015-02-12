@@ -197,6 +197,9 @@ UI.Popup = function(options){
         animationDuration: 500,
         modal: true,
         overlay: true,
+        onBeforeShow: function(){
+
+        },
 		onShow: function(instance){
 
 		},
@@ -381,6 +384,8 @@ UI.Popup = function(options){
 
 		resize();
 
+		_this.options.onBeforeShow(_this);
+
     	animateWindow = new UI.Animate({
     		$element: this.$popup.find('.window'), 
     		animationDuration: this.options.animationDuration
@@ -424,8 +429,8 @@ UI.Tabs = function(options){
 		activeName;
 
 	this.options = $.extend({
-        tabsSelector: '.tabs',
-        tabsContentSelector: '.tabs-content',
+        tabsSelector: '#tabs',
+        tabsContentSelector: '#tabs-content',
 		sliding: true,
 		onTabOpen: function(name){
 

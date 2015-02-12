@@ -111,11 +111,41 @@ Demo.Popup = function(){
         });
     };
 
+    this.initPopup4 = function(){
+        var content = new UI.Template('template-demo-popup-4-content').render();
+
+        this.samplePopup4 = new UI.Popup({
+            width: 500,
+            overlay: true,
+            modal: true,
+            onBeforeShow: function(instance){
+                var tabs = new UI.Tabs({
+                    tabsSelector: '#tabs-popup',
+                    tabsContentSelector: '#tabs-popup-content',
+                    sliding: true
+                });
+
+                $('#tabs-popup-content .tab-trigger').on('click', function(e){
+                    e.preventDefault();
+                    tabs.openTab($(this).data('name'));
+                });
+            },
+            onShow: function(instance){
+                
+            }
+        });
+
+        $('#tabs-popup-trigger').on('click', function(e){
+            e.preventDefault();
+            _this.samplePopup4.show('Tabs are inside', content);
+        });
+    };
 
     this.init = function(){
         this.initPopup1();
         this.initPopup2();
         this.initPopup3();
+        this.initPopup4();
 
         return this;
     };
@@ -125,9 +155,13 @@ Demo.Tabs = function(){
     var _this = this;
 
     this.initTabs = function(){
-        this.sampleTabs = new UI.Tabs();
+        this.sampleTabs = new UI.Tabs({
+            tabsSelector: '#tabs',
+            tabsContentSelector: '#tabs-content',
+            sliding: true,
+        });
 
-        $('.tab-trigger').on('click', function(e){
+        $('#tabs-content .tab-trigger').on('click', function(e){
             e.preventDefault();
             _this.sampleTabs.openTab($(this).data('name'));
         });
