@@ -1,12 +1,10 @@
-main
-	padding: $margin-vertical-space 0 $margin-vertical-space * 1.5
-
 .logo
 	font-size: 30px
 	font-weight: bold
 	margin-bottom: .5em
 	display: block
 	line-height: 1.1em
+	white-space: nowrap
 
 	i
 		width: 28px
@@ -21,15 +19,9 @@ main
 		color: $color-medium-gray-dark
 
 .colors
-	.grid
-		margin-bottom: 30px
-
-		&:last-of-type
-			margin-bottom: 0
-
 	.item
 		border-radius: $border-radius
-		//@extend .shadowed
+		margin-bottom: 30px
 
 		.dark, 
 		.light
@@ -51,6 +43,11 @@ main
 			border: 1px solid $border-component-color
 			border-top: none
 
+	.grid
+		&:last-of-type
+			.item
+				margin-bottom: 0
+
 .grid-demo
 	.grid
 		margin-bottom: $margin-vertical-space
@@ -69,7 +66,7 @@ main
 
 		div
 			@extend .border-radius
-			background: $color-aqua-light
+			background: $color-cold-light
 			height: $height-component-fat
 			line-height: $height-component-fat
 			color: #fff
@@ -81,19 +78,19 @@ main
 	margin-top: -6px
 	margin-left: 12px
 
-.paintable,
+.colorable,
 .resizeable,
 .code
 	@extend .links-component
 
-	&.paintable i
+	&.colorable i
 		font-size: 14px
 	&.code i
 		font-size: 20px
 
 	i
 		margin-right: .3ex
-		color: $color-aqua-dark
+		color: $color-cold-dark
 
 	margin-right: 3ex
 	font-style: italic
@@ -103,4 +100,4 @@ main
 		margin-right: 0
 
 	&:hover i
-		color: $color-aqua-dark + 30
+		color: $color-cold-dark + 30

@@ -1,24 +1,23 @@
 $one_col: (100% - ($grid-gutter-width * ($grid-cols - 1))) / $grid-cols;
 
 @mixin cols($num){
-  float: left;
-  width: ($one_col * $num) + ($grid-gutter-width * ($num - 1));
+	float: left;
+	width: ($one_col * $num) + ($grid-gutter-width * ($num - 1));
 }
 
-
 @mixin sub_cols($num_child, $num_parent) {
-  $parent_size: ($one_col * $num_parent) + ($grid-gutter-width * ($num_parent - 1));
-  $child_size: ($one_col * $num_child) + ($grid-gutter-width * ($num_child - 1));
-  margin-left: ($grid-gutter-width / $parent_size) * 100%;
-  width: ($child_size / $parent_size) * 100%;
+	$parent_size: ($one_col * $num_parent) + ($grid-gutter-width * ($num_parent - 1));
+	$child_size: ($one_col * $num_child) + ($grid-gutter-width * ($num_child - 1));
+	margin-left: ($grid-gutter-width / $parent_size) * 100%;
+	width: ($child_size / $parent_size) * 100%;
 }
 
 .grid {
-    &:after {
-        content: '';
-        clear: both;
-        display: block;
-    }
+	&:after {
+		content: '';
+		clear: both;
+		display: block;
+	}
 
 	#{enumerate('.col-', 1, $grid-cols, '')} {
 		float: left;
@@ -40,5 +39,14 @@ $one_col: (100% - ($grid-gutter-width * ($grid-cols - 1))) / $grid-cols;
 	> :first-child,
 	.grid > :first-child {
 		margin-left: 0;
+	}
+
+	[class^="col-"], 
+	[class*=" col-"] {
+		@include breakpoint($bp-iphone) {
+			float: none !important;
+			width: 100% !important;
+			margin-left: 0 !important;
+		}
 	}
 }

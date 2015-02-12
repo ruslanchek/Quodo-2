@@ -1,26 +1,26 @@
-$color-bittersweet-light: #fc6d58
-$color-bittersweet-dark: #e95546
+$color-heat-light: #fc6d58
+$color-heat-dark: #e95546
 
-$color-sunflower-light: #ffcd69
-$color-sunflower-dark: #f6ba59
+$color-warm-light: #ffcd69
+$color-warm-dark: #f6ba59
 
-$color-grass-light: #9fd477
-$color-grass-dark: #8bc163
+$color-soft-light: #9fd477
+$color-soft-dark: #8bc163
 
-$color-mint-light: #46cfb0
-$color-mint-dark: #34bc9d
+$color-neutral-light: #46cfb0
+$color-neutral-dark: #34bc9d
 
-$color-aqua-light: #4fc2e5
-$color-aqua-dark: #3bb0d6
+$color-cold-light: #4fc2e5
+$color-cold-dark: #3bb0d6
 
-$color-blue-jeans-light: #5e9de6
-$color-blue-jeans-dark: #4b8ad6
+$color-mid-light: #5e9de6
+$color-mid-dark: #4b8ad6
 
-$color-lavender-light: #ad93e6
-$color-lavender-dark: #977bd5
+$color-myst-light: #ad93e6
+$color-myst-dark: #977bd5
 
-$color-pink-rose-light: #ed87bd
-$color-pink-rose-dark: #d870a9
+$color-mix-light: #ed87bd
+$color-mix-dark: #d870a9
 
 $color-light-gray-light: #f5f7fa
 $color-light-gray-dark: #e6e9ed
@@ -39,36 +39,40 @@ $color-black-dark: #1F2226
 $font-base-line-height: 1.4em
 $font-base-font-size: 16px
 
+
 // Sizes
-$overall-width: 1000px
+$overall-width-min: 1000px
 $overall-width-max: 1200px
 $border-radius: 5px
+$limiter-side-padding: 5%
+
 
 // Components sizes
 $height-component-slim: 32px
 $height-component-default: 36px
 $height-component-fat: 48px
-$height-footer: 200px
+$height-footer: 225px
 
 $padding-component-side: 20px
 $padding-component-vertical: 20px
 
 $margin-vertical-space: 40px
 
+
 // Components colors
 $fill-component-color: $color-dark-gray-dark
-$fill-component-active-state: $color-aqua-light
+$fill-component-active-state: $color-cold-light
 $fill-component-neutral-state: $color-light-gray-light // @TODO: needs refacoring (shorten names)
 $fill-button-color: $color-light-gray-dark
-$fill-component-mark: $color-lavender-light
+$fill-component-mark: $color-myst-light
 
 $border-component-color: $color-light-gray-dark
 
-$fill-component-bordered-hover: $border-component-color + 10
-$fill-component-bordered-active: $border-component-color + 5
+$fill-component-bordered-hover: $border-component-color + 11
+$fill-component-bordered-active: $border-component-color + 6
 $fill-component-bordered-selected: $border-component-color
 
-$color-links-default: $color-aqua-dark
+$color-links-default: $color-cold-dark
 $color-links-component: $color-dark-gray-light
 
 $fill-component-hover: rgba(255, 255, 255, .15)
@@ -76,21 +80,29 @@ $fill-component-active: rgba(255, 255, 255, .25)
 
 $color-faded-text: $color-dark-gray-light
 
-$color-error: $color-bittersweet-dark
-$color-success: $color-mint-dark
+$color-error: $color-heat-dark
+$color-success: $color-neutral-dark
+
 
 // Grid settings
 $grid-cols: 24
 $grid-gutter-width: 4%
 
+
 // Animations
 $animation-component-duration: .15s
+
 
 // Typography
 $base-font-size: 16px
 $base-line-height: 1.5em
 
+
 // Table
-$bg-table-stripe: $border-component-color + 7
-$bg-table-hover: $border-component-color + 10
+$bg-table-stripe: $border-component-color + 6
+$bg-table-hover: $border-component-color + 11
 $bg-table-head: $border-component-color + 5
+
+
+// Breakpoints
+$bp-iphone: 0 569px

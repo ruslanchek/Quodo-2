@@ -5,13 +5,13 @@ block content
 
 	mixin feature(state, text)
 		if state == 1
-			.bullet.bg-grass-light= text
+			.bullet.bg-soft-light= text
 
 		if state == 2
 			.bullet.bg-medium-gray-light= text
 
 		if state == 3
-			.bullet.bg-sunflower-light= text
+			.bullet.bg-warm-light= text
 
 	.grid
 		.col-6
@@ -26,13 +26,16 @@ block content
 			+feature(2, 'Forms')
 			+feature(2, 'Pagination')
 			+feature(2, 'Solve CSS3 bugs in safari')
-			+feature(2, 'Color schemes')
-
+			+feature(2, 'Responsive')
+			
 			h2 Ideas
+				span.fade will released not so close
 			+feature(3, 'Probably, it\'s nice to make a drag functionality in non modal popup?')
 			+feature(3, 'How about a new navigation element - header menu a right side opposite the H1 or H2 links with icons, maybe buttons or something like this?')
+			+feature(3, 'Color schemes')
 
 			h2 Yep, done!
+			+feature(1, 'Tabs inside a popup')
 			+feature(1, 'Fade effect on wait animation of the Popup')
 			+feature(1, 'Timeout for popup wait method')
 			+feature(1, 'Popup close by click anywhere option')

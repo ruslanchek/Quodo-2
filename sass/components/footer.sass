@@ -5,10 +5,9 @@
 	background-color: $fill-component-color
 	color: #fff
 	padding: $padding-component-vertical*2 0
+
+	+breakpoint($bp-iphone)
+		height: auto
 	
 	a 
 		@extend .links-white
-
-	.nav
-		a
-			line-height: 1.2em

@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";;IAEE,mBAAmB,EAAE,GAAG;;IAExB,mBAAmB,EAAE,MAAM",
-"sources": ["../../sass/common/tweens.sass"],
-"names": [],
-"file": "tweens.css"
-}

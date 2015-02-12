@@ -13,14 +13,13 @@ block content
 
 			.checker#sample-checker
 				a.active(href="#") Activated checker
-				a.w-5.text-center(href="#", data-active-class="bg-blue-jeans-dark"): i.fa.fa-facebook
-				a.w-5.text-center(href="#", data-active-class="bg-bittersweet-light"): i.fa.fa-google-plus
-				a.w-5.text-center(href="#", data-active-class="bg-aqua-dark"): i.fa.fa-twitter
-				a.w-5.text-center(href="#", data-active-class="bg-blue-jeans-light"): i.fa.fa-vk
-				a.w-5.text-center(href="#", data-active-class="bg-bittersweet-dark"): i.fa.fa-youtube
+				a.w-5.text-center(href="#", data-active-class="bg-mid-dark"): i.fa.fa-facebook
+				a.w-5.text-center(href="#", data-active-class="bg-heat-light"): i.fa.fa-google-plus
+				a.w-5.text-center(href="#", data-active-class="bg-cold-dark"): i.fa.fa-twitter
+				a.w-5.text-center(href="#", data-active-class="bg-mid-light"): i.fa.fa-vk
+				a.w-5.text-center(href="#", data-active-class="bg-heat-dark"): i.fa.fa-youtube
 				a(href="#", data-toggled-content="On") Off
 
-			br
 			.grid
-				.col-9
-					include partials/code
+				include partials/code
+				include partials/colorable
