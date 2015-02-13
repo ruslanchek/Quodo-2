@@ -3179,7 +3179,9 @@ code {
   display: block;
   background: #f5f7fa;
   padding: 13.3333333333px 20px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  overflow-x: scroll;
+  width: 100%; }
 
 mark {
   background-color: #ad93e6;
@@ -4360,5 +4362,57 @@ table {
   .resizeable:hover i,
   .code:hover i {
     color: #59cef4; }
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0;
+  -webkit-text-size-adjust: none; }
+
+.hljs,
+.hljs-subst,
+.hljs-tag .hljs-title,
+.nginx .hljs-title {
+  color: #656d77;
+  font-weight: normal; }
+
+.hljs-keyword,
+.hljs-id,
+.hljs-title,
+.hljs-built_in,
+.css .hljs-tag,
+.hljs-javadoctag,
+.hljs-phpdoc,
+.hljs-dartdoc,
+.hljs-yardoctag,
+.smalltalk .hljs-class,
+.hljs-winutils,
+.bash .hljs-variable,
+.apache .hljs-tag,
+.hljs-type,
+.hljs-typename,
+.tex .hljs-command,
+.asciidoc .hljs-strong,
+.markdown .hljs-strong,
+.hljs-request,
+.hljs-status {
+  font-weight: normal; }
+
+.asciidoc .hljs-emphasis,
+.markdown .hljs-emphasis {
+  font-style: italic; }
+
+.nginx .hljs-built_in {
+  font-weight: normal; }
+
+.coffeescript .javascript,
+.javascript .xml,
+.lasso .markup,
+.tex .hljs-formula,
+.xml .javascript,
+.xml .vbscript,
+.xml .css,
+.xml .hljs-cdata {
+  opacity: 0.5; }
 
 /*# sourceMappingURL=screen.css.map */
