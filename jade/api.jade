@@ -25,7 +25,7 @@ block content
 
 
 			+constructorSection('Animate')
-			pre.code-multiline: code
+			pre.code-multiline: code.javascript
 				|var Animate = new UI.Animate({
 				|	$element: $('#my-element'),
 				|	animationDuration: 300
@@ -40,7 +40,7 @@ block content
 			+paramItem('disappear')
 
 			+constructorSection('ClickOutside')
-			code.code-multiline: pre
+			pre.code-multiline: code.javascript
 				|var ClickOutside = new UI.ClickOutside({
 				|	selector: '#my-element',
 				|	onClickOutside: function($target){}
@@ -52,7 +52,7 @@ block content
 
 			// Popup
 			+constructorSection('Popup')
-			code.code-multiline: pre
+			pre.code-multiline: code.javascript
 				|var Popup = new UI.Popup({
 				|	width: 500,
 				|	modal: false,
@@ -75,7 +75,7 @@ block content
 
 			// Popup
 			+constructorSection('Tabs')
-			code.code-multiline: pre
+			pre.code-multiline: code.javascript
 				|var Tabs = new UI.Tabs({
 				|	tabsSelector: '.tabs',
 				|	tabsContentSelector: '.tabs-content'
