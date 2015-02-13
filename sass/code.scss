@@ -39,7 +39,7 @@
 .asciidoc .hljs-header,
 .markdown .hljs-header,
 .coffeescript .hljs-attribute {
-  
+  color: #FC6D58;
 }
 
 .smartquote,
@@ -67,7 +67,7 @@
 .markdown .hljs-bullet,
 .asciidoc .hljs-link_url,
 .markdown .hljs-link_url {
-
+    color: #AD93E6;
 }
 
 .hljs-label,
@@ -123,6 +123,7 @@
 .hljs-request,
 .hljs-status {
   font-weight: normal;
+  color: #3BB0D6;
 }
 
 .asciidoc .hljs-emphasis,
