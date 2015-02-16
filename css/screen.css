@@ -3689,23 +3689,23 @@ ul.dashes li {
   .links-default:active, * a:active {
     color: #54c9ef; }
 
-.links-component, .nav[data-collapse="true"]:before, .nav a, .popup .window .close, .breadcrumbs a, .tabs a, .colorable,
+.links-component, .nav[data-collapse="true"]:before, .nav a, .popup .window .close, .breadcrumbs a, .tabs a, .bricks .item, .colorable,
 .resizeable,
 .code {
   color: #656d77; }
-  .links-component:visited, .nav[data-collapse="true"]:visited:before, .nav a:visited, .popup .window .close:visited, .breadcrumbs a:visited, .tabs a:visited, .colorable:visited,
+  .links-component:visited, .nav[data-collapse="true"]:visited:before, .nav a:visited, .popup .window .close:visited, .breadcrumbs a:visited, .tabs a:visited, .bricks .item:visited, .colorable:visited,
   .resizeable:visited,
   .code:visited {
     color: #656d77; }
-  .links-component:focus, .nav[data-collapse="true"]:focus:before, .nav a:focus, .popup .window .close:focus, .breadcrumbs a:focus, .tabs a:focus, .colorable:focus,
+  .links-component:focus, .nav[data-collapse="true"]:focus:before, .nav a:focus, .popup .window .close:focus, .breadcrumbs a:focus, .tabs a:focus, .bricks .item:focus, .colorable:focus,
   .resizeable:focus,
   .code:focus {
     color: #656d77; }
-  .links-component:hover, .nav[data-collapse="true"]:hover:before, .nav a:hover, .popup .window .close:hover, .breadcrumbs a:hover, .tabs a:hover, .colorable:hover,
+  .links-component:hover, .nav[data-collapse="true"]:hover:before, .nav a:hover, .popup .window .close:hover, .breadcrumbs a:hover, .tabs a:hover, .bricks .item:hover, .colorable:hover,
   .resizeable:hover,
   .code:hover {
     color: #7e8690; }
-  .links-component:active, .nav[data-collapse="true"]:active:before, .nav a:active, .popup .window .close:active, .breadcrumbs a:active, .tabs a:active, .colorable:active,
+  .links-component:active, .nav[data-collapse="true"]:active:before, .nav a:active, .popup .window .close:active, .breadcrumbs a:active, .tabs a:active, .bricks .item:active, .colorable:active,
   .resizeable:active,
   .code:active {
     color: #7e8690; }
@@ -4224,6 +4224,51 @@ table {
     border-radius: 0 0 5px 5px;
     padding: 20px 20px; }
 
+.bricks .item {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e6e9ed;
+  border-radius: 5px;
+  position: relative;
+  transition: 0.15s; }
+  .bricks .item:before {
+    content: "";
+    display: block;
+    padding-top: 100%; }
+  .bricks .item .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.15s; }
+    .bricks .item .content i {
+      font-size: 8em;
+      display: block;
+      width: 1em;
+      height: 1em;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #e6e9ed; }
+    .bricks .item .content span {
+      position: absolute;
+      bottom: 0.75em;
+      left: 0;
+      width: 100%;
+      text-align: center; }
+  .bricks .item:hover {
+    border-color: #d2d5d9; }
+    .bricks .item:hover .content {
+      transform: scale(1.2); }
+      .bricks .item:hover .content i {
+        color: #d2d5d9; }
+
 .logo {
   font-size: 30px;
   font-weight: bold;
@@ -4241,6 +4286,8 @@ table {
 
 .footer .logo-p {
   color: #aab2bc; }
+.footer .nav {
+  margin-bottom: 0; }
 
 .colors .item {
   border-radius: 5px;
