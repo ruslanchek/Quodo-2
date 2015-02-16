@@ -3771,7 +3771,7 @@ ul.dashes li {
       .nav.filled a:last-child {
         border-radius: 0 0 4px 4px; }
   .nav.bordered {
-    background-color: none;
+    background-color: transparent;
     border: 1px solid #e6e9ed;
     border-radius: 5px; }
     .nav.bordered a {
@@ -3815,12 +3815,11 @@ ul.dashes li {
     .nav.horizontal {
       display: block !important;
       text-align: left;
-      table-layout: none; }
+      table-layout: auto; }
       .nav.horizontal a {
-        display: block !important;
+        display: inline !important;
         padding: 0 20px !important;
-        text-align: left;
-        width: 100% !important; } }
+        text-align: left; } }
   .nav.fat a {
     height: 48px;
     line-height: 48px; }

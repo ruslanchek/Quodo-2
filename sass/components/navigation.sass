@@ -85,7 +85,7 @@
 				border-radius: 0 0 $border-radius - 1 $border-radius - 1
 
 	&.bordered
-		background-color: none
+		background-color: transparent
 		border: 1px solid $border-component-color
 		border-radius: $border-radius
 
@@ -145,13 +145,12 @@
 		+breakpoint($bp-iphone)
 			display: block !important
 			text-align: left
-			table-layout: none
+			table-layout: auto
 
 			a
-				display: block !important
+				display: inline !important
 				padding: 0 $padding-component-side !important
 				text-align: left
-				width: 100% !important
 
 	&.fat a
 		height: $height-component-fat
