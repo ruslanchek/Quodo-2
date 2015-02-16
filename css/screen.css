@@ -3814,12 +3814,16 @@ ul.dashes li {
   @media (min-width: 0) and (max-width: 569px) {
     .nav.horizontal {
       display: block !important;
-      text-align: left;
+      text-align: left !important;
       table-layout: auto; }
       .nav.horizontal a {
-        display: inline !important;
+        display: inline-block !important;
         padding: 0 20px !important;
-        text-align: left; } }
+        text-align: left;
+        margin-right: 0.5ex;
+        border: none !important;
+        width: auto !important;
+        border-radius: 5px !important; } }
   .nav.fat a {
     height: 48px;
     line-height: 48px; }

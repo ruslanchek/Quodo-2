@@ -144,13 +144,17 @@
 
 		+breakpoint($bp-iphone)
 			display: block !important
-			text-align: left
+			text-align: left !important
 			table-layout: auto
 
 			a
-				display: inline !important
+				display: inline-block !important
 				padding: 0 $padding-component-side !important
 				text-align: left
+				margin-right: .5ex
+				border: none !important
+				width: auto !important
+				border-radius: $border-radius !important
 
 	&.fat a
 		height: $height-component-fat
