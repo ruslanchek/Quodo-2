@@ -65,3 +65,23 @@ block content
 			// 	|	var i = 0;
 			// 	|	return View();
 			// 	|}
+
+			hr
+
+
+			h1 Checkers
+			p Everybody loves checkboxes, but needs some other things too
+
+			.checker#sample-checker
+				a.active(href="#") Activated checker
+				a.w-5.text-center(href="#", data-active-class="bg-mid-dark"): i.fa.fa-facebook
+				a.w-5.text-center(href="#", data-active-class="bg-heat-light"): i.fa.fa-google-plus
+				a.w-5.text-center(href="#", data-active-class="bg-cold-dark"): i.fa.fa-twitter
+				a.w-5.text-center(href="#", data-active-class="bg-mid-light"): i.fa.fa-vk
+				a.w-5.text-center(href="#", data-active-class="bg-heat-dark"): i.fa.fa-youtube
+				a(href="#", data-toggled-content="On") Off
+
+			br
+			.grid
+				include partials/code
+				include partials/colorable

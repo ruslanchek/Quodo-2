@@ -2,6 +2,15 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "18493",
 "files": {
+	"\/api.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/api.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/buttons.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -67,7 +76,7 @@
 		},
 	"\/demo-templates.html": {
 		"fileType": 8192,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/demo-templates.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -105,7 +114,7 @@
 		},
 	"\/head.html": {
 		"fileType": 8192,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/head.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -127,7 +136,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/api.jade",
-		"outputAbbreviatedPath": "\/api.html",
+		"outputAbbreviatedPath": "\/jade\/api.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -138,7 +147,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/buttons.jade",
-		"outputAbbreviatedPath": "\/buttons.html",
+		"outputAbbreviatedPath": "\/jade\/buttons.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -149,7 +158,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/checkers.jade",
-		"outputAbbreviatedPath": "\/checkers.html",
+		"outputAbbreviatedPath": "\/jade\/checkers.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -160,7 +169,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/colors.jade",
-		"outputAbbreviatedPath": "\/colors.html",
+		"outputAbbreviatedPath": "\/jade\/colors.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -171,7 +180,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/forms.jade",
-		"outputAbbreviatedPath": "\/forms.html",
+		"outputAbbreviatedPath": "\/jade\/forms.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -182,7 +191,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/grid.jade",
-		"outputAbbreviatedPath": "\/grid.html",
+		"outputAbbreviatedPath": "\/jade\/grid.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -193,7 +202,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/index.jade",
-		"outputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "\/jade\/index.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -201,10 +210,10 @@
 	"\/jade\/layout.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/layout.jade",
-		"outputAbbreviatedPath": "\/layout.html",
+		"outputAbbreviatedPath": "\/jade\/layout.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -215,7 +224,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/nav-misc.jade",
-		"outputAbbreviatedPath": "\/nav-misc.html",
+		"outputAbbreviatedPath": "\/jade\/nav-misc.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -226,7 +235,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/nav.jade",
-		"outputAbbreviatedPath": "\/nav.html",
+		"outputAbbreviatedPath": "\/jade\/nav.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -237,7 +246,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/partials\/code.jade",
-		"outputAbbreviatedPath": "\/code.html",
+		"outputAbbreviatedPath": "\/jade\/partials\/code.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -248,7 +257,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/partials\/colorable.jade",
-		"outputAbbreviatedPath": "\/colorable.html",
+		"outputAbbreviatedPath": "\/jade\/partials\/colorable.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -256,10 +265,10 @@
 	"\/jade\/partials\/demo-templates.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/partials\/demo-templates.jade",
-		"outputAbbreviatedPath": "\/demo-templates.html",
+		"outputAbbreviatedPath": "\/jade\/partials\/demo-templates.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -267,10 +276,10 @@
 	"\/jade\/partials\/footer.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/partials\/footer.jade",
-		"outputAbbreviatedPath": "\/footer.html",
+		"outputAbbreviatedPath": "\/jade\/partials\/footer.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -278,10 +287,10 @@
 	"\/jade\/partials\/head.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/partials\/head.jade",
-		"outputAbbreviatedPath": "\/head.html",
+		"outputAbbreviatedPath": "\/jade\/partials\/head.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -289,10 +298,10 @@
 	"\/jade\/partials\/header.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/partials\/header.jade",
-		"outputAbbreviatedPath": "\/header.html",
+		"outputAbbreviatedPath": "\/jade\/partials\/header.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -300,10 +309,10 @@
 	"\/jade\/partials\/leftcol.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/partials\/leftcol.jade",
-		"outputAbbreviatedPath": "\/leftcol.html",
+		"outputAbbreviatedPath": "\/jade\/partials\/leftcol.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -314,7 +323,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/partials\/resizeable.jade",
-		"outputAbbreviatedPath": "\/resizeable.html",
+		"outputAbbreviatedPath": "\/jade\/partials\/resizeable.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -322,10 +331,10 @@
 	"\/jade\/partials\/ui-templates.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/partials\/ui-templates.jade",
-		"outputAbbreviatedPath": "\/ui-templates.html",
+		"outputAbbreviatedPath": "\/jade\/partials\/ui-templates.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -336,7 +345,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/popup.jade",
-		"outputAbbreviatedPath": "\/popup.html",
+		"outputAbbreviatedPath": "\/jade\/popup.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -347,7 +356,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/roadmap.jade",
-		"outputAbbreviatedPath": "\/roadmap.html",
+		"outputAbbreviatedPath": "\/jade\/roadmap.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -358,7 +367,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/table.jade",
-		"outputAbbreviatedPath": "\/table.html",
+		"outputAbbreviatedPath": "\/jade\/table.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -369,7 +378,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/typography.jade",
-		"outputAbbreviatedPath": "\/typography.html",
+		"outputAbbreviatedPath": "\/jade\/typography.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -828,7 +837,7 @@
 		"useLibsass": 0
 		},
 	"\/sass\/code.scss": {
-		"createSourceMap": 1,
+		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
@@ -839,7 +848,7 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
@@ -988,7 +997,7 @@
 		"useLibsass": false
 		},
 	"\/sass\/components\/checker.sass": {
-		"createSourceMap": 1,
+		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 2,
@@ -999,7 +1008,7 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
@@ -1100,7 +1109,7 @@
 		"useLibsass": false
 		},
 	"\/sass\/components\/popup.sass": {
-		"createSourceMap": 1,
+		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 2,
@@ -1111,7 +1120,7 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
@@ -1164,7 +1173,7 @@
 		"useLibsass": false
 		},
 	"\/sass\/components\/typography.sass": {
-		"createSourceMap": 1,
+		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 2,
@@ -1175,7 +1184,7 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
@@ -1404,7 +1413,7 @@
 		"useLibsass": 0
 		},
 	"\/sass\/screen.sass": {
-		"createSourceMap": 1,
+		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 2,
@@ -1415,7 +1424,7 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
@@ -2256,7 +2265,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Ruslan",
+"lastSavedByUser": "Ruslan Shashkov",
 "manualImportLinks": {
 	},
 "projectAttributes": {
@@ -2426,10 +2435,10 @@
 	"hamlUseUnixNewlines": 0,
 	"jadeAutoOutputPathEnabled": 1,
 	"jadeAutoOutputPathFilenamePattern": "*.html",
-	"jadeAutoOutputPathRelativePath": ".\/",
+	"jadeAutoOutputPathRelativePath": "",
 	"jadeAutoOutputPathReplace1": "",
 	"jadeAutoOutputPathReplace2": "",
-	"jadeAutoOutputPathStyle": 1,
+	"jadeAutoOutputPathStyle": 0,
 	"jadeCompileDebug": 1,
 	"jadeOutputStyle": 0,
 	"javascriptAutoOutputPathEnabled": 1,
@@ -2875,12 +2884,12 @@
 	"sassAutoOutputPathReplace1": "sass",
 	"sassAutoOutputPathReplace2": "css",
 	"sassAutoOutputPathStyle": 2,
-	"sassCreateSourceMap": 1,
+	"sassCreateSourceMap": 0,
 	"sassDebugStyle": 0,
 	"sassDecimalPrecision": 10,
 	"sassOutputStyle": 0,
 	"sassUseLibsass": 0,
-	"shouldRunAutoprefixer": 1,
+	"shouldRunAutoprefixer": 0,
 	"shouldRunBless": 0,
 	"skippedItemsString": ".svn, .git, .hg, log, _logs, _cache, cache, logs, node_modules",
 	"slimAutoOutputPathEnabled": 1,
