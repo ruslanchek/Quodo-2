@@ -164,3 +164,49 @@
 	&.slim a
 		height: $height-component-slim
 		line-height: $height-component-fat
+
+
+
+.nav-bricks
+	.item
+		text-align: center
+		display: block
+		margin-bottom: 2em
+		@extend .links-component
+
+		.icon
+			background-color: $fill-component-color
+			font-size: 3.8em
+			padding: .55em 0
+			border-radius: 5px 5px 0 0
+			display: block
+			color: #fff
+			position: relative
+			margin: 0 auto
+
+			&:after
+				content: ''
+				display: block
+				width: 100%
+				height: 100%
+				position: absolute
+				top: 0
+				left: 0
+				background: #fff
+				opacity: 0
+				transition: opacity $animation-component-duration
+
+		&:hover
+			.icon
+				&:after
+					opacity: .5
+
+		.text
+			box-sizing: border-box
+			display: block
+			margin: 0 auto
+			text-align: center
+			border: 1px solid $border-component-color
+			border-top: none
+			border-radius: 0 0 5px 5px
+			padding: 10px 0

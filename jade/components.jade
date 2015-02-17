@@ -1,0 +1,50 @@
+extends ./layout.jade
+
+block content
+	- var section = 'components'
+
+	.grid
+		.col-6
+			include ./partials/leftcol.jade
+
+		.col-18
+			h1 Components
+			p A full of power UI-construction kit
+
+			.nav-bricks
+				.grid
+					.col-3
+						a.item(href="buttons.html")
+							span.icon.bg-cold-light
+								i.fa.fa-paper-plane-o
+							span.text Buttons
+
+					.col-3
+						a.item(href="checkers.html")
+							span.icon.bg-cold-light
+								i.fa.fa-paper-plane-o
+							span.text Checkers
+
+					.col-3
+						a.item(href="forms.html")
+							span.icon.bg-cold-light
+								i.fa.fa-paper-plane-o
+							span.text Forms
+
+					.col-3
+						a.item(href="nav.html")
+							span.icon.bg-cold-light
+								i.fa.fa-paper-plane-o
+							span.text Nav
+
+					.col-3
+						a.item(href="popup.html")
+							span.icon.bg-cold-light
+								i.fa.fa-paper-plane-o
+							span.text Popup
+
+					.col-3
+						a.item(href="table.html")
+							span.icon.bg-cold-light
+								i.fa.fa-paper-plane-o
+							span.text Table
