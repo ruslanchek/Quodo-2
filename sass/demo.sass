@@ -18,6 +18,9 @@
 	.logo-p
 		color: $color-medium-gray-dark
 
+	.nav
+		margin-bottom: 0
+
 .colors
 	.item
 		border-radius: $border-radius
@@ -42,11 +45,6 @@
 			line-height: $height-component-fat
 			border: 1px solid $border-component-color
 			border-top: none
-
-	.grid
-		&:last-of-type
-			.item
-				margin-bottom: 0
 
 .grid-demo
 	.grid
@@ -85,11 +83,13 @@
 
 	&.colorable i
 		font-size: 14px
+
 	&.code i
 		font-size: 20px
 
 	i
-		margin-right: .3ex
+		text-align: center
+		width: 20px
 		color: $color-cold-dark
 
 	margin-right: 3ex

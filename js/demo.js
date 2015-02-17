@@ -158,7 +158,7 @@ Demo.Tabs = function(){
         this.sampleTabs = new UI.Tabs({
             tabsSelector: '#tabs',
             tabsContentSelector: '#tabs-content',
-            sliding: true,
+            sliding: true
         });
 
         $('#tabs-content .tab-trigger').on('click', function(e){

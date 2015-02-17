@@ -19,20 +19,9 @@
             <div class="col-6"><a href="index.html" class="color-dark-gray-dark">
                 <div class="logo">Quodo<i class="fa fa-rocket color-cold-dark"></i>2</div>
                 <p class="logo-p">Application UI library</p></a>
-              <nav data-collapse="false" data-collapsed-text="Sections" class="nav fat bordered"><a href="colors.html">Colors</a><a href="nav.html" class="active">Navigation</a><a href="nav-misc.html">Other navigation</a><a href="grid.html">Grid</a><a href="buttons.html">Buttons</a><a href="forms.html">Forms</a><a href="table.html">Table</a><a href="typography.html">Typography</a><a href="checkers.html">Checkers</a><a href="popup.html">Popup</a><a href="api.html">API</a><a href="roadmap.html">Roadmap</a></nav>
+              <nav data-collapse="false" data-collapsed-text="Sections" class="nav fat bordered"><a href="components.html">Components</a><a href="typography.html">Typography</a><a href="colors.html">Colors</a><a href="grid.html">Grid</a><a href="api.html">API</a><a href="roadmap.html">Roadmap</a></nav>
             </div>
             <div class="col-18">
-              <h1>Horizontal navigation</h1>
-              <p>Can be bordered, filled or simple inline links</p>
-              <nav class="nav fat horizontal bordered"><a href="#stayhere" class="active">Letter</a><a href="#stayhere">Word</a><a href="#stayhere">Expression</a><a href="#stayhere">Article</a><a href="#stayhere">Tale</a></nav>
-              <nav class="nav fat horizontal filled bg-heat-light"><a href="#stayhere">Letter</a><a href="#stayhere">Word</a><a href="#stayhere" class="active">Expression</a><a href="#stayhere">Article</a><a href="#stayhere">Tale</a></nav>
-              <nav class="nav fat horizontal text-center"><a href="#stayhere">Letter</a><a href="#stayhere">Word</a><a href="#stayhere">Expression</a><a href="#stayhere">Article</a><a href="#stayhere" class="active">Tale</a></nav>
-              <div class="grid">
-                <div class="col-4"><a href="#" class="code"><i class="fa fa-code"></i>&nbsp;The code</a></div>
-                <div class="col-4"><a href="#" class="colorable"><i class="fa fa-paint-brush"></i>&nbsp;Colorable</a></div>
-                <div class="col-4"><a href="#" class="resizeable"><i class="fa fa-arrows"></i>&nbsp;Resizeable</a></div>
-              </div>
-              <hr>
               <h1>Vertical navigation</h1>
               <p>Can be bordered, filled or simple inline links</p>
               <div class="grid">
@@ -51,6 +40,49 @@
                 <div class="col-4"><a href="#" class="colorable"><i class="fa fa-paint-brush"></i>&nbsp;Colorable</a></div>
                 <div class="col-4"><a href="#" class="resizeable"><i class="fa fa-arrows"></i>&nbsp;Resizeable</a></div>
               </div>
+              <hr>
+              <h1>Horizontal navigation</h1>
+              <p>Can be bordered, filled or simple inline links</p>
+              <nav class="nav fat horizontal bordered"><a href="#stayhere" class="active">Letter</a><a href="#stayhere">Word</a><a href="#stayhere">Expression</a><a href="#stayhere">Article</a><a href="#stayhere">Tale</a></nav>
+              <nav class="nav fat horizontal filled bg-heat-light"><a href="#stayhere">Letter</a><a href="#stayhere">Word</a><a href="#stayhere" class="active">Expression</a><a href="#stayhere">Article</a><a href="#stayhere">Tale</a></nav>
+              <nav class="nav fat horizontal text-center"><a href="#stayhere">Letter</a><a href="#stayhere">Word</a><a href="#stayhere">Expression</a><a href="#stayhere">Article</a><a href="#stayhere" class="active">Tale</a></nav>
+              <div class="grid">
+                <div class="col-4"><a href="#" class="code"><i class="fa fa-code"></i>&nbsp;The code</a></div>
+                <div class="col-4"><a href="#" class="colorable"><i class="fa fa-paint-brush"></i>&nbsp;Colorable</a></div>
+                <div class="col-4"><a href="#" class="resizeable"><i class="fa fa-arrows"></i>&nbsp;Resizeable</a></div>
+              </div>
+              <hr>
+              <h1>Tabs</h1>
+              <p>Rapid content-switching component</p>
+              <div id="tabs" class="tabs fat"><i class="marker"></i><a href="#about" class="active">About</a><a href="#contacts">Contacts</a><a href="#media">Media</a></div>
+              <div id="tabs-content" class="tabs-content">
+                <div data-role="tab-page" data-tab="about" class="page">
+                  <h2>About content</h2>
+                  <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p>
+                  <p><a href="#" data-name="contacts" class="tab-trigger button wireframe bg-myst-dark next">Contacts section</a></p>
+                  <p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.</p>
+                </div>
+                <div data-role="tab-page" data-tab="contacts" class="page active">
+                  <h2>Contacts content</h2>
+                  <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do.</p>
+                  <p>	<a href="#" data-name="about" class="tab-trigger button wireframe prev">About section</a>&nbsp;<a href="#" data-name="media" class="tab-trigger button wireframe next">Media section</a></p>
+                  <p>That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p>
+                </div>
+                <div data-role="tab-page" data-tab="media" class="page">
+                  <h2>Media content</h2>
+                  <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do.</p>
+                  <p><a href="#" data-name="about" class="tab-trigger button wireframe prev">Go back to About</a></p>
+                  <p>That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We\'re on the same curve, just on opposite ends.</p>
+                  <p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.</p>
+                </div>
+              </div>
+              <div class="grid"><a href="api.html#Popup" class="code"><i class="fa fa-code"></i>&nbsp;The code</a></div>
+              <h1>Breadcrumbs</h1>
+              <p>Those little bastards are very useful</p>
+              <div class="breadcrumbs"><a href="#">Main page</a><a href="#">Navigation</a><a href="#" class="active">Breadcrumbs</a></div><br>
+              <div class="grid">
+                <div class="col-9"><a href="api.html#Popup" class="code"><i class="fa fa-code"></i>&nbsp;The code</a></div>
+              </div>
             </div>
           </div>
         </div>
@@ -68,9 +100,8 @@
           <div class="col-18">
             <nav class="nav white">
               <div class="grid">
-                <div class="col-6"><a href="colors.html">Colors</a><a href="nav.html" class="active">Navigation</a><a href="nav-misc.html">Other navigation</a><a href="grid.html">Grid</a></div>
-                <div class="col-6"><a href="buttons.html">Buttons</a><a href="forms.html">Forms</a><a href="table.html">Table</a><a href="typography.html">Typography</a></div>
-                <div class="col-6"><a href="checkers.html">Checkers</a><a href="popup.html">Popup</a><a href="api.html">API</a><a href="roadmap.html">Roadmap</a></div>
+                <div class="col-6"><a href="components.html">Components</a><a href="typography.html">Typography</a><a href="colors.html">Colors</a><a href="grid.html">Grid</a></div>
+                <div class="col-6"><a href="api.html">API</a><a href="roadmap.html">Roadmap</a></div>
               </div>
             </nav>
           </div>

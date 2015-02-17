@@ -1,0 +1,26 @@
+extends ./layout.jade
+
+block content
+	- var section = 'breadcrumbs'
+
+	.grid
+		.col-6
+			include ./partials/leftcol.jade
+
+		.col-18
+			h1 Breadcrumbs
+			p Those little bastards are very useful
+
+			.breadcrumbs
+				a(href="#") Main page
+				a(href="#") Navigation
+				a.active(href="#") Breadcrumbs
+
+			br
+			.grid
+				.col-9
+					a.code(href="api.html#Popup")
+						i.fa.fa-code
+						|&nbsp;The code
+
+			
