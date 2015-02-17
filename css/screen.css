@@ -3801,9 +3801,9 @@ ul.dashes li {
       color: #656d77;
       opacity: 1; }
       .nav.bordered a:hover {
-        background-color: #f1f4f8; }
+        background-color: #f6f9fd; }
       .nav.bordered a:active {
-        background-color: #eceff3; }
+        background-color: #f0f3f7; }
       .nav.bordered a.active {
         background-color: #e6e9ed; }
       .nav.bordered a:first-child {
@@ -3857,7 +3857,6 @@ ul.dashes li {
   display: block;
   margin-bottom: 2em; }
   .nav-bricks .item .icon {
-    background-color: #434a53;
     font-size: 3.8em;
     padding: 0.55em 0;
     height: 1em;
@@ -3867,7 +3866,10 @@ ul.dashes li {
     color: #fff;
     position: relative;
     margin: 0 auto;
-    vertical-align: middle; }
+    vertical-align: middle;
+    border: 1px solid #e6e9ed; }
+    .nav-bricks .item .icon[class^="bg-"], .nav-bricks .item .icon[class*=" bg-"] {
+      border: none; }
     .nav-bricks .item .icon img {
       display: block;
       margin: 0 auto; }
@@ -3877,6 +3879,7 @@ ul.dashes li {
       width: 100%;
       height: 100%;
       position: absolute;
+      border-radius: 5px 5px 0 0;
       top: 0;
       left: 0;
       background: #fff;
