@@ -22,64 +22,31 @@
               <nav data-collapse="false" data-collapsed-text="Sections" class="nav fat bordered"><a href="components.html">Components</a><a href="typography.html">Typography</a><a href="colors.html">Colors</a><a href="grid.html">Grid</a><a href="api.html">API</a><a href="roadmap.html">Roadmap</a></nav>
             </div>
             <div class="col-18">
-              <h1>Table</h1>
-              <p>Simple grid system of 24 cols, nesting supports</p>
-              <table id="table-sample" class="rounded bordered">
-                <thead>
-                  <tr>
-                    <th></th>
-                    <th>Make</th>
-                    <th>Model</th>
-                    <th>Horsepower</th>
-                    <th>Top speed</th>
-                    <th>Price</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Audi</td>
-                    <td>A5 3.2 Quattro</td>
-                    <td>350</td>
-                    <td>250 km/h</td>
-                    <td>$69 000</td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>BMW</td>
-                    <td>335i xDrive</td>
-                    <td>300</td>
-                    <td>250 km/h</td>
-                    <td>$71 000</td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>Mercedes Benz</td>
-                    <td>E 320 AMG</td>
-                    <td>298</td>
-                    <td>250 km/h</td>
-                    <td>$70 000</td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td>Infiniti</td>
-                    <td>Q50 Eau Rouge</td>
-                    <td>500</td>
-                    <td>280 km/h</td>
-                    <td>$100 000</td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr>
-                    <td colspan="5" class="text-right">Total</td>
-                    <td>$1 290 000</td>
-                  </tr>
-                </tfoot>
-              </table><br>
-              <div id="table-checker" class="checker"><a href="#" data-type="rounded" class="active">Rounded</a><a href="#" data-type="bordered" class="active">Bordered</a><a href="#" data-type="striped">Striped</a><a href="#" data-type="hovered">Hovered</a><a href="#" data-type="bordered-rows-h">Horizontal borders</a><a href="#" data-type="bordered-rows-v">Vertical borders</a></div>
-              <div class="grid">
-                <div class="col-4"><a href="#" class="code"><i class="fa fa-code"></i>&nbsp;The code</a></div>
+              <h1>Tabs</h1>
+              <p>Rapid content-switching component</p>
+              <div id="tabs" class="tabs fat"><i class="marker"></i><a href="#about" class="active">About</a><a href="#contacts">Contacts</a><a href="#media">Media</a></div>
+              <div id="tabs-content" class="tabs-content">
+                <div data-role="tab-page" data-tab="about" class="page">
+                  <h2>About content</h2>
+                  <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p>
+                  <p><a id="tabs-popup-trigger" href="#" class="button wireframe bg-myst-dark">How about a popup?</a>&nbsp;<a href="#" data-name="contacts" class="tab-trigger button wireframe next">Contacts section</a></p>
+                  <p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.</p>
+                </div>
+                <div data-role="tab-page" data-tab="contacts" class="page active">
+                  <h2>Contacts content</h2>
+                  <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do.</p>
+                  <p>	<a href="#" data-name="about" class="tab-trigger button wireframe prev">About section</a>&nbsp;<a href="#" data-name="media" class="tab-trigger button wireframe next">Media section</a></p>
+                  <p>That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p>
+                </div>
+                <div data-role="tab-page" data-tab="media" class="page">
+                  <h2>Media content</h2>
+                  <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do.</p>
+                  <p><a href="#" data-name="about" class="tab-trigger button wireframe prev">Go back to About</a></p>
+                  <p>That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We\'re on the same curve, just on opposite ends.</p>
+                  <p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.</p>
+                </div>
               </div>
+              <div class="grid"><a href="api.html#Popup" class="code"><i class="fa fa-code"></i>&nbsp;The code</a></div>
             </div>
           </div>
         </div>

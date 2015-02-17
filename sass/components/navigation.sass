@@ -166,7 +166,6 @@
 		line-height: $height-component-fat
 
 
-
 .nav-bricks
 	.item
 		text-align: center
@@ -178,11 +177,18 @@
 			background-color: $fill-component-color
 			font-size: 3.8em
 			padding: .55em 0
-			border-radius: 5px 5px 0 0
-			display: block
+			height: 1em
+			border-radius: $border-radius $border-radius 0 0
+			display: table-cell
+			width: 1%
 			color: #fff
 			position: relative
 			margin: 0 auto
+			vertical-align: middle
+
+			img
+				display: block
+				margin: 0 auto
 
 			&:after
 				content: ''
@@ -190,6 +196,7 @@
 				width: 100%
 				height: 100%
 				position: absolute
+				border-radius: $border-radius $border-radius 0 0
 				top: 0
 				left: 0
 				background: #fff
@@ -199,7 +206,7 @@
 		&:hover
 			.icon
 				&:after
-					opacity: .5
+					opacity: .3
 
 		.text
 			box-sizing: border-box
@@ -208,5 +215,5 @@
 			text-align: center
 			border: 1px solid $border-component-color
 			border-top: none
-			border-radius: 0 0 5px 5px
+			border-radius: 0 0 $border-radius $border-radius
 			padding: 10px 0

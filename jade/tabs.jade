@@ -8,73 +8,6 @@ block content
 			include ./partials/leftcol.jade
 
 		.col-18
-			h1 Vertical navigation
-			p Can be bordered, filled or simple inline links
-
-			.grid
-				.col-6
-					nav.nav.fat.bordered
-						a.active(href="#stayhere") Letter
-						a(href="#stayhere") Word
-						a(href="#stayhere") Expression
-						a(href="#stayhere") Article
-						a(href="#stayhere") Tale
-				.col-6
-					nav.nav.fat.filled.bg-myst-light
-						a(href="#stayhere") Letter
-						a(href="#stayhere") Word
-						a.active(href="#stayhere") Expression
-						a(href="#stayhere") Article
-						a(href="#stayhere") Tale
-
-				.col-6
-					nav.nav.fat
-						a(href="#stayhere") Letter
-						a(href="#stayhere") Word
-						a(href="#stayhere") Expression
-						a(href="#stayhere") Article
-						a.active(href="#stayhere") Tale
-
-			.grid
-				include partials/code
-				include partials/colorable
-				include partials/resizeable
-
-
-			hr
-
-			h1 Horizontal navigation
-			p Can be bordered, filled or simple inline links
-
-			nav.nav.fat.horizontal.bordered
-				a.active(href="#stayhere") Letter
-				a(href="#stayhere") Word
-				a(href="#stayhere") Expression
-				a(href="#stayhere") Article
-				a(href="#stayhere") Tale
-
-			nav.nav.fat.horizontal.filled.bg-heat-light
-				a(href="#stayhere") Letter
-				a(href="#stayhere") Word
-				a.active(href="#stayhere") Expression
-				a(href="#stayhere") Article
-				a(href="#stayhere") Tale
-
-			nav.nav.fat.horizontal.text-center
-				a(href="#stayhere") Letter
-				a(href="#stayhere") Word
-				a(href="#stayhere") Expression
-				a(href="#stayhere") Article
-				a.active(href="#stayhere") Tale
-
-			.grid
-				include partials/code
-				include partials/colorable
-				include partials/resizeable
-
-			hr
-
-
 			h1 Tabs
 			p Rapid content-switching component
 
@@ -90,7 +23,10 @@ block content
 					
 					p Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
 					
-					p: a.tab-trigger.button.wireframe.bg-myst-dark.next(href="#", data-name="contacts") Contacts section
+					p
+						a#tabs-popup-trigger.button.wireframe.bg-myst-dark(href="#") How about a popup?
+						|&nbsp;
+						a.tab-trigger.button.wireframe.next(href="#", data-name="contacts") Contacts section
 					
 					p Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.
 
@@ -122,21 +58,5 @@ block content
 				a.code(href="api.html#Popup")
 					i.fa.fa-code
 					| &nbsp;The code
-
-
-			h1 Breadcrumbs
-			p Those little bastards are very useful
-
-			.breadcrumbs
-				a(href="#") Main page
-				a(href="#") Navigation
-				a.active(href="#") Breadcrumbs
-
-			br
-			.grid
-				.col-9
-					a.code(href="api.html#Popup")
-						i.fa.fa-code
-						|&nbsp;The code
 
 			
