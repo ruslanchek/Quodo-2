@@ -1,0 +1,79 @@
+extends ./layout.jade
+
+block content
+	- var section = 'catalog'
+
+	.grid
+		.col-6
+			include ./partials/leftcol.jade
+
+		.col-18
+			h1 Catalog bricks
+			p A best way to use Font Awesome icons
+
+			.nav-bricks
+				.grid
+					.col-6
+						a.item(href="#stayhere")
+							span.icon.bg-dark-gray-dark
+								i.fa.fa-globe.color-cold-light
+							span.text Travel worldwide
+
+					.col-4
+						a.item(href="#stayhere")
+							span.icon.bg-cold-light
+								i.fa.fa-plane
+							span.text Air Tickets
+
+					.col-4
+						a.item(href="#stayhere")
+							span.icon.bg-cold-light
+								i.fa.fa-ship
+							span.text Sea Cruises
+
+					.col-4
+						a.item(href="#stayhere")
+							span.icon.bg-cold-light
+								i.fa.fa-bed
+							span.text Hotels
+
+			.grid
+				include partials/code
+				include partials/colorable
+
+			hr
+
+			h1 How about transparent?
+			p They are so nice, really
+
+			.nav-bricks
+				.grid
+					.col-6
+						a.item(href="#stayhere")
+							span.icon
+								i.fa.fa-globe.color-cold-light
+							span.text Travel worldwide
+
+					.col-4
+						a.item(href="#stayhere")
+							span.icon
+								i.fa.fa-plane.color-dark-gray-light
+							span.text Air Tickets
+
+					.col-4
+						a.item(href="#stayhere")
+							span.icon
+								i.fa.fa-ship.color-dark-gray-light
+							span.text Sea Cruises
+
+					.col-4
+						a.item(href="#stayhere")
+							span.icon
+								i.fa.fa-bed.color-dark-gray-light
+							span.text Hotels
+
+			.grid
+				include partials/code
+				include partials/colorable
+
+			hr
