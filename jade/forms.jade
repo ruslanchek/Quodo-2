@@ -13,5 +13,53 @@ block content
 
 			.grid
 				.col-9
-					.form
-						input
+					h2 Horizontal
+					form.form
+						.input
+							label(for="name-1") Name
+							input#name-1(type="text", tabindex="1")
+
+						.input
+							label(for="email-1") E-mail
+							input#email-1(type="email", tabindex="2")
+
+						.input
+							label(for="realm-1")
+							select#realm-1
+								option North America
+								option Europe
+								option Asia
+								option Oceania
+								option South Africa
+
+						.input
+							label(for="remember-1") Remember me
+							input#remember-1(type="checkbox", tabindex="3")
+
+						button.button.fat.bg-neutral-light(type="submit") Login
+
+				.col-8
+					h2 Horizontal
+					form.form.horizontal
+						.input
+							label(for="name-2") Name
+							input#name-2(type="text", tabindex="4")
+
+						.input
+							label(for="email-2") E-mail
+							input#email-2(type="email", tabindex="5")
+
+						.input
+							label(for="realm-2")
+							select#realm-2
+								option North America
+								option Europe
+								option Asia
+								option Oceania
+								option South Africa
+
+						.input
+							label(for="remember-2") Remember me
+							input#remember-2(type="checkbox", tabindex="6")
+
+						button.button.fat.bg-neutral-light(type="submit") Login
