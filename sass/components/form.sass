@@ -1,2 +1,37 @@
 .form
-	
+	.input
+		margin: 0 0 1em
+		display: block
+
+	label
+		&:after
+			content: ''
+			display: block
+
+	&.horizontal
+		.input
+			label
+				width: 150px
+				display: inline-block
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"]
+	appearance: none
+	outline: none
+	display: block
+	width: 100%
+	font-family: $base-font-family
+	font-size: $base-font-size
+	box-sizing: border-box
+	padding: .75em 1.5ex
+	border: 1px solid $border-component-color
+	border-radius: $border-radius
+	transition: $animation-component-duration
+
+	&:hover
+		border-color: $border-component-color - 15
+
+	&:focus
+		border-color:  $border-component-color - 25
