@@ -11,73 +11,91 @@ block content
 			h1 Forms
 			p The forms with a lot of shapes
 
+			form.form.w-50
+				.input
+					label.label(for="name-1") Name
+					input#name-1(type="text", tabindex="1")
+
+				.input
+					label.label(for="email-1") E-mail
+					input#email-1(type="email", tabindex="2")
+
+				.input
+					label.label(for="realm-1", tabindex="3") Realm
+
+					.select
+						select#realm-1
+							option North America
+							option Europe
+							option Asia
+							option Oceania
+							option South Africa
+
+				.input
+					.label
+					input#remember-1(type="checkbox", tabindex="4")
+					label(for="remember-1") Remember me
+
+				.input
+					label.label Gender
+
+					input#gender-1-1(type="radio", tabindex="5", name="gender-1", value="1", checked)
+					label(for="gender-1-1") Male
+
+					input#gender-1-2(type="radio", tabindex="6", name="gender-1", value="2")
+					label(for="gender-1-2") Female
+
+				button.button.fat.bevel.bg-cold-light.w-50(type="submit") Login
+
+			br
 			.grid
-				.col-9
-					h2 Horizontal
-					form.form
-						.input
-							label.label(for="name-1") Name
-							input#name-1(type="text", tabindex="1")
+				a.code(href="#")
+					i.fa.fa-code
+					| &nbsp;The code
 
-						.input
-							label.label(for="email-1") E-mail
-							input#email-1(type="email", tabindex="2")
 
-						.input
-							label.label(for="realm-1", tabindex="3") Realm
-							select#realm-1
-								option North America
-								option Europe
-								option Asia
-								option Oceania
-								option South Africa
+			hr
 
-						.input
-							input#remember-1(type="checkbox", tabindex="4")
-							label(for="remember-1") Remember me
+			h1 Vertical
+			p Another kind in vertical mode
 
-						.input
-							label.label Gender
+			form.form.vertical.w-50
+				.input
+					label.label(for="name-2") Name
+					input#name-2(type="text", tabindex="11")
 
-							input#gender-1-1(type="radio", tabindex="5", name="gender-1", value="1")
-							label(for="gender-1-1") Male
+				.input
+					label.label(for="email-2") E-mail
+					input#email-2(type="email", tabindex="12")
 
-							input#gender-1-2(type="radio", tabindex="6", name="gender-1", value="2")
-							label(for="gender-1-2") Female
+				.input
+					label.label(for="realm-2", tabindex="13") Realm
+					.select
+						select#realm-1
+							option North America
+							option Europe
+							option Asia
+							option Oceania
+							option South Africa
 
-						button.button.fat.bg-neutral-light(type="submit") Login
+				.input
+					.label
+					input#remember-2(type="checkbox", tabindex="14")
+					label(for="remember-2") Remember me
 
-				.col-8
-					h2 Vertical
-					form.form.vertical
-						.input
-							label.label(for="name-2") Name
-							input#name-2(type="text", tabindex="11")
+				.input
+					label.label Gender
 
-						.input
-							label.label(for="email-2") E-mail
-							input#email-2(type="email", tabindex="12")
+					input#gender-2-1(type="radio", tabindex="15", name="gender-2", value="1", checked)
+					label(for="gender-2-1") Male
 
-						.input
-							label.label(for="realm-2", tabindex="13") Realm
-							select#realm-2
-								option North America
-								option Europe
-								option Asia
-								option Oceania
-								option South Africa
+					input#gender-2-2(type="radio", tabindex="16", name="gender-2", value="2")
+					label(for="gender-2-2") Female
 
-						.input
-							input#remember-2(type="checkbox", tabindex="14")
-							label(for="remember-2") Remember me
+				button.button.fat.bevel.bg-cold-light.w-50(type="submit") Login
 
-						.input
-							label.label Gender
-
-							input#gender-2-1(type="radio", tabindex="15", name="gender-2", value="1")
-							label(for="gender-2-1") Male
-
-							input#gender-2-2(type="radio", tabindex="16", name="gender-2", value="2")
-							label(for="gender-2-2") Female
-
-						button.button.fat.bg-neutral-light(type="submit") Login
+			br
+			.grid
+				a.code(href="#")
+					i.fa.fa-code
+					| &nbsp;The code

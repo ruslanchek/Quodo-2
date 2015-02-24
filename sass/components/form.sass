@@ -1,7 +1,21 @@
 .form
 	.input
-		margin: 0 0 1em
+		margin: 0 0 1.15em
 		display: block
+
+	&.vertical
+		.input
+			.label
+				width: 125px
+				display: inline-block
+
+		input[type="text"],
+		input[type="email"],
+		input[type="password"],
+		textarea,
+		select
+			display: inline-block
+			width: auto
 
 	.label
 		&:after
@@ -19,18 +33,36 @@
 
 input,
 select,
-textarea,
+textarea
 	&:disabled
 		opacity: .75
 		cursor: default
 
-select
+.select
+	height: 40px
+	position: relative
 
+	select
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 40px
+		line-height: 40px
+		background: transparent
+		border: none
+		outline: none
+		-webkit-appearance: none
+		color: $color-text-default
+		font-family: $base-font-family
+		font-size: $base-font-size
 
 input[type="text"],
 input[type="email"],
 input[type="password"],
-textarea
+textarea,
+.select
+	color: $color-text-default
 	-webkit-appearance: none
 	outline: none
 	display: block
@@ -38,14 +70,14 @@ textarea
 	font-family: $base-font-family
 	font-size: $base-font-size
 	box-sizing: border-box
-	padding: .75em 1.5ex
-	border: 1px solid $border-component-color
+	padding: .6em 1.5ex
+	border: 1px solid $border-component-color - 15
 	border-radius: $border-radius
 	transition: $animation-component-duration
 	box-shadow: inset 0 0 0 1px transparent
 
 	&:hover
-		border-color: $border-component-color - 15
+		border-color: $border-component-color - 35
 
 	&:focus
 		border-color: $color-cold-light
@@ -53,46 +85,116 @@ textarea
 
 
 input[type="checkbox"]
+	$size: 18px
+
 	visibility: hidden
 	opacity: 0
 	position: absolute
 
 	&+label
+		cursor: pointer
+		position: relative
+		padding-left: $size * 1.5
+
 		&:before
+			box-sizing: border-box
+			position: absolute
+			top: 0
+			left: 0
 			content: ''
-			width: 30px
-			height: 30px
+			width: $size
+			height: $size
 			display: inline-block
-			background-color: red
+			border-radius: 2px
+			border: 1px solid $border-component-color - 15
+			box-shadow: inset 0 0 0 1px transparent
+			transition: $animation-component-duration
+
+		&:after
+			box-sizing: border-box
+			position: absolute
+			top: 4px
+			left: 4px
+			content: ''
+			width: $size / 2 + 1
+			height: $size / 2 + 1
+			background-color: $color-cold-light
+			opacity: 0
+			transform: scale(0)
+			transition: $animation-component-duration
+
+		&:hover
+			&:before
+				border-color: $border-component-color - 35
 
 	&:checked
 		&+label
 			&:before
-				content: ''
-				width: 30px
-				height: 30px
-				display: inline-block
-				background-color: green
+				border-color: $color-cold-light
+				box-shadow: inset 0 0 0 1px $color-cold-light
+
+			&:after
+				opacity: 1
+				transform: scale(1)
+
+			&:hover
+				&:before
+					border-color: $color-cold-light - 15
+
+				&:after
+					background-color: $color-cold-light - 15
 
 
 input[type="radio"]
+	$size: 18px
+
 	visibility: hidden
 	opacity: 0
 	position: absolute
 
 	&+label
+		cursor: pointer
+		position: relative
+		padding-left: $size * 1.5
+
 		&:before
+			box-sizing: border-box
+			position: absolute
+			top: 0
+			left: 0
 			content: ''
-			width: 30px
-			height: 30px
+			width: $size + 2
+			height: $size + 2
 			display: inline-block
-			background-color: red
+			border-radius: $size
+			border: 1px solid $border-component-color - 15
+			transition: $animation-component-duration
+
+		&:after
+			box-sizing: border-box
+			position: absolute
+			top: 4px
+			left: 4px
+			content: ''
+			width: $size - 6
+			height: $size - 6
+			border-radius: $size - 4
+			background-color: $color-cold-light
+			opacity: 0
+			transform: scale(0)
+			transition: $animation-component-duration
+
+		&:hover
+			&:before
+				border-color: $border-component-color - 35
 
 	&:checked
 		&+label
+			cursor: default
+
 			&:before
-				content: ''
-				width: 30px
-				height: 30px
-				display: inline-block
-				background-color: green
+				border: 2px solid $color-cold-light
+
+			&:after
+				opacity: 1
+				transform: scale(1)
