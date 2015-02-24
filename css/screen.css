@@ -4439,17 +4439,27 @@ table {
 .form .input {
   margin: 0 0 1em;
   display: block; }
-.form label:after {
+.form .label:after {
   content: "";
   display: block; }
-.form.horizontal .input label {
-  width: 150px;
-  display: inline-block; }
+.form input[type="checkbox"] + label,
+.form input[type="radio"] + label {
+  margin-right: 2ex; }
+@media (min-width: 0) and (max-width: 569px) {
+  .form .button {
+    width: 100%; } }
+
+input:disabled,
+select:disabled,
+textarea:disabled {
+  opacity: 0.75;
+  cursor: default; }
 
 input[type="text"],
 input[type="email"],
-input[type="password"] {
-  appearance: none;
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
   outline: none;
   display: block;
   width: 100%;
@@ -4460,15 +4470,53 @@ input[type="password"] {
   border: 1px solid #e6e9ed;
   border-radius: 5px;
   -webkit-transition: 0.15s;
-          transition: 0.15s; }
+          transition: 0.15s;
+  box-shadow: inset 0 0 0 1px transparent; }
   input[type="text"]:hover,
   input[type="email"]:hover,
-  input[type="password"]:hover {
+  input[type="password"]:hover,
+  textarea:hover {
     border-color: #d7dade; }
   input[type="text"]:focus,
   input[type="email"]:focus,
-  input[type="password"]:focus {
-    border-color: #cdd0d4; }
+  input[type="password"]:focus,
+  textarea:focus {
+    border-color: #4fc2e5;
+    box-shadow: inset 0 0 0 1px #4fc2e5; }
+
+input[type="checkbox"] {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute; }
+  input[type="checkbox"] + label:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-color: red; }
+  input[type="checkbox"]:checked + label:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-color: green; }
+
+input[type="radio"] {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute; }
+  input[type="radio"] + label:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-color: red; }
+  input[type="radio"]:checked + label:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-color: green; }
 
 .logo {
   font-size: 30px;

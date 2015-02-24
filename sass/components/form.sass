@@ -3,22 +3,35 @@
 		margin: 0 0 1em
 		display: block
 
-	label
+	.label
 		&:after
 			content: ''
 			display: block
 
-	&.horizontal
-		.input
-			label
-				width: 150px
-				display: inline-block
+	input[type="checkbox"],
+	input[type="radio"]
+		&+label
+			margin-right: 2ex
+
+	.button
+		+breakpoint($bp-iphone)
+			width: 100%
+
+input,
+select,
+textarea,
+	&:disabled
+		opacity: .75
+		cursor: default
+
+select
 
 
 input[type="text"],
 input[type="email"],
-input[type="password"]
-	appearance: none
+input[type="password"],
+textarea
+	-webkit-appearance: none
 	outline: none
 	display: block
 	width: 100%
@@ -29,9 +42,57 @@ input[type="password"]
 	border: 1px solid $border-component-color
 	border-radius: $border-radius
 	transition: $animation-component-duration
+	box-shadow: inset 0 0 0 1px transparent
 
 	&:hover
 		border-color: $border-component-color - 15
 
 	&:focus
-		border-color:  $border-component-color - 25
+		border-color: $color-cold-light
+		box-shadow: inset 0 0 0 1px $color-cold-light
+
+
+input[type="checkbox"]
+	visibility: hidden
+	opacity: 0
+	position: absolute
+
+	&+label
+		&:before
+			content: ''
+			width: 30px
+			height: 30px
+			display: inline-block
+			background-color: red
+
+	&:checked
+		&+label
+			&:before
+				content: ''
+				width: 30px
+				height: 30px
+				display: inline-block
+				background-color: green
+
+
+input[type="radio"]
+	visibility: hidden
+	opacity: 0
+	position: absolute
+
+	&+label
+		&:before
+			content: ''
+			width: 30px
+			height: 30px
+			display: inline-block
+			background-color: red
+
+	&:checked
+		&+label
+			&:before
+				content: ''
+				width: 30px
+				height: 30px
+				display: inline-block
+				background-color: green

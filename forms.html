@@ -29,15 +29,15 @@
                   <h2>Horizontal</h2>
                   <form class="form">
                     <div class="input">
-                      <label for="name-1">Name</label>
+                      <label for="name-1" class="label">Name</label>
                       <input id="name-1" type="text" tabindex="1">
                     </div>
                     <div class="input">
-                      <label for="email-1">E-mail</label>
+                      <label for="email-1" class="label">E-mail</label>
                       <input id="email-1" type="email" tabindex="2">
                     </div>
                     <div class="input">
-                      <label for="realm-1" tabindex="3">Realm</label>
+                      <label for="realm-1" tabindex="3" class="label">Realm</label>
                       <select id="realm-1">
                         <option>North America</option>
                         <option>Europe</option>
@@ -47,25 +47,32 @@
                       </select>
                     </div>
                     <div class="input">
-                      <label for="remember-1">Remember me</label>
                       <input id="remember-1" type="checkbox" tabindex="4">
+                      <label for="remember-1">Remember me</label>
+                    </div>
+                    <div class="input">
+                      <label class="label">Gender</label>
+                      <input id="gender-1-1" type="radio" tabindex="5" name="gender-1" value="1">
+                      <label for="gender-1-1">Male</label>
+                      <input id="gender-1-2" type="radio" tabindex="6" name="gender-1" value="2">
+                      <label for="gender-1-2">Female</label>
                     </div>
                     <button type="submit" class="button fat bg-neutral-light">Login</button>
                   </form>
                 </div>
                 <div class="col-8">
                   <h2>Vertical</h2>
-                  <form class="form horizontal">
+                  <form class="form vertical">
                     <div class="input">
-                      <label for="name-2">Name</label>
+                      <label for="name-2" class="label">Name</label>
                       <input id="name-2" type="text" tabindex="11">
                     </div>
                     <div class="input">
-                      <label for="email-2">E-mail</label>
+                      <label for="email-2" class="label">E-mail</label>
                       <input id="email-2" type="email" tabindex="12">
                     </div>
                     <div class="input">
-                      <label for="realm-2" tabindex="13">Realm</label>
+                      <label for="realm-2" tabindex="13" class="label">Realm</label>
                       <select id="realm-2">
                         <option>North America</option>
                         <option>Europe</option>
@@ -75,8 +82,15 @@
                       </select>
                     </div>
                     <div class="input">
-                      <label for="remember-2">Remember me</label>
                       <input id="remember-2" type="checkbox" tabindex="14">
+                      <label for="remember-2">Remember me</label>
+                    </div>
+                    <div class="input">
+                      <label class="label">Gender</label>
+                      <input id="gender-2-1" type="radio" tabindex="15" name="gender-2" value="1">
+                      <label for="gender-2-1">Male</label>
+                      <input id="gender-2-2" type="radio" tabindex="16" name="gender-2" value="2">
+                      <label for="gender-2-2">Female</label>
                     </div>
                     <button type="submit" class="button fat bg-neutral-light">Login</button>
                   </form>

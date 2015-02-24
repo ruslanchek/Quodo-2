@@ -16,15 +16,15 @@ block content
 					h2 Horizontal
 					form.form
 						.input
-							label(for="name-1") Name
+							label.label(for="name-1") Name
 							input#name-1(type="text", tabindex="1")
 
 						.input
-							label(for="email-1") E-mail
+							label.label(for="email-1") E-mail
 							input#email-1(type="email", tabindex="2")
 
 						.input
-							label(for="realm-1", tabindex="3") Realm
+							label.label(for="realm-1", tabindex="3") Realm
 							select#realm-1
 								option North America
 								option Europe
@@ -33,24 +33,33 @@ block content
 								option South Africa
 
 						.input
-							label(for="remember-1") Remember me
 							input#remember-1(type="checkbox", tabindex="4")
+							label(for="remember-1") Remember me
+
+						.input
+							label.label Gender
+
+							input#gender-1-1(type="radio", tabindex="5", name="gender-1", value="1")
+							label(for="gender-1-1") Male
+
+							input#gender-1-2(type="radio", tabindex="6", name="gender-1", value="2")
+							label(for="gender-1-2") Female
 
 						button.button.fat.bg-neutral-light(type="submit") Login
 
 				.col-8
 					h2 Vertical
-					form.form.horizontal
+					form.form.vertical
 						.input
-							label(for="name-2") Name
+							label.label(for="name-2") Name
 							input#name-2(type="text", tabindex="11")
 
 						.input
-							label(for="email-2") E-mail
+							label.label(for="email-2") E-mail
 							input#email-2(type="email", tabindex="12")
 
 						.input
-							label(for="realm-2", tabindex="13") Realm
+							label.label(for="realm-2", tabindex="13") Realm
 							select#realm-2
 								option North America
 								option Europe
@@ -59,7 +68,16 @@ block content
 								option South Africa
 
 						.input
-							label(for="remember-2") Remember me
 							input#remember-2(type="checkbox", tabindex="14")
+							label(for="remember-2") Remember me
+
+						.input
+							label.label Gender
+
+							input#gender-2-1(type="radio", tabindex="15", name="gender-2", value="1")
+							label(for="gender-2-1") Male
+
+							input#gender-2-2(type="radio", tabindex="16", name="gender-2", value="2")
+							label(for="gender-2-2") Female
 
 						button.button.fat.bg-neutral-light(type="submit") Login
