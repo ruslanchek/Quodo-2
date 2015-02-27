@@ -4069,6 +4069,7 @@ html, body {
   line-height: 36px;
   position: relative;
   outline: none;
+  margin: 0;
   border-radius: 5px;
   -webkit-transition: opacity 0.2s;
           transition: opacity 0.2s;
@@ -4489,6 +4490,22 @@ select:disabled,
 textarea:disabled {
   opacity: 0.25;
   cursor: default; }
+input::-webkit-input-placeholder,
+select::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder{
+  color: #aab2bc; }
+input::-moz-placeholder,
+select::-moz-placeholder,
+textarea::-moz-placeholder{
+  color: #aab2bc; }
+input:-ms-input-placeholder,
+select:-ms-input-placeholder,
+textarea:-ms-input-placeholder{
+  color: #aab2bc; }
+input::placeholder,
+select::placeholder,
+textarea::placeholder {
+  color: #aab2bc; }
 
 .select {
   height: 40px;
