@@ -38,11 +38,6 @@ block content
 								option South Africa
 
 				.row
-					.input
-						input#remember-1(type="checkbox", tabindex="4")
-						label(for="remember-1") Remember me
-
-				.row
 					.label
 						label Gender
 
@@ -55,8 +50,14 @@ block content
 
 				.row
 					.input
-						button.button.fat.bevel.bg-cold-light(type="submit") Login
-						button.button.fat.bevel Cancel
+						input#remember-1(type="checkbox", tabindex="4")
+						label(for="remember-1") Remember me
+
+				.row
+					.input
+						.button-group
+							button.button.bevel.bg-cold-light(type="submit") Login
+							button.button.bevel Cancel
 
 			br
 			.grid
@@ -67,10 +68,10 @@ block content
 
 			hr
 
-			h1 Vertical
-			p Another kind in vertical mode
+			h1 Horizontal
+			p Another kind &mdash; horizontal mode
 
-			form.form.vertical.w-50
+			form.form.horizontal.w-50
 				.row
 					.label
 						label(for="name-2") Name
@@ -99,11 +100,6 @@ block content
 								option South Africa
 
 				.row
-					.input
-						input#remember-2(type="checkbox", tabindex="14")
-						label(for="remember-2") Remember me
-
-				.row
 					.label
 						label Gender
 
@@ -116,8 +112,14 @@ block content
 
 				.row
 					.input
-						button.button.fat.bevel.bg-cold-light(type="submit") Login
-						button.button.fat.bevel Cancel
+						input#remember-2(type="checkbox", tabindex="14")
+						label(for="remember-2") Remember me
+
+				.row
+					.input
+						.button-group
+							button.button.bevel.bg-cold-light(type="submit") Login
+							button.button.bevel Cancel
 
 			br
 			.grid

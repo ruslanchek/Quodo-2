@@ -4466,9 +4466,11 @@ table {
 .form .row {
   margin: 0 0 1.15em;
   display: block; }
-.form.vertical .row .label {
-  display: inline-block; }
-.form.vertical .row .input {
+  .form .row:last-of-type {
+    margin-bottom: 0; }
+.form.horizontal .row .label {
+  float: left; }
+.form.horizontal .row .input {
   box-sizing: border-box;
   width: 100%;
   padding-left: 150px; }
@@ -4490,8 +4492,22 @@ textarea:disabled {
 
 .select {
   height: 40px;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
+  .select:after {
+    content: "";
+    font: normal normal normal 14px/1 FontAwesome;
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    right: 4px;
+    font-size: 18px;
+    margin-top: -8px;
+    pointer-events: none; }
   .select select {
+    cursor: pointer;
     position: absolute;
     top: 0;
     left: 0;

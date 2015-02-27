@@ -3,10 +3,13 @@
 		margin: 0 0 1.15em
 		display: block
 
-	&.vertical
+		&:last-of-type
+			margin-bottom: 0
+
+	&.horizontal
 		.row
 			.label
-				display: inline-block
+				float: left
 
 			.input
 				box-sizing: border-box
@@ -37,8 +40,23 @@ textarea
 .select
 	height: 40px
 	position: relative
+	cursor: pointer
+
+	&:after
+		content: $fa-var-angle-down
+		font: normal normal normal 14px/1 FontAwesome
+		display: inline-block
+		position: absolute
+		width: 20px
+		height: 20px
+		top: 50%
+		right: 4px
+		font-size: 18px
+		margin-top: -8px
+		pointer-events: none
 
 	select
+		cursor: pointer
 		position: absolute
 		top: 0
 		left: 0
