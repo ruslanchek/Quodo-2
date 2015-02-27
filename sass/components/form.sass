@@ -1,21 +1,17 @@
 .form
-	.input
+	.row
 		margin: 0 0 1.15em
 		display: block
 
 	&.vertical
-		.input
+		.row
 			.label
-				width: 125px
 				display: inline-block
 
-		input[type="text"],
-		input[type="email"],
-		input[type="password"],
-		textarea,
-		select
-			display: inline-block
-			width: auto
+			.input
+				box-sizing: border-box
+				width: 100%
+				padding-left: 150px
 
 	.label
 		&:after
@@ -35,7 +31,7 @@ input,
 select,
 textarea
 	&:disabled
-		opacity: .75
+		opacity: .25
 		cursor: default
 
 .select
@@ -47,8 +43,8 @@ textarea
 		top: 0
 		left: 0
 		width: 100%
-		height: 40px
-		line-height: 40px
+		padding: .6em 1.5ex
+		margin: 0
 		background: transparent
 		border: none
 		outline: none

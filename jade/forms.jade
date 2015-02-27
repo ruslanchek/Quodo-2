@@ -12,40 +12,51 @@ block content
 			p The forms with a lot of shapes
 
 			form.form.w-50
-				.input
-					label.label(for="name-1") Name
-					input#name-1(type="text", tabindex="1")
-
-				.input
-					label.label(for="email-1") E-mail
-					input#email-1(type="email", tabindex="2")
-
-				.input
-					label.label(for="realm-1", tabindex="3") Realm
-
-					.select
-						select#realm-1
-							option North America
-							option Europe
-							option Asia
-							option Oceania
-							option South Africa
-
-				.input
+				.row
 					.label
-					input#remember-1(type="checkbox", tabindex="4")
-					label(for="remember-1") Remember me
+						label(for="name-1") Name
+					.input
+						input#name-1(type="text", tabindex="1")
 
-				.input
-					label.label Gender
+				.row
+					.label
+						label(for="email-1") E-mail
+					.input
+						input#email-1(type="email", tabindex="2", placeholder="name@domain.com")
 
-					input#gender-1-1(type="radio", tabindex="5", name="gender-1", value="1", checked)
-					label(for="gender-1-1") Male
+				.row
+					.label
+						label(for="realm-1", tabindex="3") Realm
 
-					input#gender-1-2(type="radio", tabindex="6", name="gender-1", value="2")
-					label(for="gender-1-2") Female
+					.input
+						.select
+							select#realm-1
+								option North America
+								option Europe
+								option Asia
+								option Oceania
+								option South Africa
 
-				button.button.fat.bevel.bg-cold-light.w-50(type="submit") Login
+				.row
+					.input
+						input#remember-1(type="checkbox", tabindex="4")
+						label(for="remember-1") Remember me
+
+				.row
+					.label
+						label Gender
+
+					.input
+						input#gender-1-1(type="radio", tabindex="5", name="gender-1", value="1", checked)
+						label(for="gender-1-1") Male
+
+						input#gender-1-2(type="radio", tabindex="6", name="gender-1", value="2")
+						label(for="gender-1-2") Female
+
+				.row
+					.input
+						button.button.fat.bevel.bg-cold-light(type="submit") Login
+						button.button.fat.bevel Cancel
 
 			br
 			.grid
@@ -60,42 +71,57 @@ block content
 			p Another kind in vertical mode
 
 			form.form.vertical.w-50
-				.input
-					label.label(for="name-2") Name
-					input#name-2(type="text", tabindex="11")
-
-				.input
-					label.label(for="email-2") E-mail
-					input#email-2(type="email", tabindex="12")
-
-				.input
-					label.label(for="realm-2", tabindex="13") Realm
-					.select
-						select#realm-1
-							option North America
-							option Europe
-							option Asia
-							option Oceania
-							option South Africa
-
-				.input
+				.row
 					.label
-					input#remember-2(type="checkbox", tabindex="14")
-					label(for="remember-2") Remember me
+						label(for="name-2") Name
 
-				.input
-					label.label Gender
+					.input
+						input#name-2(type="text", tabindex="11")
 
-					input#gender-2-1(type="radio", tabindex="15", name="gender-2", value="1", checked)
-					label(for="gender-2-1") Male
+				.row
+					.label
+						label(for="email-2") E-mail
 
-					input#gender-2-2(type="radio", tabindex="16", name="gender-2", value="2")
-					label(for="gender-2-2") Female
+					.input
+						input#email-2(type="email", tabindex="12", placeholder="name@domain.com")
 
-				button.button.fat.bevel.bg-cold-light.w-50(type="submit") Login
+				.row
+					.label
+						label(for="realm-2", tabindex="13") Realm
+
+					.input
+						.select
+							select#realm-1
+								option North America
+								option Europe
+								option Asia
+								option Oceania
+								option South Africa
+
+				.row
+					.input
+						input#remember-2(type="checkbox", tabindex="14")
+						label(for="remember-2") Remember me
+
+				.row
+					.label
+						label Gender
+
+					.input
+						input#gender-2-1(type="radio", tabindex="15", name="gender-2", value="1", checked)
+						label(for="gender-2-1") Male
+
+						input#gender-2-2(type="radio", tabindex="16", name="gender-2", value="2")
+						label(for="gender-2-2") Female
+
+				.row
+					.input
+						button.button.fat.bevel.bg-cold-light(type="submit") Login
+						button.button.fat.bevel Cancel
 
 			br
 			.grid
 				a.code(href="#")
 					i.fa.fa-code
 					| &nbsp;The code
+

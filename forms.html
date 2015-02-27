@@ -25,78 +25,122 @@
               <h1>Forms</h1>
               <p>The forms with a lot of shapes</p>
               <form class="form w-50">
-                <div class="input">
-                  <label for="name-1" class="label">Name</label>
-                  <input id="name-1" type="text" tabindex="1">
-                </div>
-                <div class="input">
-                  <label for="email-1" class="label">E-mail</label>
-                  <input id="email-1" type="email" tabindex="2">
-                </div>
-                <div class="input">
-                  <label for="realm-1" tabindex="3" class="label">Realm</label>
-                  <div class="select">
-                    <select id="realm-1">
-                      <option>North America</option>
-                      <option>Europe</option>
-                      <option>Asia</option>
-                      <option>Oceania</option>
-                      <option>South Africa</option>
-                    </select>
+                <div class="row">
+                  <div class="label">
+                    <label for="name-1">Name</label>
+                  </div>
+                  <div class="input">
+                    <input id="name-1" type="text" tabindex="1">
                   </div>
                 </div>
-                <div class="input">
-                  <div class="label"></div>
-                  <input id="remember-1" type="checkbox" tabindex="4">
-                  <label for="remember-1">Remember me</label>
+                <div class="row">
+                  <div class="label">
+                    <label for="email-1">E-mail</label>
+                  </div>
+                  <div class="input">
+                    <input id="email-1" type="email" tabindex="2" placeholder="name@domain.com">
+                  </div>
                 </div>
-                <div class="input">
-                  <label class="label">Gender</label>
-                  <input id="gender-1-1" type="radio" tabindex="5" name="gender-1" value="1" checked>
-                  <label for="gender-1-1">Male</label>
-                  <input id="gender-1-2" type="radio" tabindex="6" name="gender-1" value="2">
-                  <label for="gender-1-2">Female</label>
+                <div class="row">
+                  <div class="label">
+                    <label for="realm-1" tabindex="3">Realm</label>
+                  </div>
+                  <div class="input">
+                    <div class="select">
+                      <select id="realm-1">
+                        <option>North America</option>
+                        <option>Europe</option>
+                        <option>Asia</option>
+                        <option>Oceania</option>
+                        <option>South Africa</option>
+                      </select>
+                    </div>
+                  </div>
                 </div>
-                <button type="submit" class="button fat bevel bg-cold-light w-50">Login</button>
+                <div class="row">
+                  <div class="input">
+                    <input id="remember-1" type="checkbox" tabindex="4">
+                    <label for="remember-1">Remember me</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="label">
+                    <label>Gender</label>
+                  </div>
+                  <div class="input">
+                    <input id="gender-1-1" type="radio" tabindex="5" name="gender-1" value="1" checked>
+                    <label for="gender-1-1">Male</label>
+                    <input id="gender-1-2" type="radio" tabindex="6" name="gender-1" value="2">
+                    <label for="gender-1-2">Female</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input">
+                    <button type="submit" class="button fat bevel bg-cold-light">Login</button>
+                    <button class="button fat bevel">Cancel</button>
+                  </div>
+                </div>
               </form><br>
               <div class="grid"><a href="#" class="code"><i class="fa fa-code"></i>&nbsp;The code</a></div>
               <hr>
               <h1>Vertical</h1>
               <p>Another kind in vertical mode</p>
               <form class="form vertical w-50">
-                <div class="input">
-                  <label for="name-2" class="label">Name</label>
-                  <input id="name-2" type="text" tabindex="11">
-                </div>
-                <div class="input">
-                  <label for="email-2" class="label">E-mail</label>
-                  <input id="email-2" type="email" tabindex="12">
-                </div>
-                <div class="input">
-                  <label for="realm-2" tabindex="13" class="label">Realm</label>
-                  <div class="select">
-                    <select id="realm-1">
-                      <option>North America</option>
-                      <option>Europe</option>
-                      <option>Asia</option>
-                      <option>Oceania</option>
-                      <option>South Africa</option>
-                    </select>
+                <div class="row">
+                  <div class="label">
+                    <label for="name-2">Name</label>
+                  </div>
+                  <div class="input">
+                    <input id="name-2" type="text" tabindex="11">
                   </div>
                 </div>
-                <div class="input">
-                  <div class="label"></div>
-                  <input id="remember-2" type="checkbox" tabindex="14">
-                  <label for="remember-2">Remember me</label>
+                <div class="row">
+                  <div class="label">
+                    <label for="email-2">E-mail</label>
+                  </div>
+                  <div class="input">
+                    <input id="email-2" type="email" tabindex="12" placeholder="name@domain.com">
+                  </div>
                 </div>
-                <div class="input">
-                  <label class="label">Gender</label>
-                  <input id="gender-2-1" type="radio" tabindex="15" name="gender-2" value="1" checked>
-                  <label for="gender-2-1">Male</label>
-                  <input id="gender-2-2" type="radio" tabindex="16" name="gender-2" value="2">
-                  <label for="gender-2-2">Female</label>
+                <div class="row">
+                  <div class="label">
+                    <label for="realm-2" tabindex="13">Realm</label>
+                  </div>
+                  <div class="input">
+                    <div class="select">
+                      <select id="realm-1">
+                        <option>North America</option>
+                        <option>Europe</option>
+                        <option>Asia</option>
+                        <option>Oceania</option>
+                        <option>South Africa</option>
+                      </select>
+                    </div>
+                  </div>
                 </div>
-                <button type="submit" class="button fat bevel bg-cold-light w-50">Login</button>
+                <div class="row">
+                  <div class="input">
+                    <input id="remember-2" type="checkbox" tabindex="14">
+                    <label for="remember-2">Remember me</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="label">
+                    <label>Gender</label>
+                  </div>
+                  <div class="input">
+                    <input id="gender-2-1" type="radio" tabindex="15" name="gender-2" value="1" checked>
+                    <label for="gender-2-1">Male</label>
+                    <input id="gender-2-2" type="radio" tabindex="16" name="gender-2" value="2">
+                    <label for="gender-2-2">Female</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input">
+                    <button type="submit" class="button fat bevel bg-cold-light">Login</button>
+                    <button class="button fat bevel">Cancel</button>
+                  </div>
+                </div>
               </form><br>
               <div class="grid"><a href="#" class="code"><i class="fa fa-code"></i>&nbsp;The code</a></div>
             </div>

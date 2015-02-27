@@ -9,7 +9,7 @@ block content
 
 		.col-18
 			h1 Buttons
-			p A beautiful set of buttons, the combinations are awesome
+			p A beautiful set of buttons, the combinations of styles are awesome
 
 			.grid
 				.col-6
@@ -31,25 +31,31 @@ block content
 					br
 					br
 				.col-6
-					button.button.fat.wireframe.w-100 Show the skeleton
+					button.button.fat.wireframe.w-100 Show me the skeleton
 					br
 					br
 				.col-6
-					button.button.fat.bg-warm-dark.volume.w-100(disabled) Sorry, i am disabled
+					button.button.fat.bg-mix-light.volume.w-100(disabled) Sorry, i am disabled
 					br
 					br
 
 			.grid
 				.col-6
 					button.button.fat.bg-warm-dark.volume.w-100 Get a suntan
+					br
+					br
 
 				.col-6
 					button.button.fat.bg-heat-light.w-100
 						i.fa.fa-bomb
 						|&nbsp;Boom!
+					br
+					br
 
 				.col-6
 					button.button.fat.bg-cold-dark.wireframe.prev.w-100 Blue lines
+					br
+					br
 
 			//br
 			//.box.filled.bg-dark-gray-dark
@@ -62,6 +68,32 @@ block content
 			//			button.button.fat.bg-heat-light.wireframe: i.fa.fa-eject
 			//		.col-4.text-center
 			//			button.button.fat.bg-cold-light.wireframe.next.w-100 Next
+
+			br
+
+			.grid
+				include partials/code
+				include partials/colorable
+				include partials/resizeable
+
+			h1 Button groups
+			p You can combine a couple of buttons into a group
+
+
+			.grid
+				.col-9
+					.button-group
+						button.button.fat.bg-cold-light.volume Yeah!
+						button.button.fat.volume Hmm...
+						button.button.fat.bg-heat-light.volume Pff, nope!
+
+					br
+
+				.col-9
+					.button-group.separators
+						button.button.fat.volume Yeah!
+						button.button.fat.volume Hmm...
+						button.button.fat.volume Pff, nope!
 
 			br
 
