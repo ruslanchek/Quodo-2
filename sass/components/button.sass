@@ -12,11 +12,12 @@
 	box-sizing: border-box
 	color: $color-links-component
 	text-align: center
-	font-size: 1em
+	font-size: $font-base-font-size
 	cursor: pointer
 	white-space: nowrap
 	overflow: hidden
 	text-overflow: ellipsis
+	min-width: 100px
 
 	&:visited,
 	&:active,
@@ -40,12 +41,15 @@
 		&:before
 			background-color: $fill-component-hover
 
-	&:active,
-	&.active
+	&:active
 		transform: translateY(1px)
 
 		&:before
 			background-color: $fill-component-hover
+
+	&.active
+		&:before
+			background-color: rgba(0, 0, 0, .05) !important
 
 	&[class^="bg-"], 
 	&[class*=" bg-"]
@@ -76,8 +80,7 @@
 	&.volume
 		@extend .bevel
 
-		&:active,
-		&.active
+		&:active
 			@extend .bevel-active
 
 			&:before
@@ -86,6 +89,9 @@
 			&:disabled,
 			.wait
 				@extend .bevel
+
+		&.active
+			@extend .bevel-active
 
 	// @TODO: Improve that shit, needs to be merged
 	&.next
@@ -155,7 +161,7 @@
 	&:disabled,
 	&.disabled
 		cursor: default
-		opacity: .75
+		opacity: .25
 
 		&:before
 			display: none
@@ -177,6 +183,41 @@
 
 		&.wireframe
 			line-height: $height-component-slim - 1
+
+
+.button-group
+	font-size: 0 // Kill parasite space between inline-blocks
+	white-space: nowrap
+
+	.button
+		border-radius: 0
+
+		&:before
+			border-radius: 0
+
+		&:first-child
+			border-top-left-radius: $border-radius
+			border-bottom-left-radius: $border-radius
+			margin-left: 0
+
+			&:before
+				border-top-left-radius: $border-radius
+				border-bottom-left-radius: $border-radius
+
+		&:last-child
+			border-top-right-radius: $border-radius
+			border-bottom-right-radius: $border-radius
+
+			&:before
+				border-top-right-radius: $border-radius
+				border-bottom-right-radius: $border-radius
+
+	&.separators
+		.button
+			border-left: 1px solid rgba(0, 0, 0, .05)
+
+			&:first-child
+				border-left: none
 
 
 // @TODO: Add white and bordered styles to the button 

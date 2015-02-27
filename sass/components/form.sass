@@ -1,2 +1,214 @@
 .form
-	
+	.row
+		margin: 0 0 1.15em
+		display: block
+
+		&:last-of-type
+			margin-bottom: 0
+
+	&.horizontal
+		.row
+			.label
+				float: left
+
+			.input
+				box-sizing: border-box
+				width: 100%
+				padding-left: 150px
+
+	.label
+		&:after
+			content: ''
+			display: block
+
+	input[type="checkbox"],
+	input[type="radio"]
+		&+label
+			margin-right: 2ex
+
+	.button
+		+breakpoint($bp-iphone)
+			width: 100%
+
+input,
+select,
+textarea
+	&:disabled
+		opacity: .25
+		cursor: default
+
+.select
+	height: 40px
+	position: relative
+	cursor: pointer
+
+	&:after
+		content: $fa-var-angle-down
+		font: normal normal normal 14px/1 FontAwesome
+		display: inline-block
+		position: absolute
+		width: 20px
+		height: 20px
+		top: 50%
+		right: 4px
+		font-size: 18px
+		margin-top: -8px
+		pointer-events: none
+
+	select
+		cursor: pointer
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		padding: .6em 1.5ex
+		margin: 0
+		background: transparent
+		border: none
+		outline: none
+		-webkit-appearance: none
+		color: $color-text-default
+		font-family: $base-font-family
+		font-size: $base-font-size
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+.select
+	color: $color-text-default
+	-webkit-appearance: none
+	outline: none
+	display: block
+	width: 100%
+	font-family: $base-font-family
+	font-size: $base-font-size
+	box-sizing: border-box
+	padding: .6em 1.5ex
+	border: 1px solid $border-component-color - 15
+	border-radius: $border-radius
+	transition: $animation-component-duration
+	box-shadow: inset 0 0 0 1px transparent
+
+	&:hover
+		border-color: $border-component-color - 35
+
+	&:focus
+		border-color: $color-cold-light
+		box-shadow: inset 0 0 0 1px $color-cold-light
+
+
+input[type="checkbox"]
+	$size: 18px
+
+	visibility: hidden
+	opacity: 0
+	position: absolute
+
+	&+label
+		cursor: pointer
+		position: relative
+		padding-left: $size * 1.5
+
+		&:before
+			box-sizing: border-box
+			position: absolute
+			top: 0
+			left: 0
+			content: ''
+			width: $size
+			height: $size
+			display: inline-block
+			border-radius: 2px
+			border: 1px solid $border-component-color - 15
+			box-shadow: inset 0 0 0 1px transparent
+			transition: $animation-component-duration
+
+		&:after
+			box-sizing: border-box
+			position: absolute
+			top: 4px
+			left: 4px
+			content: ''
+			width: $size / 2 + 1
+			height: $size / 2 + 1
+			background-color: $color-cold-light
+			opacity: 0
+			transform: scale(0)
+			transition: $animation-component-duration
+
+		&:hover
+			&:before
+				border-color: $border-component-color - 35
+
+	&:checked
+		&+label
+			&:before
+				border-color: $color-cold-light
+				box-shadow: inset 0 0 0 1px $color-cold-light
+
+			&:after
+				opacity: 1
+				transform: scale(1)
+
+			&:hover
+				&:before
+					border-color: $color-cold-light - 15
+
+				&:after
+					background-color: $color-cold-light - 15
+
+
+input[type="radio"]
+	$size: 18px
+
+	visibility: hidden
+	opacity: 0
+	position: absolute
+
+	&+label
+		cursor: pointer
+		position: relative
+		padding-left: $size * 1.5
+
+		&:before
+			box-sizing: border-box
+			position: absolute
+			top: 0
+			left: 0
+			content: ''
+			width: $size + 2
+			height: $size + 2
+			display: inline-block
+			border-radius: $size
+			border: 1px solid $border-component-color - 15
+			transition: $animation-component-duration
+
+		&:after
+			box-sizing: border-box
+			position: absolute
+			top: 4px
+			left: 4px
+			content: ''
+			width: $size - 6
+			height: $size - 6
+			border-radius: $size - 4
+			background-color: $color-cold-light
+			opacity: 0
+			transform: scale(0)
+			transition: $animation-component-duration
+
+		&:hover
+			&:before
+				border-color: $border-component-color - 35
+
+	&:checked
+		&+label
+			cursor: default
+
+			&:before
+				border: 2px solid $color-cold-light
+
+			&:after
+				opacity: 1
+				transform: scale(1)
