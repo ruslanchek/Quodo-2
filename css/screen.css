@@ -4579,7 +4579,8 @@ input[type="checkbox"] {
   input[type="checkbox"] + label {
     cursor: pointer;
     position: relative;
-    padding-left: 27px; }
+    padding-left: 27px;
+    z-index: 1; }
     input[type="checkbox"] + label:before {
       box-sizing: border-box;
       position: absolute;
@@ -4631,7 +4632,8 @@ input[type="radio"] {
   input[type="radio"] + label {
     cursor: pointer;
     position: relative;
-    padding-left: 27px; }
+    padding-left: 27px;
+    z-index: 1; }
     input[type="radio"] + label:before {
       box-sizing: border-box;
       position: absolute;
