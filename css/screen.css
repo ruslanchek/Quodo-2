@@ -4470,11 +4470,21 @@ table {
   .form .row:last-of-type {
     margin-bottom: 0; }
 .form.horizontal .row .label {
-  float: left; }
+  float: left;
+  padding: 0.5em 0; }
 .form.horizontal .row .input {
   box-sizing: border-box;
   width: 100%;
-  padding-left: 150px; }
+  padding-left: 150px;
+  min-height: 40px; }
+  .form.horizontal .row .input input[type="radio"] + label,
+  .form.horizontal .row .input input[type="checkbox"] + label {
+    margin-top: 0.5em;
+    display: inline-block; }
+    .form.horizontal .row .input input[type="radio"] + label:after, .form.horizontal .row .input input[type="radio"] + label:before,
+    .form.horizontal .row .input input[type="checkbox"] + label:after,
+    .form.horizontal .row .input input[type="checkbox"] + label:before {
+      margin-top: 3px; }
 .form .label:after {
   content: "";
   display: block; }
@@ -4507,43 +4517,13 @@ select::placeholder,
 textarea::placeholder {
   color: #aab2bc; }
 
-.select {
-  height: 40px;
-  position: relative;
-  cursor: pointer; }
-  .select:after {
-    content: "";
-    font: normal normal normal 14px/1 FontAwesome;
-    display: inline-block;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 50%;
-    right: 4px;
-    font-size: 18px;
-    margin-top: -8px;
-    pointer-events: none; }
-  .select select {
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 0.6em 1.5ex;
-    margin: 0;
-    background: transparent;
-    border: none;
-    outline: none;
-    -webkit-appearance: none;
-    color: #434a53;
-    font-family: "Asap", sans-serif;
-    font-size: 16px; }
-
 input[type="text"],
 input[type="email"],
 input[type="password"],
 textarea,
 .select {
+  margin-top: 0;
+  margin-bottom: 0;
   color: #434a53;
   -webkit-appearance: none;
   outline: none;
@@ -4571,6 +4551,25 @@ textarea,
   .select:focus {
     border-color: #4fc2e5;
     box-shadow: inset 0 0 0 1px #4fc2e5; }
+  input[type="text"].error,
+  input[type="email"].error,
+  input[type="password"].error,
+  textarea.error,
+  .select.error {
+    border-color: #e95546; }
+    input[type="text"].error:hover,
+    input[type="email"].error:hover,
+    input[type="password"].error:hover,
+    textarea.error:hover,
+    .select.error:hover {
+      border-color: #c63223; }
+    input[type="text"].error:focus,
+    input[type="email"].error:focus,
+    input[type="password"].error:focus,
+    textarea.error:focus,
+    .select.error:focus {
+      border-color: #e95546;
+      box-shadow: inset 0 0 0 1px #e95546; }
 
 input[type="checkbox"] {
   visibility: hidden;
@@ -4612,6 +4611,10 @@ input[type="checkbox"] {
               transition: 0.15s; }
     input[type="checkbox"] + label:hover:before {
       border-color: #c3c6ca; }
+  input[type="checkbox"].error + label:before {
+    border-color: #e95546; }
+  input[type="checkbox"].error + label:hover:before {
+    border-color: #c63223; }
   input[type="checkbox"]:checked + label:before {
     border-color: #4fc2e5;
     box-shadow: inset 0 0 0 1px #4fc2e5; }
@@ -4674,6 +4677,38 @@ input[type="radio"] {
       -webkit-transform: scale(1);
           -ms-transform: scale(1);
               transform: scale(1); }
+
+.select {
+  position: relative;
+  cursor: pointer;
+  padding: 0; }
+  .select:after {
+    content: "";
+    font: normal normal normal 14px/1 FontAwesome;
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    right: 4px;
+    font-size: 18px;
+    margin-top: -8px;
+    pointer-events: none; }
+  .select select {
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.6em 1.5ex;
+    margin: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    color: #434a53;
+    font-family: "Asap", sans-serif;
+    font-size: 16px; }
 
 .logo {
   font-size: 30px;
