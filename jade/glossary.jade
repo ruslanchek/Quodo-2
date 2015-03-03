@@ -1,0 +1,99 @@
+extends ./layout.jade
+
+block content
+	- var section = 'catalog'
+
+	.grid
+		.col-6
+			include ./partials/leftcol.jade
+
+		.col-18
+			h1 Glossary
+			p The best way to use Font Awesome icons... A tiny kind of
+
+			.nav-glossary
+				.grid
+					.col-6
+						a.item(href="#stayhere")
+							span.icon.bg-heat-light
+								i.fa.fa-book
+							span.text Books
+
+					.col-6
+						a.item(href="#stayhere")
+							span.icon.bg-cold-light
+								i.fa.fa-pencil
+							span.text Pencils
+
+					.col-6
+						a.item(href="#stayhere")
+							span.icon.bg-cold-light
+								i.fa.fa-laptop
+							span.text Laptops
+
+				.grid
+					.col-6
+						a.item(href="#stayhere")
+							span.icon.bg-cold-light
+								i.fa.fa-desktop
+							span.text Personal computers
+
+					.col-6
+						a.item(href="#stayhere")
+							span.icon.bg-cold-light
+								i.fa.fa-camera
+							span.text Cameras
+
+					.col-6
+						a.item(href="#stayhere")
+							span.icon.bg-cold-light
+								i.fa.fa-gamepad
+							span.text Games
+
+			.grid
+				include partials/code
+				include partials/colorable
+
+			hr
+
+			h1 Yes, transparent style is applicable too
+			p Nice, isn't it?
+
+			.nav-glossary
+				.grid
+					.col-6
+						a.item(href="#stayhere")
+							span.icon: i.fa.fa-book.color-heat-light
+							span.text Books
+
+					.col-6
+						a.item(href="#stayhere")
+							span.icon: i.fa.fa-pencil.color-dark-gray-light
+							span.text Pencils
+
+					.col-6
+						a.item(href="#stayhere")
+							span.icon: i.fa.fa-laptop.color-dark-gray-light
+							span.text Laptops
+
+				.grid
+					.col-6
+						a.item(href="#stayhere")
+							span.icon: i.fa.fa-desktop.color-dark-gray-light
+							span.text Personal computers
+
+					.col-6
+						a.item(href="#stayhere")
+							span.icon: i.fa.fa-camera.color-dark-gray-light
+							span.text Cameras
+
+					.col-6
+						a.item(href="#stayhere")
+							span.icon: i.fa.fa-gamepad.color-dark-gray-light
+							span.text Games
+
+			.grid
+				include partials/code
+				include partials/colorable
+
+			hr
