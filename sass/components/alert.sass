@@ -1,0 +1,40 @@
+.alert
+	background-color: $color-light-gray-dark
+	padding: .5em $padding-component-side
+	border-radius: $border-radius
+
+	&.error
+		background-color: $color-error
+		color: #fff
+
+	&.success
+		background-color: $color-success
+		color: #fff
+
+	&.attention
+		background-color: $color-attention
+		color: #fff
+
+	&.invert
+		background-color: transparent
+		box-shadow: inset 0 0 0 1px $color-medium-gray-light
+
+		&.error
+			color: $color-error
+			box-shadow: inset 0 0 0 1px $color-error
+
+		&.success
+			color: $color-success
+			box-shadow: inset 0 0 0 1px $color-success
+
+		&.attention
+			color: $color-attention - 20
+			box-shadow: inset 0 0 0 1px $color-attention - 20
+
+	&.fade
+		&.error,
+		&.success
+			opacity: .55
+
+		&.attention
+			opacity: .75
