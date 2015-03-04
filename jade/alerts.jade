@@ -1,0 +1,27 @@
+extends _layout
+
+block content
+	- var section = 'checkers'
+	.grid
+		.col-6
+			include ./partials/leftcol.jade
+
+		.col-18
+			h1 Checkers
+
+			+breadcrumbs([
+				['components', 'Components'],
+				['alerts', 'Alerts']
+			])
+
+			h2 Variations of alerts
+			p They are useful in form messages feedback, for example
+
+			p.alert.error Hey, there is a problem here!
+			p.alert.success Yeah, we do it!
+			p.alert.warning Something wrong, try to wait a bit...
+			p.alert Nothing special, just in case
+
+			.grid
+				include partials/code
+				include partials/colorable

@@ -4771,6 +4771,20 @@ input[type="radio"] {
     font-family: "Asap", sans-serif;
     font-size: 16px; }
 
+.alert {
+  background-color: #e6e9ed;
+  padding: 0.5em 20px;
+  border-radius: 5px; }
+  .alert.error {
+    background-color: #e95546;
+    color: #fff; }
+  .alert.success {
+    background-color: #34bc9d;
+    color: #fff; }
+  .alert.warning {
+    background-color: #ffcd69;
+    color: #fff; }
+
 .logo {
   font-size: 30px;
   font-weight: bold;
