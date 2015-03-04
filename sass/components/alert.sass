@@ -11,6 +11,30 @@
 		background-color: $color-success
 		color: #fff
 
-	&.warning
+	&.attention
 		background-color: $color-attention
 		color: #fff
+
+	&.invert
+		background-color: transparent
+		box-shadow: inset 0 0 0 1px $color-medium-gray-light
+
+		&.error
+			color: $color-error
+			box-shadow: inset 0 0 0 1px $color-error
+
+		&.success
+			color: $color-success
+			box-shadow: inset 0 0 0 1px $color-success
+
+		&.attention
+			color: $color-attention - 20
+			box-shadow: inset 0 0 0 1px $color-attention - 20
+
+	&.fade
+		&.error,
+		&.success
+			opacity: .55
+
+		&.attention
+			opacity: .75
