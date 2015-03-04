@@ -1,4 +1,4 @@
-extends ./layout.jade
+extends _layout
 
 block content
 	- var section = 'catalog'
@@ -9,6 +9,13 @@ block content
 
 		.col-18
 			h1 Glossary
+
+			+breadcrumbs([
+				['components', 'Components'],
+				['glossary', 'Glossary']
+			])
+
+			h2 Coloured glossary
 			p The best way to use Font Awesome icons... A tiny kind of
 
 			.nav-glossary
@@ -56,7 +63,7 @@ block content
 
 			hr
 
-			h1 Yes, transparent style is applicable too
+			h2 Yes, transparent style is applicable too
 			p Nice, isn't it?
 
 			.nav-glossary

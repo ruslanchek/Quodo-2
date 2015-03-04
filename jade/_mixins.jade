@@ -1,0 +1,19 @@
+mixin breadcrumbs(items)
+	.breadcrumbs
+		a(href="index.html") Main page
+		each item in items
+			a(href=item[0] + '.html', class=item[2] ? 'active' : '')= item[1]
+
+	hr
+
+mixin apiSection(title, code)
+	a(name="#{title}")
+	h2 UI.#{title}
+
+mixin apiPublicMethod(code, desc)
+	div.bullet
+		code= code
+
+mixin paramItem(code)
+	div.bullet.bg-mix-light
+		code= code

@@ -1,4 +1,4 @@
-extends ./layout.jade
+extends _layout
 
 block content
 	- var section = 'nav'
@@ -9,6 +9,13 @@ block content
 
 		.col-18
 			h1 Horizontal navigation
+
+			+breadcrumbs([
+				['components', 'Components'],
+				['nav-h', 'Horizontal navigation']
+			])
+
+			h2 Default horizontal navigation
 			p Can be bordered, filled or simple inline links
 
 			nav.nav.fat.horizontal.bordered
@@ -18,7 +25,7 @@ block content
 				a(href="#stayhere") Article
 				a(href="#stayhere") Tale
 
-			nav.nav.fat.horizontal.filled.bg-heat-light
+			nav.nav.fat.horizontal.filled.bg-cold-light.bevel
 				a(href="#stayhere") Letter
 				a(href="#stayhere") Word
 				a.active(href="#stayhere") Expression

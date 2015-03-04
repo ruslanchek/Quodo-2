@@ -3293,7 +3293,7 @@ p.lead {
 hr {
   height: 1px;
   background: #e6e9ed;
-  margin: 1em 0 2em;
+  margin: 1em 0;
   border: none; }
 
 pre {
@@ -3307,8 +3307,7 @@ code {
 
 .code-multiline {
   display: block;
-  border: 1px solid #e6e9ed;
-  background: rgba(0, 0, 0, 0.0075);
+  background: rgba(0, 0, 0, 0.035);
   padding: 13.33333px 20px;
   border-radius: 5px;
   overflow-x: scroll;
@@ -3864,15 +3863,15 @@ ul.dashes li {
   box-sizing: border-box;
   margin-bottom: 40px; }
   .nav[data-collapse="true"] {
-    height: 36px;
+    height: 40px;
     overflow: hidden;
     position: relative;
     cursor: pointer; }
     .nav[data-collapse="true"]:before {
       content: attr(data-collapsed-text);
       display: block;
-      height: 36px;
-      line-height: 36px;
+      height: 40px;
+      line-height: 40px;
       box-sizing: border-box; }
     .nav[data-collapse="true"]:after {
       font: normal normal normal 14px/1 FontAwesome;
@@ -3888,8 +3887,8 @@ ul.dashes li {
     .nav[data-collapse="true"].bordered:before, .nav[data-collapse="true"].filled:before {
       padding: 0 20px; }
   .nav a {
-    height: 36px;
-    line-height: 36px;
+    height: 40px;
+    line-height: 40px;
     box-sizing: border-box;
     display: block;
     -webkit-transition: 0.15s;
@@ -3985,7 +3984,7 @@ ul.dashes li {
 .nav-bricks .item {
   text-align: center;
   display: block;
-  margin-bottom: 2em; }
+  margin-bottom: 40px; }
   .nav-bricks .item .icon {
     font-size: 3.8em;
     padding: 0.55em 0;
@@ -4027,26 +4026,24 @@ ul.dashes li {
 
 .nav-glossary .item {
   display: block;
-  margin-bottom: 2em;
+  margin-bottom: 40px;
   overflow: hidden;
   *zoom: 1; }
   .nav-glossary .item .icon {
     width: 1.6em;
     height: 1.6em;
     font-size: 1.6em;
-    line-height: 1.6em;
-    margin-right: 20px;
+    line-height: 1.61em;
+    margin-right: 10px;
     border-radius: 5px;
     color: #fff;
     display: inline-block;
     position: relative;
     box-sizing: border-box;
     text-align: center;
-    float: left;
-    border: 1px solid #e6e9ed;
-    box-sizing: border-box; }
+    float: left; }
     .nav-glossary .item .icon[class^="bg-"], .nav-glossary .item .icon[class*=" bg-"] {
-      border: none; }
+      margin-right: 20px; }
     .nav-glossary .item .icon img {
       display: block;
       margin: 0 auto; }
@@ -4111,8 +4108,8 @@ html, body {
   border: none;
   display: inline-block;
   padding: 0 20px;
-  height: 36px;
-  line-height: 36px;
+  height: 40px;
+  line-height: 40px;
   position: relative;
   outline: none;
   margin: 0;
@@ -4205,7 +4202,7 @@ html, body {
     background-color: transparent;
     border: 1px solid #979fa9;
     box-shadow: none !important;
-    line-height: 35px; }
+    line-height: 39px; }
     .button.wireframe:before {
       background-color: #979fa9;
       opacity: 0; }
@@ -4237,7 +4234,9 @@ html, body {
 
 .button-group {
   font-size: 0;
-  white-space: nowrap; }
+  white-space: nowrap;
+  overflow: hidden;
+  *zoom: 1; }
   .button-group .button {
     border-radius: 0; }
     .button-group .button:before {
@@ -4408,6 +4407,13 @@ table {
       padding: 20px 20px; }
       .popup .window .content p:last-child {
         margin-bottom: 0; }
+      .popup .window .content .tabs {
+        margin-left: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%; }
+      .popup .window .content .tabs-content .page {
+        padding-bottom: 0; }
     .popup .window .bottom {
       padding: 20px 20px; }
     .popup .window .close {
@@ -4427,19 +4433,24 @@ table {
     .popup.no-overlay .overlay {
       display: none; }
 
-.breadcrumbs a {
-  display: inline-block;
-  margin-right: 2ex; }
-  .breadcrumbs a:after {
-    margin-left: 2ex;
-    font: normal normal normal 14px/1 FontAwesome;
-    content: "";
+.breadcrumbs {
+  margin-bottom: 1.5em; }
+  .breadcrumbs a {
     display: inline-block;
-    color: #aab2bc; }
-  .breadcrumbs a:last-of-type {
-    color: #aab2bc; }
-    .breadcrumbs a:last-of-type:after {
-      display: none; }
+    margin-right: 2ex; }
+    .breadcrumbs a:after {
+      margin-left: 2ex;
+      font: normal normal normal 14px/1 FontAwesome;
+      content: "";
+      display: inline-block;
+      color: #aab2bc;
+      width: 0.7ex; }
+    .breadcrumbs a:last-of-type,
+    .breadcrumbs a .active {
+      color: #aab2bc; }
+      .breadcrumbs a:last-of-type:after,
+      .breadcrumbs a .active:after {
+        display: none; }
 
 .tabs {
   border-bottom: 1px solid #e6e9ed;
@@ -4449,8 +4460,8 @@ table {
     display: inline-block;
     padding: 0 20px;
     border: 1px solid transparent;
-    height: 36px;
-    line-height: 36px;
+    height: 40px;
+    line-height: 40px;
     position: relative;
     z-index: 2; }
   .tabs.fat a {

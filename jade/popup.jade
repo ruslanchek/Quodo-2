@@ -1,4 +1,4 @@
-extends ./layout.jade
+extends _layout
 
 block content
 	- var section = 'popup'
@@ -9,7 +9,14 @@ block content
 
 		.col-18
 			h1 Popup
-			p Yeah, everybody loves popups
+
+			+breadcrumbs([
+				['components', 'Components'],
+				['popup', 'Popup']
+			])
+
+			h2 Fancy popups
+			p Yeah, everybody loves popups, if they are of that kind
 
 			.grid
 				.col-6: button.button.fat.w-100.bg-cold-light#show-sample-popup-1 Waiting mode

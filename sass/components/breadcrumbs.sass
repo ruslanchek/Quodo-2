@@ -1,4 +1,6 @@
 .breadcrumbs
+	margin-bottom: 1.5em
+
 	a
 		display: inline-block
 		margin-right: 2ex
@@ -11,8 +13,10 @@
 			content: $fa-var-angle-right
 			display: inline-block
 			color: $color-medium-gray-dark
+			width: .7ex // Depends on symbol width
 
-		&:last-of-type
+		&:last-of-type,
+		.active
 			color: $color-medium-gray-dark
 
 			&:after

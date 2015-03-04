@@ -1,4 +1,4 @@
-extends ./layout.jade
+extends _layout
 
 block content
 	- var section = 'buttons'
@@ -9,6 +9,13 @@ block content
 
 		.col-18
 			h1 Buttons
+
+			+breadcrumbs([
+				['components', 'Components'],
+				['buttons', 'Buttons']
+			])
+
+			h2 Buttons set
 			p A beautiful set of buttons, the combinations of styles are awesome
 
 			.grid
@@ -75,24 +82,26 @@ block content
 				include partials/colorable
 				include partials/resizeable
 
-			h1 Button groups
+			hr
+
+			h2 Button groups
 			p You can combine a couple of buttons into a group
 
 
 			.grid
 				.col-9
-					.button-group
-						button.button.fat.bg-cold-light.volume Yeah!
-						button.button.fat.volume Hmm...
-						button.button.fat.bg-heat-light.volume Pff, nope!
-
-					br
-
-				.col-9
 					.button-group.separators
 						button.button.fat.volume Yeah!
 						button.button.fat.volume Hmm...
-						button.button.fat.volume Pff, nope!
+						button.button.fat.volume Pff, nah!
+					br
+
+				.col-9
+					.button-group
+						button.button.fat.bg-cold-light.volume Yeah!
+						button.button.fat.bg-heat-light.volume Pff, nope!
+
+					br
 
 			.grid
 				include partials/code

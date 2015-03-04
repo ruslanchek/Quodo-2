@@ -1,4 +1,4 @@
-extends ./layout.jade
+extends _layout
 
 block content
 	- var section = 'colors'
@@ -9,6 +9,13 @@ block content
 
 		.col-18
 			h1 Colors
+
+			+breadcrumbs([
+				['components', 'Components'],
+				['colors', 'Colors']
+			])
+
+			h2 Colors set
 			p A backgrounds, text and links colors, that also suitable for theming
 
 			.colors
@@ -84,7 +91,7 @@ block content
 
 			hr
 
-			h1 Coloured text
+			h2 Coloured text
 			p
 				span.color-heat-dark Any
 				|&nbsp;
@@ -109,9 +116,7 @@ block content
 
 			hr
 
-			h1
-
-			h1 Coloured links
+			h2 Coloured links
 			p
 				a(href="#stayhere").color-heat-dark Links
 				|&nbsp;

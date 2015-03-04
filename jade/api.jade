@@ -1,19 +1,7 @@
-extends ./layout.jade
+extends _layout
 
 block content
 	- var section = 'api'
-
-	mixin constructorSection(title, code)
-		a(name="#{title}")
-		h2 UI.#{title}
-
-	mixin constructorPublicMethod(code, desc)
-		div.bullet
-			code= code
-
-	mixin paramItem(code)
-		div.bullet.bg-mix-light
-			code= code
 
 	.grid
 		.col-6
@@ -21,37 +9,53 @@ block content
 
 		.col-18
 			h1 JavaScript API
-			p The API will make you happy
+
+			+breadcrumbs([
+				['api', 'API']
+			])
 
 
-			+constructorSection('Animate')
+			// Popup
+			+apiSection('Template')
+			pre.code-multiline: code.javascript
+				|var Template = new UI.Template(templateName);
+			br
+
+			+apiPublicMethod('Template.render()')
+
+			hr
+
+			+apiSection('Animate')
 			pre.code-multiline: code.javascript
 				|var Animate = new UI.Animate({
 				|	$element: $('#my-element'),
 				|	animationDuration: 300
 				|});
 			br
-			+constructorPublicMethod('Animate.play(animationMethod, onDone)', 'Will apply an animation method on the $element, that pointed when you construct UI.Animate()')
-			
+			+apiPublicMethod('Animate.play(animationMethod, onDone)', 'Will apply an animation method on the $element, that pointed when you construct UI.Animate()')
+
 			h4 Animation methods
 			+paramItem('fadeIn')
 			+paramItem('fadeOut')
 			+paramItem('appear')
 			+paramItem('disappear')
 
-			+constructorSection('ClickOutside')
+			hr
+
+			+apiSection('ClickOutside')
 			pre.code-multiline: code.javascript
 				|var ClickOutside = new UI.ClickOutside({
 				|	selector: '#my-element',
 				|	onClickOutside: function($target){}
 				|})
 			br
-			+constructorPublicMethod('ClickOutside.bind()', 'Activate the click outside listener')
-			+constructorPublicMethod('ClickOutside.unbind()', 'Deactivate the click outside listener')
+			+apiPublicMethod('ClickOutside.bind()', 'Activate the click outside listener')
+			+apiPublicMethod('ClickOutside.unbind()', 'Deactivate the click outside listener')
 
+			hr
 
 			// Popup
-			+constructorSection('Popup')
+			+apiSection('Popup')
 			pre.code-multiline: code.javascript
 				|var Popup = new UI.Popup({
 				|	width: 500,
@@ -63,21 +67,29 @@ block content
 				|});
 			br
 
-			+constructorPublicMethod('Popup.show(title, content)', 'Shows the popup')
-			+constructorPublicMethod('Popup.hide()', 'Hides the popup')
-			+constructorPublicMethod('Popup.showMessage(type, timeout, content)', 'Shows text with background under the title (it can be error message for example)')
-			+constructorPublicMethod('Popup.hideMessage()', 'Hides the popup message')
-			+constructorPublicMethod('Popup.changeContent(html)', 'Change the popup body content')
-			+constructorPublicMethod('Popup.changeTitle(html)', 'Change the popup title content')
-			+constructorPublicMethod('Popup.setWaitingMode(timeout, done)', 'Shows waiting animation on the popup title')
-			+constructorPublicMethod('Popup.removeWaitingMode()', 'Removes the popup waiting animation')
+			+apiPublicMethod('Popup.show(title, content)', 'Shows the popup')
+			+apiPublicMethod('Popup.hide()', 'Hides the popup')
+			+apiPublicMethod('Popup.showMessage(type, timeout, content)', 'Shows text with background under the title (it can be error message for example)')
+			+apiPublicMethod('Popup.hideMessage()', 'Hides the popup message')
+			+apiPublicMethod('Popup.changeContent(html)', 'Change the popup body content')
+			+apiPublicMethod('Popup.changeTitle(html)', 'Change the popup title content')
+			+apiPublicMethod('Popup.setWaitingMode(timeout, done)', 'Shows waiting animation on the popup title')
+			+apiPublicMethod('Popup.removeWaitingMode()', 'Removes the popup waiting animation')
 
+			hr
 
 			// Popup
-			+constructorSection('Tabs')
+			+apiSection('Tabs')
 			pre.code-multiline: code.javascript
 				|var Tabs = new UI.Tabs({
-				|	tabsSelector: '.tabs',
-				|	tabsContentSelector: '.tabs-content'
+				|	tabsSelector: '#tabs',
+				|	tabsContentSelector: '#tabs-content',
+				|	sliding: true,
+				|	onTabOpen: function(name){}
 				|});
 			br
+
+			+apiPublicMethod('Tabs.openTab(name)', '')
+			+apiPublicMethod('Tabs.next()', '')
+			+apiPublicMethod('Tabs.prev()', '')
+			+apiPublicMethod('Tabs.getActive()', '')

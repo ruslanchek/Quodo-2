@@ -23,7 +23,11 @@
             </div>
             <div class="col-18">
               <h1>Forms</h1>
-              <p>The forms with a lot of shapes</p>
+                <div class="breadcrumbs"><a href="index.html">Main page</a><a href="components.html">Components</a><a href="forms.html">Forms</a>
+                </div>
+                <hr>
+              <h2>Default form</h2>
+              <p>There's nothing to say</p>
               <form class="form w-50">
                 <div class="row">
                   <div class="label">
@@ -75,8 +79,72 @@
               </form><br>
               <div class="grid"><a href="#" class="code"><i class="fa fa-code"></i>&nbsp;The code</a></div>
               <hr>
-              <h1>Horizontal</h1>
+              <h2>Horizontal form</h2>
               <p>Another kind &mdash; horizontal mode</p>
+              <form class="form horizontal w-50">
+                <div class="row">
+                  <div class="label">
+                    <label for="name-2">Name</label>
+                  </div>
+                  <div class="input">
+                    <input id="name-2" type="text" tabindex="11">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="label">
+                    <label for="email-2">E-mail</label>
+                  </div>
+                  <div class="input">
+                    <input id="email-2" type="email" tabindex="12" placeholder="name@domain.com">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="label">
+                    <label for="realm-2" tabindex="13">Realm</label>
+                  </div>
+                  <div class="input">
+                    <div class="select">
+                      <select id="realm-1">
+                        <option>North America</option>
+                        <option>South America</option>
+                        <option>Europe</option>
+                        <option>Asia</option>
+                        <option>Oceania</option>
+                        <option>South Africa</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="label">
+                    <label>Gender</label>
+                  </div>
+                  <div class="input">
+                    <input id="gender-2-1" type="radio" tabindex="15" name="gender-2" value="1" checked>
+                    <label for="gender-2-1">Male</label>
+                    <input id="gender-2-2" type="radio" tabindex="16" name="gender-2" value="2">
+                    <label for="gender-2-2">Female</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input">
+                    <input id="remember-2" type="checkbox" tabindex="14">
+                    <label for="remember-2">Remember me</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input">
+                    <div class="button-group">
+                      <button type="submit" class="button bevel bg-cold-light">Login</button>
+                      <button class="button bevel">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+              </form><br>
+              <div class="grid"><a href="#" class="code"><i class="fa fa-code"></i>&nbsp;The code</a></div>
+              <hr>
+              <h2>Errors</h2>
+              <p>This sample shows how inputs can be marked as wrong</p>
               <form class="form horizontal w-50">
                 <div class="row">
                   <div class="label">
@@ -197,16 +265,13 @@
       <div id="tabs-popup" class="tabs fat"><i class="marker"></i><a href="#about" class="active">About</a><a href="#contacts">Contacts</a><a href="#media">Media</a></div>
       <div id="tabs-popup-content" class="tabs-content">
         <div data-role="tab-page" data-tab="about" class="page">
-          <h2>About content</h2>
           <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p>
         </div>
         <div data-role="tab-page" data-tab="contacts" class="page active">
-          <h2>Contacts content</h2>
           <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do.</p>
           <p>That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p>
         </div>
         <div data-role="tab-page" data-tab="media" class="page">
-          <h2>Media content</h2>
           <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do.</p>
           <p>That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p>
         </div>
