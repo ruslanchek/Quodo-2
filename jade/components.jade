@@ -1,4 +1,4 @@
-extends ./layout.jade
+extends _layout
 
 block content
 	- var section = 'components'
@@ -9,94 +9,99 @@ block content
 
 		.col-18
 			h1 Components
-			p A full power UI-construction kit
+
+			+breadcrumbs([
+				['components', 'Components']
+			])
+
+			br
 
 			.nav-glossary
 				.grid
 					.col-6
 						a.item(href="buttons.html")
-							span.icon.bg-cold-light
+							span.icon.bevel.bg-cold-light
 								i.fa.fa-square
 							span.text Buttons
 
 					.col-6
 						a.item(href="checkers.html")
-							span.icon.bg-cold-light
+							span.icon.bevel.bg-cold-light
 								i.fa.fa-check-square
 							span.text Checkers
 
 					.col-6
 						a.item(href="forms.html")
-							span.icon.bg-cold-light
+							span.icon.bevel.bg-cold-light
 								i.fa.fa-paper-plane-o
 							span.text Forms
 
 				.grid
 					.col-6
 						a.item(href="nav-h.html")
-							span.icon.bg-cold-light
+							span.icon.bevel.bg-cold-light
 								i.fa.fa-ellipsis-h
 							span.text Horizontal navigation
 
 					.col-6
 						a.item(href="nav-v.html")
-							span.icon.bg-cold-light
+							span.icon.bevel.bg-cold-light
 								i.fa.fa-bars
 							span.text Vertical navigation
 
 					.col-6
 						a.item(href="breadcrumbs.html")
-							span.icon.bg-cold-light
+							span.icon.bevel.bg-cold-light
 								i.fa.fa-long-arrow-right
 							span.text Breadcrumbs
 
 				.grid
 					.col-6
 						a.item(href="tabs.html")
-							span.icon.bg-cold-light
+							span.icon.bevel.bg-cold-light
 								i.fa.fa-folder-o
 							span.text Tabs
 
 					.col-6
 						a.item(href="popup.html")
-							span.icon.bg-cold-light
+							span.icon.bevel.bg-cold-light
 								i.fa.fa-list-alt
 							span.text Popup
 
 					.col-6
 						a.item(href="table.html")
-							span.icon.bg-cold-light
+							span.icon.bevel.bg-cold-light
 								i.fa.fa-table
 							span.text Table
 
 				.grid
 					.col-6
 						a.item(href="catalog.html")
-							span.icon.bg-cold-light
+							span.icon.bevel.bg-cold-light
 								i.fa.fa-th-large
 							span.text Catalog
 
 					.col-6
 						a.item(href="glossary.html")
-							span.icon.bg-cold-light
+							span.icon.bevel.bg-cold-light
 								i.fa.fa-th
 							span.text Glossary
 
 					.col-6
 						a.item(href="grid.html")
-							span.icon.bg-cold-light
+							span.icon.bevel.bg-cold-light
 								i.fa.fa-diamond
 							span.text Grid
 
 				.grid
 					.col-6
 						a.item(href="colors.html")
-							span.icon.bg-cold-light
+							span.icon.bevel.bg-cold-light
 								i.fa.fa-paint-brush
 							span.text Colors
 
 					.col-6
 						a.item(href="typography.html")
-							span.icon.bg-cold-light
+							span.icon.bevel.bg-cold-light
 								i.fa.fa-font
 							span.text Typography

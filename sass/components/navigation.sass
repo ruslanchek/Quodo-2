@@ -170,7 +170,7 @@
 	.item
 		text-align: center
 		display: block
-		margin-bottom: 2em
+		margin-bottom: $margin-vertical-space
 		@extend .links-component
 
 		.icon
@@ -222,7 +222,7 @@
 .nav-glossary
 	.item
 		display: block
-		margin-bottom: 2em
+		margin-bottom: $margin-vertical-space
 		@extend .links-component
 		+clearfix
 
@@ -230,8 +230,8 @@
 			width: 1.6em
 			height: 1.6em
 			font-size: 1.6em
-			line-height: 1.6em
-			margin-right: $padding-component-side
+			line-height: 1.61em
+			margin-right: $padding-component-side / 2
 			border-radius: $border-radius
 			color: #fff
 			display: inline-block
@@ -239,12 +239,10 @@
 			box-sizing: border-box
 			text-align: center
 			float: left
-			border: 1px solid $border-component-color
-			box-sizing: border-box
 
 			&[class^="bg-"],
 			&[class*=" bg-"]
-				border: none
+				margin-right: $padding-component-side
 
 			img
 				display: block

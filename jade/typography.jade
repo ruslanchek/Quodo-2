@@ -1,4 +1,4 @@
-extends ./layout.jade
+extends _layout
 
 block content
 	- var section = 'typography'
@@ -9,7 +9,11 @@ block content
 
 		.col-18
 			h1 Typography
-			p Simple grid system of 24 cols, nesting supports
+
+			+breadcrumbs([
+				['components', 'Components'],
+				['typography', 'Typography']
+			])
 
 			h1 First heading element
 
@@ -50,10 +54,12 @@ block content
 				|that comes with it: the most popular gun in American crime. 
 				|Like they're actually proud of that shit.
 
+			.grid
+				include partials/code
 
 			hr
 
-			h1 Leading text
+			h2 Leading text
 			p.lead 
 				|Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 				|incididunt ut labore et dolore magna aliqua.
@@ -65,8 +71,11 @@ block content
 				|Some pilots get picked and become television programs.
 
 
+			.grid
+				include partials/code
+
 			hr
-			h1 Address
+			h2 Address
 
 			address
 				strong Company
@@ -77,8 +86,12 @@ block content
 				br
 				|USA
 
+			br
+			.grid
+				include partials/code
+
 			hr
-			h1 Lists
+			h2 Lists
 
 			.grid
 				.col-6

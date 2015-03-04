@@ -1,4 +1,4 @@
-extends ./layout.jade
+extends _layout
 
 block content
 	- var section = 'checkers'
@@ -9,7 +9,14 @@ block content
 
 		.col-18
 			h1 Checkers
-			p Everybody loves checkboxes, but needs some other things too
+
+			+breadcrumbs([
+				['components', 'Components'],
+				['checkers', 'Checkers']
+			])
+
+			h2 Useful checkers
+			p Everybody loves checkboxes, but everybody wants some other thing
 
 			.checker#sample-checker
 				a.active(href="#") Activated checker

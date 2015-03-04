@@ -1,4 +1,4 @@
-extends ./layout.jade
+extends _layout
 
 block content
 	- var section = 'table'
@@ -9,7 +9,14 @@ block content
 
 		.col-18
 			h1 Table
-			p Simple grid system of 24 cols, nesting supports
+
+			+breadcrumbs([
+				['components', 'Components'],
+				['table', 'Table']
+			])
+
+			h2 Customizable table
+			p Tables has a lot of styles and modes, that can be combined in any way
 
 			table.rounded.bordered#table-sample
 				thead

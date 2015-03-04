@@ -1,4 +1,4 @@
-extends ./layout.jade
+extends _layout
 
 block content
 	- var section = 'roadmap'
@@ -22,10 +22,14 @@ block content
 
 		.col-18
 			h1 Roadmap
-			p A place, where we solve the problems and making a new things
+
+			+breadcrumbs([
+				['components', 'Components'],
+				['roadmap', 'Roadmap']
+			])
 
 			h2 Not yet
-			
+
 			+feature(2, 'Pagination')
 			+feature(2, 'Solve CSS3 bugs in safari')
 			+feature(2, 'Very low FPS in sliding popup')
@@ -36,7 +40,7 @@ block content
 			+feature(2, 'Check popup in mobile')
 			+feature(2, 'Grid cols needs bottom margin')
 			+feature(2, 'Request animation frame instead of setTimeout() in animations')
-			
+
 			h2 Ideas&nbsp;
 				em.text-fade.text-slim &mdash; will be released not so close
 			+feature(3, 'Probably, it\'s nice to make a drag functionality in non modal popup?')

@@ -1,4 +1,4 @@
-extends ./layout.jade
+extends _layout
 
 block content
 	- var section = 'catalog'
@@ -9,6 +9,13 @@ block content
 
 		.col-18
 			h1 Catalog bricks
+
+			+breadcrumbs([
+				['components', 'Components'],
+				['catalog', 'Catalog']
+			])
+
+			h2 Coloured bricks
 			p The best way to use Font Awesome icons
 
 			.nav-bricks
@@ -43,7 +50,7 @@ block content
 
 			hr
 
-			h1 How about transparent?
+			h2 How about transparent?
 			p They are so nice, really
 
 			.nav-bricks

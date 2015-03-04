@@ -1,4 +1,4 @@
-extends ./layout.jade
+extends _layout
 
 block content
 	- var section = 'breadcrumbs'
@@ -9,14 +9,24 @@ block content
 
 		.col-18
 			h1 Breadcrumbs
+
+			+breadcrumbs([
+				['components', 'Components'],
+				['forms', 'Forms']
+			])
+
+			h2 Default breadcrumbs
 			p Those little bastards are very useful
 
 			.breadcrumbs
-				a(href="#") Main page
-				a(href="#") Navigation
-				a.active(href="#") Breadcrumbs
+				a(href="#") Catalog
+				a(href="#") Pillows
+				a(href="#") Soft
+				a(href="#") Travel
+				a(href="#") Children
 
-			br
+				a.active(href="#") Soft travel pillow for children
+
 			.grid
 				.col-9
 					a.code(href="api.html#Popup")

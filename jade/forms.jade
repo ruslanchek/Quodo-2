@@ -1,4 +1,4 @@
-extends ./layout.jade
+extends _layout
 
 block content
 	- var section = 'forms'
@@ -9,7 +9,14 @@ block content
 
 		.col-18
 			h1 Forms
-			p The forms with a lot of shapes
+
+			+breadcrumbs([
+				['components', 'Components'],
+				['forms', 'Forms']
+			])
+
+			h2 Default form
+			p There's nothing to say
 
 			form.form.w-50
 				.row
@@ -58,7 +65,7 @@ block content
 
 			hr
 
-			h1 Horizontal
+			h2 Horizontal form
 			p Another kind &mdash; horizontal mode
 
 			form.form.horizontal.w-50
@@ -118,3 +125,64 @@ block content
 					i.fa.fa-code
 					| &nbsp;The code
 
+			hr
+
+			h2 Errors
+			p This sample shows how inputs can be marked as wrong
+
+			form.form.horizontal.w-50
+				.row
+					.label
+						label(for="name-2") Name
+
+					.input
+						input#name-2(type="text", tabindex="11")
+
+				.row
+					.label
+						label(for="email-2") E-mail
+
+					.input
+						input#email-2(type="email", tabindex="12", placeholder="name@domain.com")
+
+				.row
+					.label
+						label(for="realm-2", tabindex="13") Realm
+
+					.input
+						.select
+							select#realm-1
+								option North America
+								option South America
+								option Europe
+								option Asia
+								option Oceania
+								option South Africa
+
+				.row
+					.label
+						label Gender
+
+					.input
+						input#gender-2-1(type="radio", tabindex="15", name="gender-2", value="1", checked)
+						label(for="gender-2-1") Male
+
+						input#gender-2-2(type="radio", tabindex="16", name="gender-2", value="2")
+						label(for="gender-2-2") Female
+
+				.row
+					.input
+						input#remember-2(type="checkbox", tabindex="14")
+						label(for="remember-2") Remember me
+
+				.row
+					.input
+						.button-group
+							button.button.bevel.bg-cold-light(type="submit") Login
+							button.button.bevel Cancel
+
+			br
+			.grid
+				a.code(href="#")
+					i.fa.fa-code
+					| &nbsp;The code

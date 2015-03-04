@@ -1,4 +1,4 @@
-extends ./layout.jade
+extends _layout
 
 block content
 	- var section = 'grid'
@@ -9,7 +9,14 @@ block content
 
 		.col-18
 			h1 Grid
-			p Simple grid system of 24, support nesting
+
+			+breadcrumbs([
+				['components', 'Components'],
+				['grid', 'Grid']
+			])
+
+			h2 Grid of 24
+			p Simple grid system of 24 cols, support nesting
 
 			.grid-demo
 				.grid

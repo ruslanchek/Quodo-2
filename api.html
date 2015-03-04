@@ -23,27 +23,36 @@
             </div>
             <div class="col-18">
               <h1>JavaScript API</h1>
-              <p>The API will make you happy</p><a name="Animate"></a>
-                        <h2>UI.Animate</h2>
+                <div class="breadcrumbs"><a href="index.html">Main page</a><a href="api.html">API</a>
+                </div>
+                <hr>
+              <!-- Popup--><a name="Template"></a>
+                <h2>UI.Template</h2>
+              <pre class="code-multiline"><code class="javascript">var Template = new UI.Template(templateName);</code></pre><br>
+                <div class="bullet"><code>Template.render()</code></div>
+              <hr><a name="Animate"></a>
+                <h2>UI.Animate</h2>
               <pre class="code-multiline"><code class="javascript">var Animate = new UI.Animate({
 	$element: $('#my-element'),
 	animationDuration: 300
 });</code></pre><br>
-                        <div class="bullet"><code>Animate.play(animationMethod, onDone)</code></div>
+                <div class="bullet"><code>Animate.play(animationMethod, onDone)</code></div>
               <h4>Animation methods</h4>
-                        <div class="bullet bg-mix-light"><code>fadeIn</code></div>
-                        <div class="bullet bg-mix-light"><code>fadeOut</code></div>
-                        <div class="bullet bg-mix-light"><code>appear</code></div>
-                        <div class="bullet bg-mix-light"><code>disappear</code></div><a name="ClickOutside"></a>
-                        <h2>UI.ClickOutside</h2>
+                <div class="bullet bg-mix-light"><code>fadeIn</code></div>
+                <div class="bullet bg-mix-light"><code>fadeOut</code></div>
+                <div class="bullet bg-mix-light"><code>appear</code></div>
+                <div class="bullet bg-mix-light"><code>disappear</code></div>
+              <hr><a name="ClickOutside"></a>
+                <h2>UI.ClickOutside</h2>
               <pre class="code-multiline"><code class="javascript">var ClickOutside = new UI.ClickOutside({
 	selector: '#my-element',
 	onClickOutside: function($target){}
 })</code></pre><br>
-                        <div class="bullet"><code>ClickOutside.bind()</code></div>
-                        <div class="bullet"><code>ClickOutside.unbind()</code></div>
+                <div class="bullet"><code>ClickOutside.bind()</code></div>
+                <div class="bullet"><code>ClickOutside.unbind()</code></div>
+              <hr>
               <!-- Popup--><a name="Popup"></a>
-                        <h2>UI.Popup</h2>
+                <h2>UI.Popup</h2>
               <pre class="code-multiline"><code class="javascript">var Popup = new UI.Popup({
 	width: 500,
 	modal: false,
@@ -52,20 +61,27 @@
 	onShow: function(instance){},
 	onHide: function(instance){}
 });</code></pre><br>
-                        <div class="bullet"><code>Popup.show(title, content)</code></div>
-                        <div class="bullet"><code>Popup.hide()</code></div>
-                        <div class="bullet"><code>Popup.showMessage(type, timeout, content)</code></div>
-                        <div class="bullet"><code>Popup.hideMessage()</code></div>
-                        <div class="bullet"><code>Popup.changeContent(html)</code></div>
-                        <div class="bullet"><code>Popup.changeTitle(html)</code></div>
-                        <div class="bullet"><code>Popup.setWaitingMode(timeout, done)</code></div>
-                        <div class="bullet"><code>Popup.removeWaitingMode()</code></div>
+                <div class="bullet"><code>Popup.show(title, content)</code></div>
+                <div class="bullet"><code>Popup.hide()</code></div>
+                <div class="bullet"><code>Popup.showMessage(type, timeout, content)</code></div>
+                <div class="bullet"><code>Popup.hideMessage()</code></div>
+                <div class="bullet"><code>Popup.changeContent(html)</code></div>
+                <div class="bullet"><code>Popup.changeTitle(html)</code></div>
+                <div class="bullet"><code>Popup.setWaitingMode(timeout, done)</code></div>
+                <div class="bullet"><code>Popup.removeWaitingMode()</code></div>
+              <hr>
               <!-- Popup--><a name="Tabs"></a>
-                        <h2>UI.Tabs</h2>
+                <h2>UI.Tabs</h2>
               <pre class="code-multiline"><code class="javascript">var Tabs = new UI.Tabs({
-	tabsSelector: '.tabs',
-	tabsContentSelector: '.tabs-content'
+	tabsSelector: '#tabs',
+	tabsContentSelector: '#tabs-content',
+	sliding: true,
+	onTabOpen: function(name){}
 });</code></pre><br>
+                <div class="bullet"><code>Tabs.openTab(name)</code></div>
+                <div class="bullet"><code>Tabs.next()</code></div>
+                <div class="bullet"><code>Tabs.prev()</code></div>
+                <div class="bullet"><code>Tabs.getActive()</code></div>
             </div>
           </div>
         </div>
@@ -125,16 +141,13 @@
       <div id="tabs-popup" class="tabs fat"><i class="marker"></i><a href="#about" class="active">About</a><a href="#contacts">Contacts</a><a href="#media">Media</a></div>
       <div id="tabs-popup-content" class="tabs-content">
         <div data-role="tab-page" data-tab="about" class="page">
-          <h2>About content</h2>
           <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p>
         </div>
         <div data-role="tab-page" data-tab="contacts" class="page active">
-          <h2>Contacts content</h2>
           <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do.</p>
           <p>That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p>
         </div>
         <div data-role="tab-page" data-tab="media" class="page">
-          <h2>Media content</h2>
           <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do.</p>
           <p>That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p>
         </div>
