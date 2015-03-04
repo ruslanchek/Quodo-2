@@ -33,11 +33,11 @@ block content
 
 				.row
 					.label
-						label(for="realm-1", tabindex="3") Realm
+						label(for="realm-1") Realm
 
 					.input
 						.select
-							select#realm-1
+							select#realm-1(tabindex="3")
 								option North America
 								option South America
 								option Europe
@@ -85,11 +85,11 @@ block content
 
 				.row
 					.label
-						label(for="realm-2", tabindex="13") Realm
+						label(for="realm-2") Realm
 
 					.input
 						.select
-							select#realm-1
+							select#realm-2(tabindex="13")
 								option North America
 								option South America
 								option Europe
@@ -110,7 +110,7 @@ block content
 
 				.row
 					.input
-						input#remember-2(type="checkbox", tabindex="14")
+						input#remember-2(type="checkbox", tabindex="17")
 						label(for="remember-2") Remember me
 
 				.row
@@ -133,25 +133,25 @@ block content
 			form.form.horizontal.w-50
 				.row
 					.label
-						label(for="name-2") Name
+						label(for="name-3") Name
 
 					.input
-						input#name-2(type="text", tabindex="11")
+						input.error#name-3(type="text", tabindex="21")
 
 				.row
 					.label
-						label(for="email-2") E-mail
+						label(for="email-3") E-mail
 
 					.input
-						input#email-2(type="email", tabindex="12", placeholder="name@domain.com")
+						input.error#email-3(type="email", tabindex="22", placeholder="name@domain.com")
 
 				.row
 					.label
-						label(for="realm-2", tabindex="13") Realm
+						label(for="realm-3", tabindex="23") Realm
 
 					.input
-						.select
-							select#realm-1
+						.select.error
+							select#realm-3(tabindex="24")
 								option North America
 								option South America
 								option Europe
@@ -164,16 +164,16 @@ block content
 						label Gender
 
 					.input
-						input#gender-2-1(type="radio", tabindex="15", name="gender-2", value="1", checked)
-						label(for="gender-2-1") Male
+						input#gender-3-1(type="radio", tabindex="25", name="gender-2", value="1", checked)
+						label(for="gender-3-1") Male
 
-						input#gender-2-2(type="radio", tabindex="16", name="gender-2", value="2")
-						label(for="gender-2-2") Female
+						input#gender-3-2(type="radio", tabindex="26", name="gender-2", value="2")
+						label(for="gender-3-2") Female
 
 				.row
 					.input
-						input#remember-2(type="checkbox", tabindex="14")
-						label(for="remember-2") Remember me
+						input.error#remember-3(type="checkbox", tabindex="27")
+						label(for="remember-3") Remember me
 
 				.row
 					.input
