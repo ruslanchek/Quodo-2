@@ -18,7 +18,7 @@ block content
 			h2 Default form
 			p There's nothing to say
 
-			form.form.w-50
+			form.form
 				.row
 					.label
 						label(for="name-1") Name
@@ -52,9 +52,7 @@ block content
 
 				.row
 					.input
-						.button-group
-							button.button.bevel.bg-cold-light(type="submit") Login
-							button.button.bevel Cancel
+						button.button.bevel.bg-cold-light(type="submit") Login
 
 			br
 			.grid
@@ -68,7 +66,7 @@ block content
 			h2 Horizontal form
 			p Another kind &mdash; horizontal mode
 
-			form.form.horizontal.w-50
+			form.form.horizontal
 				.row
 					.label
 						label(for="name-2") Name
@@ -115,9 +113,7 @@ block content
 
 				.row
 					.input
-						.button-group
-							button.button.bevel.bg-cold-light(type="submit") Login
-							button.button.bevel Cancel
+						button.button.bevel.bg-cold-light(type="submit") Login
 
 			br
 			.grid
@@ -128,9 +124,9 @@ block content
 			hr
 
 			h2 Errors
-			p This sample shows how inputs can be marked as wrong
+			p This sample shows how inputs can be marked as a wrong
 
-			form.form.horizontal.w-50
+			form.form.horizontal
 				.row
 					.label
 						label(for="name-3") Name
@@ -177,9 +173,7 @@ block content
 
 				.row
 					.input
-						.button-group
-							button.button.bevel.bg-cold-light(type="submit") Login
-							button.button.bevel Cancel
+						button.button.bevel.bg-cold-light(type="submit", disabled) Please, correct a wrong fields
 
 			br
 			.grid

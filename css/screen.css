@@ -4214,7 +4214,7 @@ html, body {
       border-color: #d2d5d9; }
   .button:disabled, .button.disabled {
     cursor: default;
-    opacity: 0.25; }
+    opacity: 0.5; }
     .button:disabled:before, .button.disabled:before {
       display: none; }
     .button:disabled:active, .button:disabled.active, .button.disabled:active, .button.disabled.active {
@@ -4526,22 +4526,26 @@ table {
   display: block; }
   .form .row:last-of-type {
     margin-bottom: 0; }
-.form.horizontal .row .label {
-  float: left;
-  padding: 0.5em 0; }
-.form.horizontal .row .input {
-  box-sizing: border-box;
-  width: 100%;
-  padding-left: 150px;
-  min-height: 40px; }
+@media (min-width: 570px) {
+  .form.horizontal .row .label {
+    float: left;
+    padding: 0.5em 0; } }
+@media (min-width: 570px) {
+  .form.horizontal .row .input {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 150px;
+    min-height: 40px; } }
+@media (min-width: 570px) {
   .form.horizontal .row .input input[type="radio"] + label,
   .form.horizontal .row .input input[type="checkbox"] + label {
     margin-top: 0.5em;
-    display: inline-block; }
-    .form.horizontal .row .input input[type="radio"] + label:after, .form.horizontal .row .input input[type="radio"] + label:before,
-    .form.horizontal .row .input input[type="checkbox"] + label:after,
-    .form.horizontal .row .input input[type="checkbox"] + label:before {
-      margin-top: 3px; }
+    display: inline-block; } }
+@media (min-width: 570px) {
+  .form.horizontal .row .input input[type="radio"] + label:after, .form.horizontal .row .input input[type="radio"] + label:before,
+  .form.horizontal .row .input input[type="checkbox"] + label:after,
+  .form.horizontal .row .input input[type="checkbox"] + label:before {
+    margin-top: 3px; } }
 .form .label:after {
   content: "";
   display: block; }
@@ -4555,7 +4559,7 @@ table {
 input:disabled,
 select:disabled,
 textarea:disabled {
-  opacity: 0.25;
+  opacity: 0.5;
   cursor: default; }
 input::-webkit-input-placeholder,
 select::-webkit-input-placeholder,

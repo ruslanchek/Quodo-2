@@ -9,24 +9,28 @@
 	&.horizontal
 		.row
 			.label
-				float: left
-				padding: .5em 0
+				+breakpoint($bp-gt-iphone)
+					float: left
+					padding: .5em 0
 
 			.input
-				box-sizing: border-box
-				width: 100%
-				padding-left: 150px
-				min-height: 40px
+				+breakpoint($bp-gt-iphone)
+					box-sizing: border-box
+					width: 100%
+					padding-left: 150px
+					min-height: 40px
 
 				input[type="radio"],
 				input[type="checkbox"]
 					&+label
-						margin-top: .5em
-						display: inline-block
+						+breakpoint($bp-gt-iphone)
+							margin-top: .5em
+							display: inline-block
 
 						&:after,
 						&:before
-							margin-top: 3px
+							+breakpoint($bp-gt-iphone)
+								margin-top: 3px
 
 	.label
 		&:after
@@ -46,7 +50,7 @@ input,
 select,
 textarea
 	&:disabled
-		opacity: .25
+		opacity: .5
 		cursor: default
 
 	&::placeholder
