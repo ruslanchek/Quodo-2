@@ -3838,23 +3838,23 @@ ul.dashes li {
   .links-default:active, * a:active {
     color: #54c9ef; }
 
-.links-component, .nav[data-collapse="true"]:before, .nav a, .nav-bricks .item, .nav-glossary .item, .popup .window .close, .breadcrumbs a, .tabs a, .colorable,
+.links-component, .nav[data-collapse="true"]:before, .nav a, .nav-bricks .item, .nav-glossary .item, .popup .window .close, .breadcrumbs a, .pagination a, .tabs a, .colorable,
 .resizeable,
 .code {
   color: #656d77; }
-  .links-component:visited, .nav[data-collapse="true"]:visited:before, .nav a:visited, .nav-bricks .item:visited, .nav-glossary .item:visited, .popup .window .close:visited, .breadcrumbs a:visited, .tabs a:visited, .colorable:visited,
+  .links-component:visited, .nav[data-collapse="true"]:visited:before, .nav a:visited, .nav-bricks .item:visited, .nav-glossary .item:visited, .popup .window .close:visited, .breadcrumbs a:visited, .pagination a:visited, .tabs a:visited, .colorable:visited,
   .resizeable:visited,
   .code:visited {
     color: #656d77; }
-  .links-component:focus, .nav[data-collapse="true"]:focus:before, .nav a:focus, .nav-bricks .item:focus, .nav-glossary .item:focus, .popup .window .close:focus, .breadcrumbs a:focus, .tabs a:focus, .colorable:focus,
+  .links-component:focus, .nav[data-collapse="true"]:focus:before, .nav a:focus, .nav-bricks .item:focus, .nav-glossary .item:focus, .popup .window .close:focus, .breadcrumbs a:focus, .pagination a:focus, .tabs a:focus, .colorable:focus,
   .resizeable:focus,
   .code:focus {
     color: #656d77; }
-  .links-component:hover, .nav[data-collapse="true"]:hover:before, .nav a:hover, .nav-bricks .item:hover, .nav-glossary .item:hover, .popup .window .close:hover, .breadcrumbs a:hover, .tabs a:hover, .colorable:hover,
+  .links-component:hover, .nav[data-collapse="true"]:hover:before, .nav a:hover, .nav-bricks .item:hover, .nav-glossary .item:hover, .popup .window .close:hover, .breadcrumbs a:hover, .pagination a:hover, .tabs a:hover, .colorable:hover,
   .resizeable:hover,
   .code:hover {
     color: #7e8690; }
-  .links-component:active, .nav[data-collapse="true"]:active:before, .nav a:active, .nav-bricks .item:active, .nav-glossary .item:active, .popup .window .close:active, .breadcrumbs a:active, .tabs a:active, .colorable:active,
+  .links-component:active, .nav[data-collapse="true"]:active:before, .nav a:active, .nav-bricks .item:active, .nav-glossary .item:active, .popup .window .close:active, .breadcrumbs a:active, .pagination a:active, .tabs a:active, .colorable:active,
   .resizeable:active,
   .code:active {
     color: #7e8690; }
@@ -4026,14 +4026,14 @@ ul.dashes li {
 
 .nav-glossary .item {
   display: block;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   overflow: hidden;
   *zoom: 1; }
   .nav-glossary .item .icon {
-    width: 1.6em;
-    height: 1.6em;
-    font-size: 1.6em;
-    line-height: 1.61em;
+    width: 1.7em;
+    height: 1.7em;
+    font-size: 1.8em;
+    line-height: 1.72em;
     margin-right: 10px;
     border-radius: 5px;
     color: #fff;
@@ -4063,7 +4063,7 @@ ul.dashes li {
   .nav-glossary .item:hover .icon:after {
     opacity: 0.3; }
   .nav-glossary .item .text {
-    margin-top: 0.5em;
+    margin-top: 0.75em;
     overflow: hidden;
     display: block;
     zoom: 1; }
@@ -4451,6 +4451,19 @@ table {
       .breadcrumbs a:last-of-type:after,
       .breadcrumbs a .active:after {
         display: none; }
+
+.pagination a {
+  display: inline-block;
+  margin: 0 1ex 0 0;
+  padding: 0.5em 2ex;
+  border-radius: 5px; }
+  .pagination a:hover {
+    background-color: #f0f3f7; }
+  .pagination a:active {
+    background-color: #ebeef2; }
+  .pagination a.active {
+    border-radius: 5px;
+    background-color: #e6e9ed; }
 
 .tabs {
   border-bottom: 1px solid #e6e9ed;

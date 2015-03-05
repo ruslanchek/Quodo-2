@@ -1,5 +1,5 @@
 mixin breadcrumbs(items)
-	.breadcrumbs
+	nav.breadcrumbs
 		a(href="index.html") Main page
 		each item in items
 			a(href=item[0] + '.html', class=item[2] ? 'active' : '')= item[1]
