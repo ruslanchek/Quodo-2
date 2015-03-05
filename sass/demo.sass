@@ -48,11 +48,6 @@
 
 .grid-demo
 	.grid
-		margin-bottom: $margin-vertical-space
-
-		&:last-of-type
-			margin-bottom: 0
-
 		$opacity: 1
 		$items: 9
 
@@ -62,13 +57,18 @@
 				
 			$items: $items - 1
 
-		div
+		> div
 			@extend .border-radius
 			background: $color-cold-light
 			height: $height-component-fat
 			line-height: $height-component-fat
 			color: #fff
 			text-align: center
+			margin-bottom: $margin-vertical-space
+
+		&:last-of-type
+			> div
+				margin-bottom: 0
 
 .super
 	font-size: 16px

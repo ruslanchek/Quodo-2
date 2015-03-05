@@ -1,0 +1,29 @@
+extends _layout
+
+block content
+	- var section = 'fullscreen'
+
+	.grid
+		.col-6
+			include ./partials/leftcol.jade
+
+		.col-18
+			h1 Fullscreen
+
+			+breadcrumbs([
+				['components', 'Components'],
+				['fullscreen', 'Fullscreen']
+			])
+
+			h2 Fullscreen demo
+			p The full screen have a rich API, so you can tune it how you prefer
+
+			a.button#fullscreen-demo(href="#") Open fullscreen
+			br
+
+			br
+
+			.grid
+				a.code(href="api.html#Popup")
+					i.fa.fa-code
+					| &nbsp;The code
