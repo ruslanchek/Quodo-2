@@ -15,6 +15,9 @@
 		background: rgba(0, 0, 0, .4)
 		z-index: 100
 
+		+breakpoint($bp-iphone)
+			background: rgba(0, 0, 0, .8)
+
 	.window
 		position: absolute
 		width: 400px
@@ -26,6 +29,12 @@
 		margin: -150px 0 0 -200px
 		box-shadow: 0 20px 80px rgba(0, 0, 0, .5)
 		z-index: 101
+
+		+breakpoint($bp-iphone)
+			width: 95vw !important
+			height: 96vh !important
+			margin: -48vh 0 0 -47.5vw !important
+			box-shadow: none
 
 		.title
 			font-size: 1.375em
@@ -67,6 +76,9 @@
 
 		.content
 			padding: $padding-component-vertical $padding-component-side
+
+			+breakpoint($bp-iphone)
+				overflow: auto
 
 			p:last-child
 				margin-bottom: 0

@@ -4246,32 +4246,60 @@ html, body {
     .button.slim.wireframe {
       line-height: 31px; }
 
-.button-group {
-  font-size: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  *zoom: 1; }
+@media (min-width: 570px) {
+  .button-group {
+    font-size: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    *zoom: 1; }
+    .button-group .button {
+      border-radius: 0; }
+      .button-group .button:before {
+        border-radius: 0; }
+      .button-group .button:first-child {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        margin-left: 0; }
+        .button-group .button:first-child:before {
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px; }
+      .button-group .button:last-child {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px; }
+        .button-group .button:last-child:before {
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px; }
+    .button-group.separators .button {
+      border-left: 1px solid rgba(0, 0, 0, 0.05); }
+      .button-group.separators .button:first-child {
+        border-left: none; } }
+@media (min-width: 0) and (max-width: 569px) {
   .button-group .button {
+    width: 100%;
     border-radius: 0; }
     .button-group .button:before {
       border-radius: 0; }
     .button-group .button:first-child {
       border-top-left-radius: 5px;
-      border-bottom-left-radius: 5px;
+      border-top-right-radius: 5px;
       margin-left: 0; }
       .button-group .button:first-child:before {
         border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px; }
+        border-top-right-radius: 5px; }
     .button-group .button:last-child {
-      border-top-right-radius: 5px;
+      border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px; }
       .button-group .button:last-child:before {
-        border-top-right-radius: 5px;
+        border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px; }
+    .button-group .button.bevel:not(:last-child), .button-group .button.volume:not(:last-child),
+    .button-group .button.volume:active .button.wait:not(:last-child),
+    .button.volume:active .button-group .button.wait:not(:last-child) {
+      box-shadow: none; }
   .button-group.separators .button {
-    border-left: 1px solid rgba(0, 0, 0, 0.05); }
+    border-top: 1px solid rgba(0, 0, 0, 0.05); }
     .button-group.separators .button:first-child {
-      border-left: none; }
+      border-top: none; } }
 
 .table {
   overflow: auto; }
@@ -4377,6 +4405,9 @@ html, body {
     width: 100%;
     background: rgba(0, 0, 0, 0.4);
     z-index: 100; }
+    @media (min-width: 0) and (max-width: 569px) {
+      .popup .overlay {
+        background: rgba(0, 0, 0, 0.8); } }
   .popup .window {
     position: absolute;
     width: 400px;
@@ -4388,6 +4419,12 @@ html, body {
     margin: -150px 0 0 -200px;
     box-shadow: 0 20px 80px rgba(0, 0, 0, 0.5);
     z-index: 101; }
+    @media (min-width: 0) and (max-width: 569px) {
+      .popup .window {
+        width: 95vw !important;
+        height: 96vh !important;
+        margin: -48vh 0 0 -47.5vw !important;
+        box-shadow: none; } }
     .popup .window .title {
       font-size: 1.375em;
       border-radius: 5px 5px 0 0;
@@ -4421,6 +4458,9 @@ html, body {
           background-color: #46cfb0; }
     .popup .window .content {
       padding: 20px 20px; }
+      @media (min-width: 0) and (max-width: 569px) {
+        .popup .window .content {
+          overflow: auto; } }
       .popup .window .content p:last-child {
         margin-bottom: 0; }
       .popup .window .content .tabs {
