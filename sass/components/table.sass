@@ -1,70 +1,73 @@
-table
-	width: 100%
-	border-spacing: 0
-	border-collapse: separate
-	border: 1px solid transparent
+.table
+	overflow: auto
 
-	td,
-	th
-		padding: 11px 15px
-		border-right: 1px solid transparent
+	table
+		width: 100%
+		border-spacing: 0
+		border-collapse: separate
+		border: 1px solid transparent
 
-	th
-		font-weight: bold
-
-	td
-		border-bottom: 1px solid transparent
-
-	tr
-		transition: background $animation-component-duration
-
-	thead
+		td,
 		th
-			border-bottom: 1px solid $border-component-color
+			padding: 11px 15px
+			border-right: 1px solid transparent
 
-	tfoot
+		th
+			font-weight: bold
+
 		td
-			border-top: 1px solid $border-component-color
+			border-bottom: 1px solid transparent
 
-	&.rounded
-		border-radius: $border-radius
-
-	&.striped
-		tbody
-			tr:nth-child(even)
-				background-color: $bg-table-stripe
-
-	&.hovered
-		tbody
-			tr:hover
-				background-color: $bg-table-hover
-
-		&.striped
-			tr:nth-child(even):hover
-				background-color: $bg-table-stripe - 5
-
-	&.bordered
-		border-color: $border-component-color
+		tr
+			transition: background $animation-component-duration
 
 		thead
-			tr
-				background-color: $bg-table-head
-
-		&.bordered-rows-v
-			td,
 			th
-				border-right-color: $border-component-color
+				border-bottom: 1px solid $border-component-color
 
-				&:last-of-type,
-				&:last-of-type
-					border-right-color: transparent
-
-
-	&.bordered-rows-h
-		tbody
+		tfoot
 			td
-				border-bottom-color: $border-component-color
+				border-top: 1px solid $border-component-color
 
-			tr:last-of-type
+		&.rounded
+			border-radius: $border-radius
+
+		&.striped
+			tbody
+				tr:nth-child(even)
+					background-color: $bg-table-stripe
+
+		&.hovered
+			tbody
+				tr:hover
+					background-color: $bg-table-hover
+
+			&.striped
+				tr:nth-child(even):hover
+					background-color: $bg-table-stripe - 5
+
+		&.bordered
+			border-color: $border-component-color
+
+			thead
+				tr
+					background-color: $bg-table-head
+
+			&.bordered-rows-v
+				td,
+				th
+					border-right-color: $border-component-color
+
+					&:last-of-type,
+					&:last-of-type
+						border-right-color: transparent
+
+
+		&.bordered-rows-h
+			tbody
 				td
+					border-bottom-color: $border-component-color
+
+				tr:last-of-type
+					td
 					border-bottom-color: transparent
