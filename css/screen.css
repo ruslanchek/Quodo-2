@@ -3903,6 +3903,11 @@ ul.dashes li {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: clip; }
+  @media (min-width: 0) and (max-width: 569px) {
+    .nav {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: clip; } }
   .nav.white a {
     color: #fff; }
   .nav.filled {
@@ -3940,40 +3945,28 @@ ul.dashes li {
       .nav.bordered a:last-of-type {
         border-radius: 0 0 4px 4px;
         border-bottom: none; }
-  .nav.horizontal a {
-    padding: 0 40px 0 0;
-    display: inline-block; }
-    .nav.horizontal a:first-child {
-      border-radius: 4px 0 0 4px; }
-    .nav.horizontal a:last-child {
-      border-radius: 0 4px 4px 0; }
-  .nav.horizontal.bordered, .nav.horizontal.filled {
-    text-align: center;
-    display: table;
-    table-layout: fixed;
-    width: 100%; }
-    .nav.horizontal.bordered a, .nav.horizontal.filled a {
-      padding: 0;
-      display: table-cell;
-      width: 2%; }
-  .nav.horizontal.bordered a {
-    border-bottom: none;
-    border-right: 1px solid #e6e9ed; }
-    .nav.horizontal.bordered a:last-of-type {
-      border-right: none; }
-  @media (min-width: 0) and (max-width: 569px) {
-    .nav.horizontal {
-      display: block !important;
-      text-align: left !important;
-      table-layout: auto; }
-      .nav.horizontal a {
-        display: inline-block !important;
-        padding: 0 20px !important;
-        text-align: left;
-        margin-right: 0.5ex;
-        border: none !important;
-        width: auto !important;
-        border-radius: 5px !important; } }
+  @media (min-width: 570px) {
+    .nav.horizontal a {
+      padding: 0 40px 0 0;
+      display: inline-block; }
+      .nav.horizontal a:first-child {
+        border-radius: 4px 0 0 4px; }
+      .nav.horizontal a:last-child {
+        border-radius: 0 4px 4px 0; }
+    .nav.horizontal.bordered, .nav.horizontal.filled {
+      text-align: center;
+      display: table;
+      table-layout: fixed;
+      width: 100%; }
+      .nav.horizontal.bordered a, .nav.horizontal.filled a {
+        padding: 0;
+        display: table-cell;
+        width: 2%; }
+    .nav.horizontal.bordered a {
+      border-bottom: none;
+      border-right: 1px solid #e6e9ed; }
+      .nav.horizontal.bordered a:last-of-type {
+        border-right: none; } }
   .nav.fat a {
     height: 48px;
     line-height: 48px; }

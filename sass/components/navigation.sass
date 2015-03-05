@@ -58,6 +58,11 @@
 		overflow: hidden
 		text-overflow: clip
 
+	+breakpoint($bp-iphone)
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: clip
+
 	&.white
 		a
 			color: #fff
@@ -111,50 +116,37 @@
 				border-radius: 0 0 $border-radius - 1 $border-radius - 1
 				border-bottom: none
 
-	&.horizontal	
-		a
-			padding: 0 $padding-component-side*2 0 0
-			display: inline-block
-			
-			&:first-child
-				border-radius: $border-radius - 1 0 0 $border-radius - 1
-
-			&:last-child
-				border-radius: 0 $border-radius - 1 $border-radius - 1 0
-
-		&.bordered,
-		&.filled
-			text-align: center
-			display: table
-			table-layout: fixed
-			width: 100%
-
+	+breakpoint($bp-gt-iphone)
+		&.horizontal
 			a
-				padding: 0
-				display: table-cell
-				width: 2%
+				padding: 0 $padding-component-side*2 0 0
+				display: inline-block
 
-		&.bordered
-			a
-				border-bottom: none
-				border-right: 1px solid $border-component-color
+				&:first-child
+					border-radius: $border-radius - 1 0 0 $border-radius - 1
 
-				&:last-of-type
-					border-right: none
+				&:last-child
+					border-radius: 0 $border-radius - 1 $border-radius - 1 0
 
-		+breakpoint($bp-iphone)
-			display: block !important
-			text-align: left !important
-			table-layout: auto
+			&.bordered,
+			&.filled
+				text-align: center
+				display: table
+				table-layout: fixed
+				width: 100%
 
-			a
-				display: inline-block !important
-				padding: 0 $padding-component-side !important
-				text-align: left
-				margin-right: .5ex
-				border: none !important
-				width: auto !important
-				border-radius: $border-radius !important
+				a
+					padding: 0
+					display: table-cell
+					width: 2%
+
+			&.bordered
+				a
+					border-bottom: none
+					border-right: 1px solid $border-component-color
+
+					&:last-of-type
+						border-right: none
 
 	&.fat a
 		height: $height-component-fat
