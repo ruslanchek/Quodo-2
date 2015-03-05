@@ -1,13 +1,13 @@
 extends _layout
 
 block content
-	- var section = 'checkers'
+	- var section = 'alerts'
 	.grid
 		.col-6
 			include ./partials/leftcol.jade
 
 		.col-18
-			h1 Checkers
+			h1 Alerts
 
 			+breadcrumbs([
 				['components', 'Components'],
@@ -22,6 +22,11 @@ block content
 			p.alert.attention Something wrong, try to wait a bit...
 			p.alert Nothing special, just in case
 
+			.grid.marginless
+				include partials/code
+
+			hr
+
 			h2 Inverted
 			p Just borders, light variation
 
@@ -29,6 +34,11 @@ block content
 			p.alert.invert.success Yeah, we do it!
 			p.alert.invert.attention Something wrong, try to wait a bit...
 			p.alert.invert Nothing special, just in case
+
+			.grid.marginless
+				include partials/code
+
+			hr
 
 			h2 Faded version
 			p Soft as silk
@@ -38,6 +48,5 @@ block content
 			p.alert.fade.attention Something wrong, try to wait a bit...
 			p.alert.fade Nothing special, just in case
 
-			.grid
+			.grid.marginless
 				include partials/code
-				include partials/colorable

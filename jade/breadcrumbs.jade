@@ -18,7 +18,7 @@ block content
 			h2 Default breadcrumbs
 			p Those little bastards are very useful
 
-			.breadcrumbs
+			nav.breadcrumbs
 				a(href="#") Catalog
 				a(href="#") Pillows
 				a(href="#") Soft
@@ -27,10 +27,5 @@ block content
 
 				a.active(href="#") Soft travel pillow for children
 
-			.grid
-				.col-9
-					a.code(href="api.html#Popup")
-						i.fa.fa-code
-						|&nbsp;The code
-
-			
+			.grid.marginless
+				include partials/code

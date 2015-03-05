@@ -1,0 +1,18 @@
+.pagination
+	a
+		display: inline-block
+		margin: 0 1ex 0 0
+		padding: .5em 2ex
+		border-radius: $border-radius
+
+		@extend .links-component
+
+		&:hover
+			background-color: $fill-component-bordered-hover
+
+		&:active
+			background-color: $fill-component-bordered-active
+
+		&.active
+			border-radius: $border-radius
+			background-color: $border-component-color

@@ -18,48 +18,49 @@ block content
 			h2 Customizable table
 			p Tables has a lot of styles and modes, that can be combined in any way
 
-			table.rounded.bordered#table-sample
-				thead
-					tr
-						th
-						th Make
-						th Model
-						th Horsepower
-						th Top speed
-						th Price
-				tbody
-					tr
-						td 1
-						td Audi
-						td A5 3.2 Quattro
-						td 350
-						td 250 km/h
-						td $69 000
-					tr
-						td 2
-						td BMW
-						td 335i xDrive
-						td 300
-						td 250 km/h
-						td $71 000
-					tr
-						td 3
-						td Mercedes Benz
-						td E 320 AMG
-						td 298
-						td 250 km/h
-						td $70 000
-					tr
-						td 4
-						td Infiniti
-						td Q50 Eau Rouge
-						td 500
-						td 280 km/h
-						td $100 000
-				tfoot
-					tr
-						td.text-right(colspan="5") Total
-						td $1 290 000
+			.table
+				table.rounded.bordered#table-sample
+					thead
+						tr
+							th
+							th Make
+							th Model
+							th Horsepower
+							th Top speed
+							th Price
+					tbody
+						tr
+							td 1
+							td Audi
+							td A5 3.2 Quattro
+							td 350
+							td 250 km/h
+							td $69 000
+						tr
+							td 2
+							td BMW
+							td 335i xDrive
+							td 300
+							td 250 km/h
+							td $71 000
+						tr
+							td 3
+							td Mercedes Benz
+							td E320 AMG
+							td 298
+							td 250 km/h
+							td $70 000
+						tr
+							td 4
+							td Infiniti
+							td Q50 Eau Rouge
+							td 500
+							td 280 km/h
+							td $100 000
+					tfoot
+						tr
+							td.text-right(colspan="5") Total
+							td $1 290 000
 
 			br
 
@@ -71,5 +72,5 @@ block content
 				a(href="#", data-type="bordered-rows-h") Horizontal borders
 				a(href="#", data-type="bordered-rows-v") Vertical borders
 
-			.grid
+			.grid.marginless
 				include partials/code

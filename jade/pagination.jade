@@ -1,0 +1,33 @@
+extends _layout
+
+block content
+	- var section = 'pagination'
+
+	.grid
+		.col-6
+			include ./partials/leftcol.jade
+
+		.col-18
+			h1 Pagination
+
+			+breadcrumbs([
+				['components', 'Components'],
+				['pagination', 'Pagination']
+			])
+
+			h2 Default pagination
+			p Looks like that
+
+			nav.pagination
+				a(href="#"): i.fa.fa-arrow-left
+				a(href="#") 1
+				a(href="#") 2
+				a.active(href="#") 3
+				a(href="#") 4
+				a(href="#") 5
+				a(href="#"): i.fa.fa-arrow-right
+
+			br
+
+			.grid.marginless
+				include partials/code

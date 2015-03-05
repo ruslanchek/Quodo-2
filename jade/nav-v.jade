@@ -1,7 +1,7 @@
 extends _layout
 
 block content
-	- var section = 'nav'
+	- var section = 'nav-v'
 
 	.grid
 		.col-6
@@ -42,7 +42,7 @@ block content
 						a(href="#stayhere") Article
 						a.active(href="#stayhere") Tale
 
-			.grid
+			.grid.marginless
 				include partials/code
 				include partials/colorable
 				include partials/resizeable
