@@ -4484,12 +4484,13 @@ html, body {
       text-align: center; }
     .popup .window.wait .title .wait-indicator {
       opacity: 1; }
-  .popup.no-overlay {
-    position: static;
-    height: auto;
-    width: auto; }
-    .popup.no-overlay .overlay {
-      display: none; }
+  @media (min-width: 570px) {
+    .popup.no-overlay {
+      position: static;
+      width: 0;
+      height: 0; }
+      .popup.no-overlay .overlay {
+        display: none; } }
 
 .breadcrumbs {
   margin-bottom: 1.5em; }

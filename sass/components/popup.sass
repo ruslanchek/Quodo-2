@@ -114,9 +114,10 @@
 					opacity: 1
 
 	&.no-overlay
-		position: static
-		height: auto
-		width: auto
+		+breakpoint($bp-gt-iphone)
+			position: static
+			width: 0
+			height: 0
 
-		.overlay
-			display: none
+			.overlay
+				display: none
