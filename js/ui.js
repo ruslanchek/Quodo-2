@@ -382,6 +382,10 @@ UI.Popup = function(options){
 
 		$('body').append(this.$popup);
 
+        if(this.options.modal) {
+            $('html,body').css('overflow', 'hidden');
+        }
+
 		resize();
 
 		_this.options.onBeforeShow(_this);
@@ -417,6 +421,10 @@ UI.Popup = function(options){
 				_this.$popup = null;
 				animateWindow = null;
 				animateOverlay = null;
+
+                if(_this.options.modal) {
+                    $('html,body').css('overflow', 'auto');
+                }
 			});
 		}
 	};

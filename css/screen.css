@@ -4485,7 +4485,9 @@ html, body {
     .popup .window.wait .title .wait-indicator {
       opacity: 1; }
   .popup.no-overlay {
-    position: static; }
+    position: static;
+    height: auto;
+    width: auto; }
     .popup.no-overlay .overlay {
       display: none; }
 
