@@ -28,9 +28,21 @@
                 <hr>
               <h2>Default horizontal navigation</h2>
               <p>Can be bordered, filled or simple inline links</p>
-              <nav class="nav fat horizontal bordered"><a href="#stayhere" class="active">Letter</a><a href="#stayhere">Word</a><a href="#stayhere">Expression</a><a href="#stayhere">Article</a><a href="#stayhere">Tale</a></nav>
-              <nav class="nav fat horizontal filled bg-cold-light bevel"><a href="#stayhere">Letter</a><a href="#stayhere">Word</a><a href="#stayhere" class="active">Expression</a><a href="#stayhere">Article</a><a href="#stayhere">Tale</a></nav>
-              <nav class="nav fat horizontal"><a href="#stayhere">Letter</a><a href="#stayhere">Word</a><a href="#stayhere">Expression</a><a href="#stayhere">Article</a><a href="#stayhere" class="active">Tale</a></nav>
+              <div class="grid">
+                <div class="col-18">
+                  <nav class="nav fat bordered horizontal"><a href="#stayhere" class="active">Letter</a><a href="#stayhere">Word</a><a href="#stayhere">Expression</a><a href="#stayhere">Article</a><a href="#stayhere">Tale</a></nav>
+                </div>
+              </div>
+              <div class="grid">
+                <div class="col-18">
+                  <nav class="nav fat filled bg-cold-light bevel horizontal"><a href="#stayhere">Letter</a><a href="#stayhere">Word</a><a href="#stayhere" class="active">Expression</a><a href="#stayhere">Article</a><a href="#stayhere">Tale</a></nav>
+                </div>
+              </div>
+              <div class="grid">
+                <div class="col-18">
+                  <nav class="nav fat horizontal"><a href="#stayhere">Letter</a><a href="#stayhere">Word</a><a href="#stayhere">Expression</a><a href="#stayhere">Article</a><a href="#stayhere" class="active">Tale</a></nav>
+                </div>
+              </div>
               <div class="grid">
                 <div class="col-4"><a href="#" class="code"><i class="fa fa-code"></i>&nbsp;The code</a></div>
                 <div class="col-4"><a href="#" class="colorable"><i class="fa fa-paint-brush"></i>&nbsp;Colorable</a></div>
@@ -52,7 +64,7 @@
           </div>
           <div class="col-18">
             <nav class="nav white">
-              <div class="grid">
+              <div class="grid marginless">
                 <div class="col-6"><a href="components.html">Components</a><a href="typography.html">Typography</a><a href="colors.html">Colors</a><a href="grid.html">Grid</a></div>
                 <div class="col-6"><a href="api.html">API</a><a href="roadmap.html">Roadmap</a></div>
               </div>

@@ -43,10 +43,39 @@ $one_col: (100% - ($grid-gutter-width * ($grid-cols - 1))) / $grid-cols;
 
 	[class^="col-"], 
 	[class*=" col-"] {
+        margin-bottom: $margin-vertical-space;
+
 		@include breakpoint($bp-iphone) {
 			float: none !important;
 			width: 100% !important;
 			margin-left: 0 !important;
 		}
 	}
+
+    &:last-child {
+        @include breakpoint($bp-gt-iphone) {
+            > [class^="col-"],
+            > [class*=" col-"] {
+                margin-bottom: 0;
+            }
+        }
+
+        @include breakpoint($bp-iphone) {
+            > [class^="col-"],
+            > [class*=" col-"] {
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    &.marginless {
+        margin-bottom: 0;
+
+        > [class^="col-"],
+        > [class*=" col-"] {
+            margin-bottom: 0;
+        }
+    }
 }

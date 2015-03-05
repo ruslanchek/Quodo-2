@@ -18,26 +18,32 @@ block content
 			h2 Default horizontal navigation
 			p Can be bordered, filled or simple inline links
 
-			nav.nav.fat.horizontal.bordered
-				a.active(href="#stayhere") Letter
-				a(href="#stayhere") Word
-				a(href="#stayhere") Expression
-				a(href="#stayhere") Article
-				a(href="#stayhere") Tale
+			.grid
+				.col-18
+					nav.nav.fat.bordered.horizontal
+						a.active(href="#stayhere") Letter
+						a(href="#stayhere") Word
+						a(href="#stayhere") Expression
+						a(href="#stayhere") Article
+						a(href="#stayhere") Tale
 
-			nav.nav.fat.horizontal.filled.bg-cold-light.bevel
-				a(href="#stayhere") Letter
-				a(href="#stayhere") Word
-				a.active(href="#stayhere") Expression
-				a(href="#stayhere") Article
-				a(href="#stayhere") Tale
+			.grid
+				.col-18
+					nav.nav.fat.filled.bg-cold-light.bevel.horizontal
+						a(href="#stayhere") Letter
+						a(href="#stayhere") Word
+						a.active(href="#stayhere") Expression
+						a(href="#stayhere") Article
+						a(href="#stayhere") Tale
 
-			nav.nav.fat.horizontal
-				a(href="#stayhere") Letter
-				a(href="#stayhere") Word
-				a(href="#stayhere") Expression
-				a(href="#stayhere") Article
-				a.active(href="#stayhere") Tale
+			.grid
+				.col-18
+					nav.nav.fat.horizontal
+						a(href="#stayhere") Letter
+						a(href="#stayhere") Word
+						a(href="#stayhere") Expression
+						a(href="#stayhere") Article
+						a.active(href="#stayhere") Tale
 
 			.grid
 				include partials/code
