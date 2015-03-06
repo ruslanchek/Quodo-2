@@ -575,3 +575,15 @@ UI.Tabs = function(options){
 		bind();
 	}
 };
+
+
+UI.Fullscreen = function(options){
+    var _this = this,
+        _id = _.uniqueId('UIFullscreen_');
+
+    this.options = $.extend({
+
+    }, options);
+
+    this.$fs = null;
+};
