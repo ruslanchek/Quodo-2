@@ -3850,6 +3850,17 @@ ul.dashes li {
   .links-white:active, .footer a:active {
     color: #c8c8c8; }
 
+.links-on-black, .fullscreen .window .close {
+  color: #c8c8c8; }
+  .links-on-black:visited, .fullscreen .window .close:visited {
+    color: #c8c8c8; }
+  .links-on-black:focus, .fullscreen .window .close:focus {
+    color: #c8c8c8; }
+  .links-on-black:hover, .fullscreen .window .close:hover {
+    color: #fff; }
+  .links-on-black:active, .fullscreen .window .close:active {
+    color: #fff; }
+
 .links-default, * a {
   color: #3bb0d6; }
   .links-default:visited, * a:visited {
@@ -4077,7 +4088,7 @@ ul.dashes li {
   .nav-glossary .item:hover .icon:after {
     opacity: 0.3; }
   .nav-glossary .item .text {
-    margin-top: 0.75em;
+    margin-top: 0.78em;
     overflow: hidden;
     display: block;
     zoom: 1; }
@@ -4226,6 +4237,9 @@ html, body {
       opacity: 0.125; }
     .button.wireframe.wait {
       border-color: #d2d5d9; }
+      .button.wireframe.wait:before {
+        display: block;
+        opacity: 0.125; }
   .button:disabled, .button.disabled {
     cursor: default;
     opacity: 0.5; }
@@ -4461,7 +4475,7 @@ html, body {
       @media (min-width: 0) and (max-width: 569px) {
         .popup .window .content {
           overflow: auto; } }
-      .popup .window .content p:last-child {
+      .popup .window .content *:last-child {
         margin-bottom: 0; }
       .popup .window .content .tabs {
         margin-left: -20px;
@@ -4491,6 +4505,58 @@ html, body {
       height: 0; }
       .popup.no-overlay .overlay {
         display: none; } }
+
+.fullscreen {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1000; }
+  .fullscreen .overlay {
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9); }
+  .fullscreen .window {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1002;
+    overflow: scroll;
+    color: #969ea8; }
+    .fullscreen .window hr {
+      background: #434a53; }
+    .fullscreen .window .viewport {
+      margin: 30px 0;
+      position: relative; }
+    .fullscreen .window .title {
+      margin: 0 50px 1em 0;
+      font-weight: normal;
+      color: #ccd1d8; }
+      .fullscreen .window .title .subtitle {
+        font-size: 1rem;
+        color: #656d77; }
+    .fullscreen .window .close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 2em;
+      border-radius: 100px;
+      text-align: center; }
+    .fullscreen .window .toolbar {
+      font-size: 14px; }
+    .fullscreen .window .content {
+      width: 100%;
+      overflow: scroll; }
+      .fullscreen .window .content img {
+        display: block;
+        box-shadow: 0 0 0 1px white; }
 
 .breadcrumbs {
   margin-bottom: 1.5em; }
