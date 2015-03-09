@@ -13,9 +13,7 @@ UI.ClickOutside = function(options){
 
 	this.options = $.extend({
 		selector: '', 
-		onClickOutside: function($target){
-			
-		}
+		onClickOutside: function($target){}
 	}, options);
 
 	this.bind = function(){
@@ -132,15 +130,9 @@ UI.Checker = function(options){
 
 	this.options = $.extend({
 		selector: '.checker', 
-		onCheck: function($checker){
-
-		}, 
-		onUncheck: function($checker){
-
-		},
-		onToggle: function(state, $checker){
-
-		}
+		onCheck: function($checker){}, 
+		onUncheck: function($checker){},
+		onToggle: function(state, $checker){}
 	}, options);
 
 	var $items = $(this.options.selector).find('>a');
@@ -197,15 +189,9 @@ UI.Popup = function(options){
         animationDuration: 500,
         modal: true,
         overlay: true,
-        onBeforeShow: function(){
-
-        },
-		onShow: function(instance){
-
-		},
-		onHide: function(instance){
-
-		}
+        onBeforeShow: function(){},
+		onShow: function(instance){},
+		onHide: function(instance){}
 	}, options);
 
 	if(this.options.modal !== true){
@@ -220,7 +206,7 @@ UI.Popup = function(options){
 	var bind = function(){
 		unbind();
 
-		if(_this.$popup){
+		if(_this.$popup && _this.$popup.length > 0){
 			_this.$popup.find('.close').on('click', function(e){
 				e.preventDefault();
 
@@ -232,11 +218,11 @@ UI.Popup = function(options){
 			}
 		}
 
-        $(window).on('resize.UIPopup', function(){
+        $(window).on('resize.' + _id, function(){
             resize();
         });
 
-		$(document).on('keyup.UIPopup', function(e){
+		$(document).on('keyup.' + _id, function(e){
 			switch(e.keyCode){
 				case 27 : {
 					_this.hide();
@@ -246,7 +232,8 @@ UI.Popup = function(options){
 	};
 
 	var unbind = function(){
-		$(document).off('keyup.UIPopup');
+		$(document).off('keyup.' + _id);
+		$(window).off('resize.' + _id);
 
 		if(!_this.options.modal && clickOutside !== null){
 			clickOutside.unbind();
@@ -409,7 +396,7 @@ UI.Popup = function(options){
 	};
 
 	this.hide = function(){
-		if(this.$popup){
+		if(this.$popup && this.popup.length > 0){
 			animateOverlay.play('fadeOut');
 
 			animateWindow.play('disappear', function(){
@@ -440,9 +427,7 @@ UI.Tabs = function(options){
         tabsSelector: '#tabs',
         tabsContentSelector: '#tabs-content',
 		sliding: true,
-		onTabOpen: function(name){
-
-		}
+		onTabOpen: function(name){}
 	}, options);
 
 	var $tabs = $(this.options.tabsSelector),
@@ -579,11 +564,95 @@ UI.Tabs = function(options){
 
 UI.Fullscreen = function(options){
     var _this = this,
-        _id = _.uniqueId('UIFullscreen_');
+        _id = _.uniqueId('UIFullscreen_'),
+        animateWindow = null,
+        animateOverlay = null;
 
     this.options = $.extend({
-
+    	onBeforeShow: function(){},
+		onShow: function(instance){},
+		onHide: function(instance){},
+		animationDuration: 500
     }, options);
 
     this.$fs = null;
+
+    var make = function(data){
+        var template = new UI.Template('template-ui-fullscreen');
+
+		return template.render(data);
+	};
+
+	var bind = function(){
+		unbind();
+
+		if(_this.$fs && _this.$fs.length > 0){
+			_this.$fs.find('.close').on('click', function(e){
+				e.preventDefault();
+				_this.hide();
+			});
+		}
+
+		$(document).on('keyup.' + _id, function(e){
+			switch(e.keyCode){
+				case 27 : {
+					_this.hide();
+				} break;
+			}
+		});
+	};
+
+	var unbind = function(){
+		$(document).off('keyup.' + _id);
+	};
+
+	this.show = function(title, subtitle, content, toolbar){
+		this.$fs = $(make({
+			title: title,
+			subtitle: subtitle,
+			content: content,
+			toolbar: toolbar
+		}));
+
+		$('body').append(this.$fs);
+        $('html,body').css('overflow', 'hidden');
+
+        _this.options.onBeforeShow(_this);
+
+    	animateWindow = new UI.Animate({
+    		$element: this.$fs.find('.window'), 
+    		animationDuration: this.options.animationDuration
+    	});
+
+    	animateOverlay = new UI.Animate({
+    		$element: this.$fs.find('.overlay'), 
+    		animationDuration: this.options.animationDuration
+    	});
+
+		animateOverlay.play('fadeIn');
+
+		animateWindow.play('appear', function(){
+			bind();
+    		_this.options.onShow(_this);
+		});
+	};
+
+	this.hide = function(){
+		if(this.$fs && this.$fs.length > 0){
+			animateOverlay.play('fadeOut');
+
+			animateWindow.play('disappear', function(){
+				unbind();
+
+				_this.$fs.remove();
+				_this.options.onHide(_this);
+				
+				_this.$fs = null;
+				animateWindow = null;
+				animateOverlay = null;
+
+                $('html,body').css('overflow', 'auto');
+			});
+		}
+	};
 };
