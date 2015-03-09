@@ -42,6 +42,8 @@
                 <div class="bullet bg-mix-light"><code>fadeOut</code></div>
                 <div class="bullet bg-mix-light"><code>appear</code></div>
                 <div class="bullet bg-mix-light"><code>disappear</code></div>
+                <div class="bullet bg-mix-light"><code>slideDown</code></div>
+                <div class="bullet bg-mix-light"><code>slideUp</code></div>
               <hr><a name="ClickOutside"></a>
                 <h2>UI.ClickOutside</h2>
               <pre class="code-multiline"><code class="javascript">var ClickOutside = new UI.ClickOutside({
@@ -82,6 +84,17 @@
                 <div class="bullet"><code>Tabs.next()</code></div>
                 <div class="bullet"><code>Tabs.prev()</code></div>
                 <div class="bullet"><code>Tabs.getActive()</code></div>
+              <hr>
+              <!-- Fullscreen--><a name="Fullscreen"></a>
+                <h2>UI.Fullscreen</h2>
+              <pre class="code-multiline"><code class="javascript">var Fullscreen = new UI.Fullscreen({
+	animationDuration: 500,
+	onBeforeShow: function(instance){}, 
+	onShow: function(instance){},
+	onHide: function(instance){}
+});</code></pre><br>
+                <div class="bullet"><code>Fullscreen.show(title, subtitle, content, toolbar)</code></div>
+                <div class="bullet"><code>Fullscreen.hide()</code></div>
             </div>
           </div>
         </div>

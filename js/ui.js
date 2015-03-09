@@ -43,8 +43,10 @@ UI.Animate = function(options){
 		animationDuration: 300
 	}, options);
 
+	var $e = this.options.$element;
+
 	methods.fadeIn = function(done){
-		_this.options.$element.transition({
+		$e.transition({
 			opacity: 1
 		}, _this.options.animationDuration);
 
@@ -52,7 +54,7 @@ UI.Animate = function(options){
 	};
 
 	methods.fadeOut = function(done){
-		_this.options.$element.transition({
+		$e.transition({
 			opacity: 0
 		}, _this.options.animationDuration);
 
@@ -60,7 +62,7 @@ UI.Animate = function(options){
 	};
 
 	methods.appear = function(done){
-		_this.options.$element.transition({
+		$e.transition({
 			scale: 0,
 			opacity: 1,
 			perspective: '1500px',
@@ -68,7 +70,7 @@ UI.Animate = function(options){
 		}, 0);
 
 		setTimeout(function(){
-			_this.options.$element.transition({
+			$e.transition({
 				scale: 1,
 				opacity: 1,
 				rotateX: '0deg'
@@ -79,11 +81,47 @@ UI.Animate = function(options){
 	};
 
 	methods.disappear = function(done){
-		_this.options.$element.transition({
+		$e.transition({
 			scale: 0,
 			opacity: 1,
 			rotateX: '90deg'
 		}, _this.options.animationDuration, 'easeInBack');		
+
+		done();
+	};
+
+	methods.slideDown = function(done){
+		$e.transition({
+			scale: .75,
+			opacity: 0,
+			y: '-100vh'
+		}, 0);
+
+		$e.transition({
+			y: '0vh',
+			opacity: 1
+		}, _this.options.animationDuration, 'easeOutQuad')
+		.transition({
+			scale: 1
+		}, _this.options.animationDuration, 'easeOutBack');
+
+		done();
+	};
+
+	methods.slideUp = function(done){
+		$e.transition({
+			scale: 1,
+			opacity: 1,
+			y: '0vh'
+		}, 0);
+
+		$e.transition({
+			scale: .75
+		}, _this.options.animationDuration, 'easeInOutBack')
+		.transition({
+			opacity: 0,
+			y: '-100vh'
+		}, _this.options.animationDuration/2, 'easeInQuad');
 
 		done();
 	};
@@ -96,7 +134,7 @@ UI.Animate = function(options){
 				}, _this.options.animationDuration);
 			});
 		}else{
-			console.error('UI.Animate', 'Animation method not defined', method);
+			console.error('UI.Animate', 'Can\'t find animation method', method);
 		}
 	};
 };
@@ -631,7 +669,7 @@ UI.Fullscreen = function(options){
 
 		animateOverlay.play('fadeIn');
 
-		animateWindow.play('appear', function(){
+		animateWindow.play('slideDown', function(){
 			bind();
     		_this.options.onShow(_this);
 		});
@@ -639,19 +677,19 @@ UI.Fullscreen = function(options){
 
 	this.hide = function(){
 		if(this.$fs && this.$fs.length > 0){
-			animateOverlay.play('fadeOut');
+			unbind();
 
-			animateWindow.play('disappear', function(){
-				unbind();
+			animateWindow.play('slideUp', function(){
+				animateOverlay.play('fadeOut', function(){
+					_this.$fs.remove();
+					_this.options.onHide(_this);
+					
+					_this.$fs = null;
+					animateWindow = null;
+					animateOverlay = null;
 
-				_this.$fs.remove();
-				_this.options.onHide(_this);
-				
-				_this.$fs = null;
-				animateWindow = null;
-				animateOverlay = null;
-
-                $('html,body').css('overflow', 'auto');
+	                $('html,body').css('overflow', 'auto');
+				});
 			});
 		}
 	};

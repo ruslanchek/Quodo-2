@@ -184,7 +184,7 @@ Demo.Fullscreen = function(){
 
         $('#fullscreen-demo-1').on('click', function(e){
             e.preventDefault();
-            _this.sampleFullscreen1.show('Fullscreen demo 1', 'Simple photo demo', '<img width="100%" scr="http://lorempixel.com/1200/1200/?123">', 'Hey, man!');
+            _this.sampleFullscreen1.show('Fullscreen demo 1', 'Simple photo demo', '<img width="100%" src="http://lorempixel.com/1200/1200/?123"/>', '<div class="button-group"><a class="button bg-cold-light" href="#">Send</a><a class="button bg-heat-light" href="#">Delete</a></div>');
         });
     };
 
