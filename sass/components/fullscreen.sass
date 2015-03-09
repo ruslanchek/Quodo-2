@@ -6,6 +6,56 @@
 	left: 0
 	z-index: 1000
 
+	.loading
+		position: absolute
+		$width: 60px
+		width: $width
+		height: $width
+		top: 50%
+		left: 50%
+		margin-top: -$width/2
+		margin-left: -$width/2
+		z-index: 1004
+
+		.animation
+			$width: 60px
+			width: $width
+			height: $width
+			border: 2px solid rgba(255, 255, 255, .5)
+			position: relative
+			box-sizing: border-box
+			border-radius: $border-radius
+			
+			&:after
+				$width: 46px
+				display: block
+				content: ''
+				width: $width
+				height: $width
+				border: 2px solid rgba(255, 255, 255, .35)
+				position: absolute
+				box-sizing: border-box
+				top: 50%
+				left: 50%
+				margin-top: -$width/2
+				margin-left: -$width/2
+				border-radius: $border-radius / 2
+
+			&:before
+				$width: 32px
+				display: block
+				content: ''
+				width: $width
+				height: $width
+				border: 2px solid rgba(255, 255, 255, .25)
+				position: absolute
+				box-sizing: border-box
+				top: 50%
+				left: 50%
+				margin-top: -$width/2
+				margin-left: -$width/2
+				border-radius: $border-radius / 2
+
 	.overlay
 		width: 100%
 		height: 100%
@@ -13,9 +63,11 @@
 		position: absolute
 		top: 0
 		left: 0
-		background: rgba(0, 0, 0, .9)
+		background: rgba(0, 0, 0, .98)
 
 	.window
+		opacity: 0
+		transform: translateY(-100vh) scale(.8) // From slidDown animation effect
 		width: 100%
 		height: 100%
 		position: absolute

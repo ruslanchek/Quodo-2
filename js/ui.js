@@ -92,7 +92,7 @@ UI.Animate = function(options){
 
 	methods.slideDown = function(done){
 		$e.transition({
-			scale: .75,
+			scale: .8,
 			opacity: 0,
 			y: '-100vh'
 		}, 0);
@@ -102,7 +102,7 @@ UI.Animate = function(options){
 			opacity: 1
 		}, _this.options.animationDuration, 'easeOutQuad')
 		.transition({
-			scale: 1
+			scale: 1,
 		}, _this.options.animationDuration, 'easeOutBack');
 
 		done();
@@ -116,7 +116,7 @@ UI.Animate = function(options){
 		}, 0);
 
 		$e.transition({
-			scale: .75
+			scale: .8,
 		}, _this.options.animationDuration, 'easeInOutBack')
 		.transition({
 			opacity: 0,
@@ -130,7 +130,7 @@ UI.Animate = function(options){
 		if(methods[method]){
 			methods[method](function(){
 				setTimeout(function(){
-					if(done) done();
+					if(done) done($e);
 				}, _this.options.animationDuration);
 			});
 		}else{
@@ -604,6 +604,7 @@ UI.Fullscreen = function(options){
     var _this = this,
         _id = _.uniqueId('UIFullscreen_'),
         animateWindow = null,
+        animateLoading = null,
         animateOverlay = null;
 
     this.options = $.extend({
@@ -644,7 +645,28 @@ UI.Fullscreen = function(options){
 		$(document).off('keyup.' + _id);
 	};
 
-	this.show = function(title, subtitle, content, toolbar){
+	this.setWaitingMode = function(){
+		var $element = this.$fs.find('.loading');
+
+		$element.show();
+
+		animateLoading = new UI.Animate({
+    		$element: $element, 
+    		animationDuration: 300
+    	});
+
+		animateLoading.play('appear');
+	};
+
+	this.removeWaitingMode = function(){
+		if(animateLoading){
+			animateLoading.play('disappear', function($e){
+				$e.hide();
+			});
+		}
+	};
+
+	this.show = function(title, subtitle, content, toolbar, loading){
 		this.$fs = $(make({
 			title: title,
 			subtitle: subtitle,
@@ -657,22 +679,32 @@ UI.Fullscreen = function(options){
 
         _this.options.onBeforeShow(_this);
 
-    	animateWindow = new UI.Animate({
-    		$element: this.$fs.find('.window'), 
-    		animationDuration: this.options.animationDuration
-    	});
-
     	animateOverlay = new UI.Animate({
     		$element: this.$fs.find('.overlay'), 
     		animationDuration: this.options.animationDuration
     	});
 
-		animateOverlay.play('fadeIn');
+    	animateWindow = new UI.Animate({
+    		$element: this.$fs.find('.window'), 
+    		animationDuration: this.options.animationDuration
+    	});
 
-		animateWindow.play('slideDown', function(){
-			bind();
-    		_this.options.onShow(_this);
-		});
+		if(loading){
+			this.setWaitingMode();
+
+			loading(function(){
+				animateWindow.play('slideDown', function(){
+		    		_this.options.onShow(_this);
+		    		bind();
+		    		_this.removeWaitingMode();	
+				});
+    		});
+		}else{
+			animateWindow.play('slideDown', function(){
+	    		_this.options.onShow(_this);
+	    		bind();
+			});
+		}
 	};
 
 	this.hide = function(){
