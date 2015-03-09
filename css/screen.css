@@ -4654,7 +4654,7 @@ html, body {
         content: "";
         width: 46px;
         height: 46px;
-        border: 2px solid rgba(255, 255, 255, 0.4);
+        border: 2px solid rgba(255, 255, 255, 0.35);
         position: absolute;
         box-sizing: border-box;
         top: 50%;
@@ -4667,7 +4667,7 @@ html, body {
         content: "";
         width: 32px;
         height: 32px;
-        border: 2px solid rgba(255, 255, 255, 0.3);
+        border: 2px solid rgba(255, 255, 255, 0.25);
         position: absolute;
         box-sizing: border-box;
         top: 50%;

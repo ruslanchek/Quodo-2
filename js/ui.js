@@ -645,6 +645,27 @@ UI.Fullscreen = function(options){
 		$(document).off('keyup.' + _id);
 	};
 
+	this.setWaitingMode = function(){
+		var $element = this.$fs.find('.loading');
+
+		$element.show();
+
+		animateLoading = new UI.Animate({
+    		$element: $element, 
+    		animationDuration: 300
+    	});
+
+		animateLoading.play('appear');
+	};
+
+	this.removeWaitingMode = function(){
+		if(animateLoading){
+			animateLoading.play('disappear', function($e){
+				$e.hide();
+			});
+		}
+	};
+
 	this.show = function(title, subtitle, content, toolbar, loading){
 		this.$fs = $(make({
 			title: title,
@@ -668,26 +689,16 @@ UI.Fullscreen = function(options){
     		animationDuration: this.options.animationDuration
     	});
 
-    	animateLoading = new UI.Animate({
-    		$element: this.$fs.find('.loading'), 
-    		animationDuration: 300
-    	});
-
-		animateOverlay.play('fadeIn');
-
 		if(loading){
-			animateLoading.play('appear');
+			this.setWaitingMode();
 
 			loading(function(){
 				animateWindow.play('slideDown', function(){
-					animateLoading.play('disappear', function($e){
-						$e.hide();
-					});
-					
 		    		_this.options.onShow(_this);
 		    		bind();
+		    		_this.removeWaitingMode();	
 				});
-			});
+    		});
 		}else{
 			animateWindow.play('slideDown', function(){
 	    		_this.options.onShow(_this);
