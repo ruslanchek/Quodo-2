@@ -434,7 +434,7 @@ UI.Popup = function(options){
 	};
 
 	this.hide = function(){
-		if(this.$popup && this.popup.length > 0){
+		if(this.$popup && this.$popup.length > 0){
 			animateOverlay.play('fadeOut');
 
 			animateWindow.play('disappear', function(){
