@@ -4277,6 +4277,8 @@ html, body {
         .button-group .button:first-child:before {
           border-top-left-radius: 5px;
           border-bottom-left-radius: 5px; }
+        .button-group .button:first-child.wireframe {
+          border-right: none; }
       .button-group .button:last-child {
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px; }
@@ -4290,7 +4292,8 @@ html, body {
 @media (min-width: 0) and (max-width: 569px) {
   .button-group .button {
     width: 100%;
-    border-radius: 0; }
+    border-radius: 0;
+    display: block; }
     .button-group .button:before {
       border-radius: 0; }
     .button-group .button:first-child {
@@ -4300,6 +4303,8 @@ html, body {
       .button-group .button:first-child:before {
         border-top-left-radius: 5px;
         border-top-right-radius: 5px; }
+      .button-group .button:first-child.wireframe {
+        border-bottom: none !important; }
     .button-group .button:last-child {
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px; }
@@ -4313,7 +4318,7 @@ html, body {
   .button-group.separators .button {
     border-top: 1px solid rgba(0, 0, 0, 0.05); }
     .button-group.separators .button:first-child {
-      border-top: none; } }
+      border-top: none !important; } }
 
 .table {
   overflow: auto; }

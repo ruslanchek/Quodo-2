@@ -39,6 +39,8 @@ block content
 			+paramItem('fadeOut')
 			+paramItem('appear')
 			+paramItem('disappear')
+			+paramItem('slideDown')
+			+paramItem('slideUp')
 
 			hr
 
@@ -93,3 +95,20 @@ block content
 			+apiPublicMethod('Tabs.next()', '')
 			+apiPublicMethod('Tabs.prev()', '')
 			+apiPublicMethod('Tabs.getActive()', '')
+
+
+			hr
+
+			// Fullscreen
+			+apiSection('Fullscreen')
+			pre.code-multiline: code.javascript
+				|var Fullscreen = new UI.Fullscreen({
+				|	animationDuration: 500,
+				|	onBeforeShow: function(instance){}, 
+				|	onShow: function(instance){},
+				|	onHide: function(instance){}
+				|});
+			br
+
+			+apiPublicMethod('Fullscreen.show(title, subtitle, content, toolbar)')
+			+apiPublicMethod('Fullscreen.hide()')

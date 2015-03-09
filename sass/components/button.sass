@@ -211,6 +211,9 @@
 					border-top-left-radius: $border-radius
 					border-bottom-left-radius: $border-radius
 
+				&.wireframe
+					border-right: none
+
 			&:last-child
 				border-top-right-radius: $border-radius
 				border-bottom-right-radius: $border-radius
@@ -230,7 +233,8 @@
 		.button
 			width: 100%
 			border-radius: 0
-
+			display: block
+			
 			&:before
 				border-radius: 0
 
@@ -242,6 +246,9 @@
 				&:before
 					border-top-left-radius: $border-radius
 					border-top-right-radius: $border-radius
+
+				&.wireframe
+					border-bottom: none !important
 
 			&:last-child
 				border-bottom-left-radius: $border-radius
@@ -259,7 +266,7 @@
 				border-top: 1px solid rgba(0, 0, 0, .05)
 
 				&:first-child
-					border-top: none
+					border-top: none !important
 
 
 // @TODO: Add white and bordered styles to the button 
