@@ -14,3 +14,20 @@ script(type="text/x-handlebars-template")#template-ui-popup
 
 script(type="text/x-handlebars-template")#template-ui-popup-message
 	.message(class="{{className}}") {{content}}
+
+script(type="text/x-handlebars-template")#template-ui-fullscreen
+	.fullscreen
+		.overlay
+		.window
+			.limiter
+				.viewport
+					h3.title {{title}}
+						p.subtitle {{subtitle}}
+					a.close(href="#") &times;
+
+					.grid
+						.col-18
+							.content {{content}}
+
+						.col-6
+							.toolbar {{toolbar}}

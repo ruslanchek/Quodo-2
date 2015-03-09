@@ -174,11 +174,33 @@ Demo.Tabs = function(){
     };
 };
 
+Demo.Fullscreen = function(){
+    var _this = this;
+
+    this.initFullscreen1 = function(){
+        this.sampleFullscreen1 = new UI.Fullscreen();
+
+        console.log(this.sampleFullscreen1)
+
+        $('#fullscreen-demo-1').on('click', function(e){
+            e.preventDefault();
+            _this.sampleFullscreen1.show('Fullscreen demo 1', 'Simple photo demo', '<img width="100%" scr="http://lorempixel.com/1200/1200/?123">', 'Hey, man!');
+        });
+    };
+
+    this.init = function(){
+        this.initFullscreen1();
+
+        return this;
+    };
+};
+
 Demo.init = function(){
 	this.table = new this.Table().init();
 	this.checker = new this.Checker().init();
     this.popup = new this.Popup().init();
     this.tabs = new this.Tabs().init();
+    this.fullscreen = new this.Fullscreen().init();
 };
 
 $(function(){

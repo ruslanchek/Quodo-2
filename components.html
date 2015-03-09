@@ -98,6 +98,28 @@
     <script type="text/x-handlebars-template" id="template-ui-popup-message">
       <div class="message {{className}}">{{content}}</div>
     </script>
+    <script type="text/x-handlebars-template" id="template-ui-fullscreen">
+      <div class="fullscreen">
+        <div class="overlay"></div>
+        <div class="window">
+          <div class="limiter">
+            <div class="viewport">
+              <h3 class="title">{{title}}
+                <p class="subtitle">{{subtitle}}</p>
+              </h3><a href="#" class="close">&times;</a>
+              <div class="grid">
+                <div class="col-18">
+                  <div class="content">{{content}}</div>
+                </div>
+                <div class="col-6">
+                  <div class="toolbar">{{toolbar}}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </script>
     <script type="text/x-handlebars-template" id="template-demo-popup-1-content">
       <p>This example will show you, how the popup can appear and disappear, and how it play its own waiting animation. Also you can set a timeout, that automatically removes waiting mode from a popup window.</p>
       <div id="popup-sample-waiting-checker" class="checker"><a href="#" data-toggled-content="Switch waiting mode off">Switch waiting mode on</a></div>
@@ -128,38 +150,5 @@
         </div>
       </div>
     </script>
-    <!--.fullscreen
-    .overlay
-    .window
-    	.limiter
-    		.viewport
-    			h3.title Fullscreen image title
-    				p.subtitle There is description are going
-    			a.close(href="#") &times;
-    
-    			.grid
-    				.col-18
-    					.content
-    						img(src="http://lorempixel.com/1200/1200/sports/1", width="100%")
-    
-    				.col-6
-    					.toolbar
-    						.checker#sample-checker
-    							|Comments are&nbsp;
-    							a.active.bg-warm-dark(href="#", data-toggled-content="Disabled", data-active-class="bg-warm-dark") Enabled
-    
-    						hr
-    
-    						p Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. 
-    
-    						hr
-    						br
-    
-    						a.button.wireframe.wait.w-100(href="#") Send
-    						br
-    						br
-    
-    						a.button.wireframe.w-100.bg-heat-dark(href="#") Delete
-    -->
   </body>
 </html>
