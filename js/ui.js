@@ -48,17 +48,17 @@ UI.Animate = function(options){
 	methods.fadeIn = function(done){
 		$e.transition({
 			opacity: 1
-		}, _this.options.animationDuration);
-
-		done();
+		}, _this.options.animationDuration, function(){
+			done();
+		});
 	};
 
 	methods.fadeOut = function(done){
 		$e.transition({
 			opacity: 0
-		}, _this.options.animationDuration);
-
-		done();
+		}, _this.options.animationDuration, function(){
+			done();
+		});
 	};
 
 	methods.appear = function(done){
@@ -69,15 +69,13 @@ UI.Animate = function(options){
 			rotateX: '-90deg'
 		}, 0);
 
-		setTimeout(function(){
-			$e.transition({
-				scale: 1,
-				opacity: 1,
-				rotateX: '0deg'
-			}, _this.options.animationDuration, 'easeOutBack');
-
+		$e.transition({
+			scale: 1,
+			opacity: 1,
+			rotateX: '0deg'
+		}, _this.options.animationDuration, 'easeOutBack', function(){
 			done();
-		}, 50);
+		});
 	};
 
 	methods.disappear = function(done){
@@ -85,9 +83,9 @@ UI.Animate = function(options){
 			scale: 0,
 			opacity: 1,
 			rotateX: '90deg'
-		}, _this.options.animationDuration, 'easeInBack');		
-
-		done();
+		}, _this.options.animationDuration, 'easeInBack', function(){
+			done();
+		});
 	};
 
 	methods.slideDown = function(done){
@@ -103,9 +101,9 @@ UI.Animate = function(options){
 		}, _this.options.animationDuration, 'easeOutQuad')
 		.transition({
 			scale: 1,
-		}, _this.options.animationDuration, 'easeOutBack');
-
-		done();
+		}, _this.options.animationDuration, 'easeOutBack', function(){
+			done();
+		});
 	};
 
 	methods.slideUp = function(done){
@@ -121,9 +119,9 @@ UI.Animate = function(options){
 		.transition({
 			opacity: 0,
 			y: '-100vh'
-		}, _this.options.animationDuration/2, 'easeInQuad');
-
-		done();
+		}, _this.options.animationDuration/2, 'easeInQuad', function(){
+			done();
+		});
 	};
 
 	this.play = function(method, done){
@@ -401,39 +399,39 @@ UI.Popup = function(options){
     };
 
 	this.show = function(title, content){
-		this.hide();
+		this.hide(function(){
+			_this.$popup = $(make(title, content));
 
-		this.$popup = $(make(title, content));
+			$('body').append(_this.$popup);
 
-		$('body').append(this.$popup);
+	        if(_this.options.modal) {
+	            $('html,body').css('overflow', 'hidden');
+	        }
 
-        if(this.options.modal) {
-            $('html,body').css('overflow', 'hidden');
-        }
+			resize();
 
-		resize();
+			_this.options.onBeforeShow(_this);
 
-		_this.options.onBeforeShow(_this);
+	    	animateWindow = new UI.Animate({
+	    		$element: _this.$popup.find('.window'), 
+	    		animationDuration: _this.options.animationDuration
+	    	});
 
-    	animateWindow = new UI.Animate({
-    		$element: this.$popup.find('.window'), 
-    		animationDuration: this.options.animationDuration
-    	});
+	    	animateOverlay = new UI.Animate({
+	    		$element: _this.$popup.find('.overlay'), 
+	    		animationDuration: _this.options.animationDuration
+	    	});
 
-    	animateOverlay = new UI.Animate({
-    		$element: this.$popup.find('.overlay'), 
-    		animationDuration: this.options.animationDuration
-    	});
+			animateOverlay.play('fadeIn');
 
-		animateOverlay.play('fadeIn');
-
-		animateWindow.play('appear', function(){
-			bind();
-    		_this.options.onShow(_this);
+			animateWindow.play('appear', function(){
+				bind();
+	    		_this.options.onShow(_this);
+			});
 		});
 	};
 
-	this.hide = function(){
+	this.hide = function(done){
 		if(this.$popup && this.$popup.length > 0){
 			animateOverlay.play('fadeOut');
 
@@ -441,7 +439,6 @@ UI.Popup = function(options){
 				unbind();
 
 				_this.$popup.remove();
-				_this.options.onHide(_this);
 				
 				_this.$popup = null;
 				animateWindow = null;
@@ -450,7 +447,12 @@ UI.Popup = function(options){
                 if(_this.options.modal) {
                     $('html,body').css('overflow', 'auto');
                 }
+
+                _this.options.onHide(_this);
+                if(done) done();
 			});
+		}else{
+			 if(done) done();
 		}
 	};
 };
@@ -667,62 +669,68 @@ UI.Fullscreen = function(options){
 	};
 
 	this.show = function(title, subtitle, content, toolbar, loading){
-		this.$fs = $(make({
-			title: title,
-			subtitle: subtitle,
-			content: content,
-			toolbar: toolbar
-		}));
+		this.hide(function(){
+			_this.$fs = $(make({
+				title: title,
+				subtitle: subtitle,
+				content: content,
+				toolbar: toolbar
+			}));
 
-		$('body').append(this.$fs);
-        $('html,body').css('overflow', 'hidden');
+			$('body').append(_this.$fs);
+	        $('html,body').css('overflow', 'hidden');
 
-        _this.options.onBeforeShow(_this);
+	        _this.options.onBeforeShow(_this);
 
-    	animateOverlay = new UI.Animate({
-    		$element: this.$fs.find('.overlay'), 
-    		animationDuration: this.options.animationDuration
-    	});
+	    	animateOverlay = new UI.Animate({
+	    		$element: _this.$fs.find('.overlay'), 
+	    		animationDuration: _this.options.animationDuration
+	    	});
 
-    	animateWindow = new UI.Animate({
-    		$element: this.$fs.find('.window'), 
-    		animationDuration: this.options.animationDuration
-    	});
+	    	animateWindow = new UI.Animate({
+	    		$element: _this.$fs.find('.window'), 
+	    		animationDuration: _this.options.animationDuration
+	    	});
 
-		if(loading){
-			this.setWaitingMode();
+			if(loading){
+				_this.setWaitingMode();
 
-			loading(function(){
+				loading(function(){
+					animateWindow.play('slideDown', function(){
+						bind();
+			    		_this.options.onShow(_this);
+			    		_this.removeWaitingMode();
+					});
+	    		});
+			}else{
 				animateWindow.play('slideDown', function(){
+					bind();
 		    		_this.options.onShow(_this);
-		    		bind();
-		    		_this.removeWaitingMode();	
 				});
-    		});
-		}else{
-			animateWindow.play('slideDown', function(){
-	    		_this.options.onShow(_this);
-	    		bind();
-			});
-		}
+			}
+		});
 	};
 
-	this.hide = function(){
+	this.hide = function(done){
 		if(this.$fs && this.$fs.length > 0){
 			unbind();
 
 			animateWindow.play('slideUp', function(){
 				animateOverlay.play('fadeOut', function(){
 					_this.$fs.remove();
-					_this.options.onHide(_this);
 					
 					_this.$fs = null;
 					animateWindow = null;
 					animateOverlay = null;
 
 	                $('html,body').css('overflow', 'auto');
+
+	                _this.options.onHide(_this);
+	                if(done) done();
 				});
 			});
+		}else{
+			 if(done) done();
 		}
 	};
 };
