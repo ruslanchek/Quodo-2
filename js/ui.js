@@ -620,7 +620,11 @@ UI.Fullscreen = function(options){
 
     var make = function(data){
         var template = new UI.Template('template-ui-fullscreen');
+		return template.render(data);
+	};
 
+	var makeContent = function(data){
+        var template = new UI.Template('template-ui-fullscreen-content');
 		return template.render(data);
 	};
 
@@ -653,7 +657,7 @@ UI.Fullscreen = function(options){
 		$element.show();
 
 		animateLoading = new UI.Animate({
-    		$element: $element, 
+    		$element: $element,
     		animationDuration: 300
     	});
 
@@ -664,50 +668,54 @@ UI.Fullscreen = function(options){
 		if(animateLoading){
 			animateLoading.play('disappear', function($e){
 				$e.hide();
+				animateLoading = null;
 			});
 		}
 	};
 
-	this.show = function(title, subtitle, content, toolbar, loading){
-		this.hide(function(){
-			_this.$fs = $(make({
-				title: title,
-				subtitle: subtitle,
-				content: content,
-				toolbar: toolbar
-			}));
+	var showOverlay = function(done){
+		animateOverlay = new UI.Animate({
+    		$element: _this.$fs.find('.overlay'), 
+    		animationDuration: _this.options.animationDuration
+    	});
 
-			$('body').append(_this.$fs);
-	        $('html,body').css('overflow', 'hidden');
+    	animateOverlay.play('fadeIn', function(){
+    		if(done) done();
+    	});
+	};
 
+	var showWindow = function(done){
+		animateWindow = new UI.Animate({
+    		$element: _this.$fs.find('.window'), 
+    		animationDuration: _this.options.animationDuration
+    	});
+
+    	animateWindow.play('slideDown', function(){
+			if(done) done();
+		});
+	};
+
+	this.show = function(title, subtitle, content, toolbar){
+		this.hide(function(){		
 	        _this.options.onBeforeShow(_this);
+	        _this.$fs = $(make());
+	        _this.$fsContent = $(makeContent({
+	        	title: title, 
+	        	subtitle: subtitle, 
+	        	content: content, 
+	        	toolbar: toolbar
+	        }));
 
-	    	animateOverlay = new UI.Animate({
-	    		$element: _this.$fs.find('.overlay'), 
-	    		animationDuration: _this.options.animationDuration
-	    	});
+	        _this.$fs.find('.viewport').html(_this.$fsContent);
 
-	    	animateWindow = new UI.Animate({
-	    		$element: _this.$fs.find('.window'), 
-	    		animationDuration: _this.options.animationDuration
-	    	});
+	        $('body').append(_this.$fs);
+	       	$('html,body').css('overflow', 'hidden');
 
-			if(loading){
-				_this.setWaitingMode();
-
-				loading(function(){
-					animateWindow.play('slideDown', function(){
-						bind();
-			    		_this.options.onShow(_this);
-			    		_this.removeWaitingMode();
-					});
-	    		});
-			}else{
-				animateWindow.play('slideDown', function(){
-					bind();
-		    		_this.options.onShow(_this);
-				});
-			}
+	        showOverlay();
+	        showWindow(function(){
+				bind();
+    			_this.options.onShow(_this);	
+	        });	
 		});
 	};
 

@@ -186,18 +186,29 @@ Demo.Fullscreen = function(){
                 'Fullscreen demo 1', 
                 'Simple photo demo', 
                 '<img width="100%" src="http://lorempixel.com/1200/1200/?123"/>', 
-                '<div class="button-group"><a class="button wireframe bg-cold-light" href="#">Send</a><a class="button wireframe bg-heat-light" href="#">Delete</a></div>',
-                function(done){
-                    setTimeout(function(){
-                        done();
-                    }, 1500);
-                }
+                '<div class="button-group"><a class="button wireframe bg-cold-light" href="#">Send</a><a class="button wireframe bg-heat-light" href="#">Delete</a></div>'
+            );
+        });
+    };
+
+    this.initFullscreen2 = function(){
+        this.sampleFullscreen2 = new UI.Fullscreen();
+
+        $('#fullscreen-demo-2').on('click', function(e){
+            e.preventDefault();
+
+            _this.sampleFullscreen2.show(
+                'Fullscreen demo 1', 
+                'Simple photo demo', 
+                '<img width="100%" src="http://lorempixel.com/1200/1200/?123"/>', 
+                '<div class="button-group"><a class="button wireframe bg-cold-light" href="#">Send</a><a class="button wireframe bg-heat-light" href="#">Delete</a></div>'
             );
         });
     };
 
     this.init = function(){
         this.initFullscreen1();
+        this.initFullscreen2();
 
         return this;
     };
