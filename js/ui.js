@@ -623,11 +623,6 @@ UI.Fullscreen = function(options){
 		return template.render(data);
 	};
 
-	var makeContent = function(data){
-        var template = new UI.Template('template-ui-fullscreen-content');
-		return template.render(data);
-	};
-
 	var bind = function(){
 		unbind();
 
@@ -649,28 +644,6 @@ UI.Fullscreen = function(options){
 
 	var unbind = function(){
 		$(document).off('keyup.' + _id);
-	};
-
-	this.setWaitingMode = function(){
-		var $element = this.$fs.find('.loading');
-
-		$element.show();
-
-		animateLoading = new UI.Animate({
-    		$element: $element,
-    		animationDuration: 300
-    	});
-
-		animateLoading.play('appear');
-	};
-
-	this.removeWaitingMode = function(){
-		if(animateLoading){
-			animateLoading.play('disappear', function($e){
-				$e.hide();
-				animateLoading = null;
-			});
-		}
 	};
 
 	var showOverlay = function(done){
@@ -695,28 +668,59 @@ UI.Fullscreen = function(options){
 		});
 	};
 
-	this.show = function(title, subtitle, content, toolbar){
+	var prepareContainer = function(){
+		_this.$fs = $(make());
+
+        $('body').append(_this.$fs);
+       	$('html,body').css('overflow', 'hidden');
+	};
+
+	this.setWaitingMode = function(){
+		var $element = this.$fs.find('.loading');
+
+		$element.show();
+
+		animateLoading = new UI.Animate({
+    		$element: $element,
+    		animationDuration: 300
+    	});
+
+		animateLoading.play('appear');
+	};
+
+	this.removeWaitingMode = function(){
+		if(animateLoading){
+			animateLoading.play('disappear', function($e){
+				$e.hide();
+				animateLoading = null;
+			});
+		}
+	};
+
+	this.prepare = function(){
 		this.hide(function(){		
 	        _this.options.onBeforeShow(_this);
-	        _this.$fs = $(make());
-	        _this.$fsContent = $(makeContent({
-	        	title: title, 
-	        	subtitle: subtitle, 
-	        	content: content, 
-	        	toolbar: toolbar
-	        }));
-
-	        _this.$fs.find('.viewport').html(_this.$fsContent);
-
-	        $('body').append(_this.$fs);
-	       	$('html,body').css('overflow', 'hidden');
-
+	        
+	        prepareContainer();
 	        showOverlay();
-	        showWindow(function(){
-				bind();
-    			_this.options.onShow(_this);	
-	        });	
+	        _this.setWaitingMode();
 		});
+	};
+
+	this.render = function(data, templateName){
+        var template = new UI.Template((templateName) ? templateName : 'template-ui-fullscreen-content'),
+        	$content = template.render(data);
+
+        this.$fs.find('.viewport').html($content);
+	};
+
+	this.show = function(){
+		this.removeWaitingMode();
+		
+        showWindow(function(){
+        	bind();
+        	_this.options.onShow(_this);
+        });
 	};
 
 	this.hide = function(done){

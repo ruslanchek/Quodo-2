@@ -177,38 +177,28 @@ Demo.Tabs = function(){
 Demo.Fullscreen = function(){
     var _this = this;
 
-    this.initFullscreen1 = function(){
-        this.sampleFullscreen1 = new UI.Fullscreen();
+    this.initFullscreen = function(){
+        this.sampleFullscreen = new UI.Fullscreen();
 
         $('#fullscreen-demo-1').on('click', function(e){
             e.preventDefault();
-            _this.sampleFullscreen1.show(
-                'Fullscreen demo 1', 
-                'Simple photo demo', 
-                '<img width="100%" src="http://lorempixel.com/1200/1200/?123"/>', 
-                '<div class="button-group"><a class="button wireframe bg-cold-light" href="#">Send</a><a class="button wireframe bg-heat-light" href="#">Delete</a></div>'
-            );
-        });
-    };
 
-    this.initFullscreen2 = function(){
-        this.sampleFullscreen2 = new UI.Fullscreen();
+            _this.sampleFullscreen.prepare();
+            _this.sampleFullscreen.render({
+                title: 'Fullscreen demo 1',
+                subtitle: 'Simple photo demo',
+                content: '<img width="100%" src="http://lorempixel.com/1200/1200/?123"/>',
+                toolbar: '<div class="button-group"><a class="button wireframe bg-cold-light" href="#">Send</a><a class="button wireframe bg-heat-light" href="#">Delete</a></div>'
+            });
 
-        $('#fullscreen-demo-2').on('click', function(e){
-            e.preventDefault();
-
-            _this.sampleFullscreen2.show(
-                'Fullscreen demo 1', 
-                'Simple photo demo', 
-                '<img width="100%" src="http://lorempixel.com/1200/1200/?123"/>', 
-                '<div class="button-group"><a class="button wireframe bg-cold-light" href="#">Send</a><a class="button wireframe bg-heat-light" href="#">Delete</a></div>'
-            );
+            setTimeout(function(){ // Emulate data loading delay
+                _this.sampleFullscreen.show();
+            }, 1500);
         });
     };
 
     this.init = function(){
-        this.initFullscreen1();
-        this.initFullscreen2();
+        this.initFullscreen();
 
         return this;
     };
