@@ -19,7 +19,7 @@
             <div class="col-6"><a href="index.html" class="color-dark-gray-dark">
                 <div class="logo">Quodo<i class="fa fa-rocket color-cold-dark"></i>2</div>
                 <p class="logo-p">Application UI library</p></a>
-              <nav data-collapse="false" data-collapsed-text="Sections" class="nav fat bordered"><a href="components.html">Components</a><a href="typography.html">Typography</a><a href="colors.html">Colors</a><a href="grid.html">Grid</a><a href="api.html">API</a><a href="roadmap.html">Roadmap</a></nav>
+              <nav data-collapse="false" data-collapsed-text="Sections" class="nav fat bordered"><a href="index.html">Components</a><a href="typography.html">Typography</a><a href="colors.html">Colors</a><a href="grid.html">Grid</a><a href="api.html">API</a><a href="roadmap.html">Roadmap</a></nav>
             </div>
             <div class="col-18">
               <h1>Fullscreen</h1>
@@ -27,8 +27,10 @@
                 </nav>
                 <hr>
               <h2>Fullscreen demo</h2>
-              <p>The full screen have a rich API, so you can tune it how you prefer</p>
-              <p><a id="fullscreen-demo-1" href="#" class="button">Open fullscreen</a></p>
+              <p>The fullscreen component have a rich API, so you can tune it how you prefer</p>
+              <div class="grid">
+                <div class="col-6"><a id="fullscreen-demo-1" href="#" class="button fat w-100">Fullscreen</a></div>
+              </div>
               <div class="grid marginless">
                 <div class="col-4"><a href="#" class="code"><i class="fa fa-code"></i>&nbsp;The code</a></div>
               </div>
@@ -49,7 +51,7 @@
           <div class="col-18">
             <nav class="nav white">
               <div class="grid marginless">
-                <div class="col-6"><a href="components.html">Components</a><a href="typography.html">Typography</a><a href="colors.html">Colors</a><a href="grid.html">Grid</a></div>
+                <div class="col-6"><a href="index.html">Components</a><a href="typography.html">Typography</a><a href="colors.html">Colors</a><a href="grid.html">Grid</a></div>
                 <div class="col-6"><a href="api.html">API</a><a href="roadmap.html">Roadmap</a></div>
               </div>
             </nav>
@@ -81,20 +83,21 @@
         </div>
         <div class="window">
           <div class="limiter">
-            <div class="viewport">
-              <h3 class="title">{{title}}
-                <p class="subtitle">{{subtitle}}</p>
-              </h3><a href="#" class="close">&times;</a>
-              <div class="grid">
-                <div class="col-18">
-                  <div class="content">{{content}}</div>
-                </div>
-                <div class="col-6">
-                  <div class="toolbar">{{toolbar}}</div>
-                </div>
-              </div>
-            </div>
+            <div class="viewport"></div>
           </div>
+        </div>
+      </div>
+    </script>
+    <script type="text/x-handlebars-template" id="template-ui-fullscreen-content">
+      <h3 class="title">{{title}}
+        <p class="subtitle">{{subtitle}}</p>
+      </h3><a href="#" class="close">&times;</a>
+      <div class="grid">
+        <div class="col-18">
+          <div class="content">{{content}}</div>
+        </div>
+        <div class="col-6">
+          <div class="toolbar">{{toolbar}}</div>
         </div>
       </div>
     </script>

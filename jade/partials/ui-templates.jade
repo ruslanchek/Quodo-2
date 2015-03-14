@@ -23,13 +23,16 @@ script(type="text/x-handlebars-template")#template-ui-fullscreen
 		.window
 			.limiter
 				.viewport
-					h3.title {{title}}
-						p.subtitle {{subtitle}}
-					a.close(href="#") &times;
+					
+script(type="text/x-handlebars-template")#template-ui-fullscreen-content
+	h3.title {{title}}
+		p.subtitle {{subtitle}}
 
-					.grid
-						.col-18
-							.content {{content}}
+	a.close(href="#") &times;
 
-						.col-6
-							.toolbar {{toolbar}}
+	.grid
+		.col-18
+			.content {{content}}
+
+		.col-6
+			.toolbar {{toolbar}}
