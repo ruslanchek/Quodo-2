@@ -44,6 +44,7 @@ $one_col: (100% - ($grid-gutter-width * ($grid-cols - 1))) / $grid-cols;
 	[class^="col-"], 
 	[class*=" col-"] {
         margin-bottom: $margin-vertical-space;
+        min-height: 1px;
 
 		@include breakpoint($bp-iphone) {
 			float: none !important;
