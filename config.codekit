@@ -335,6 +335,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/css\/screen.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/screen.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/forms.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -760,17 +769,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/min\/ui-min.js",
 		"outputAbbreviatedPath": "\/js\/min\/min\/ui-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/ui.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/ui.js",
-		"outputAbbreviatedPath": "\/js\/min\/ui-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -2687,7 +2685,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Ruslan",
+"lastSavedByUser": "Ruslan Shashkov",
 "manualImportLinks": {
 	},
 "projectAttributes": {

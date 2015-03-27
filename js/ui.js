@@ -139,25 +139,32 @@ UI.Animate = function(options){
 
 
 UI.Template = function(templateName){
-	var _this = this;
+	var _this = this,
+		template;
 
 	_.templateSettings = UI.settings.templateSettings;
 
-	var getTemplate = function(){
-		var template = $('#' + templateName).html();
+	var warn = function(){
+		console.warn('UI.Template', 'Template is empty', templateName);
+	};
 
-		if(template){
-			return template;
-		}else{
-			console.error('UI.Template', 'Template is empty', templateName);
+	var getTemplate = function(){
+		var t = $('#' + templateName).html();
+
+		if(t){
+			template = _.template(t);
 		}
 	};
 
 	this.render = function(data){
-		var template = _.template(getTemplate());
-
-		return template(data);
+		if(template){
+			return template(data);
+		}else{
+			warn();
+		}
 	};
+
+	getTemplate();
 };
 
 
@@ -698,7 +705,7 @@ UI.Fullscreen = function(options){
 	};
 
 	this.prepare = function(){
-		this.hide(function(){		
+		this.hide(function(){
 	        _this.options.onBeforeShow(_this);
 	        
 	        prepareContainer();
