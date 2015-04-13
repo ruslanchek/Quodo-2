@@ -3034,7 +3034,8 @@ main {
   margin-left: 0; }
 .grid [class^="col-"],
 .grid [class*=" col-"] {
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  min-height: 1px; }
   @media (min-width: 0) and (max-width: 569px) {
     .grid [class^="col-"],
     .grid [class*=" col-"] {
@@ -4677,6 +4678,7 @@ html, body {
         margin-left: -16px;
         border-radius: 2.5px; }
   .fullscreen .overlay {
+    opacity: 0;
     width: 100%;
     height: 100%;
     z-index: 1001;
